@@ -1,0 +1,405 @@
+/* Widget Container - Fixed Positioning */
+.todo-widget-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Collapsed Pill State */
+.todo-pill {
+    background: rgba(30, 41, 59, 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    color: #e2e8f0;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.todo-pill:hover {
+    background: rgba(30, 41, 59, 1);
+    box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.4);
+}
+
+.pill-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6366f1;
+}
+
+.pill-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.pill-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.pill-badge {
+    background: #ef4444;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.1rem 0.4rem;
+    border-radius: 99px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.pill-arrow {
+    color: #94a3b8;
+}
+
+/* Expanded State Overrides/Additions */
+.todo-wrapper.expanded {
+    width: 380px;
+    /* Specific width for widget mode */
+    max-height: 80vh;
+    /* Max height constraint */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    /* Remove auto margin from previous */
+}
+
+/* Header Controls */
+.todo-header-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.close-widget-btn {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-widget-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* --- Keep Existing Premium Styles Below (Modified for Widget Context if needed) --- */
+
+/* Header Section */
+.todo-header-premium {
+    padding: 1.5rem;
+    /* Slightly reduced padding */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.03), transparent);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    flex-shrink: 0;
+}
+
+.todo-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.todo-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #f8fafc;
+}
+
+.brand-icon {
+    color: #6366f1;
+}
+
+.todo-brand h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.todo-progress-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.progress-text {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.progress-bar-bg {
+    width: 80px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: #6366f1;
+    border-radius: 99px;
+}
+
+/* Input Group */
+.todo-input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.todo-premium-input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.todo-premium-input:focus {
+    outline: none;
+    background: rgba(0, 0, 0, 0.3);
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.todo-premium-input::placeholder {
+    color: #64748b;
+}
+
+.todo-add-btn-premium {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #6366f1;
+    border: none;
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.todo-add-btn-premium:hover {
+    background: #4f46e5;
+}
+
+.todo-add-btn-premium:disabled {
+    background: #334155;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+/* Content & Tabs */
+.todo-content {
+    padding: 0.5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* For inner scroll */
+}
+
+.todo-tabs {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.75rem;
+    flex-shrink: 0;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: #64748b;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.tab-btn:hover {
+    color: #94a3b8;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.tab-btn.active {
+    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Tasks List */
+.todo-list-premium {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: auto;
+    flex: 1;
+    min-height: 200px;
+    padding-bottom: 1rem;
+}
+
+/* Scrollbar for Widget List */
+.todo-list-premium::-webkit-scrollbar {
+    width: 4px;
+}
+
+.todo-list-premium::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.todo-item-premium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.todo-item-premium:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Checkbox */
+.custom-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 0.75rem;
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #475569;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    color: white;
+}
+
+.todo-item-premium:hover .custom-checkbox {
+    border-color: #64748b;
+}
+
+.custom-checkbox.checked {
+    background: #10b981;
+    border-color: #10b981;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #e2e8f0;
+    transition: all 0.2s;
+    word-break: break-all;
+}
+
+.todo-item-premium.completed .task-text {
+    color: #64748b;
+    text-decoration: line-through;
+}
+
+/* Delete Button */
+.delete-btn-premium {
+    background: none;
+    border: none;
+    color: #ef4444;
+    opacity: 0;
+    transition: all 0.2s;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.todo-item-premium:hover .delete-btn-premium {
+    opacity: 1;
+}
+
+.delete-btn-premium:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+/* Empty State */
+.empty-state-premium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 120px;
+    color: #64748b;
+    text-align: center;
+    gap: 0.75rem;
+}
+
+.empty-icon {
+    color: #475569;
+}
+
+.todo-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 1.5rem 1rem;
+}
+
+/* Clear Button */
+.clear-completed-btn {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 0.75rem;
+    cursor: pointer;
+    padding: 0.4rem;
+    transition: all 0.2s;
+}
+
+.clear-completed-btn:hover {
+    color: #e2e8f0;
+}
