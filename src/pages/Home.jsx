@@ -144,9 +144,9 @@ const Home = () => {
             <Link to="/questions" className="btn btn-primary">
               Start Solving <ArrowRight size={18} />
             </Link>
-            <a href="#notes" className="btn btn-secondary">
+            <Link to="/dsa-vault" className="btn btn-secondary">
               View All Notes
-            </a>
+            </Link>
           </div>
         </motion.div>
       </section>
