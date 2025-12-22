@@ -239,9 +239,9 @@ const Home = () => {
             <TodoList />
           </div>
           <div className="footer-social">
-            <a href="#" aria-label="GitHub"><Github size={20} /></a>
-            <a href="" aria-label="LinkedIn"><Linkedin size={20} /></a>
-            <a href="mailto:adityagaikwad@gmail.com" aria-label="Email"><Mail size={20} /></a>
+            <a href="#" aria-label="https://github.com/adityagaikwad90"><Github size={20} /></a>
+            <a href="" aria-label="https://www.linkedin.com/in/aditya-gaikwad-52335a250/"><Linkedin size={20} /></a>
+            <a href="mailto:adityagaikwadpbn@gmail.com" aria-label="Email"><Mail size={20} /></a>
           </div>
         </div>
         <div className="footer-bottom">
