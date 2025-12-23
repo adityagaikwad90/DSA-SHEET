@@ -344,20 +344,131 @@
 /* Responsive */
 @media (max-width: 768px) {
     .club-chat-container {
-        padding-top: 70px;
+        padding-top: 60px;
+        /* Reduced offset */
+        padding-bottom: 0px;
+        height: 100dvh;
+        /* Use dynamic viewport height */
     }
 
-    .chat-window-premium {
-        height: 100%;
-        border-radius: 0;
+    /* Club Selection */
+    .club-selection {
+        padding: 0 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .clubs-header {
+        margin-bottom: 2rem;
     }
 
     .clubs-header h1 {
         font-size: 2rem;
     }
 
+    .hub-tabs {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .hub-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        flex: 1;
+        /* Distribute space evenly */
+        min-width: 80px;
+        text-align: center;
+    }
+
+    .club-list {
+        grid-template-columns: 1fr;
+        /* Single column */
+        gap: 1.5rem;
+    }
+
+    .club-card {
+        padding: 1.5rem;
+    }
+
+    /* Inbox */
+    .inbox-list {
+        width: 100%;
+    }
+
+    /* Chat Workspace */
+    .chat-workspace {
+        padding: 0;
+        height: 100%;
+        background: #0f172a;
+        /* Match theme background to avoid gaps */
+    }
+
+    .chat-window-premium {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-header-premium {
+        padding: 0.75rem 1rem;
+        background: rgba(15, 23, 42, 0.95);
+        /* More opaque on mobile */
+    }
+
+    .header-info h3 {
+        font-size: 1rem;
+    }
+
+    .chat-body-premium {
+        padding: 1rem;
+    }
+
     .message-row {
-        max-width: 85%;
+        max-width: 90%;
+        gap: 0.5rem;
+    }
+
+    .msg-avatar {
+        width: 28px;
+        height: 28px;
+        font-size: 0.7rem;
+    }
+
+    .message-bubble {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 12px;
+    }
+
+    .chat-footer-premium {
+        padding: 0.75rem 1rem;
+        padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+        /* Safe area for iPhone */
+    }
+
+    .input-wrapper {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .send-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Profile Modal */
+    .profile-modal {
+        width: 90%;
+        max-width: 320px;
+        padding: 1.5rem;
+    }
+
+    .profile-avatar-large {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
     }
 }
 
