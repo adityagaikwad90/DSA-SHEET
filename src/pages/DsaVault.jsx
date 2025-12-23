@@ -4,6 +4,7 @@ import { FileText, Table, Youtube, ExternalLink } from 'lucide-react';
 import { DSA_TOPICS } from '../constants';
 import TopicNotes from '../components/TopicNotes';
 import './Home.css';
+import './DsaVault.css';
 
 const SHEETS = [
     { name: "Striver's SDE Sheet", author: "Raj Vikramaditya", url: "https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/" },
@@ -28,15 +29,15 @@ const DsaVault = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="section"
+                className="section dsa-vault-container"
             >
-                <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                <div className="vault-header">
                     <h1 className="section-title">DSA Vault</h1>
                     <p className="section-subtitle">Manage your revision notes and resources</p>
                 </div>
 
-                <div className="section-header" style={{ marginBottom: '2rem', textAlign: 'center' }}>
-                    <h2 className="section-title" style={{ fontSize: '2rem' }}>Topic Notes</h2>
+                <div className="vault-section-header">
+                    <h2 className="section-title vault-section-title">Topic Notes</h2>
                     <p className="section-subtitle">Select a topic to manage your notes</p>
                 </div>
 
@@ -59,43 +60,31 @@ const DsaVault = () => {
 
                 {/* External Resources Section */}
                 <div className="resources-section">
-                    <div className="section-header" style={{ marginBottom: '2rem', textAlign: 'center' }}>
-                        <h2 className="section-title" style={{ fontSize: '2rem' }}>Learning Resources</h2>
+                    <div className="vault-section-header">
+                        <h2 className="section-title vault-section-title">Learning Resources</h2>
                         <p className="section-subtitle">Curated sheets and video lectures</p>
                     </div>
 
-                    <div className="resources-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                    <div className="vault-resources-grid">
 
                         {/* Sheets Column */}
                         <div className="resource-column">
-                            <h3 className="subsection-title" style={{ color: 'var(--color-text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', fontWeight: '600' }}>
+                            <h3 className="subsection-title vault-sub-title">
                                 <Table size={24} className="text-purple-400" style={{ color: 'var(--color-primary)' }} /> Important Sheets
                             </h3>
-                            <div className="resource-list" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                            <div className="vault-resource-list">
                                 {SHEETS.map((sheet, idx) => (
                                     <motion.a
                                         key={idx}
                                         href={sheet.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="resource-card"
+                                        className="vault-resource-card"
                                         whileHover={{ x: 5 }}
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'space-between',
-                                            alignItems: 'center',
-                                            padding: '1.25rem',
-                                            background: 'rgba(30, 41, 59, 0.4)',
-                                            borderRadius: '12px',
-                                            textDecoration: 'none',
-                                            color: 'var(--color-text-primary)',
-                                            border: '1px solid rgba(255,255,255,0.05)',
-                                            backdropFilter: 'blur(10px)'
-                                        }}
                                     >
-                                        <div>
-                                            <h4 style={{ fontWeight: '600', marginBottom: '0.25rem' }}>{sheet.name}</h4>
-                                            <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>{sheet.author}</p>
+                                        <div className="resource-info">
+                                            <h4>{sheet.name}</h4>
+                                            <p>{sheet.author}</p>
                                         </div>
                                         <ExternalLink size={18} style={{ opacity: 0.7 }} />
                                     </motion.a>
@@ -105,34 +94,22 @@ const DsaVault = () => {
 
                         {/* Videos Column */}
                         <div className="resource-column">
-                            <h3 className="subsection-title" style={{ color: 'var(--color-text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', fontWeight: '600' }}>
+                            <h3 className="subsection-title vault-sub-title">
                                 <Youtube size={24} className="text-red-400" style={{ color: '#ef4444' }} /> Video Lectures
                             </h3>
-                            <div className="resource-list" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                            <div className="vault-resource-list">
                                 {VIDEOS.map((video, idx) => (
                                     <motion.a
                                         key={idx}
                                         href={video.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="resource-card"
+                                        className="vault-resource-card"
                                         whileHover={{ x: 5 }}
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'space-between',
-                                            alignItems: 'center',
-                                            padding: '1.25rem',
-                                            background: 'rgba(30, 41, 59, 0.4)',
-                                            borderRadius: '12px',
-                                            textDecoration: 'none',
-                                            color: 'var(--color-text-primary)',
-                                            border: '1px solid rgba(255,255,255,0.05)',
-                                            backdropFilter: 'blur(10px)'
-                                        }}
                                     >
-                                        <div>
-                                            <h4 style={{ fontWeight: '600', marginBottom: '0.25rem' }}>{video.title}</h4>
-                                            <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>{video.channel}</p>
+                                        <div className="resource-info">
+                                            <h4>{video.title}</h4>
+                                            <p>{video.channel}</p>
                                         </div>
                                         <ExternalLink size={18} style={{ opacity: 0.7 }} />
                                     </motion.a>
