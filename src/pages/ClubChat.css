@@ -17,6 +17,10 @@
     max-width: 1000px;
     padding: 0 2rem;
     z-index: 10;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 4rem;
+    /* Ensure bottom content is accessible */
 }
 
 .clubs-header {

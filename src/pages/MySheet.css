@@ -411,10 +411,13 @@
 @media (max-width: 768px) {
     .mysheet-container {
         padding-top: 80px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .mysheet-controls {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .form-row {
@@ -422,8 +425,70 @@
         gap: 1rem;
     }
 
-    .topic-table th,
+    /* Card View Transformation */
+    .topic-table,
+    .topic-table tbody,
+    .topic-table tr,
     .topic-table td {
-        padding: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .topic-table thead {
+        display: none;
+    }
+
+    .topic-table tr {
+        margin-bottom: 1rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        padding: 1.25rem;
+        position: relative;
+    }
+
+    .topic-table td {
+        padding: 0.25rem 0;
+        border: none;
+        text-align: left;
+    }
+
+    /* Specific Column Adjustments */
+    .col-problem {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding-right: 3rem;
+        /* Space for delete button */
+    }
+
+    .problem-name {
+        font-size: 1.1rem;
+    }
+
+    .col-notes {
+        width: 100%;
+        margin-bottom: 0.75rem;
+        color: var(--color-text-secondary);
+        font-size: 0.9rem;
+    }
+
+    .col-importance {
+        width: auto;
+        display: inline-block;
+    }
+
+    .col-actions {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: auto;
+        border: none;
+        padding: 0;
+    }
+
+    .btn-delete {
+        background: rgba(255, 255, 255, 0.05);
+        opacity: 1;
+        padding: 8px;
     }
 }
