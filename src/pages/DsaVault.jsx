@@ -23,20 +23,19 @@ const DsaVault = () => {
     const [selectedTopic, setSelectedTopic] = useState(null);
 
     return (
-        <div className="home-container" style={{ paddingTop: '80px', minHeight: '100vh' }}>
+        <div className="home-container">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="section"
-                style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}
             >
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                    <h1 className="section-title" style={{ fontSize: '3rem', marginBottom: '1rem' }}>DSA Vault</h1>
+                    <h1 className="section-title">DSA Vault</h1>
                     <p className="section-subtitle">Manage your revision notes and resources</p>
                 </div>
 
-                <div className="section-header" style={{ marginBottom: '2rem' }}>
+                <div className="section-header" style={{ marginBottom: '2rem', textAlign: 'center' }}>
                     <h2 className="section-title" style={{ fontSize: '2rem' }}>Topic Notes</h2>
                     <p className="section-subtitle">Select a topic to manage your notes</p>
                 </div>
@@ -69,8 +68,8 @@ const DsaVault = () => {
 
                         {/* Sheets Column */}
                         <div className="resource-column">
-                            <h3 className="subsection-title" style={{ color: '#fff', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                <Table size={24} className="text-purple-400" style={{ color: '#a78bfa' }} /> Important Sheets
+                            <h3 className="subsection-title" style={{ color: 'var(--color-text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', fontWeight: '600' }}>
+                                <Table size={24} className="text-purple-400" style={{ color: 'var(--color-primary)' }} /> Important Sheets
                             </h3>
                             <div className="resource-list" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                                 {SHEETS.map((sheet, idx) => (
@@ -80,22 +79,23 @@ const DsaVault = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="resource-card"
-                                        whileHover={{ x: 10 }}
+                                        whileHover={{ x: 5 }}
                                         style={{
                                             display: 'flex',
                                             justifyContent: 'space-between',
                                             alignItems: 'center',
-                                            padding: '1rem',
-                                            background: 'rgba(255,255,255,0.05)',
+                                            padding: '1.25rem',
+                                            background: 'rgba(30, 41, 59, 0.4)',
                                             borderRadius: '12px',
                                             textDecoration: 'none',
-                                            color: '#e2e8f0',
-                                            border: '1px solid rgba(255,255,255,0.1)'
+                                            color: 'var(--color-text-primary)',
+                                            border: '1px solid rgba(255,255,255,0.05)',
+                                            backdropFilter: 'blur(10px)'
                                         }}
                                     >
                                         <div>
                                             <h4 style={{ fontWeight: '600', marginBottom: '0.25rem' }}>{sheet.name}</h4>
-                                            <p style={{ fontSize: '0.85rem', color: '#94a3b8' }}>{sheet.author}</p>
+                                            <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>{sheet.author}</p>
                                         </div>
                                         <ExternalLink size={18} style={{ opacity: 0.7 }} />
                                     </motion.a>
@@ -105,8 +105,8 @@ const DsaVault = () => {
 
                         {/* Videos Column */}
                         <div className="resource-column">
-                            <h3 className="subsection-title" style={{ color: '#fff', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                <Youtube size={24} className="text-red-400" style={{ color: '#f87171' }} /> Video Lectures
+                            <h3 className="subsection-title" style={{ color: 'var(--color-text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', fontWeight: '600' }}>
+                                <Youtube size={24} className="text-red-400" style={{ color: '#ef4444' }} /> Video Lectures
                             </h3>
                             <div className="resource-list" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                                 {VIDEOS.map((video, idx) => (
@@ -116,22 +116,23 @@ const DsaVault = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="resource-card"
-                                        whileHover={{ x: 10 }}
+                                        whileHover={{ x: 5 }}
                                         style={{
                                             display: 'flex',
                                             justifyContent: 'space-between',
                                             alignItems: 'center',
-                                            padding: '1rem',
-                                            background: 'rgba(255,255,255,0.05)',
+                                            padding: '1.25rem',
+                                            background: 'rgba(30, 41, 59, 0.4)',
                                             borderRadius: '12px',
                                             textDecoration: 'none',
-                                            color: '#e2e8f0',
-                                            border: '1px solid rgba(255,255,255,0.1)'
+                                            color: 'var(--color-text-primary)',
+                                            border: '1px solid rgba(255,255,255,0.05)',
+                                            backdropFilter: 'blur(10px)'
                                         }}
                                     >
                                         <div>
                                             <h4 style={{ fontWeight: '600', marginBottom: '0.25rem' }}>{video.title}</h4>
-                                            <p style={{ fontSize: '0.85rem', color: '#94a3b8' }}>{video.channel}</p>
+                                            <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>{video.channel}</p>
                                         </div>
                                         <ExternalLink size={18} style={{ opacity: 0.7 }} />
                                     </motion.a>

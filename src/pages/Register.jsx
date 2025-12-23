@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
+import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 import "./Login.css"; // Reuse auth styles
 
 export default function Register() {
@@ -16,9 +17,20 @@ export default function Register() {
     setError("");
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      // Update profile
       await updateProfile(userCredential.user, {
         displayName: fullName
       });
+
+      // Save user to 'users' collection for directory
+      await setDoc(doc(db, "users", userCredential.user.uid), {
+        uid: userCredential.user.uid,
+        displayName: fullName,
+        email: email,
+        photoURL: null,
+        createdAt: serverTimestamp()
+      });
+
       navigate("/"); // Redirect to home on success
     } catch (err) {
       setError(err.message);

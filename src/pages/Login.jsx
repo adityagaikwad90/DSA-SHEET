@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
+import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
 import "./Login.css"; // Import the CSS file
 
 export default function Login() {
@@ -14,7 +15,23 @@ export default function Login() {
     e.preventDefault();
     setError("");
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      // Check if user exists in Firestore (for old users migration)
+      const userDocRef = doc(db, "users", user.uid);
+      const userDoc = await getDoc(userDocRef);
+
+      if (!userDoc.exists()) {
+        await setDoc(userDocRef, {
+          uid: user.uid,
+          displayName: user.displayName || user.email.split('@')[0],
+          email: user.email,
+          photoURL: user.photoURL,
+          createdAt: serverTimestamp()
+        });
+      }
+
       navigate("/"); // Redirect to home on success
     } catch (err) {
       setError(err.message);
