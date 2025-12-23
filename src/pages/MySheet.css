@@ -418,11 +418,44 @@
     .mysheet-controls {
         flex-direction: column;
         align-items: stretch;
+        gap: 1rem;
+    }
+
+    /* Form Adjustments for Mobile */
+    .add-question-form {
+        padding: 1.5rem;
     }
 
     .form-row {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.25rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 16px;
+        /* Prevent iOS zoom */
+        padding: 1rem;
+        /* Larger touch target */
+    }
+
+    .btn-submit {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .btn-cancel {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+        /* Put primary action on top/bottom as preferred, or just stack */
+        gap: 0.75rem;
     }
 
     /* Card View Transformation */
@@ -439,56 +472,85 @@
     }
 
     .topic-table tr {
-        margin-bottom: 1rem;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 12px;
-        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+        background: rgba(30, 41, 59, 0.6);
+        /* Slightly darker for contrast */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 1.5rem;
         position: relative;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
 
     .topic-table td {
-        padding: 0.25rem 0;
+        padding: 0.5rem 0;
         border: none;
         text-align: left;
+        position: relative;
     }
 
-    /* Specific Column Adjustments */
+    /* Column Specifics */
     .col-problem {
-        width: 100%;
-        margin-bottom: 0.5rem;
-        padding-right: 3rem;
-        /* Space for delete button */
+        padding-right: 2.5rem;
+        /* Space for actions */
+        margin-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding-bottom: 0.75rem !important;
     }
 
     .problem-name {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
+        color: white;
     }
 
     .col-notes {
-        width: 100%;
-        margin-bottom: 0.75rem;
+        font-size: 0.95rem;
+        color: #cbd5e1;
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .col-notes::before {
+        content: "Notes";
+        font-size: 0.75rem;
+        text-transform: uppercase;
         color: var(--color-text-secondary);
-        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
     }
 
     .col-importance {
-        width: auto;
-        display: inline-block;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .col-importance::before {
+        content: "Priority:";
+        font-size: 0.85rem;
+        color: var(--color-text-secondary);
     }
 
     .col-actions {
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: 1.25rem;
+        right: 1.25rem;
         width: auto;
-        border: none;
-        padding: 0;
+        padding: 0 !important;
     }
 
     .btn-delete {
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
         opacity: 1;
-        padding: 8px;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
