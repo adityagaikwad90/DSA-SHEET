@@ -38,11 +38,11 @@ function Navbar() {
         </div>
 
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-          <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
-          <Link to="/questions" className="nav-link" onClick={closeMenu}>Code Arena</Link>
-          <Link to="/sheet" className="nav-link" onClick={closeMenu}>My Sheet</Link>
-          <Link to="/dsa-vault" className="nav-link" onClick={closeMenu}>DSA Vault</Link>
-          <Link to="/club" className="nav-link" onClick={closeMenu}>Clubs</Link>
+          <li><Link to="/" className="nav-link" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/questions" className="nav-link" onClick={closeMenu}>Code Arena</Link></li>
+          <li><Link to="/sheet" className="nav-link" onClick={closeMenu}>My Sheet</Link></li>
+          <li><Link to="/dsa-vault" className="nav-link" onClick={closeMenu}>DSA Vault</Link></li>
+          <li><Link to="/club" className="nav-link" onClick={closeMenu}>Clubs</Link></li>
 
           {currentUser ? (
             <>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import {
   ArrowRight,
   CheckCircle2,
@@ -16,7 +16,6 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { DSA_TOPICS } from '../constants';
-import TopicNotes from '../components/TopicNotes';
 import TodoList from '../components/TodoList';
 import './Home.css';
 
@@ -62,7 +61,7 @@ const TRENDS_DATA = [
 const Particles = () => {
   return (
     <div className="particles-container">
-      {[...Array(20)].map((_, i) => (
+      {[...Array(25)].map((_, i) => (
         <motion.div
           key={i}
           className="particle"
@@ -70,15 +69,17 @@ const Particles = () => {
             x: Math.random() * window.innerWidth,
             y: Math.random() * window.innerHeight,
             opacity: 0,
+            scale: Math.random() * 0.5 + 0.5,
           }}
           animate={{
-            y: [null, Math.random() * -100],
-            opacity: [0, 0.5, 0],
+            y: [null, Math.random() * -150],
+            opacity: [0, 0.4, 0],
           }}
           transition={{
-            duration: Math.random() * 10 + 10,
+            duration: Math.random() * 20 + 15, // Slower, more floating
             repeat: Infinity,
             ease: "linear",
+            delay: Math.random() * 10,
           }}
         />
       ))}
@@ -86,10 +87,13 @@ const Particles = () => {
   );
 };
 
+const MotionLink = motion(Link);
+
 const Home = () => {
   const { currentUser } = useAuth();
-  const [selectedTopic, setSelectedTopic] = React.useState(null);
   const trendsContainerRef = React.useRef(null);
+  const { scrollY } = useScroll();
+  const y1 = useTransform(scrollY, [0, 500], [0, 200]);
 
   const scrollLeft = () => {
     if (trendsContainerRef.current) {
@@ -121,6 +125,26 @@ const Home = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 50, damping: 20 }
+    }
+  };
+
   return (
     <div className="home-container">
       <Particles />
@@ -129,38 +153,56 @@ const Home = () => {
       <section className="hero-section">
         <motion.div
           className="hero-content"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
         >
-          <h1 className="hero-title">
-            {currentUser ? `Welcome back, ${currentUser.displayName || currentUser.email.split('@')[0]}!` : "Master Data Structures & Algorithms"}
-          </h1>
-          <p className="hero-subtitle">
-            Your ultimate companion for technical interview preparation. Track progress, solve curated problems, and land your dream job.
-          </p>
+          <motion.div variants={itemVariants}>
+            <h1 className="hero-title">
+              {currentUser ?
+                <>Welcome back, <span className="text-gradient">{currentUser.displayName || currentUser.email.split('@')[0]}</span>!</>
+                :
+                <>Master <span className="text-gradient">Data Structures</span> <br /> & Algorithms</>
+              }
+            </h1>
+          </motion.div>
 
-          <div className="hero-buttons">
-            <Link to="/questions" className="btn btn-primary">
+          <motion.p className="hero-subtitle" variants={itemVariants}>
+            Your ultimate companion for technical interview preparation. <br className="hidden md:block" />
+            Track progress, solve curated problems, and land your dream job.
+          </motion.p>
+
+          <motion.div className="hero-buttons" variants={itemVariants}>
+            <MotionLink
+              to="/questions"
+              className="btn btn-primary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               Start Solving <ArrowRight size={18} />
-            </Link>
-            <Link to="/dsa-vault" className="btn btn-secondary">
+            </MotionLink>
+            <MotionLink
+              to="/dsa-vault"
+              className="btn btn-secondary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               View All Notes
-            </Link>
-          </div>
+            </MotionLink>
+          </motion.div>
         </motion.div>
       </section>
 
       {/* Tech Trends Section */}
       <section className="section trends-section">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
         >
-          <div className="section-header" style={{ marginBottom: '2rem', textAlign: 'center' }}>
-            <h2 className="section-title">Developer Trends 2024</h2>
+          <div className="section-header text-center mb-md">
+            <h2 className="section-title">Developer Trends <span className="text-primary">2024</span></h2>
             <p className="section-subtitle">Insights from Stack Overflow Developer Survey</p>
           </div>
 
@@ -171,7 +213,12 @@ const Home = () => {
 
             <div className="trends-grid" ref={trendsContainerRef}>
               {TRENDS_DATA.map((group, idx) => (
-                <div key={idx} className="trend-card">
+                <motion.div
+                  key={idx}
+                  className="trend-card"
+                  whileHover={{ y: -5, boxShadow: "0 10px 30px -10px rgba(139, 92, 246, 0.3)" }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
                   <h3 className="trend-category">{group.category}</h3>
                   <div className="trend-bars">
                     {group.items.map((item, i) => (
@@ -185,14 +232,15 @@ const Home = () => {
                             className="trend-bar-fill"
                             initial={{ width: 0 }}
                             whileInView={{ width: `${item.percent}%` }}
-                            transition={{ duration: 1, delay: 0.2 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1.2, delay: 0.2 + (i * 0.1), ease: "easeOut" }}
                             style={{ backgroundColor: item.color }}
                           />
                         </div>
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
 
@@ -206,20 +254,28 @@ const Home = () => {
       {/* How It Works Section */}
       <section className="section how-it-works">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
         >
           <h2 className="section-title">How It Works</h2>
           <div className="steps-grid">
             {steps.map((step, index) => (
-              <div key={index} className="step-card">
+              <motion.div
+                key={index}
+                className="step-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.2 }}
+                whileHover={{ y: -10, backgroundColor: "rgba(255, 255, 255, 0.05)" }}
+              >
                 <div className="step-number">{index + 1}</div>
                 <div className="step-icon">{step.icon}</div>
                 <h3 className="step-title">{step.title}</h3>
                 <p className="step-desc">{step.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </motion.div>
@@ -236,6 +292,8 @@ const Home = () => {
             <a href="#">About</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Contact</a>
+            {/* TodoList component is used as a widget in the corner, not here in the footer links usually, 
+                but keeping structure if it's rendered as a hidden portal or similar */}
             <TodoList />
           </div>
           <div className="footer-social">
