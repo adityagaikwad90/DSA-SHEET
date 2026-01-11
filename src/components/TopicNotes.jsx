@@ -74,9 +74,18 @@ const TopicNotes = ({ topic, onClose }) => {
 
             onClose();
         } catch (error) {
-            console.error("Error saving notes:", error);
+            console.error("Error saving notes detailed:", error);
+            // Log full error structure
+            console.dir(error);
+
             // Show more specific error to user
-            const errorMessage = error.message || "Unknown error occurred";
+            let errorMessage = error.message || "Unknown error occurred";
+
+            // Handle cases where error might be an object without message property
+            if (errorMessage === "Unknown error occurred" && typeof error === 'object') {
+                errorMessage = JSON.stringify(error);
+            }
+
             alert(`Failed to save notes: ${errorMessage}`);
         } finally {
             setSaving(false);
