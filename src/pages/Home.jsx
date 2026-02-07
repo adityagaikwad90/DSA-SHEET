@@ -303,7 +303,7 @@ const Home = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} DSA Sheet. Version 1.0.0</p>
+          <p>&copy; {new Date().getFullYear()} DSA Sheet. Version 2.0.0</p>
         </div>
       </footer>
     </div>
