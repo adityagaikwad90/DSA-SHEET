@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import DsaVault from './pages/DsaVault';
 import ClubChat from './pages/ClubChat';
+import AiChat from './pages/AiChat';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './Navbar';
 
@@ -31,6 +32,11 @@ function App() {
         <Route path="/club" element={
           <PrivateRoute>
             <ClubChat />
+          </PrivateRoute>
+        } />
+        <Route path="/ask-ai" element={
+          <PrivateRoute>
+            <AiChat />
           </PrivateRoute>
         } />
       </Routes>

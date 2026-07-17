@@ -13,7 +13,7 @@ async function testGemini() {
         }
 
         const genAI = new GoogleGenerativeAI(key);
-        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
         const prompt = "Hello! Are you working?";
         console.log("Sending prompt:", prompt);

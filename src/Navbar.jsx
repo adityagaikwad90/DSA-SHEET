@@ -43,6 +43,7 @@ function Navbar() {
           <li><Link to="/sheet" className="nav-link" onClick={closeMenu}>My Sheet</Link></li>
           <li><Link to="/dsa-vault" className="nav-link" onClick={closeMenu}>DSA Vault</Link></li>
           <li><Link to="/club" className="nav-link" onClick={closeMenu}>Clubs</Link></li>
+          <li><Link to="/ask-ai" className="nav-link" onClick={closeMenu}>Ask AI</Link></li>
 
           {currentUser ? (
             <>
