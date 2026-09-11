@@ -9,12 +9,14 @@ import ClubChat from './pages/ClubChat';
 import AiChat from './pages/AiChat';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './Navbar';
+import './App.css';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
-      <Routes>
+      <main className="main-content page-enter">
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/questions" element={<Questions />} />
         <Route path="/sheet" element={
@@ -40,6 +42,7 @@ function App() {
           </PrivateRoute>
         } />
       </Routes>
+      </main>
     </div>
   );
 }

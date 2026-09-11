@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
 import "./Navbar.css";
 
@@ -29,26 +29,29 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <h2 className="nav-logo">DSA Sheet</h2>
+        <Link to="/" className="nav-logo-link" onClick={closeMenu}>
+          <h2 className="nav-logo">DSA Sheet</h2>
+        </Link>
 
-        <div className="hamburger-menu" onClick={toggleMenu}>
+        <div className="hamburger-menu" onClick={toggleMenu} aria-label="Toggle navigation">
           <div className={`bar ${isOpen ? "open" : ""}`}></div>
           <div className={`bar ${isOpen ? "open" : ""}`}></div>
           <div className={`bar ${isOpen ? "open" : ""}`}></div>
         </div>
 
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-          <li><Link to="/" className="nav-link" onClick={closeMenu}>Home</Link></li>
-          <li><Link to="/questions" className="nav-link" onClick={closeMenu}>Code Arena</Link></li>
-          <li><Link to="/sheet" className="nav-link" onClick={closeMenu}>My Sheet</Link></li>
-          <li><Link to="/dsa-vault" className="nav-link" onClick={closeMenu}>DSA Vault</Link></li>
-          <li><Link to="/club" className="nav-link" onClick={closeMenu}>Clubs</Link></li>
-          <li><Link to="/ask-ai" className="nav-link" onClick={closeMenu}>Ask AI</Link></li>
+          <li><NavLink to="/" end className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Home</NavLink></li>
+          <li><NavLink to="/questions" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Code Arena</NavLink></li>
+          <li><NavLink to="/sheet" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>My Sheet</NavLink></li>
+          <li><NavLink to="/dsa-vault" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>DSA Vault</NavLink></li>
+          <li><NavLink to="/club" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Clubs</NavLink></li>
+          <li><NavLink to="/ask-ai" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Ask AI</NavLink></li>
 
           {currentUser ? (
             <>
               <li className="user-info">
-                Hello, {currentUser.email.split('@')[0]}
+                <span className="user-status-dot"></span>
+                <span>{currentUser.email.split('@')[0]}</span>
               </li>
               <li>
                 <button onClick={handleLogout} className="logout-btn">
@@ -58,8 +61,8 @@ function Navbar() {
             </>
           ) : (
             <>
-              <li><Link to="/login" onClick={closeMenu}>Login</Link></li>
-              <li><Link to="/register" onClick={closeMenu}>Register</Link></li>
+              <li><NavLink to="/login" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Login</NavLink></li>
+              <li><NavLink to="/register" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Register</NavLink></li>
             </>
           )}
         </ul>
