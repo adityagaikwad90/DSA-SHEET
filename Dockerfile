@@ -1,7 +1,7 @@
 # Stage 1: Build the React application
 FROM node:18-alpine AS build
 
-# Set working directory
+# Set working directoryy
 WORKDIR /app
 
 # Copy package.json and package-lock.json
