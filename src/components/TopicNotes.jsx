@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Save, Loader2, Upload, FileText, Trash2, BookOpen, Minimize2, Lock } from 'lucide-react';
+import { X, Save, Loader2, Upload, FileText, Trash2, BookOpen, Minimize2, Download, ShieldCheck } from 'lucide-react';
 import { db } from '../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
@@ -8,7 +8,7 @@ import { uploadFile, deleteFile } from '../aws-config';
 import './TopicNotes.css';
 
 const TopicNotes = ({ topic, onClose }) => {
-    const { currentUser } = useAuth();
+    const { currentUser, isAdmin } = useAuth();
     const [notes, setNotes] = useState('');
     const [pdfUrl, setPdfUrl] = useState(null);
     const [selectedFile, setSelectedFile] = useState(null);
@@ -19,21 +19,23 @@ const TopicNotes = ({ topic, onClose }) => {
 
     useEffect(() => {
         const fetchNotes = async () => {
-            if (!currentUser) {
+            if (!topic) {
                 setLoading(false);
                 return;
             }
 
-            if (!topic) return;
-
             try {
-                const docRef = doc(db, 'topic_notes', `${currentUser.uid}_${topic}`);
+                // Fetch shared topic notes curated by admin
+                const docRef = doc(db, 'topic_notes', topic);
                 const docSnap = await getDoc(docRef);
 
                 if (docSnap.exists()) {
                     const data = docSnap.data();
                     setNotes(data.content || '');
                     setPdfUrl(data.pdfUrl || null);
+                } else {
+                    setNotes('');
+                    setPdfUrl(null);
                 }
             } catch (error) {
                 console.error("Error fetching notes:", error);
@@ -43,49 +45,44 @@ const TopicNotes = ({ topic, onClose }) => {
         };
 
         fetchNotes();
-    }, [currentUser, topic]);
+    }, [topic]);
 
     const handleFileChange = (e) => {
-        if (e.target.files[0]) {
+        if (!isAdmin) return;
+        if (e.target.files && e.target.files[0]) {
             setSelectedFile(e.target.files[0]);
         }
     };
 
     const handleSave = async () => {
-        if (!currentUser) return;
+        if (!isAdmin) return;
         setSaving(true);
 
         try {
             let currentPdfUrl = pdfUrl;
 
-            // Upload PDF if selected
+            // Upload PDF to AWS S3 if selected
             if (selectedFile) {
-                const path = `topic-notes/${currentUser.uid}/${topic}/${selectedFile.name}`;
+                const path = `topic-notes/admin/${topic}/${selectedFile.name}`;
                 currentPdfUrl = await uploadFile(selectedFile, path);
             }
 
-            await setDoc(doc(db, 'topic_notes', `${currentUser.uid}_${topic}`), {
-                userId: currentUser.uid,
+            await setDoc(doc(db, 'topic_notes', topic), {
                 topic,
                 content: notes,
                 pdfUrl: currentPdfUrl,
+                updatedBy: currentUser?.email || 'admin',
                 lastUpdated: new Date()
             }, { merge: true });
 
+            setSelectedFile(null);
             onClose();
         } catch (error) {
-            console.error("Error saving notes detailed:", error);
-            // Log full error structure
-            console.dir(error);
-
-            // Show more specific error to user
-            let errorMessage = error.message || "Unknown error occurred";
-
-            // Handle cases where error might be an object without message property
+            console.error("Error saving notes:", error);
+            let errorMessage = error?.message || "Unknown error occurred";
             if (errorMessage === "Unknown error occurred" && typeof error === 'object') {
                 errorMessage = JSON.stringify(error);
             }
-
             alert(`Failed to save notes: ${errorMessage}`);
         } finally {
             setSaving(false);
@@ -93,7 +90,7 @@ const TopicNotes = ({ topic, onClose }) => {
     };
 
     const handleDeletePdf = async () => {
-        if (!currentUser || !pdfUrl) return;
+        if (!isAdmin || !pdfUrl) return;
 
         if (!window.confirm("Are you sure you want to delete this PDF? This cannot be undone.")) {
             return;
@@ -101,30 +98,22 @@ const TopicNotes = ({ topic, onClose }) => {
 
         setSaving(true);
         try {
-            // 1. Delete from S3
-            // Extract path from URL: .../topic-notes/...
-            // URL format: https://bucket.s3.region.amazonaws.com/topic-notes/uid/topic/filename
+            // Delete from AWS S3
             const urlObj = new URL(pdfUrl);
-            // The pathname starts with a slash, e.g., /topic-notes/...
-            // We need to remove the leading slash for the Key
-            let s3Key = urlObj.pathname.substring(1);
-            // Decode URI component to handle spaces/special chars in filename
-            s3Key = decodeURIComponent(s3Key);
-
+            let s3Key = decodeURIComponent(urlObj.pathname.substring(1));
             await deleteFile(s3Key);
 
-            // 2. Update Firestore
-            await setDoc(doc(db, 'topic_notes', `${currentUser.uid}_${topic}`), {
-                userId: currentUser.uid,
+            // Update Firestore
+            await setDoc(doc(db, 'topic_notes', topic), {
                 topic,
                 content: notes,
-                pdfUrl: null, // Remove the link
+                pdfUrl: null,
+                updatedBy: currentUser?.email || 'admin',
                 lastUpdated: new Date()
             }, { merge: true });
 
             setPdfUrl(null);
-            setIsReading(false); // Close reader if open
-
+            setIsReading(false);
         } catch (error) {
             console.error("Error deleting PDF:", error);
             alert("Failed to delete PDF. Check console.");
@@ -132,48 +121,6 @@ const TopicNotes = ({ topic, onClose }) => {
             setSaving(false);
         }
     };
-
-    // Auth Check Render
-    if (!currentUser) {
-        return (
-            <AnimatePresence>
-                <motion.div
-                    className="modal-overlay"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    onClick={onClose}
-                >
-                    <motion.div
-                        className="modal-content auth-required"
-                        initial={{ scale: 0.9, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        exit={{ scale: 0.9, opacity: 0 }}
-                        onClick={e => e.stopPropagation()}
-                        style={{ height: 'auto', minHeight: '300px' }}
-                    >
-                        <div className="modal-header">
-                            <h2>Login Required</h2>
-                            <button className="close-btn" onClick={onClose}>
-                                <X size={20} />
-                            </button>
-                        </div>
-                        <div className="modal-body items-center justify-center text-center">
-                            <Lock size={48} className="text-secondary mb-md" style={{ opacity: 0.5 }} />
-                            <h3 className="text-xl font-bold text-primary mb-2">Unlock Topic Notes</h3>
-                            <p className="text-secondary mb-6">
-                                You need to be logged in to save notes and upload PDFs for <strong>{topic}</strong>.
-                            </p>
-                            <div className="flex gap-4">
-                                <button className="btn btn-secondary" onClick={onClose}>Cancel</button>
-                                <a href="/login" className="btn btn-primary">Log In Now</a>
-                            </div>
-                        </div>
-                    </motion.div>
-                </motion.div>
-            </AnimatePresence>
-        );
-    }
 
     return (
         <AnimatePresence>
@@ -192,8 +139,19 @@ const TopicNotes = ({ topic, onClose }) => {
                     onClick={e => e.stopPropagation()}
                 >
                     <div className="modal-header">
-                        <h2>{topic} Notes</h2>
-                        <button className="close-btn" onClick={onClose}>
+                        <div className="modal-header-title">
+                            <h2>{topic} Notes</h2>
+                            {isAdmin ? (
+                                <span className="admin-badge">
+                                    <ShieldCheck size={14} /> Admin Mode
+                                </span>
+                            ) : (
+                                <span className="student-badge">
+                                    Curated Notes
+                                </span>
+                            )}
+                        </div>
+                        <button className="close-btn" onClick={onClose} aria-label="Close">
                             <X size={20} />
                         </button>
                     </div>
@@ -206,13 +164,27 @@ const TopicNotes = ({ topic, onClose }) => {
                         ) : (
                             <>
                                 <div className={`modal-body-content ${isReading ? 'split-view' : ''}`}>
-                                    <textarea
-                                        value={notes}
-                                        onChange={(e) => setNotes(e.target.value)}
-                                        placeholder={`Write your key takeaways, formulas, or patterns for ${topic}...`}
-                                        autoFocus
-                                        className={isReading ? 'notes-compact' : ''}
-                                    />
+                                    {isAdmin ? (
+                                        <textarea
+                                            value={notes}
+                                            onChange={(e) => setNotes(e.target.value)}
+                                            placeholder={`Write key takeaways, formulas, or patterns for ${topic}...`}
+                                            autoFocus
+                                            className={isReading ? 'notes-compact' : ''}
+                                        />
+                                    ) : (
+                                        <div className={`notes-readonly ${isReading ? 'notes-compact' : ''}`}>
+                                            {notes.trim() ? (
+                                                <div className="notes-text">{notes}</div>
+                                            ) : (
+                                                <div className="notes-empty">
+                                                    <FileText size={36} style={{ opacity: 0.4, marginBottom: '0.5rem' }} />
+                                                    <p>No written notes published for this topic yet.</p>
+                                                    <p className="notes-empty-sub">Check back soon or explore attached PDF resources below.</p>
+                                                </div>
+                                            )}
+                                        </div>
+                                    )}
 
                                     {isReading && pdfUrl && (
                                         <div className="pdf-viewer-container">
@@ -225,82 +197,112 @@ const TopicNotes = ({ topic, onClose }) => {
                                     )}
                                 </div>
 
-                                <div className="pdf-section">
-                                    <div className="pdf-header">
-                                        <span>PDF Attachment</span>
-                                        <label className="upload-btn">
-                                            <input
-                                                type="file"
-                                                accept=".pdf"
-                                                onChange={handleFileChange}
-                                                hidden
-                                            />
-                                            <Upload size={14} />
-                                            {selectedFile ? 'Change PDF' : 'Upload PDF'}
-                                        </label>
-                                    </div>
-
-                                    {(selectedFile || pdfUrl) && (
-                                        <div className="pdf-preview">
-                                            <FileText size={16} className="pdf-icon" />
-                                            <span className="pdf-name">
-                                                {selectedFile ? selectedFile.name : 'Attached PDF Note'}
-                                            </span>
-                                            {pdfUrl && !selectedFile && (
-                                                <>
-                                                    <a
-                                                        href={pdfUrl}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="view-pdf-link"
-                                                    >
-                                                        View
-                                                    </a>
-                                                    <button
-                                                        className="read-pdf-btn"
-                                                        onClick={() => setIsReading(!isReading)}
-                                                    >
-                                                        {isReading ? <Minimize2 size={14} /> : <BookOpen size={14} />}
-                                                        {isReading ? 'Close Reader' : 'Read Now'}
-                                                    </button>
-                                                    <button
-                                                        className="read-pdf-btn delete-btn"
-                                                        onClick={handleDeletePdf}
-                                                        title="Delete PDF"
-                                                    >
-                                                        <Trash2 size={14} />
-                                                    </button>
-                                                </>
-                                            )}
-                                            {selectedFile && (
-                                                <button
-                                                    className="remove-pdf"
-                                                    onClick={() => setSelectedFile(null)}
-                                                >
-                                                    <X size={14} />
-                                                </button>
+                                {/* PDF Section */}
+                                {(isAdmin || pdfUrl || selectedFile) && (
+                                    <div className="pdf-section">
+                                        <div className="pdf-header">
+                                            <span>Attached PDF Revision Note</span>
+                                            {isAdmin && (
+                                                <label className="upload-btn">
+                                                    <input
+                                                        type="file"
+                                                        accept=".pdf"
+                                                        onChange={handleFileChange}
+                                                        hidden
+                                                    />
+                                                    <Upload size={14} />
+                                                    {selectedFile ? 'Change PDF' : (pdfUrl ? 'Replace PDF' : 'Upload PDF')}
+                                                </label>
                                             )}
                                         </div>
-                                    )}
-                                </div>
+
+                                        {(selectedFile || pdfUrl) && (
+                                            <div className="pdf-preview">
+                                                <FileText size={18} className="pdf-icon" />
+                                                <span className="pdf-name">
+                                                    {selectedFile ? selectedFile.name : `${topic} Reference Note.pdf`}
+                                                </span>
+
+                                                {pdfUrl && !selectedFile && (
+                                                    <div className="pdf-actions">
+                                                        <a
+                                                            href={pdfUrl}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="view-pdf-link"
+                                                        >
+                                                            View
+                                                        </a>
+                                                        <button
+                                                            className="read-pdf-btn"
+                                                            onClick={() => setIsReading(!isReading)}
+                                                        >
+                                                            {isReading ? <Minimize2 size={14} /> : <BookOpen size={14} />}
+                                                            {isReading ? 'Close Reader' : 'Read Now'}
+                                                        </button>
+                                                        <a
+                                                            href={pdfUrl}
+                                                            download={`${topic}-notes.pdf`}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="download-pdf-btn"
+                                                        >
+                                                            <Download size={14} />
+                                                            Download
+                                                        </a>
+                                                        {isAdmin && (
+                                                            <button
+                                                                className="read-pdf-btn delete-btn"
+                                                                onClick={handleDeletePdf}
+                                                                title="Delete PDF"
+                                                            >
+                                                                <Trash2 size={14} />
+                                                            </button>
+                                                        )}
+                                                    </div>
+                                                )}
+
+                                                {selectedFile && isAdmin && (
+                                                    <button
+                                                        className="remove-pdf"
+                                                        onClick={() => setSelectedFile(null)}
+                                                        title="Cancel selection"
+                                                    >
+                                                        <X size={14} />
+                                                    </button>
+                                                )}
+                                            </div>
+                                        )}
+                                    </div>
+                                )}
+
+                                {!isAdmin && !pdfUrl && !notes.trim() && (
+                                    <div className="empty-vault-notice">
+                                        <p>Revision notes and PDFs for <strong>{topic}</strong> are being prepared by the instructor.</p>
+                                    </div>
+                                )}
                             </>
                         )}
                     </div>
 
                     <div className="modal-footer">
-                        <button className="btn-cancel" onClick={onClose}>Cancel</button>
-                        <button
-                            className="btn-save"
-                            onClick={handleSave}
-                            disabled={saving || loading}
-                        >
-                            {saving ? <Loader2 className="spinner" size={16} /> : <Save size={16} />}
-                            {saving ? 'Saving...' : 'Save Notes'}
+                        <button className="btn-cancel" onClick={onClose}>
+                            {isAdmin ? 'Cancel' : 'Close'}
                         </button>
+                        {isAdmin && (
+                            <button
+                                className="btn-save"
+                                onClick={handleSave}
+                                disabled={saving || loading}
+                            >
+                                {saving ? <Loader2 className="spinner" size={16} /> : <Save size={16} />}
+                                {saving ? 'Saving...' : 'Save Notes'}
+                            </button>
+                        )}
                     </div>
                 </motion.div>
             </motion.div>
-        </AnimatePresence >
+        </AnimatePresence>
     );
 };
 

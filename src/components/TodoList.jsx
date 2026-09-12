@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { Plus, X, Calendar, Sparkles, ChevronUp, Layout, Check, Trash2 } from 'lucide-react';
+import { triggerRewardCelebration } from '../utils/celebration';
 import './TodoList.css';
 
 // Premium Spring Config - Natural, not bouncy
@@ -61,10 +62,18 @@ const TodoList = () => {
         setNewTask('');
     };
 
-    const toggleTask = (id) => {
-        setTasks(tasks.map(t =>
-            t.id === id ? { ...t, completed: !t.completed } : t
-        ));
+    const toggleTask = (id, e) => {
+        setTasks(tasks.map(t => {
+            if (t.id === id) {
+                if (!t.completed && e) {
+                    const clientX = e.clientX || (e.target?.getBoundingClientRect ? e.target.getBoundingClientRect().x + 10 : undefined);
+                    const clientY = e.clientY || (e.target?.getBoundingClientRect ? e.target.getBoundingClientRect().y + 10 : undefined);
+                    triggerRewardCelebration(clientX, clientY);
+                }
+                return { ...t, completed: !t.completed };
+            }
+            return t;
+        }));
     };
 
     const deleteTask = (id) => {
@@ -276,13 +285,13 @@ const TodoList = () => {
                                             onKeyDown={(e) => {
                                                 if (e.key === 'Enter' || e.key === ' ') {
                                                     e.preventDefault();
-                                                    toggleTask(task.id);
+                                                    toggleTask(task.id, e);
                                                 }
                                             }}
                                         >
                                             <div
                                                 className="custom-checkbox-wrapper"
-                                                onClick={() => toggleTask(task.id)}
+                                                onClick={(e) => toggleTask(task.id, e)}
                                             >
                                                 <div className={`custom-checkbox ${task.completed ? 'checked' : ''}`}>
                                                     {task.completed && <Check size={12} strokeWidth={3} />}

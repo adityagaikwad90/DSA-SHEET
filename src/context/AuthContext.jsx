@@ -25,8 +25,12 @@ export function AuthProvider({ children }) {
         return signOut(auth);
     };
 
+    const adminEmail = (import.meta.env.VITE_ADMIN_EMAIL || "adityagaikwadpbn@gmail.com").toLowerCase();
+    const isAdmin = Boolean(currentUser?.email && currentUser.email.toLowerCase() === adminEmail);
+
     const value = {
         currentUser,
+        isAdmin,
         logout,
     };
 

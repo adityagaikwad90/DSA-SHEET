@@ -1,17 +1,19 @@
+/* Questions Container */
 .questions-container {
-    padding: var(--spacing-2xl) var(--spacing-md);
-    min-height: calc(100vh - 70px);
-    /* Dark Gradient Background with subtle noise */
+    padding: 96px var(--spacing-lg) var(--spacing-3xl);
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 100vh;
     background:
-        radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.08), transparent 25%),
-        radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%),
+        radial-gradient(circle at 15% 30%, rgba(168, 85, 247, 0.06), transparent 30%),
+        radial-gradient(circle at 85% 20%, rgba(236, 72, 153, 0.05), transparent 30%),
         var(--color-bg-primary);
     background-attachment: fixed;
     position: relative;
     overflow-x: hidden;
 }
 
-/* Particles */
+/* Background Particles */
 .particles-container {
     position: fixed;
     top: 0;
@@ -30,153 +32,158 @@
     border-radius: 50%;
 }
 
+/* Page Header */
 .questions-header {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     position: relative;
     z-index: 1;
 }
 
 .questions-title {
-    font-size: 3.5rem;
+    font-size: clamp(2.2rem, 4.5vw, 3.25rem);
     font-weight: 800;
-    margin-bottom: var(--spacing-md);
-    background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+    margin-bottom: 0.5rem;
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    letter-spacing: -1px;
+    letter-spacing: -0.02em;
 }
 
 .questions-subtitle {
     color: var(--color-text-secondary);
-    font-size: 1.2rem;
+    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
     max-width: 600px;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
-.view-all-btn {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
-    color: white;
-    border: none;
-    padding: 0.8rem 2rem;
-    border-radius: 999px;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
-    transition: all 0.3s ease;
-}
-
-.topic-section {
-    max-width: 1200px;
-    margin: 0 auto 6rem;
+/* Problem List Container */
+.problem-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     position: relative;
     z-index: 1;
 }
 
-.topic-section:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    bottom: -3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+/* Topic Section */
+.topic-section {
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .topic-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 3rem;
-    padding-bottom: var(--spacing-md);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .topic-title-wrapper {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: 0.85rem;
+}
+
+.topic-icon-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-primary);
+    flex-shrink: 0;
 }
 
 .section-icon {
-    color: var(--color-primary);
-    width: 32px;
-    height: 32px;
-    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.3));
+    width: 22px;
+    height: 22px;
 }
 
 .topic-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--color-text-primary);
     margin: 0;
     font-weight: 700;
+    letter-spacing: -0.01em;
 }
 
+/* Section Progress Bar */
 .section-progress {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 8px;
-    width: 200px;
+    gap: 6px;
+    width: 180px;
 }
 
 .progress-bar-bg {
     width: 100%;
     height: 6px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius-full);
     overflow: hidden;
 }
 
 .progress-bar-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    background: var(--gradient-primary);
+    border-radius: var(--border-radius-full);
+    box-shadow: 0 0 8px rgba(168, 85, 247, 0.35);
 }
 
 .progress-text {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--color-text-secondary);
     font-weight: 500;
 }
 
+/* Questions Grid */
 .questions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
 }
 
+/* Question Card */
 .question-card {
-    background: rgba(30, 41, 59, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: var(--border-radius-lg);
-    padding: var(--spacing-lg);
+    background: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    backdrop-filter: blur(10px);
-    transition: border-color 0.3s ease;
+    gap: 0.85rem;
+    backdrop-filter: blur(12px);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
     position: relative;
-    overflow: visible;
 }
 
 .question-card:hover {
-    border-color: rgba(59, 130, 246, 0.3);
+    border-color: var(--color-border-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .question-card.solved-card {
-    border-color: rgba(34, 197, 94, 0.3);
-    background: rgba(34, 197, 94, 0.05);
+    border-color: rgba(16, 185, 129, 0.35);
+    background: rgba(16, 185, 129, 0.04);
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 0.75rem;
     height: 100%;
 }
 
@@ -184,41 +191,43 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
 }
 
 .question-name {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--color-text-primary);
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.35;
 }
 
-/* Tooltip Container */
+/* Tooltip */
 .tooltip-container {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
 }
 
 .tooltip-text {
     visibility: hidden;
-    width: 120px;
-    background-color: rgba(15, 23, 42, 0.9);
+    width: 110px;
+    background-color: rgba(19, 19, 26, 0.95);
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 4px 8px;
     position: absolute;
-    z-index: 1;
-    bottom: 125%;
+    z-index: 20;
+    bottom: 130%;
     left: 50%;
-    margin-left: -60px;
+    transform: translateX(-50%);
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity var(--transition-fast);
     font-size: 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     pointer-events: none;
+    white-space: nowrap;
 }
 
 .tooltip-container:hover .tooltip-text {
@@ -226,13 +235,14 @@
     opacity: 1;
 }
 
+/* Solved Checkbox Toggle */
 .solved-toggle {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
-    color: var(--color-text-tertiary);
-    transition: all 0.3s ease;
+    padding: 2px;
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast), transform var(--transition-fast);
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -247,102 +257,107 @@
 
 .solved-toggle.active {
     color: var(--color-success);
-    filter: drop-shadow(0 0 5px rgba(34, 197, 94, 0.4));
 }
 
 .solved-icon {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
 }
 
 .solved-icon.active {
     color: var(--color-success);
-    fill: rgba(34, 197, 94, 0.2);
+    fill: rgba(16, 185, 129, 0.2);
 }
 
+/* Difficulty Badges */
 .difficulty-badge-wrapper {
     display: flex;
 }
 
 .question-difficulty {
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.04em;
 }
 
 .difficulty-easy {
-    background-color: rgba(34, 197, 94, 0.15);
+    background-color: rgba(16, 185, 129, 0.12);
     color: var(--color-success);
+    border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
 .difficulty-medium {
-    background-color: rgba(245, 158, 11, 0.15);
+    background-color: rgba(245, 158, 11, 0.12);
     color: var(--color-warning);
+    border: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .difficulty-hard {
-    background-color: rgba(239, 68, 68, 0.15);
+    background-color: rgba(239, 68, 68, 0.12);
     color: var(--color-error);
+    border: 1px solid rgba(239, 68, 68, 0.25);
 }
 
+/* Action Links */
 .question-links {
     display: flex;
-    gap: var(--spacing-sm);
+    gap: 0.65rem;
     margin-top: auto;
-    padding-top: var(--spacing-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    flex-wrap: wrap;
 }
 
 .link-btn {
-    flex: 1;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding: 0.6rem;
-    border-radius: var(--border-radius-md);
+    gap: 6px;
+    padding: 0.45rem 0.85rem;
+    border-radius: var(--border-radius-sm);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.825rem;
     font-weight: 600;
-    transition: all 0.2s ease;
+    transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
 }
 
 .link-leetcode {
-    background-color: rgba(255, 161, 22, 0.1);
-    color: #ffa116;
-    border: 1px solid rgba(255, 161, 22, 0.2);
+    background-color: rgba(245, 158, 11, 0.12);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .link-leetcode:hover {
-    background-color: rgba(255, 161, 22, 0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 161, 22, 0.2);
+    background-color: rgba(245, 158, 11, 0.22);
+    color: #ffffff;
+    transform: translateY(-1px);
 }
 
 .link-gfg {
-    background-color: rgba(47, 141, 70, 0.1);
-    color: #2f8d46;
-    border: 1px solid rgba(47, 141, 70, 0.2);
+    background-color: rgba(16, 185, 129, 0.12);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
 .link-gfg:hover {
-    background-color: rgba(47, 141, 70, 0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(47, 141, 70, 0.2);
+    background-color: rgba(16, 185, 129, 0.22);
+    color: #ffffff;
+    transform: translateY(-1px);
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .questions-title {
-        font-size: 2.5rem;
+    .questions-container {
+        padding: 84px var(--spacing-md) var(--spacing-2xl);
     }
 
     .topic-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--spacing-md);
+        gap: 0.75rem;
     }
 
     .section-progress {
@@ -353,63 +368,4 @@
     .questions-grid {
         grid-template-columns: 1fr;
     }
-}
-
-.problem-list {
-    max-height: 80vh;
-    overflow-y: auto;
-    padding-bottom: 2rem;
-    padding-top: 5rem;
-    /* Added spacing before basics */
-    scrollbar-gutter: stable;
-    /* Firefox Support */
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-    /* Hidden by default */
-    transition: scrollbar-color 0.3s ease;
-}
-
-/* Make the first section (Basics) pop a bit more */
-.problem-list .topic-section:first-child .topic-header {
-    background: linear-gradient(90deg, rgba(124, 58, 237, 0.15) 0%, rgba(124, 58, 237, 0.05) 50%, transparent 100%);
-    border-left: 4px solid #7c3aed;
-    padding: 1rem;
-    border-radius: 0 12px 12px 0;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.1);
-}
-
-.problem-list:hover {
-    scrollbar-color: #7c3aed rgba(255, 255, 255, 0.05);
-    /* Visible on hover */
-}
-
-/* Webkit (Chrome/Safari/Edge) */
-.problem-list::-webkit-scrollbar {
-    width: 8px;
-}
-
-.problem-list::-webkit-scrollbar-track {
-    background: transparent;
-    margin-block: 0.5rem;
-}
-
-.problem-list::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    border-radius: 99px;
-    border: 3px solid transparent;
-    /* Tricky invisible border for spacing */
-    background-clip: content-box;
-    /* Makes the thumb smaller than the width */
-    transition: background-color 0.3s ease;
-}
-
-.problem-list:hover::-webkit-scrollbar-thumb {
-    background-color: rgba(124, 58, 237, 0.5);
-    /* Semi-transparent purple */
-}
-
-.problem-list::-webkit-scrollbar-thumb:hover {
-    background-color: #7c3aed;
-    /* Full purple on grab */
 }

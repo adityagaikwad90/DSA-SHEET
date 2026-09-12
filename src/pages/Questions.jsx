@@ -11,6 +11,7 @@ import {
     Zap,
     BrainCircuit
 } from 'lucide-react';
+import { triggerRewardCelebration } from '../utils/celebration';
 import './Questions.css';
 
 const questionsData = [
@@ -207,9 +208,16 @@ const Questions = () => {
         setSolvedQuestions(saved ? JSON.parse(saved) : []);
     }, [currentUser]);
 
-    const toggleSolved = (id) => {
+    const toggleSolved = (id, e) => {
         const key = getStorageKey(currentUser?.uid);
-        const newSolved = solvedQuestions.includes(id)
+        const isCurrentlySolved = solvedQuestions.includes(id);
+
+        // Meaningful reward: burst confetti & stars when completing a problem
+        if (!isCurrentlySolved && e) {
+            triggerRewardCelebration(e.clientX, e.clientY);
+        }
+
+        const newSolved = isCurrentlySolved
             ? solvedQuestions.filter(qId => qId !== id)
             : [...solvedQuestions, id];
 
@@ -225,30 +233,32 @@ const Questions = () => {
     return (
         <div className="questions-container">
             <Particles />
-            <div className="questions-header" style={{ display: 'none' }}></div>
+            
+            {/* Page Header */}
+            <motion.div
+                className="questions-header"
+                initial={{ opacity: 0, y: -15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+            >
+                <h1 className="questions-title">Code Arena</h1>
+                <p className="questions-subtitle">
+                    Curated interview problems organized by topic with progress tracking
+                </p>
+            </motion.div>
 
             <div className="problem-list" ref={questionsRef}>
                 {questionsData.map((section, sectionIndex) => (
                     <motion.div
                         key={sectionIndex}
                         className="topic-section"
-                        initial={sectionIndex === 0
-                            ? { opacity: 0, scale: 0.8, y: 50 }
-                            : { opacity: 0, y: 30 }
-                        }
-                        whileInView={sectionIndex === 0
-                            ? { opacity: 1, scale: 1, y: 0 }
-                            : { opacity: 1, y: 0 }
-                        }
-                        viewport={{ once: true, margin: "-50px" }}
-                        transition={sectionIndex === 0
-                            ? { type: "spring", bounce: 0.5, duration: 0.8 }
-                            : { duration: 0.5, delay: sectionIndex * 0.1 }
-                        }
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4, delay: sectionIndex * 0.08 }}
                     >
                         <div className="topic-header">
                             <div className="topic-title-wrapper">
-                                {section.icon}
+                                <span className="topic-icon-badge">{section.icon}</span>
                                 <h2 className="topic-title">{section.topic}</h2>
                             </div>
                             <div className="section-progress">
@@ -256,8 +266,8 @@ const Questions = () => {
                                     <motion.div
                                         className="progress-bar-fill"
                                         initial={{ width: 0 }}
-                                        whileInView={{ width: `${calculateProgress(section.questions)}%` }}
-                                        transition={{ duration: 1, delay: 0.5 }}
+                                        animate={{ width: `${calculateProgress(section.questions)}%` }}
+                                        transition={{ duration: 0.8, delay: 0.2 }}
                                     />
                                 </div>
                                 <span className="progress-text">
@@ -271,11 +281,10 @@ const Questions = () => {
                                 <motion.div
                                     key={q.id}
                                     className={`question-card ${solvedQuestions.includes(q.id) ? 'solved-card' : ''}`}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: index * 0.05 }}
-                                    whileHover={{ y: -5, boxShadow: "0 10px 30px -10px rgba(0,0,0,0.5)" }}
+                                    initial={{ opacity: 0, y: 15 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.3, delay: Math.min(index * 0.03, 0.3) }}
+                                    whileHover={{ y: -4, boxShadow: "0 10px 30px -10px rgba(0,0,0,0.5)" }}
                                 >
                                     <div className="card-content">
                                         <div className="question-header">
@@ -283,7 +292,7 @@ const Questions = () => {
                                             <div className="tooltip-container">
                                                 <motion.button
                                                     className={`solved-toggle ${solvedQuestions.includes(q.id) ? 'active' : ''}`}
-                                                    onClick={() => toggleSolved(q.id)}
+                                                    onClick={(e) => toggleSolved(q.id, e)}
                                                     whileTap={{ scale: 0.9 }}
                                                 >
                                                     {solvedQuestions.includes(q.id) ? (

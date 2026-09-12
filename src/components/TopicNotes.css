@@ -332,3 +332,124 @@
     box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
     transform: translateY(-1px);
 }
+
+/* Admin & Student Badges */
+.modal-header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.admin-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 3px 8px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.student-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(139, 92, 246, 0.15);
+    color: #c4b5fd;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    padding: 3px 8px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Read-only notes display */
+.notes-readonly {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius-md);
+    padding: 1.25rem;
+    color: var(--color-text-primary);
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.notes-text {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-family: inherit;
+    color: var(--color-text-primary);
+}
+
+.notes-empty {
+    height: 100%;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-text-secondary);
+    padding: 1rem;
+}
+
+.notes-empty p {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.notes-empty-sub {
+    font-size: 0.85rem !important;
+    opacity: 0.7;
+    margin-top: 0.25rem !important;
+}
+
+/* PDF Actions & Download Button */
+.pdf-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.download-pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.download-pdf-btn:hover {
+    background: rgba(59, 130, 246, 0.25);
+    color: #93c5fd;
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.25);
+}
+
+.empty-vault-notice {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}

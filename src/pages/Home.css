@@ -38,21 +38,75 @@
     padding: 0 2rem;
     position: relative;
     z-index: 1;
-    background: radial-gradient(circle at 50% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 60%);
+    overflow: hidden;
+}
+
+/* Hero Ambient Background Blobs */
+.hero-ambient-blob {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(120px);
+    -webkit-filter: blur(120px);
+    z-index: 0;
+}
+
+.hero-ambient-blob-1 {
+    width: 480px;
+    height: 480px;
+    top: 15%;
+    left: 15%;
+    background: radial-gradient(circle, #00b8a3 0%, rgba(0, 184, 163, 0) 70%);
+    opacity: 0.08;
+    animation: ambientFloat1 18s ease-in-out infinite alternate;
+}
+
+.hero-ambient-blob-2 {
+    width: 440px;
+    height: 440px;
+    top: 25%;
+    right: 15%;
+    background: radial-gradient(circle, #ffa116 0%, rgba(255, 161, 22, 0) 70%);
+    opacity: 0.06;
+    animation: ambientFloat2 22s ease-in-out infinite alternate;
+}
+
+@keyframes ambientFloat1 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(35px, -25px) scale(1.06);
+    }
+}
+
+@keyframes ambientFloat2 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(-30px, 30px) scale(0.96);
+    }
 }
 
 .hero-content {
     max-width: 900px;
     margin-top: -2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-title {
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     font-weight: 800;
     margin-bottom: 1.5rem;
-    line-height: 1.1;
+    line-height: 1.15;
     letter-spacing: -0.02em;
-    color: var(--color-text-primary);
+    color: #ffffff;
+}
+
+.hero-title-solid {
+    color: #ffffff;
 }
 
 .hero-subtitle {
@@ -64,10 +118,63 @@
 
 .hero-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
+
+/* Primary Hero Button - LeetCode Pill Style */
+.hero-btn-primary {
+    background: var(--color-primary);
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-full);
+    padding: 0.8rem 2.2rem;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(0, 184, 163, 0.25);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.hero-btn-primary:hover {
+    box-shadow: 0 0 24px rgba(0, 184, 163, 0.35);
+    filter: brightness(1.06);
+    transform: translateY(-2px);
+}
+
+/* Secondary Hero Button - LeetCode Dark Charcoal Pill */
+.btn-hero-secondary {
+    position: relative;
+    background: #262626;
+    border: 1px solid #3d3d3d;
+    color: var(--color-text-primary);
+    border-radius: var(--border-radius-full);
+    padding: 0.8rem 2.2rem;
+    font-weight: 500;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.btn-hero-secondary:hover {
+    background: #303030;
+    border-color: #4a4a4a;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Respect prefers-reduced-motion for Hero Section */
+@media (prefers-reduced-motion: reduce) {
+    .hero-ambient-blob-1,
+    .hero-ambient-blob-2 {
+        animation: none !important;
+    }
+    .hero-btn-primary,
+    .btn-hero-secondary {
+        transition: none !important;
+    }
+}
+
 
 /* Section Common */
 .section {
@@ -129,18 +236,17 @@
 .trend-card {
     min-width: 320px;
     flex-shrink: 0;
-    background: rgba(30, 41, 59, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #262626;
+    border: 1px solid #333333;
     border-radius: var(--border-radius-lg);
     padding: 2rem;
-    backdrop-filter: blur(10px);
 }
 
 .trend-category {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
     color: var(--color-text-primary);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid #333333;
     padding-bottom: 0.75rem;
     font-weight: 600;
 }
@@ -164,7 +270,7 @@
 
 .trend-bar-bg {
     height: 8px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #333333;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -175,8 +281,8 @@
 }
 
 .scroll-btn {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #262626;
+    border: 1px solid #3d3d3d;
     color: var(--color-text-primary);
     width: 44px;
     height: 44px;
@@ -187,7 +293,6 @@
     cursor: pointer;
     z-index: 10;
     transition: all 0.2s;
-    backdrop-filter: blur(10px);
     position: absolute;
 }
 
@@ -196,7 +301,7 @@
     color: white;
     border-color: var(--color-primary);
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 0 15px rgba(0, 184, 163, 0.4);
 }
 
 .scroll-btn.left {
@@ -215,26 +320,26 @@
 }
 
 .topic-card {
-    background: rgba(30, 41, 59, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
+    background: #262626;
+    border: 1px solid #333333;
+    border-radius: 14px;
     padding: 1.5rem;
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
 }
 
 .topic-card:hover {
-    background: rgba(139, 92, 246, 0.1);
-    border-color: rgba(139, 92, 246, 0.3);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    background: #303030;
+    border-color: rgba(0, 184, 163, 0.4);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
 }
 
 .topic-icon {
     width: 48px;
     height: 48px;
-    background: rgba(139, 92, 246, 0.1);
+    background: rgba(0, 184, 163, 0.12);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -262,11 +367,10 @@
 }
 
 .resource-column {
-    background: rgba(30, 41, 59, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #262626;
+    border: 1px solid #333333;
     border-radius: var(--border-radius-lg);
     padding: 2rem;
-    backdrop-filter: blur(10px);
 }
 
 .subsection-title {
@@ -290,18 +394,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    background: #1f1f1f;
+    border: 1px solid #333333;
+    border-radius: 10px;
     text-decoration: none;
     color: var(--color-text-primary);
     transition: all 0.2s ease;
 }
 
 .resource-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    transform: translateX(5px);
-    border-color: rgba(255, 255, 255, 0.1);
+    background: #2b2b2b;
+    transform: translateX(4px);
+    border-color: #444444;
 }
 
 /* How It Works Section */
@@ -314,16 +418,21 @@
 .step-card {
     text-align: center;
     padding: 2.5rem 2rem;
-    background: rgba(255, 255, 255, 0.02);
+    background: #262626;
     border-radius: var(--border-radius-xl);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid #333333;
     transition: var(--transition-base);
+}
+
+.step-card:hover {
+    border-color: #444444;
+    background: #2c2c2c;
 }
 
 .step-number {
     width: 48px;
     height: 48px;
-    background: var(--gradient-primary);
+    background: var(--color-primary);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -332,7 +441,7 @@
     font-weight: 700;
     font-size: 1.25rem;
     margin: 0 auto 1.5rem;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 4px 14px rgba(0, 184, 163, 0.3);
 }
 
 .step-icon {
@@ -360,9 +469,9 @@
 
 /* Footer */
 .footer {
-    background: #050507;
+    background: #141414;
     padding: 4rem 2rem 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid #282828;
     position: relative;
     z-index: 1;
 }
@@ -417,7 +526,7 @@
     color: var(--color-text-secondary);
     transition: all 0.2s;
     padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: #222222;
     border-radius: 50%;
 }
 
@@ -425,13 +534,13 @@
     color: white;
     background: var(--color-primary);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 184, 163, 0.3);
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid #282828;
     color: var(--color-text-secondary);
     font-size: 0.9rem;
 }

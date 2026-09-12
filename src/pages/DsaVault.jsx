@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FileText, Table, Youtube, ExternalLink } from 'lucide-react';
 import { DSA_TOPICS } from '../constants';
 import TopicNotes from '../components/TopicNotes';
+import { useAuth } from '../context/AuthContext';
 import './Home.css';
 import './DsaVault.css';
 
@@ -21,6 +22,7 @@ const VIDEOS = [
 ];
 
 const DsaVault = () => {
+    const { isAdmin } = useAuth();
     const [selectedTopic, setSelectedTopic] = useState(null);
 
     return (
@@ -33,12 +35,16 @@ const DsaVault = () => {
             >
                 <div className="vault-header">
                     <h1 className="section-title">DSA Vault</h1>
-                    <p className="section-subtitle">Manage your revision notes and resources</p>
+                    <p className="section-subtitle">
+                        {isAdmin ? "Manage and publish topic notes and revision PDFs" : "Curated topic notes, revision PDFs, and resources"}
+                    </p>
                 </div>
 
                 <div className="vault-section-header">
                     <h2 className="section-title vault-section-title">Topic Notes</h2>
-                    <p className="section-subtitle">Select a topic to manage your notes</p>
+                    <p className="section-subtitle">
+                        {isAdmin ? "Select a topic to edit notes or upload PDFs" : "Select a topic to view notes and download PDF guides"}
+                    </p>
                 </div>
 
                 <div className="topics-grid" style={{ marginBottom: '4rem' }}>

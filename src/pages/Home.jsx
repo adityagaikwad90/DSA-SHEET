@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import {
   ArrowRight,
   CheckCircle2,
@@ -17,6 +17,7 @@ import {
 import { useAuth } from '../context/AuthContext';
 import { DSA_TOPICS } from '../constants';
 import TodoList from '../components/TodoList';
+import Magnetic from '../components/Magnetic';
 import './Home.css';
 
 const TRENDS_DATA = [
@@ -125,23 +126,54 @@ const Home = () => {
     }
   ];
 
-  const containerVariants = {
+  const shouldReduceMotion = useReducedMotion();
+
+  const heroContainerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.2
+        staggerChildren: shouldReduceMotion ? 0 : 0.1,
       }
     }
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+  const heroHeadingVariants = {
+    hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 14 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: "spring", stiffness: 50, damping: 20 }
+      transition: {
+        duration: shouldReduceMotion ? 0 : 0.4,
+        delay: 0,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const heroSubtextVariants = {
+    hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 14 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: shouldReduceMotion ? 0 : 0.4,
+        delay: shouldReduceMotion ? 0 : 0.1,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const heroButtonsVariants = {
+    hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 14 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: shouldReduceMotion ? 0 : 0.4,
+        delay: shouldReduceMotion ? 0 : 0.2,
+        ease: "easeOut"
+      }
     }
   };
 
@@ -151,44 +183,61 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="hero-section">
+        {/* Subtle Ambient Background Blobs */}
+        <div className="hero-ambient-blob hero-ambient-blob-1" aria-hidden="true"></div>
+        <div className="hero-ambient-blob hero-ambient-blob-2" aria-hidden="true"></div>
+
         <motion.div
           className="hero-content"
-          variants={containerVariants}
+          variants={heroContainerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.div variants={itemVariants}>
+          <motion.div variants={heroHeadingVariants}>
             <h1 className="hero-title">
-              {currentUser ?
-                <>Welcome back, <span className="text-gradient">{currentUser.displayName || currentUser.email.split('@')[0]}</span>!</>
-                :
-                <>Master <span className="text-gradient">Data Structures</span> <br /> & Algorithms</>
-              }
+              {currentUser ? (
+                <>
+                  <span className="hero-title-solid">Welcome back, </span>
+                  <span className="text-gradient">
+                    {currentUser.displayName || currentUser.email.split('@')[0]}
+                  </span>!
+                </>
+              ) : (
+                <>
+                  <span className="hero-title-solid">A New Way to </span>
+                  <span className="text-gradient">Master DSA</span>
+                </>
+              )}
             </h1>
           </motion.div>
 
-          <motion.p className="hero-subtitle" variants={itemVariants}>
-            Your ultimate companion for technical interview preparation. <br className="hidden md:block" />
-            Track progress, solve curated problems, and land your dream job.
+          <motion.p className="hero-subtitle" variants={heroSubtextVariants}>
+            The ultimate platform to help you enhance your skills, expand
+            your knowledge, and prepare for technical interviews.
           </motion.p>
 
-          <motion.div className="hero-buttons" variants={itemVariants}>
-            <MotionLink
-              to="/questions"
-              className="btn btn-primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Solving <ArrowRight size={18} />
-            </MotionLink>
-            <MotionLink
-              to="/dsa-vault"
-              className="btn btn-secondary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View All Notes
-            </MotionLink>
+          <motion.div className="hero-buttons" variants={heroButtonsVariants}>
+            <Magnetic>
+              <MotionLink
+                to="/questions"
+                className="btn btn-primary hero-btn-primary"
+                whileHover={shouldReduceMotion ? {} : { scale: 1.025 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Start Solving <ChevronRight size={18} />
+              </MotionLink>
+            </Magnetic>
+
+            <Magnetic>
+              <MotionLink
+                to="/dsa-vault"
+                className="btn btn-hero-secondary"
+                whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                View All Notes
+              </MotionLink>
+            </Magnetic>
           </motion.div>
         </motion.div>
       </section>

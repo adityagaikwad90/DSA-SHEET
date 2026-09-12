@@ -9,11 +9,17 @@ import ClubChat from './pages/ClubChat';
 import AiChat from './pages/AiChat';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './Navbar';
+import RewardCelebration from './components/RewardCelebration';
+import ClickSparkEffect from './components/ClickSparkEffect';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
+      <ScrollToTop />
+      <ClickSparkEffect />
+      <RewardCelebration />
       <Navbar />
       <main className="main-content page-enter">
         <Routes>
