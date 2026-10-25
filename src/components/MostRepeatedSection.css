@@ -713,40 +713,200 @@
   border-color: #ff8a3d;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for Tablets and Mobile Phones */
 @media (max-width: 768px) {
+  .most-repeated-section {
+    padding: 0 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .repeated-main-title {
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
+  }
+
+  .repeated-main-subtitle {
+    font-size: 0.875rem;
+    padding: 0 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .repeated-stats-card {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .repeated-metrics-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.45rem;
+    width: 100%;
+  }
+
+  .metric-chip {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.5rem;
+  }
+
   .repeated-controls-bar {
     flex-direction: column;
     align-items: stretch;
+    padding: 0.75rem;
+    gap: 0.75rem;
+    border-radius: 12px;
   }
 
   .repeated-diff-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
+    width: 100%;
+    padding: 0.2rem;
+  }
+
+  .diff-tab {
+    padding: 0.45rem 0.2rem;
+    font-size: 0.75rem;
     justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .tab-pill {
+    font-size: 0.65rem;
+    padding: 0.05rem 0.25rem;
   }
 
   .repeated-filter-inputs {
     flex-direction: column;
     align-items: stretch;
+    width: 100%;
+    gap: 0.5rem;
   }
 
   .repeated-search-box {
     max-width: none;
     min-width: 0;
+    width: 100%;
+  }
+
+  .repeated-search-input {
+    font-size: 0.825rem;
+    padding: 0.55rem 2rem 0.55rem 2.2rem;
+  }
+
+  .repeated-status-select-wrap,
+  .repeated-sort-select-wrap {
+    width: 100%;
+  }
+
+  .repeated-select {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.55rem 2rem 0.55rem 2.1rem;
   }
 
   .repeated-card {
     flex-direction: column;
     align-items: stretch;
+    padding: 0.85rem 0.95rem;
+    gap: 0.65rem;
+    border-radius: 12px;
   }
 
   .repeated-card-left {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    min-width: 0;
+    padding: 0 0 0.4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .rank-badge {
+    font-size: 0.72rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .repeated-checkbox-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .repeated-card-content {
+    width: 100%;
+    gap: 0.4rem;
+  }
+
+  .repeated-title-row {
+    gap: 0.45rem;
+  }
+
+  .repeated-title-link {
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
+
+  .diff-chip {
+    font-size: 0.68rem;
+    padding: 0.1rem 0.45rem;
+  }
+
+  .status-badge-chip {
+    font-size: 0.68rem;
+    padding: 0.1rem 0.45rem;
+  }
+
+  .repeated-companies-row {
+    gap: 0.35rem;
+  }
+
+  .company-count-badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.45rem;
+  }
+
+  .company-mini-pill {
+    font-size: 0.68rem;
+    padding: 0.1rem 0.4rem;
+  }
+
+  .repeated-topics-row {
+    gap: 0.3rem;
+  }
+
+  .repeated-topic-pill {
+    font-size: 0.675rem;
   }
 
   .repeated-card-right {
-    align-self: flex-start;
-    margin-top: 0.5rem;
+    width: 100%;
+    align-self: stretch;
+    margin-top: 0.35rem;
+  }
+
+  .practice-leetcode-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+    font-size: 0.825rem;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .repeated-main-title {
+    font-size: 1.5rem;
+  }
+
+  .repeated-metrics-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem;
+  }
+
+  .diff-tab {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.15rem;
   }
 }

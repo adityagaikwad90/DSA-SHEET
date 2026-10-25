@@ -639,34 +639,306 @@
   }
 }
 
-/* Responsive Breakpoints */
+/* ==========================================================================
+   Responsive Breakpoints for My Sheet
+   ========================================================================== */
 @media (max-width: 768px) {
   .mysheet-container {
-    padding-top: 84px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-top: 76px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 2.5rem;
   }
 
+  .mysheet-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .mysheet-title {
+    font-size: clamp(1.8rem, 6.5vw, 2.3rem);
+  }
+
+  .mysheet-subtitle {
+    font-size: 0.875rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Overview Stats: 3-column mobile grid */
   .mysheet-stats-overview {
-    gap: 1rem;
-    padding: 0.75rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.35rem;
+    padding: 0.75rem 0.5rem;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 1.25rem;
+  }
+
+  .overview-card {
+    min-width: 0;
+    text-align: center;
+  }
+
+  .overview-num {
+    font-size: 1.15rem;
+  }
+
+  .overview-label {
+    font-size: 0.65rem;
   }
 
   .overview-divider {
     display: none;
   }
 
+  /* Filter Tabs Bar: Swipeable scroll row */
+  .mysheet-tabs-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.4rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .mysheet-tabs-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mysheet-tab {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.825rem;
+    border-radius: 8px;
+  }
+
+  .tab-pill {
+    font-size: 0.7rem;
+    padding: 1px 6px;
+  }
+
+  /* Controls: Search & Add button */
   .mysheet-controls-row {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.65rem;
+  }
+
+  .search-bar {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .search-bar input {
+    font-size: 0.85rem;
+    padding: 0.75rem 2.2rem 0.75rem 2.5rem;
   }
 
   .btn-add-question {
+    width: 100%;
     justify-content: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Add Question Form */
+  .add-question-form {
+    padding: 1.15rem;
+    border-radius: 14px;
+    margin-bottom: 1.5rem;
   }
 
   .form-row {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .form-group {
+    margin-bottom: 0.75rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.85rem;
+    padding: 0.65rem 0.85rem;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+
+  .btn-cancel,
+  .btn-submit {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+
+  /* ==========================================================================
+     Transform Desktop Table into Responsive Mobile Cards
+     ========================================================================== */
+  .mysheet-table-container {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .mysheet-table {
+    display: block;
+    width: 100%;
+  }
+
+  .mysheet-table thead {
+    display: none;
+  }
+
+  .mysheet-table tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+
+  .entry-row {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg-surface, #262626);
+    border: 1px solid var(--color-border, #333333);
+    border-radius: var(--border-radius-lg, 14px);
+    padding: 1rem;
+    gap: 0.65rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform var(--transition-fast);
+  }
+
+  .entry-row:hover {
+    background: var(--color-bg-surface, #262626);
+  }
+
+  .entry-row td {
+    display: block;
+    padding: 0;
+    border: none;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Problem Header in Mobile Card */
+  .col-problem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .problem-title-text {
+    font-size: 1rem;
+    line-height: 1.35;
+    word-break: break-word;
+  }
+
+  .problem-link {
+    font-size: 0.78rem;
+  }
+
+  /* Company & Difficulty */
+  .col-company {
+    display: flex;
+    align-items: center;
+  }
+
+  .company-diff-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .company-badge-pill {
+    font-size: 0.72rem;
+    padding: 2px 6px;
+  }
+
+  .diff-badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+
+  /* Status */
+  .col-status {
+    margin-top: 0.1rem;
+  }
+
+  .status-chip {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+  }
+
+  /* Learning Notes */
+  .notes-content-box {
+    max-height: 100px;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .no-notes-text {
+    font-size: 0.75rem;
+  }
+
+  /* Date */
+  .col-date {
+    font-size: 0.75rem;
+  }
+
+  .date-text {
+    font-size: 0.75rem;
+  }
+
+  /* Action Buttons in Card Footer */
+  .col-actions {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 0.65rem !important;
+    margin-top: 0.25rem;
+  }
+
+  .actions-button-group {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+
+  .btn-action {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mysheet-title {
+    font-size: 1.65rem;
+  }
+
+  .actions-button-group {
+    justify-content: space-between;
+  }
+
+  .btn-action {
+    flex: 1;
+    max-width: 80px;
   }
 }

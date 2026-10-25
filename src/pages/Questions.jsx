@@ -594,7 +594,8 @@ const Questions = () => {
                 onClick={() => handleTabSwitch('companies')}
               >
                 <Building2 size={16} />
-                <span>Company-Wise DSA</span>
+                <span className="tab-label-full">Company-Wise DSA</span>
+                <span className="tab-label-short">Company-Wise</span>
                 <span className="arena-tab-count">{companiesSummary.length}</span>
               </button>
 
@@ -606,7 +607,8 @@ const Questions = () => {
                 onClick={() => handleTabSwitch('repeated')}
               >
                 <Flame size={16} className="tab-flame-icon" />
-                <span>Most Repeated Questions</span>
+                <span className="tab-label-full">Most Repeated Questions</span>
+                <span className="tab-label-short">Most Repeated</span>
                 <span className="arena-tab-pill">Top 100</span>
               </button>
             </div>
