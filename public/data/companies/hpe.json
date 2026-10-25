@@ -1,0 +1,52 @@
+{
+  "name": "HPE",
+  "displayName": "HPE",
+  "slug": "hpe",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "climbing-stairs",
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/climbing-stairs",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0054406495558291775"
+    },
+    {
+      "id": "combination-sum",
+      "title": "Combination Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/combination-sum",
+      "topics": [
+        "Array",
+        "Backtracking"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007727903199293317"
+    },
+    {
+      "id": "maximal-score-after-applying-k-operations",
+      "title": "Maximal Score After Applying K Operations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximal-score-after-applying-k-operations",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006424646438526507"
+    }
+  ]
+}

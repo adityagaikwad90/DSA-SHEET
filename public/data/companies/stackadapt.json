@@ -1,0 +1,59 @@
+{
+  "name": "StackAdapt",
+  "displayName": "StackAdapt",
+  "slug": "stackadapt",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-all-possible-recipes-from-given-supplies",
+      "title": "Find All Possible Recipes from Given Supplies",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005718488377206688"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004825721819748393"
+    },
+    {
+      "id": "find-median-from-data-stream",
+      "title": "Find Median from Data Stream",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-median-from-data-stream",
+      "topics": [
+        "Two Pointers",
+        "Design",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Data Stream"
+      ],
+      "frequency": 83.6,
+      "acceptanceRate": "0.005512005325213046"
+    }
+  ]
+}

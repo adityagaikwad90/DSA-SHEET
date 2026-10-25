@@ -1,0 +1,29 @@
+{
+  "name": "ZipRecruiter",
+  "displayName": "ZipRecruiter",
+  "slug": "ziprecruiter",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "rank-teams-by-votes",
+      "title": "Rank Teams by Votes",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rank-teams-by-votes",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006010136237329703"
+    }
+  ]
+}

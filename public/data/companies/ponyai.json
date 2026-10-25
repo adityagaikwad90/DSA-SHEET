@@ -1,0 +1,72 @@
+{
+  "name": "Pony.ai",
+  "displayName": "Pony.ai",
+  "slug": "ponyai",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "frequency-of-the-most-frequent-element",
+      "title": "Frequency of the Most Frequent Element",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/frequency-of-the-most-frequent-element",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Greedy",
+        "Sliding Window",
+        "Sorting",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004529167232151813"
+    },
+    {
+      "id": "k-th-smallest-prime-fraction",
+      "title": "K-th Smallest Prime Fraction",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/k-th-smallest-prime-fraction",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006940929484596225"
+    },
+    {
+      "id": "minimum-sideway-jumps",
+      "title": "Minimum Sideway Jumps",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-sideway-jumps",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005203138968908314"
+    },
+    {
+      "id": "maximum-profit-in-job-scheduling",
+      "title": "Maximum Profit in Job Scheduling",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-profit-in-job-scheduling",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005487883191525814"
+    }
+  ]
+}

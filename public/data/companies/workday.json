@@ -1,0 +1,83 @@
+{
+  "name": "Workday",
+  "displayName": "Workday",
+  "slug": "workday",
+  "total": 5,
+  "counts": {
+    "Easy": 0,
+    "Medium": 5,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "break-a-palindrome",
+      "title": "Break a Palindrome",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/break-a-palindrome",
+      "topics": [
+        "String",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005163866550886599"
+    },
+    {
+      "id": "permutations",
+      "title": "Permutations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/permutations",
+      "topics": [
+        "Array",
+        "Backtracking"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008243487627480433"
+    },
+    {
+      "id": "container-with-most-water",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/container-with-most-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.006103881944600095"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.007344441531412234"
+    },
+    {
+      "id": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/top-k-frequent-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting",
+        "Quickselect"
+      ],
+      "frequency": 81.6,
+      "acceptanceRate": "0.006757427648792895"
+    }
+  ]
+}

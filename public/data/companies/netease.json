@@ -1,0 +1,41 @@
+{
+  "name": "NetEase",
+  "displayName": "NetEase",
+  "slug": "netease",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "strange-printer",
+      "title": "Strange Printer",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/strange-printer",
+      "topics": [
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006104271793979468"
+    },
+    {
+      "id": "most-profit-assigning-work",
+      "title": "Most Profit Assigning Work",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/most-profit-assigning-work",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 95.6,
+      "acceptanceRate": "0.005640206554298743"
+    }
+  ]
+}

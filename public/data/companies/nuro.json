@@ -1,0 +1,204 @@
+{
+  "name": "Nuro",
+  "displayName": "Nuro",
+  "slug": "nuro",
+  "total": 13,
+  "counts": {
+    "Easy": 0,
+    "Medium": 10,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minesweeper",
+      "title": "Minesweeper",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minesweeper",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006902232236938091"
+    },
+    {
+      "id": "random-pick-with-weight",
+      "title": "Random Pick with Weight",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/random-pick-with-weight",
+      "topics": [
+        "Array",
+        "Math",
+        "Binary Search",
+        "Prefix Sum",
+        "Randomized"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0049317337410403105"
+    },
+    {
+      "id": "maximum-number-of-visible-points",
+      "title": "Maximum Number of Visible Points",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-number-of-visible-points",
+      "topics": [
+        "Array",
+        "Math",
+        "Geometry",
+        "Sliding Window",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0038597005163980213"
+    },
+    {
+      "id": "subrectangle-queries",
+      "title": "Subrectangle Queries",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/subrectangle-queries",
+      "topics": [
+        "Array",
+        "Design",
+        "Matrix"
+      ],
+      "frequency": 89.6,
+      "acceptanceRate": "0.008652754006534931"
+    },
+    {
+      "id": "evaluate-division",
+      "title": "Evaluate Division",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/evaluate-division",
+      "topics": [
+        "Array",
+        "String",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory",
+        "Shortest Path",
+        "Bellman–Ford Algorithm",
+        "Floyd–Warshall Algorithm"
+      ],
+      "frequency": 76.7,
+      "acceptanceRate": "0.006467507939132466"
+    },
+    {
+      "id": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/asteroid-collision",
+      "topics": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 62.1,
+      "acceptanceRate": "0.004932931077260659"
+    },
+    {
+      "id": "dot-product-of-two-sparse-vectors",
+      "title": "Dot Product of Two Sparse Vectors",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/dot-product-of-two-sparse-vectors",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Two Pointers",
+        "Design",
+        "Linear Algebra"
+      ],
+      "frequency": 62.1,
+      "acceptanceRate": "0.008987142390186009"
+    },
+    {
+      "id": "interval-list-intersections",
+      "title": "Interval List Intersections",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/interval-list-intersections",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sweep Line"
+      ],
+      "frequency": 62.1,
+      "acceptanceRate": "0.007325125147276793"
+    },
+    {
+      "id": "remove-sub-folders-from-the-filesystem",
+      "title": "Remove Sub-Folders from the Filesystem",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/remove-sub-folders-from-the-filesystem",
+      "topics": [
+        "Array",
+        "String",
+        "Depth-First Search",
+        "Trie"
+      ],
+      "frequency": 62.1,
+      "acceptanceRate": "0.007860576084808613"
+    },
+    {
+      "id": "sparse-matrix-multiplication",
+      "title": "Sparse Matrix Multiplication",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sparse-matrix-multiplication",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Matrix",
+        "Linear Algebra"
+      ],
+      "frequency": 62.1,
+      "acceptanceRate": "0.006940022265089505"
+    },
+    {
+      "id": "target-sum",
+      "title": "Target Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/target-sum",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Knapsack Problem",
+        "0-1 Knapsack"
+      ],
+      "frequency": 62.1,
+      "acceptanceRate": "0.005303004823024102"
+    },
+    {
+      "id": "alien-dictionary",
+      "title": "Alien Dictionary",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/alien-dictionary",
+      "topics": [
+        "Array",
+        "String",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 62.1,
+      "acceptanceRate": "0.0037362063773547028"
+    },
+    {
+      "id": "shortest-path-in-a-grid-with-obstacles-elimination",
+      "title": "Shortest Path in a Grid with Obstacles Elimination",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 60,
+      "acceptanceRate": "0.004678145707974713"
+    }
+  ]
+}

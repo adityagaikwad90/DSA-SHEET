@@ -1,0 +1,69 @@
+{
+  "name": "GSN Games",
+  "displayName": "GSN Games",
+  "slug": "gsn-games",
+  "total": 5,
+  "counts": {
+    "Easy": 2,
+    "Medium": 2,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "game-play-analysis-i",
+      "title": "Game Play Analysis I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/game-play-analysis-i",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007686090160744459"
+    },
+    {
+      "id": "game-play-analysis-ii",
+      "title": "Game Play Analysis II",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/game-play-analysis-ii",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005492451687824439"
+    },
+    {
+      "id": "game-play-analysis-iii",
+      "title": "Game Play Analysis III",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/game-play-analysis-iii",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008130185851073415"
+    },
+    {
+      "id": "game-play-analysis-iv",
+      "title": "Game Play Analysis IV",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/game-play-analysis-iv",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004284796737767615"
+    },
+    {
+      "id": "game-play-analysis-v",
+      "title": "Game Play Analysis V",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/game-play-analysis-v",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0050319608792162495"
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "name": "Siemens",
+  "displayName": "Siemens",
+  "slug": "siemens",
+  "total": 22,
+  "counts": {
+    "Easy": 5,
+    "Medium": 14,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005752127019869244"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004534115623893582"
+    },
+    {
+      "id": "minimized-maximum-of-products-distributed-to-any-store",
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006327516372326888"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006531447563585735"
+    },
+    {
+      "id": "peaks-in-array",
+      "title": "Peaks in Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/peaks-in-array",
+      "topics": [
+        "Array",
+        "Binary Indexed Tree",
+        "Segment Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0028567770023689098"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 89.5,
+      "acceptanceRate": "0.005302562102250053"
+    },
+    {
+      "id": "the-skyline-problem",
+      "title": "The Skyline Problem",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/the-skyline-problem",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Sweep Line",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Ordered Set"
+      ],
+      "frequency": 82,
+      "acceptanceRate": "0.0046159456512705884"
+    },
+    {
+      "id": "merge-two-sorted-lists",
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/merge-two-sorted-lists",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.006901785144139051"
+    },
+    {
+      "id": "remove-duplicates-from-sorted-array",
+      "title": "Remove Duplicates from Sorted Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.0063977115152857"
+    },
+    {
+      "id": "angle-between-hands-of-a-clock",
+      "title": "Angle Between Hands of a Clock",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/angle-between-hands-of-a-clock",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.006993444273847291"
+    },
+    {
+      "id": "clone-graph",
+      "title": "Clone Graph",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/clone-graph",
+      "topics": [
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.006640744345570656"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.007344441012430039"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.004825722526820416"
+    },
+    {
+      "id": "maximum-product-subarray",
+      "title": "Maximum Product Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-product-subarray",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.0037223854888240593"
+    },
+    {
+      "id": "minimum-add-to-make-parentheses-valid",
+      "title": "Minimum Add to Make Parentheses Valid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid",
+      "topics": [
+        "String",
+        "Stack",
+        "Greedy",
+        "Bracket Sequences"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.007441312674895297"
+    },
+    {
+      "id": "rotate-array",
+      "title": "Rotate Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotate-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Two Pointers"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.004571844296645348"
+    },
+    {
+      "id": "single-number-iii",
+      "title": "Single Number III",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/single-number-iii",
+      "topics": [
+        "Array",
+        "Bit Manipulation"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.00700842961203978"
+    },
+    {
+      "id": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/top-k-frequent-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting",
+        "Quickselect"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.006757424996843381"
+    },
+    {
+      "id": "strong-password-checker",
+      "title": "Strong Password Checker",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/strong-password-checker",
+      "topics": [
+        "String",
+        "Greedy",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 71.5,
+      "acceptanceRate": "0.001665466717019271"
+    },
+    {
+      "id": "reverse-string",
+      "title": "Reverse String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reverse-string",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 65,
+      "acceptanceRate": "0.008145958514417137"
+    },
+    {
+      "id": "find-peak-element",
+      "title": "Find Peak Element",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-peak-element",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 65,
+      "acceptanceRate": "0.004726738240356211"
+    },
+    {
+      "id": "zigzag-conversion",
+      "title": "Zigzag Conversion",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/zigzag-conversion",
+      "topics": [
+        "String"
+      ],
+      "frequency": 65,
+      "acceptanceRate": "0.005537299755124115"
+    }
+  ]
+}

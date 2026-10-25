@@ -1,0 +1,53 @@
+{
+  "name": "Toptal",
+  "displayName": "Toptal",
+  "slug": "toptal",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "airplane-seat-assignment-probability",
+      "title": "Airplane Seat Assignment Probability",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/airplane-seat-assignment-probability",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Brainteaser",
+        "Probability and Statistics"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006779246416616599"
+    },
+    {
+      "id": "string-compression-ii",
+      "title": "String Compression II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/string-compression-ii",
+      "topics": [
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005219421237437947"
+    },
+    {
+      "id": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "topics": [
+        "String",
+        "Bit Manipulation",
+        "Simulation"
+      ],
+      "frequency": 71.8,
+      "acceptanceRate": "0.0063735869453789736"
+    }
+  ]
+}

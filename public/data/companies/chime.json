@@ -1,0 +1,59 @@
+{
+  "name": "Chime",
+  "displayName": "Chime",
+  "slug": "chime",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "design-browser-history",
+      "title": "Design Browser History",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-browser-history",
+      "topics": [
+        "Array",
+        "Linked List",
+        "Stack",
+        "Design",
+        "Doubly-Linked List",
+        "Data Stream"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007860299203319926"
+    },
+    {
+      "id": "daily-temperatures",
+      "title": "Daily Temperatures",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/daily-temperatures",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 82.7,
+      "acceptanceRate": "0.006927663859642001"
+    },
+    {
+      "id": "detonate-the-maximum-bombs",
+      "title": "Detonate the Maximum Bombs",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/detonate-the-maximum-bombs",
+      "topics": [
+        "Array",
+        "Math",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Geometry"
+      ],
+      "frequency": 67.5,
+      "acceptanceRate": "0.005051575938766226"
+    }
+  ]
+}

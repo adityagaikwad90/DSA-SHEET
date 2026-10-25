@@ -1,0 +1,55 @@
+{
+  "name": "carwale",
+  "displayName": "CarWale",
+  "slug": "carwale",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-mirror-score-of-a-string",
+      "title": "Find Mirror Score of a String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-mirror-score-of-a-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003619794826168426"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 66.7,
+      "acceptanceRate": "0.005752121173271802"
+    },
+    {
+      "id": "coin-change",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 66.1,
+      "acceptanceRate": "0.004930625521998188"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "name": "Wise",
+  "displayName": "Wise",
+  "slug": "wise",
+  "total": 6,
+  "counts": {
+    "Easy": 1,
+    "Medium": 5,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "design-tic-tac-toe",
+      "title": "Design Tic-Tac-Toe",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-tic-tac-toe",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058769802589026246"
+    },
+    {
+      "id": "number-of-perfect-pairs",
+      "title": "Number of Perfect Pairs",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-perfect-pairs",
+      "topics": [
+        "Array",
+        "Math",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0034693733401141434"
+    },
+    {
+      "id": "maximal-square",
+      "title": "Maximal Square",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximal-square",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 93,
+      "acceptanceRate": "0.005105154155919983"
+    },
+    {
+      "id": "odd-string-difference",
+      "title": "Odd String Difference",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/odd-string-difference",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 78,
+      "acceptanceRate": "0.006236947579369265"
+    },
+    {
+      "id": "design-hit-counter",
+      "title": "Design Hit Counter",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-hit-counter",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Design",
+        "Queue",
+        "Data Stream"
+      ],
+      "frequency": 78,
+      "acceptanceRate": "0.006977338692550322"
+    },
+    {
+      "id": "meeting-rooms-ii",
+      "title": "Meeting Rooms II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/meeting-rooms-ii",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Prefix Sum"
+      ],
+      "frequency": 78,
+      "acceptanceRate": "0.0052845025342410645"
+    }
+  ]
+}

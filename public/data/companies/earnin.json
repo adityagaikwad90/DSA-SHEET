@@ -1,0 +1,67 @@
+{
+  "name": "EarnIn",
+  "displayName": "EarnIn",
+  "slug": "earnin",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 4,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/add-two-numbers",
+      "topics": [
+        "Linked List",
+        "Math",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0049553799264458265"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 90.1,
+      "acceptanceRate": "0.0038866718003273703"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 90.1,
+      "acceptanceRate": "0.005302574263034603"
+    },
+    {
+      "id": "valid-sudoku",
+      "title": "Valid Sudoku",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/valid-sudoku",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Matrix"
+      ],
+      "frequency": 90.1,
+      "acceptanceRate": "0.0065252811162509975"
+    }
+  ]
+}

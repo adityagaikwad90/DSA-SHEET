@@ -1,0 +1,85 @@
+{
+  "name": "Alibaba",
+  "displayName": "Alibaba",
+  "slug": "alibaba",
+  "total": 5,
+  "counts": {
+    "Easy": 0,
+    "Medium": 4,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "kth-largest-element-in-an-array",
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/kth-largest-element-in-an-array",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Quickselect"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006941740392731345"
+    },
+    {
+      "id": "path-sum-iv",
+      "title": "Path Sum IV",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/path-sum-iv",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0062760695983792155"
+    },
+    {
+      "id": "split-concatenated-strings",
+      "title": "Split Concatenated Strings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/split-concatenated-strings",
+      "topics": [
+        "Array",
+        "String",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004351563825575477"
+    },
+    {
+      "id": "valid-parenthesis-string",
+      "title": "Valid Parenthesis String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/valid-parenthesis-string",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Stack",
+        "Greedy",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00429491079731427"
+    },
+    {
+      "id": "split-array-with-equal-sum",
+      "title": "Split Array with Equal Sum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/split-array-with-equal-sum",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004993070404688366"
+    }
+  ]
+}

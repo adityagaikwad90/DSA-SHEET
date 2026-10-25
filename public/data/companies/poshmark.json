@@ -1,0 +1,64 @@
+{
+  "name": "Poshmark",
+  "displayName": "Poshmark",
+  "slug": "poshmark",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "max-chunks-to-make-sorted",
+      "title": "Max Chunks To Make Sorted",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/max-chunks-to-make-sorted",
+      "topics": [
+        "Array",
+        "Stack",
+        "Greedy",
+        "Sorting",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006441340028634865"
+    },
+    {
+      "id": "market-analysis-ii",
+      "title": "Market Analysis II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/market-analysis-ii",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00578363640564708"
+    },
+    {
+      "id": "count-unguarded-cells-in-the-grid",
+      "title": "Count Unguarded Cells in the Grid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-unguarded-cells-in-the-grid",
+      "topics": [
+        "Array",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 97.5,
+      "acceptanceRate": "0.006915321129138879"
+    },
+    {
+      "id": "market-analysis-i",
+      "title": "Market Analysis I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/market-analysis-i",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 97.5,
+      "acceptanceRate": "0.005821426354114006"
+    }
+  ]
+}

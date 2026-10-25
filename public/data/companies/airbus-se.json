@@ -1,0 +1,63 @@
+{
+  "name": "Airbus SE",
+  "displayName": "Airbus SE",
+  "slug": "airbus-se",
+  "total": 4,
+  "counts": {
+    "Easy": 2,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058036186104118035"
+    },
+    {
+      "id": "find-the-number-of-good-pairs-ii",
+      "title": "Find the Number of Good Pairs II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-the-number-of-good-pairs-ii",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0026844115748896756"
+    },
+    {
+      "id": "find-the-number-of-good-pairs-i",
+      "title": "Find the Number of Good Pairs I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-the-number-of-good-pairs-i",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 97.4,
+      "acceptanceRate": "0.008623896971142379"
+    },
+    {
+      "id": "minimum-array-changes-to-make-differences-equal",
+      "title": "Minimum Array Changes to Make Differences Equal",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 97.4,
+      "acceptanceRate": "0.0024926659332599925"
+    }
+  ]
+}

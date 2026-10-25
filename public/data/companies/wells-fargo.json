@@ -1,0 +1,283 @@
+{
+  "name": "Wells Fargo",
+  "displayName": "Wells Fargo",
+  "slug": "wells-fargo",
+  "total": 20,
+  "counts": {
+    "Easy": 9,
+    "Medium": 9,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-string-length-after-removing-substrings",
+      "title": "Minimum String Length After Removing Substrings",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-string-length-after-removing-substrings",
+      "topics": [
+        "String",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007691646296193046"
+    },
+    {
+      "id": "shortest-and-lexicographically-smallest-beautiful-string",
+      "title": "Shortest and Lexicographically Smallest Beautiful String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string",
+      "topics": [
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006001042941093885"
+    },
+    {
+      "id": "subarray-product-less-than-k",
+      "title": "Subarray Product Less Than K",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/subarray-product-less-than-k",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005490445799783963"
+    },
+    {
+      "id": "count-binary-substrings",
+      "title": "Count Binary Substrings",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-binary-substrings",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 85.8,
+      "acceptanceRate": "0.007063877089923181"
+    },
+    {
+      "id": "merge-strings-alternately",
+      "title": "Merge Strings Alternately",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/merge-strings-alternately",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 85.8,
+      "acceptanceRate": "0.008214887331674527"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 85.8,
+      "acceptanceRate": "0.005302562140417426"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 85.8,
+      "acceptanceRate": "0.00653144764809101"
+    },
+    {
+      "id": "backspace-string-compare",
+      "title": "Backspace String Compare",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/backspace-string-compare",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.005032330753621049"
+    },
+    {
+      "id": "count-vowel-substrings-of-a-string",
+      "title": "Count Vowel Substrings of a String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-vowel-substrings-of-a-string",
+      "topics": [
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.00737415176613257"
+    },
+    {
+      "id": "intersection-of-two-linked-lists",
+      "title": "Intersection of Two Linked Lists",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/intersection-of-two-linked-lists",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.006488757187906695"
+    },
+    {
+      "id": "kth-largest-element-in-a-stream",
+      "title": "Kth Largest Element in a Stream",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/kth-largest-element-in-a-stream",
+      "topics": [
+        "Tree",
+        "Design",
+        "Binary Search Tree",
+        "Heap (Priority Queue)",
+        "Binary Tree",
+        "Data Stream"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.006168772594015021"
+    },
+    {
+      "id": "rotate-string",
+      "title": "Rotate String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/rotate-string",
+      "topics": [
+        "String",
+        "String Matching"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.006654066300064109"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.004534117565777962"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.004825727256052667"
+    },
+    {
+      "id": "maximum-earnings-from-taxi",
+      "title": "Maximum Earnings From Taxi",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-earnings-from-taxi",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Binary Search",
+        "Dynamic Programming",
+        "Sorting"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.004696778571366432"
+    },
+    {
+      "id": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-subarray",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.005399360020456188"
+    },
+    {
+      "id": "meeting-rooms-ii",
+      "title": "Meeting Rooms II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/meeting-rooms-ii",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Prefix Sum"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.0052845025342410645"
+    },
+    {
+      "id": "restore-ip-addresses",
+      "title": "Restore IP Addresses",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/restore-ip-addresses",
+      "topics": [
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.005736171163508679"
+    },
+    {
+      "id": "lfu-cache",
+      "title": "LFU Cache",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/lfu-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.00505129229162285"
+    },
+    {
+      "id": "verbal-arithmetic-puzzle",
+      "title": "Verbal Arithmetic Puzzle",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/verbal-arithmetic-puzzle",
+      "topics": [
+        "Array",
+        "Math",
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.00337399841189634"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Tesco",
+  "displayName": "Tesco",
+  "slug": "tesco",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005302563776359825"
+    },
+    {
+      "id": "insert-interval",
+      "title": "Insert Interval",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/insert-interval",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 79.9,
+      "acceptanceRate": "0.004619850747323084"
+    }
+  ]
+}

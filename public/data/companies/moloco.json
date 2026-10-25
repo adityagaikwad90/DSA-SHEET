@@ -1,0 +1,184 @@
+{
+  "name": "Moloco",
+  "displayName": "Moloco",
+  "slug": "moloco",
+  "total": 12,
+  "counts": {
+    "Easy": 0,
+    "Medium": 7,
+    "Hard": 5
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "longest-string-chain",
+      "title": "Longest String Chain",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-string-chain",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0063556855597365946"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004825717857259682"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0065314556033623595"
+    },
+    {
+      "id": "check-if-a-parentheses-string-can-be-valid",
+      "title": "Check if a Parentheses String Can Be Valid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid",
+      "topics": [
+        "String",
+        "Stack",
+        "Greedy",
+        "Bracket Sequences"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.004534403631073088"
+    },
+    {
+      "id": "course-schedule-ii",
+      "title": "Course Schedule II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule-ii",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.0056443570037618875"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.006337491124583539"
+    },
+    {
+      "id": "making-a-large-island",
+      "title": "Making A Large Island",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/making-a-large-island",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.0057322229324077755"
+    },
+    {
+      "id": "minimum-window-substring",
+      "title": "Minimum Window Substring",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-window-substring",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.004869702409986858"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.0068422545178338625"
+    },
+    {
+      "id": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotting-oranges",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 80.7,
+      "acceptanceRate": "0.0059593912733685896"
+    },
+    {
+      "id": "merge-k-sorted-lists",
+      "title": "Merge k Sorted Lists",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/merge-k-sorted-lists",
+      "topics": [
+        "Linked List",
+        "Divide and Conquer",
+        "Heap (Priority Queue)",
+        "Merge Sort",
+        "Tournament Sort"
+      ],
+      "frequency": 80.7,
+      "acceptanceRate": "0.006078435671898148"
+    },
+    {
+      "id": "number-of-islands-ii",
+      "title": "Number of Islands II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/number-of-islands-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Union-Find"
+      ],
+      "frequency": 80.7,
+      "acceptanceRate": "0.004078375646795609"
+    }
+  ]
+}

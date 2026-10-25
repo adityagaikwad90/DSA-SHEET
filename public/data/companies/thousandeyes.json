@@ -1,0 +1,41 @@
+{
+  "name": "ThousandEyes",
+  "displayName": "ThousandEyes",
+  "slug": "thousandeyes",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "product-of-array-except-self",
+      "title": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/product-of-array-except-self",
+      "topics": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006937993842479716"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006842256793921393"
+    }
+  ]
+}

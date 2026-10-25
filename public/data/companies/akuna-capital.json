@@ -1,0 +1,271 @@
+{
+  "name": "Akuna Capital",
+  "displayName": "Akuna Capital",
+  "slug": "akuna-capital",
+  "total": 18,
+  "counts": {
+    "Easy": 1,
+    "Medium": 8,
+    "Hard": 9
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "can-make-palindrome-from-substring",
+      "title": "Can Make Palindrome from Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/can-make-palindrome-from-substring",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Bit Manipulation",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004250455145046823"
+    },
+    {
+      "id": "maximum-star-sum-of-a-graph",
+      "title": "Maximum Star Sum of a Graph",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-star-sum-of-a-graph",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Graph Theory",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004295092216317599"
+    },
+    {
+      "id": "minimize-malware-spread",
+      "title": "Minimize Malware Spread",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimize-malware-spread",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004354806557800992"
+    },
+    {
+      "id": "increasing-decreasing-string",
+      "title": "Increasing Decreasing String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/increasing-decreasing-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.007744479378033462"
+    },
+    {
+      "id": "delete-and-earn",
+      "title": "Delete and Earn",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/delete-and-earn",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Dynamic Programming"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.0057648789807694155"
+    },
+    {
+      "id": "map-sum-pairs",
+      "title": "Map Sum Pairs",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/map-sum-pairs",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Design",
+        "Trie"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.0057478854659734615"
+    },
+    {
+      "id": "network-delay-time",
+      "title": "Network Delay Time",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/network-delay-time",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Heap (Priority Queue)",
+        "Shortest Path",
+        "Dijkstra's Algorithm"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.0061799266356688054"
+    },
+    {
+      "id": "number-of-operations-to-make-network-connected",
+      "title": "Number of Operations to Make Network Connected",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-operations-to-make-network-connected",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.006738824455781754"
+    },
+    {
+      "id": "reduce-array-size-to-the-half",
+      "title": "Reduce Array Size to The Half",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/reduce-array-size-to-the-half",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.00694864949343458"
+    },
+    {
+      "id": "cherry-pickup",
+      "title": "Cherry Pickup",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/cherry-pickup",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.004074181020637922"
+    },
+    {
+      "id": "constrained-subsequence-sum",
+      "title": "Constrained Subsequence Sum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/constrained-subsequence-sum",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Queue",
+        "Sliding Window",
+        "Heap (Priority Queue)",
+        "Monotonic Queue"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.0056435649291676545"
+    },
+    {
+      "id": "create-sorted-array-through-instructions",
+      "title": "Create Sorted Array through Instructions",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/create-sorted-array-through-instructions",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Merge Sort",
+        "Ordered Set"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.004272537608433074"
+    },
+    {
+      "id": "dice-roll-simulation",
+      "title": "Dice Roll Simulation",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/dice-roll-simulation",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.005149972499712207"
+    },
+    {
+      "id": "minimum-initial-energy-to-finish-tasks",
+      "title": "Minimum Initial Energy to Finish Tasks",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.007672976664688087"
+    },
+    {
+      "id": "minimum-number-of-taps-to-open-to-water-a-garden",
+      "title": "Minimum Number of Taps to Open to Water a Garden",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.00511132550234083"
+    },
+    {
+      "id": "number-of-different-subsequences-gcds",
+      "title": "Number of Different Subsequences GCDs",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/number-of-different-subsequences-gcds",
+      "topics": [
+        "Array",
+        "Math",
+        "Counting",
+        "Number Theory",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.004742546574094436"
+    },
+    {
+      "id": "critical-connections-in-a-network",
+      "title": "Critical Connections in a Network",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/critical-connections-in-a-network",
+      "topics": [
+        "Depth-First Search",
+        "Graph Theory",
+        "Biconnected Component",
+        "Bridge (Graph)"
+      ],
+      "frequency": 89.2,
+      "acceptanceRate": "0.006073529792690192"
+    },
+    {
+      "id": "shortest-and-lexicographically-smallest-beautiful-string",
+      "title": "Shortest and Lexicographically Smallest Beautiful String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string",
+      "topics": [
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 62.1,
+      "acceptanceRate": "0.006001042941093885"
+    }
+  ]
+}

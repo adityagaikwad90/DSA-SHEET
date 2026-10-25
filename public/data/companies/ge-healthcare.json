@@ -1,0 +1,58 @@
+{
+  "name": "GE Healthcare",
+  "displayName": "GE Healthcare",
+  "slug": "ge-healthcare",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "concatenation-of-array",
+      "title": "Concatenation of Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/concatenation-of-array",
+      "topics": [
+        "Array",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008994129478058945"
+    },
+    {
+      "id": "evaluate-division",
+      "title": "Evaluate Division",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/evaluate-division",
+      "topics": [
+        "Array",
+        "String",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory",
+        "Shortest Path",
+        "Bellman–Ford Algorithm",
+        "Floyd–Warshall Algorithm"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006467511414493786"
+    },
+    {
+      "id": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004785841111513346"
+    }
+  ]
+}

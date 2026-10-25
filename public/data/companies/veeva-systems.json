@@ -1,0 +1,25 @@
+{
+  "name": "Veeva Systems",
+  "displayName": "Veeva Systems",
+  "slug": "veeva-systems",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-and-say",
+      "title": "Count and Say",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-and-say",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006407210130483125"
+    }
+  ]
+}

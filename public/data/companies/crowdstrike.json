@@ -1,0 +1,179 @@
+{
+  "name": "CrowdStrike",
+  "displayName": "CrowdStrike",
+  "slug": "crowdstrike",
+  "total": 12,
+  "counts": {
+    "Easy": 2,
+    "Medium": 9,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007344432654730497"
+    },
+    {
+      "id": "string-compression",
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-compression",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006096663985091801"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.006531452178254448"
+    },
+    {
+      "id": "encode-and-decode-strings",
+      "title": "Encode and Decode Strings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/encode-and-decode-strings",
+      "topics": [
+        "Array",
+        "String",
+        "Design"
+      ],
+      "frequency": 90.5,
+      "acceptanceRate": "0.0052093154620207706"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 76.9,
+      "acceptanceRate": "0.0053025827543450674"
+    },
+    {
+      "id": "squares-of-a-sorted-array",
+      "title": "Squares of a Sorted Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/squares-of-a-sorted-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.007423230847773453"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.00453411448062189"
+    },
+    {
+      "id": "clone-graph",
+      "title": "Clone Graph",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/clone-graph",
+      "topics": [
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.006640731262849919"
+    },
+    {
+      "id": "course-schedule",
+      "title": "Course Schedule",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.005241165332064123"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.005025842818764849"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.00684224823490451"
+    },
+    {
+      "id": "design-auction-system",
+      "title": "Design Auction System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-auction-system",
+      "topics": [
+        "Hash Table",
+        "Design",
+        "Heap (Priority Queue)",
+        "Ordered Set"
+      ],
+      "frequency": 64.9,
+      "acceptanceRate": "0.004213350202666292"
+    }
+  ]
+}

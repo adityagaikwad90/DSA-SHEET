@@ -1,0 +1,50 @@
+{
+  "name": "Delhivery",
+  "displayName": "Delhivery",
+  "slug": "delhivery",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803619385273128"
+    },
+    {
+      "id": "maximum-product-subarray",
+      "title": "Maximum Product Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-product-subarray",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0037223909850379296"
+    },
+    {
+      "id": "search-in-rotated-sorted-array",
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/search-in-rotated-sorted-array",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004579982118752776"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Freecharge",
+  "displayName": "Freecharge",
+  "slug": "freecharge",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "house-robber",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00536863045149925"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004001908060245158"
+    }
+  ]
+}

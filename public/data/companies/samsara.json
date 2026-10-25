@@ -1,0 +1,51 @@
+{
+  "name": "Samsara",
+  "displayName": "Samsara",
+  "slug": "samsara",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "valid-sudoku",
+      "title": "Valid Sudoku",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/valid-sudoku",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006525287962509685"
+    },
+    {
+      "id": "alternating-groups-i",
+      "title": "Alternating Groups I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/alternating-groups-i",
+      "topics": [
+        "Array",
+        "Sliding Window"
+      ],
+      "frequency": 97.5,
+      "acceptanceRate": "0.006921552091393596"
+    },
+    {
+      "id": "alternating-groups-ii",
+      "title": "Alternating Groups II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/alternating-groups-ii",
+      "topics": [
+        "Array",
+        "Sliding Window"
+      ],
+      "frequency": 97.5,
+      "acceptanceRate": "0.006001526706404862"
+    }
+  ]
+}

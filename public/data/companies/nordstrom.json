@@ -1,0 +1,58 @@
+{
+  "name": "Nordstrom",
+  "displayName": "Nordstrom",
+  "slug": "nordstrom",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "course-schedule",
+      "title": "Course Schedule",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005241165054951703"
+    },
+    {
+      "id": "display-table-of-food-orders-in-a-restaurant",
+      "title": "Display Table of Food Orders in a Restaurant",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting",
+        "Ordered Set"
+      ],
+      "frequency": 83.1,
+      "acceptanceRate": "0.007654304250992544"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 83.1,
+      "acceptanceRate": "0.004825718862808002"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Citrix",
+  "displayName": "Citrix",
+  "slug": "citrix",
+  "total": 4,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "check-if-strings-can-be-made-equal-with-operations-i",
+      "title": "Check if Strings Can be Made Equal With Operations I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00616343896713615"
+    },
+    {
+      "id": "check-if-strings-can-be-made-equal-with-operations-ii",
+      "title": "Check if Strings Can be Made Equal With Operations II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007395033791015565"
+    },
+    {
+      "id": "find-all-groups-of-farmland",
+      "title": "Find All Groups of Farmland",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-all-groups-of-farmland",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007551172735518983"
+    },
+    {
+      "id": "maximum-performance-of-a-team",
+      "title": "Maximum Performance of a Team",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-performance-of-a-team",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00481805782757214"
+    }
+  ]
+}

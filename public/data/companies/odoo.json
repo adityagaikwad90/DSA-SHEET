@@ -1,0 +1,55 @@
+{
+  "name": "Odoo",
+  "displayName": "Odoo",
+  "slug": "odoo",
+  "total": 3,
+  "counts": {
+    "Easy": 2,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0045341182507174175"
+    },
+    {
+      "id": "majority-element",
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/majority-element",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Counting",
+        "Boyer–Moore Majority Vote Algorithm"
+      ],
+      "frequency": 89.2,
+      "acceptanceRate": "0.006653559644811764"
+    },
+    {
+      "id": "min-stack",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-stack",
+      "topics": [
+        "Stack",
+        "Design"
+      ],
+      "frequency": 89.2,
+      "acceptanceRate": "0.005879065812429445"
+    }
+  ]
+}

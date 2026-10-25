@@ -1,0 +1,42 @@
+{
+  "name": "Flexera",
+  "displayName": "Flexera",
+  "slug": "flexera",
+  "total": 2,
+  "counts": {
+    "Easy": 1,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "clear-digits",
+      "title": "Clear Digits",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/clear-digits",
+      "topics": [
+        "String",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008277725452934035"
+    },
+    {
+      "id": "lexicographically-minimum-string-after-removing-stars",
+      "title": "Lexicographically Minimum String After Removing Stars",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Stack",
+        "Greedy",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0050882070949185045"
+    }
+  ]
+}

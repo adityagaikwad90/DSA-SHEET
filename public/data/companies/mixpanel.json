@@ -1,0 +1,43 @@
+{
+  "name": "Mixpanel",
+  "displayName": "Mixpanel",
+  "slug": "mixpanel",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "flatten-nested-list-iterator",
+      "title": "Flatten Nested List Iterator",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/flatten-nested-list-iterator",
+      "topics": [
+        "Stack",
+        "Tree",
+        "Depth-First Search",
+        "Design",
+        "Queue",
+        "Iterator"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006594042855152821"
+    },
+    {
+      "id": "interval-list-intersections",
+      "title": "Interval List Intersections",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/interval-list-intersections",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sweep Line"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007325118642460322"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Kakao",
+  "displayName": "Kakao",
+  "slug": "kakao",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-points-in-an-archery-competition",
+      "title": "Maximum Points in an Archery Competition",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-points-in-an-archery-competition",
+      "topics": [
+        "Array",
+        "Backtracking",
+        "Bit Manipulation",
+        "Enumeration"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005255418906645065"
+    },
+    {
+      "id": "minimum-moves-to-reach-target-with-rotations",
+      "title": "Minimum Moves to Reach Target with Rotations",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005314717502205516"
+    }
+  ]
+}

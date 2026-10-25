@@ -1,0 +1,50 @@
+{
+  "name": "GE Digital",
+  "displayName": "GE Digital",
+  "slug": "ge-digital",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "degree-of-an-array",
+      "title": "Degree of an Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/degree-of-an-array",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005877490719144511"
+    },
+    {
+      "id": "minimum-cost-to-set-cooking-time",
+      "title": "Minimum Cost to Set Cooking Time",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-cost-to-set-cooking-time",
+      "topics": [
+        "Math",
+        "Enumeration"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004523143084879604"
+    },
+    {
+      "id": "minimum-remove-to-make-valid-parentheses",
+      "title": "Minimum Remove to Make Valid Parentheses",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 90.4,
+      "acceptanceRate": "0.0071666835929205175"
+    }
+  ]
+}

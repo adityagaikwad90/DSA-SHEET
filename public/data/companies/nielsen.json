@@ -1,0 +1,66 @@
+{
+  "name": "Nielsen",
+  "displayName": "Nielsen",
+  "slug": "nielsen",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 4,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0038866714720497764"
+    },
+    {
+      "id": "maximum-swap",
+      "title": "Maximum Swap",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-swap",
+      "topics": [
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005212971705598578"
+    },
+    {
+      "id": "multiply-strings",
+      "title": "Multiply Strings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/multiply-strings",
+      "topics": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004486000467037326"
+    },
+    {
+      "id": "jump-game",
+      "title": "Jump Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.004166910996338814"
+    }
+  ]
+}

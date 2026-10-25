@@ -1,0 +1,79 @@
+{
+  "name": "Squarespace",
+  "displayName": "Squarespace",
+  "slug": "squarespace",
+  "total": 5,
+  "counts": {
+    "Easy": 3,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "merge-sorted-array",
+      "title": "Merge Sorted Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/merge-sorted-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005590676654492536"
+    },
+    {
+      "id": "check-if-all-the-integers-in-a-range-are-covered",
+      "title": "Check if All the Integers in a Range Are Covered",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 84.3,
+      "acceptanceRate": "0.005151379155590845"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 82.2,
+      "acceptanceRate": "0.004825721819748393"
+    },
+    {
+      "id": "merge-two-sorted-lists",
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/merge-two-sorted-lists",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 64,
+      "acceptanceRate": "0.006901786264394714"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 56.6,
+      "acceptanceRate": "0.005302562448151903"
+    }
+  ]
+}

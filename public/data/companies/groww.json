@@ -1,0 +1,110 @@
+{
+  "name": "Groww",
+  "displayName": "Groww",
+  "slug": "groww",
+  "total": 7,
+  "counts": {
+    "Easy": 1,
+    "Medium": 4,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00575212358226915"
+    },
+    {
+      "id": "maximum-good-subarray-sum",
+      "title": "Maximum Good Subarray Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-good-subarray-sum",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0022862985685071576"
+    },
+    {
+      "id": "minimum-number-of-operations-to-make-x-and-y-equal",
+      "title": "Minimum Number of Operations to Make X and Y Equal",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal",
+      "topics": [
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Memoization"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0048552708626774495"
+    },
+    {
+      "id": "maximize-score-after-n-operations",
+      "title": "Maximize Score After N Operations",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximize-score-after-n-operations",
+      "topics": [
+        "Array",
+        "Math",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Number Theory",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0057916471065634426"
+    },
+    {
+      "id": "maximum-number-of-events-that-can-be-attended-ii",
+      "title": "Maximum Number of Events That Can Be Attended II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006336537846010175"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock-ii",
+      "title": "Best Time to Buy and Sell Stock II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 82,
+      "acceptanceRate": "0.00717654141351508"
+    },
+    {
+      "id": "maximum-length-of-a-concatenated-string-with-unique-characters",
+      "title": "Maximum Length of a Concatenated String with Unique Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters",
+      "topics": [
+        "Array",
+        "String",
+        "Backtracking",
+        "Bit Manipulation"
+      ],
+      "frequency": 82,
+      "acceptanceRate": "0.005496851929581985"
+    }
+  ]
+}

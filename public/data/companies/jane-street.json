@@ -1,0 +1,200 @@
+{
+  "name": "Jane Street",
+  "displayName": "Jane Street",
+  "slug": "jane-street",
+  "total": 14,
+  "counts": {
+    "Easy": 7,
+    "Medium": 4,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-common-words-with-one-occurrence",
+      "title": "Count Common Words With One Occurrence",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-common-words-with-one-occurrence",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007388773107590539"
+    },
+    {
+      "id": "teemo-attacking",
+      "title": "Teemo Attacking",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/teemo-attacking",
+      "topics": [
+        "Array",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005834261784932191"
+    },
+    {
+      "id": "walking-robot-simulation",
+      "title": "Walking Robot Simulation",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/walking-robot-simulation",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Simulation"
+      ],
+      "frequency": 93.3,
+      "acceptanceRate": "0.006462284958094398"
+    },
+    {
+      "id": "minimum-time-to-make-array-sum-at-most-x",
+      "title": "Minimum Time to Make Array Sum At Most x",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Sorting"
+      ],
+      "frequency": 93.3,
+      "acceptanceRate": "0.00274697821374775"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 91.6,
+      "acceptanceRate": "0.0048257102904015"
+    },
+    {
+      "id": "number-of-orders-in-the-backlog",
+      "title": "Number of Orders in the Backlog",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-orders-in-the-backlog",
+      "topics": [
+        "Array",
+        "Heap (Priority Queue)",
+        "Simulation"
+      ],
+      "frequency": 91.6,
+      "acceptanceRate": "0.005480229559589422"
+    },
+    {
+      "id": "design-a-text-editor",
+      "title": "Design a Text Editor",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/design-a-text-editor",
+      "topics": [
+        "Linked List",
+        "String",
+        "Stack",
+        "Design",
+        "Simulation",
+        "Doubly-Linked List"
+      ],
+      "frequency": 91.6,
+      "acceptanceRate": "0.005223720192809031"
+    },
+    {
+      "id": "add-strings",
+      "title": "Add Strings",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/add-strings",
+      "topics": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 79.8,
+      "acceptanceRate": "0.005226778326857545"
+    },
+    {
+      "id": "add-two-integers",
+      "title": "Add Two Integers",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/add-two-integers",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 79.8,
+      "acceptanceRate": "0.008795949305360467"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 79.8,
+      "acceptanceRate": "0.004853661274518008"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 79.8,
+      "acceptanceRate": "0.005803620444467007"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 79.8,
+      "acceptanceRate": "0.0045341167600536315"
+    },
+    {
+      "id": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/add-two-numbers",
+      "topics": [
+        "Linked List",
+        "Math",
+        "Recursion"
+      ],
+      "frequency": 79.8,
+      "acceptanceRate": "0.004955379978429951"
+    },
+    {
+      "id": "stream-of-characters",
+      "title": "Stream of Characters",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/stream-of-characters",
+      "topics": [
+        "Array",
+        "String",
+        "Design",
+        "Trie",
+        "Data Stream",
+        "Aho–Corasick Algorithm"
+      ],
+      "frequency": 79.8,
+      "acceptanceRate": "0.005301960855745499"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Patreon",
+  "displayName": "Patreon",
+  "slug": "patreon",
+  "total": 4,
+  "counts": {
+    "Easy": 2,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "simplify-path",
+      "title": "Simplify Path",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/simplify-path",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0051686851242235795"
+    },
+    {
+      "id": "shortest-word-distance",
+      "title": "Shortest Word Distance",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/shortest-word-distance",
+      "topics": [
+        "Array",
+        "String"
+      ],
+      "frequency": 80,
+      "acceptanceRate": "0.0066435645665239695"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 74.5,
+      "acceptanceRate": "0.005302564084099654"
+    },
+    {
+      "id": "logger-rate-limiter",
+      "title": "Logger Rate Limiter",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/logger-rate-limiter",
+      "topics": [
+        "Hash Table",
+        "Design",
+        "Data Stream"
+      ],
+      "frequency": 66.5,
+      "acceptanceRate": "0.00769182624217407"
+    }
+  ]
+}

@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/generate-company-data.js",
     "build": "vite build",
+    "generate:data": "node scripts/generate-company-data.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },

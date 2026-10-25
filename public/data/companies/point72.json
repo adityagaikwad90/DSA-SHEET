@@ -1,0 +1,83 @@
+{
+  "name": "Point72",
+  "displayName": "Point72",
+  "slug": "point72",
+  "total": 6,
+  "counts": {
+    "Easy": 3,
+    "Medium": 3,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "replace-employee-id-with-the-unique-identifier",
+      "title": "Replace Employee ID With The Unique Identifier",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008393657566890693"
+    },
+    {
+      "id": "top-travellers",
+      "title": "Top Travellers",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/top-travellers",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058134560180562135"
+    },
+    {
+      "id": "weather-type-in-each-country",
+      "title": "Weather Type in Each Country",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/weather-type-in-each-country",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006714127352039274"
+    },
+    {
+      "id": "evaluate-boolean-expression",
+      "title": "Evaluate Boolean Expression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/evaluate-boolean-expression",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007158183185872408"
+    },
+    {
+      "id": "maximum-or",
+      "title": "Maximum OR",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-or",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Bit Manipulation",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0043163511880789365"
+    },
+    {
+      "id": "restaurant-growth",
+      "title": "Restaurant Growth",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/restaurant-growth",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006024805259377934"
+    }
+  ]
+}

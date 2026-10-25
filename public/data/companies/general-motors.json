@@ -1,0 +1,210 @@
+{
+  "name": "General Motors",
+  "displayName": "General Motors",
+  "slug": "general-motors",
+  "total": 14,
+  "counts": {
+    "Easy": 0,
+    "Medium": 9,
+    "Hard": 5
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005302573263470528"
+    },
+    {
+      "id": "number-of-connected-components-in-an-undirected-graph",
+      "title": "Number of Connected Components in an Undirected Graph",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00651994826779927"
+    },
+    {
+      "id": "minimum-possible-maximum-waiting-time",
+      "title": "Minimum Possible Maximum Waiting Time",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-possible-maximum-waiting-time",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "frequency": 78.8,
+      "acceptanceRate": "0.0029850274145929987"
+    },
+    {
+      "id": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "topics": [
+        "String",
+        "Bit Manipulation",
+        "Simulation"
+      ],
+      "frequency": 70.4,
+      "acceptanceRate": "0.0063735869453789736"
+    },
+    {
+      "id": "implement-trie-prefix-tree",
+      "title": "Implement Trie (Prefix Tree)",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/implement-trie-prefix-tree",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Design",
+        "Trie"
+      ],
+      "frequency": 66.1,
+      "acceptanceRate": "0.007017743633474694"
+    },
+    {
+      "id": "dot-product-of-two-sparse-vectors",
+      "title": "Dot Product of Two Sparse Vectors",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/dot-product-of-two-sparse-vectors",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Two Pointers",
+        "Design",
+        "Linear Algebra"
+      ],
+      "frequency": 60.7,
+      "acceptanceRate": "0.008987142390186009"
+    },
+    {
+      "id": "minimum-path-sum",
+      "title": "Minimum Path Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-path-sum",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 60.7,
+      "acceptanceRate": "0.006903295297264038"
+    },
+    {
+      "id": "maximum-sum-of-3-non-overlapping-subarrays",
+      "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 60.7,
+      "acceptanceRate": "0.006008698175540938"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 59.9,
+      "acceptanceRate": "0.004825710937770274"
+    },
+    {
+      "id": "first-missing-positive",
+      "title": "First Missing Positive",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/first-missing-positive",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 53.1,
+      "acceptanceRate": "0.004397276290662238"
+    },
+    {
+      "id": "guess-the-word",
+      "title": "Guess the Word",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/guess-the-word",
+      "topics": [
+        "Array",
+        "Math",
+        "String",
+        "Minimax",
+        "Interactive",
+        "Game Theory"
+      ],
+      "frequency": 53.1,
+      "acceptanceRate": "0.0036545858422984217"
+    },
+    {
+      "id": "serialize-and-deserialize-binary-tree",
+      "title": "Serialize and Deserialize Binary Tree",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree",
+      "topics": [
+        "String",
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Design",
+        "Binary Tree"
+      ],
+      "frequency": 53.1,
+      "acceptanceRate": "0.006127519287145388"
+    },
+    {
+      "id": "minimum-deletions-to-make-character-frequencies-unique",
+      "title": "Minimum Deletions to Make Character Frequencies Unique",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 52.1,
+      "acceptanceRate": "0.006158637634162597"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 52.1,
+      "acceptanceRate": "0.006531446455917994"
+    }
+  ]
+}

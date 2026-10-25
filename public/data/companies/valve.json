@@ -1,0 +1,60 @@
+{
+  "name": "Valve",
+  "displayName": "Valve",
+  "slug": "valve",
+  "total": 4,
+  "counts": {
+    "Easy": 1,
+    "Medium": 3,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "dota2-senate",
+      "title": "Dota2 Senate",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/dota2-senate",
+      "topics": [
+        "String",
+        "Greedy",
+        "Queue"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00506957562519644"
+    },
+    {
+      "id": "string-to-integer-atoi",
+      "title": "String to Integer (atoi)",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-to-integer-atoi",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0021919352788850864"
+    },
+    {
+      "id": "design-parking-system",
+      "title": "Design Parking System",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/design-parking-system",
+      "topics": [
+        "Design",
+        "Simulation",
+        "Counting"
+      ],
+      "frequency": 80.2,
+      "acceptanceRate": "0.008720594906726668"
+    },
+    {
+      "id": "deep-merge-of-two-objects",
+      "title": "Deep Merge of Two Objects",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/deep-merge-of-two-objects",
+      "topics": [],
+      "frequency": 80.2,
+      "acceptanceRate": "0.006277001270648031"
+    }
+  ]
+}

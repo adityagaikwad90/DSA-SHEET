@@ -1,0 +1,93 @@
+{
+  "name": "FactSet",
+  "displayName": "FactSet",
+  "slug": "factset",
+  "total": 6,
+  "counts": {
+    "Easy": 1,
+    "Medium": 5,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0057521208125696135"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007344430503167648"
+    },
+    {
+      "id": "pairs-of-songs-with-total-durations-divisible-by-60",
+      "title": "Pairs of Songs With Total Durations Divisible by 60",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005358126149836467"
+    },
+    {
+      "id": "remove-duplicate-letters",
+      "title": "Remove Duplicate Letters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/remove-duplicate-letters",
+      "topics": [
+        "String",
+        "Stack",
+        "Greedy",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005467632988828314"
+    },
+    {
+      "id": "remove-all-adjacent-duplicates-in-string-ii",
+      "title": "Remove All Adjacent Duplicates in String II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.006203663148963834"
+    },
+    {
+      "id": "smallest-subsequence-of-distinct-characters",
+      "title": "Smallest Subsequence of Distinct Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/smallest-subsequence-of-distinct-characters",
+      "topics": [
+        "String",
+        "Stack",
+        "Greedy",
+        "Monotonic Stack"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.007068634265447611"
+    }
+  ]
+}

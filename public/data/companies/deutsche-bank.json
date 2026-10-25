@@ -1,0 +1,273 @@
+{
+  "name": "Deutsche Bank",
+  "displayName": "Deutsche Bank",
+  "slug": "deutsche-bank",
+  "total": 19,
+  "counts": {
+    "Easy": 6,
+    "Medium": 7,
+    "Hard": 6
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "different-ways-to-add-parentheses",
+      "title": "Different Ways to Add Parentheses",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/different-ways-to-add-parentheses",
+      "topics": [
+        "Math",
+        "String",
+        "Dynamic Programming",
+        "Recursion",
+        "Memoization",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00737699666905517"
+    },
+    {
+      "id": "reverse-words-in-a-string",
+      "title": "Reverse Words in a String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/reverse-words-in-a-string",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005813316987515905"
+    },
+    {
+      "id": "apply-operations-to-maximize-frequency-score",
+      "title": "Apply Operations to Maximize Frequency Score",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/apply-operations-to-maximize-frequency-score",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Sliding Window",
+        "Sorting",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003928704298711401"
+    },
+    {
+      "id": "smallest-k-length-subsequence-with-occurrences-of-a-letter",
+      "title": "Smallest K-Length Subsequence With Occurrences of a Letter",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter",
+      "topics": [
+        "String",
+        "Stack",
+        "Greedy",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004028706890952784"
+    },
+    {
+      "id": "minimum-operations-to-collect-elements",
+      "title": "Minimum Operations to Collect Elements",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-operations-to-collect-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Bit Manipulation"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.006246549495090674"
+    },
+    {
+      "id": "minimum-operations-to-make-the-array-increasing",
+      "title": "Minimum Operations to Make the Array Increasing",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing",
+      "topics": [
+        "Array",
+        "Greedy"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.008251380151495699"
+    },
+    {
+      "id": "maximum-coins-heroes-can-collect",
+      "title": "Maximum Coins Heroes Can Collect",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-coins-heroes-can-collect",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Sorting",
+        "Prefix Sum"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.006885276885276884"
+    },
+    {
+      "id": "pour-water-between-buckets-to-make-water-levels-equal",
+      "title": "Pour Water Between Buckets to Make Water Levels Equal",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.006808825950930348"
+    },
+    {
+      "id": "the-time-when-the-network-becomes-idle",
+      "title": "The Time When the Network Becomes Idle",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/the-time-when-the-network-becomes-idle",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Graph Theory"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.005637138175860186"
+    },
+    {
+      "id": "find-the-maximum-sum-of-node-values",
+      "title": "Find the Maximum Sum of Node Values",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-the-maximum-sum-of-node-values",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy",
+        "Bit Manipulation",
+        "Tree",
+        "Sorting"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.006907411233434668"
+    },
+    {
+      "id": "maximum-running-time-of-n-computers",
+      "title": "Maximum Running Time of N Computers",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-running-time-of-n-computers",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 97,
+      "acceptanceRate": "0.005630843674393194"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 80.4,
+      "acceptanceRate": "0.0057521208125696135"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 80.4,
+      "acceptanceRate": "0.004853662815897278"
+    },
+    {
+      "id": "pascals-triangle",
+      "title": "Pascal's Triangle",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/pascals-triangle",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 80.4,
+      "acceptanceRate": "0.00794762788150569"
+    },
+    {
+      "id": "squares-of-a-sorted-array",
+      "title": "Squares of a Sorted Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/squares-of-a-sorted-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 80.4,
+      "acceptanceRate": "0.007423230847773453"
+    },
+    {
+      "id": "coin-change",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 80.4,
+      "acceptanceRate": "0.004930612106808394"
+    },
+    {
+      "id": "n-queens-ii",
+      "title": "N-Queens II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/n-queens-ii",
+      "topics": [
+        "Backtracking",
+        "Algorithm X"
+      ],
+      "frequency": 80.4,
+      "acceptanceRate": "0.007950446094967973"
+    },
+    {
+      "id": "split-array-with-same-average",
+      "title": "Split Array With Same Average",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/split-array-with-same-average",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Meet in the Middle",
+        "Bitmask"
+      ],
+      "frequency": 80.4,
+      "acceptanceRate": "0.002773805689747719"
+    },
+    {
+      "id": "spiral-matrix",
+      "title": "Spiral Matrix",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/spiral-matrix",
+      "topics": [
+        "Array",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 61.8,
+      "acceptanceRate": "0.005814591385998864"
+    }
+  ]
+}

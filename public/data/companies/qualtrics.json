@@ -1,0 +1,79 @@
+{
+  "name": "Qualtrics",
+  "displayName": "Qualtrics",
+  "slug": "qualtrics",
+  "total": 5,
+  "counts": {
+    "Easy": 2,
+    "Medium": 2,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-square-sum-triples",
+      "title": "Count Square Sum Triples",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-square-sum-triples",
+      "topics": [
+        "Math",
+        "Enumeration"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007719023096439646"
+    },
+    {
+      "id": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/asteroid-collision",
+      "topics": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004932931077260659"
+    },
+    {
+      "id": "flood-fill",
+      "title": "Flood Fill",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/flood-fill",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 69.3,
+      "acceptanceRate": "0.00690409435296944"
+    },
+    {
+      "id": "maximal-square",
+      "title": "Maximal Square",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximal-square",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 69.3,
+      "acceptanceRate": "0.0051051491886431825"
+    },
+    {
+      "id": "minimum-window-substring",
+      "title": "Minimum Window Substring",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-window-substring",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 69.3,
+      "acceptanceRate": "0.004869703505182118"
+    }
+  ]
+}

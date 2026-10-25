@@ -1,0 +1,74 @@
+{
+  "name": "Tower Research Capital",
+  "displayName": "Tower Research Capital",
+  "slug": "tower-research-capital",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "evaluate-division",
+      "title": "Evaluate Division",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/evaluate-division",
+      "topics": [
+        "Array",
+        "String",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory",
+        "Shortest Path",
+        "Bellman–Ford Algorithm",
+        "Floyd–Warshall Algorithm"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006467507939132466"
+    },
+    {
+      "id": "shortest-bridge",
+      "title": "Shortest Bridge",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/shortest-bridge",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005986790330488956"
+    },
+    {
+      "id": "using-a-robot-to-print-the-lexicographically-smallest-string",
+      "title": "Using a Robot to Print the Lexicographically Smallest String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Stack",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0062238787865421304"
+    },
+    {
+      "id": "minimum-number-of-taps-to-open-to-water-a-garden",
+      "title": "Minimum Number of Taps to Open to Water a Garden",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00511132550234083"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "name": "Confluent",
+  "displayName": "Confluent",
+  "slug": "confluent",
+  "total": 9,
+  "counts": {
+    "Easy": 0,
+    "Medium": 6,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0048257065069490825"
+    },
+    {
+      "id": "valid-sudoku",
+      "title": "Valid Sudoku",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/valid-sudoku",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006525279327508318"
+    },
+    {
+      "id": "sudoku-solver",
+      "title": "Sudoku Solver",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/sudoku-solver",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Backtracking",
+        "Matrix",
+        "Algorithm X",
+        "Dancing Links"
+      ],
+      "frequency": 96.9,
+      "acceptanceRate": "0.006554736586059875"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 93.4,
+      "acceptanceRate": "0.005025842818764849"
+    },
+    {
+      "id": "minimum-time-to-eat-all-grains",
+      "title": "Minimum Time to Eat All Grains",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-time-to-eat-all-grains",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Sorting"
+      ],
+      "frequency": 86.6,
+      "acceptanceRate": "0.004113438937148697"
+    },
+    {
+      "id": "design-authentication-manager",
+      "title": "Design Authentication Manager",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-authentication-manager",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.005885515024286555"
+    },
+    {
+      "id": "combination-sum",
+      "title": "Combination Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/combination-sum",
+      "topics": [
+        "Array",
+        "Backtracking"
+      ],
+      "frequency": 73.4,
+      "acceptanceRate": "0.007727901161143962"
+    },
+    {
+      "id": "couples-holding-hands",
+      "title": "Couples Holding Hands",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/couples-holding-hands",
+      "topics": [
+        "Greedy",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.005990851211813172"
+    },
+    {
+      "id": "cache-with-time-limit",
+      "title": "Cache With Time Limit",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/cache-with-time-limit",
+      "topics": [],
+      "frequency": 57.1,
+      "acceptanceRate": "0.007636950591846778"
+    }
+  ]
+}

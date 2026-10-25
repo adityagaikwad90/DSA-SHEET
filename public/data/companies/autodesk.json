@@ -1,0 +1,451 @@
+{
+  "name": "Autodesk",
+  "displayName": "Autodesk",
+  "slug": "autodesk",
+  "total": 32,
+  "counts": {
+    "Easy": 10,
+    "Medium": 16,
+    "Hard": 6
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "logger-rate-limiter",
+      "title": "Logger Rate Limiter",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/logger-rate-limiter",
+      "topics": [
+        "Hash Table",
+        "Design",
+        "Data Stream"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007691832057604454"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004534110493377067"
+    },
+    {
+      "id": "number-of-subarrays-that-match-a-pattern-i",
+      "title": "Number of Subarrays That Match a Pattern I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i",
+      "topics": [
+        "Array",
+        "Rolling Hash",
+        "String Matching",
+        "Hash Function"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006814021145249414"
+    },
+    {
+      "id": "distribute-elements-into-two-arrays-i",
+      "title": "Distribute Elements Into Two Arrays I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Simulation"
+      ],
+      "frequency": 97.3,
+      "acceptanceRate": "0.00837088478814224"
+    },
+    {
+      "id": "count-prefix-and-suffix-pairs-i",
+      "title": "Count Prefix and Suffix Pairs I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-prefix-and-suffix-pairs-i",
+      "topics": [
+        "Array",
+        "String",
+        "Trie",
+        "Rolling Hash",
+        "String Matching",
+        "Hash Function"
+      ],
+      "frequency": 94.3,
+      "acceptanceRate": "0.007770870118381775"
+    },
+    {
+      "id": "number-of-changing-keys",
+      "title": "Number of Changing Keys",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/number-of-changing-keys",
+      "topics": [
+        "String"
+      ],
+      "frequency": 94.3,
+      "acceptanceRate": "0.008071000312888467"
+    },
+    {
+      "id": "count-prefix-and-suffix-pairs-ii",
+      "title": "Count Prefix and Suffix Pairs II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii",
+      "topics": [
+        "Array",
+        "String",
+        "Trie",
+        "Rolling Hash",
+        "String Matching",
+        "Hash Function",
+        "Z Algorithm"
+      ],
+      "frequency": 94.3,
+      "acceptanceRate": "0.002870202231844919"
+    },
+    {
+      "id": "distribute-elements-into-two-arrays-ii",
+      "title": "Distribute Elements Into Two Arrays II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/distribute-elements-into-two-arrays-ii",
+      "topics": [
+        "Array",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Simulation"
+      ],
+      "frequency": 94.3,
+      "acceptanceRate": "0.0032490801778322863"
+    },
+    {
+      "id": "number-of-subarrays-that-match-a-pattern-ii",
+      "title": "Number of Subarrays That Match a Pattern II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii",
+      "topics": [
+        "Array",
+        "Rolling Hash",
+        "String Matching",
+        "Hash Function"
+      ],
+      "frequency": 94.3,
+      "acceptanceRate": "0.0034082975295381315"
+    },
+    {
+      "id": "search-in-rotated-sorted-array",
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/search-in-rotated-sorted-array",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 93.6,
+      "acceptanceRate": "0.004579980559968796"
+    },
+    {
+      "id": "3sum",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/3sum",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.004007309879328439"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.007344437696189226"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.0038866711287918088"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.0048257079210811925"
+    },
+    {
+      "id": "sort-colors",
+      "title": "Sort Colors",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sort-colors",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting",
+        "Quicksort",
+        "Bubble Sort"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.007029494846621584"
+    },
+    {
+      "id": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.00478584058693581"
+    },
+    {
+      "id": "linked-list-cycle",
+      "title": "Linked List Cycle",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/linked-list-cycle",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers",
+        "Floyd's Cycle Finding Algorithm"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.0055246644687835045"
+    },
+    {
+      "id": "majority-element",
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/majority-element",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Counting",
+        "Boyer–Moore Majority Vote Algorithm"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.006653558503932832"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.005803619600258055"
+    },
+    {
+      "id": "elimination-game",
+      "title": "Elimination Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/elimination-game",
+      "topics": [
+        "Math",
+        "Recursion"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.0046760264692599215"
+    },
+    {
+      "id": "koko-eating-bananas",
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/koko-eating-bananas",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.005071668180808535"
+    },
+    {
+      "id": "kth-largest-element-in-an-array",
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/kth-largest-element-in-an-array",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Quickselect"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.006941738329004395"
+    },
+    {
+      "id": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-subarray",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.005399361286972335"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.005302580879627763"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.0065314528254325575"
+    },
+    {
+      "id": "set-matrix-zeroes",
+      "title": "Set Matrix Zeroes",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/set-matrix-zeroes",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Matrix"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.006378830732246143"
+    },
+    {
+      "id": "spiral-matrix",
+      "title": "Spiral Matrix",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/spiral-matrix",
+      "topics": [
+        "Array",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.00581458382541156"
+    },
+    {
+      "id": "word-break",
+      "title": "Word Break",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/word-break",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Dynamic Programming",
+        "Trie",
+        "Memoization",
+        "Brute-Force Search"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.005002405521298693"
+    },
+    {
+      "id": "reverse-nodes-in-k-group",
+      "title": "Reverse Nodes in k-Group",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/reverse-nodes-in-k-group",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 73.7,
+      "acceptanceRate": "0.006751115079326143"
+    },
+    {
+      "id": "climbing-stairs",
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/climbing-stairs",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "frequency": 59.1,
+      "acceptanceRate": "0.005440648625890855"
+    },
+    {
+      "id": "happy-number",
+      "title": "Happy Number",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/happy-number",
+      "topics": [
+        "Hash Table",
+        "Math",
+        "Two Pointers",
+        "Floyd's Cycle Finding Algorithm"
+      ],
+      "frequency": 59.1,
+      "acceptanceRate": "0.0060426578872582815"
+    },
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 59.1,
+      "acceptanceRate": "0.005245326998804115"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Turvo",
+  "displayName": "Turvo",
+  "slug": "turvo",
+  "total": 2,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-good-triplets",
+      "title": "Count Good Triplets",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-good-triplets",
+      "topics": [
+        "Array",
+        "Enumeration"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008560365023698576"
+    },
+    {
+      "id": "minimum-difficulty-of-a-job-schedule",
+      "title": "Minimum Difficulty of a Job Schedule",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00598341420780487"
+    }
+  ]
+}

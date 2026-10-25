@@ -1,0 +1,199 @@
+{
+  "name": "Mastercard",
+  "displayName": "Mastercard",
+  "slug": "mastercard",
+  "total": 14,
+  "counts": {
+    "Easy": 4,
+    "Medium": 7,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00580362080695491"
+    },
+    {
+      "id": "strange-printer",
+      "title": "Strange Printer",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/strange-printer",
+      "topics": [
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006104271793979468"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 94.1,
+      "acceptanceRate": "0.005752124186244199"
+    },
+    {
+      "id": "n-queens",
+      "title": "N-Queens",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/n-queens",
+      "topics": [
+        "Array",
+        "Backtracking",
+        "Algorithm X"
+      ],
+      "frequency": 94.1,
+      "acceptanceRate": "0.007667722741098282"
+    },
+    {
+      "id": "coin-change-ii",
+      "title": "Coin Change II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 93.9,
+      "acceptanceRate": "0.005909031262203358"
+    },
+    {
+      "id": "contain-virus",
+      "title": "Contain Virus",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/contain-virus",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 88.7,
+      "acceptanceRate": "0.005652886012415798"
+    },
+    {
+      "id": "fizz-buzz",
+      "title": "Fizz Buzz",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/fizz-buzz",
+      "topics": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 86.5,
+      "acceptanceRate": "0.007599278647313892"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 86.5,
+      "acceptanceRate": "0.00453411686703676"
+    },
+    {
+      "id": "coin-change",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 86.5,
+      "acceptanceRate": "0.004930613929068573"
+    },
+    {
+      "id": "gas-station",
+      "title": "Gas Station",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/gas-station",
+      "topics": [
+        "Array",
+        "Greedy"
+      ],
+      "frequency": 75.8,
+      "acceptanceRate": "0.004888873034952013"
+    },
+    {
+      "id": "word-search",
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/word-search",
+      "topics": [
+        "Array",
+        "String",
+        "Backtracking",
+        "Depth-First Search",
+        "Matrix"
+      ],
+      "frequency": 75.8,
+      "acceptanceRate": "0.004831301105809856"
+    },
+    {
+      "id": "jump-game",
+      "title": "Jump Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 74.9,
+      "acceptanceRate": "0.004166911394341546"
+    },
+    {
+      "id": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-subarray",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming"
+      ],
+      "frequency": 74.9,
+      "acceptanceRate": "0.0053993570917912"
+    },
+    {
+      "id": "rotate-image",
+      "title": "Rotate Image",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotate-image",
+      "topics": [
+        "Array",
+        "Math",
+        "Matrix"
+      ],
+      "frequency": 74.9,
+      "acceptanceRate": "0.00808347846857627"
+    }
+  ]
+}

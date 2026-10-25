@@ -1,0 +1,76 @@
+{
+  "name": "Fidelity",
+  "displayName": "Fidelity",
+  "slug": "fidelity",
+  "total": 5,
+  "counts": {
+    "Easy": 4,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "first-unique-character-in-a-string",
+      "title": "First Unique Character in a String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/first-unique-character-in-a-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Queue",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006654124107933967"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004853662815897278"
+    },
+    {
+      "id": "modify-the-matrix",
+      "title": "Modify the Matrix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/modify-the-matrix",
+      "topics": [
+        "Array",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006925714662534207"
+    },
+    {
+      "id": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0054529137281246675"
+    },
+    {
+      "id": "angle-between-hands-of-a-clock",
+      "title": "Angle Between Hands of a Clock",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/angle-between-hands-of-a-clock",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006993491288645474"
+    }
+  ]
+}

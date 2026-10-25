@@ -1,0 +1,222 @@
+{
+  "name": "Robinhood",
+  "displayName": "Robinhood",
+  "slug": "robinhood",
+  "total": 15,
+  "counts": {
+    "Easy": 3,
+    "Medium": 11,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "top-k-frequent-words",
+      "title": "Top K Frequent Words",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/top-k-frequent-words",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Trie",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00607404881439102"
+    },
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00524533758074244"
+    },
+    {
+      "id": "restore-the-array-from-adjacent-pairs",
+      "title": "Restore the Array From Adjacent Pairs",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/restore-the-array-from-adjacent-pairs",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Depth-First Search"
+      ],
+      "frequency": 95.3,
+      "acceptanceRate": "0.007519786380633956"
+    },
+    {
+      "id": "ways-to-split-array-into-three-subarrays",
+      "title": "Ways to Split Array Into Three Subarrays",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/ways-to-split-array-into-three-subarrays",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Prefix Sum"
+      ],
+      "frequency": 95.3,
+      "acceptanceRate": "0.003472537053182215"
+    },
+    {
+      "id": "count-the-number-of-consistent-strings",
+      "title": "Count the Number of Consistent Strings",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-the-number-of-consistent-strings",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Bit Manipulation",
+        "Counting"
+      ],
+      "frequency": 92.6,
+      "acceptanceRate": "0.008856681905798408"
+    },
+    {
+      "id": "brightest-position-on-street",
+      "title": "Brightest Position on Street",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/brightest-position-on-street",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Prefix Sum",
+        "Ordered Set"
+      ],
+      "frequency": 92.6,
+      "acceptanceRate": "0.006066923558278168"
+    },
+    {
+      "id": "capital-gainloss",
+      "title": "Capital Gain/Loss",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/capital-gainloss",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 92.6,
+      "acceptanceRate": "0.008472829607129296"
+    },
+    {
+      "id": "check-if-there-is-a-valid-path-in-a-grid",
+      "title": "Check if There is a Valid Path in a Grid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 92.6,
+      "acceptanceRate": "0.006453708842027378"
+    },
+    {
+      "id": "count-good-meals",
+      "title": "Count Good Meals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-good-meals",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 92.6,
+      "acceptanceRate": "0.003328449286354547"
+    },
+    {
+      "id": "number-of-orders-in-the-backlog",
+      "title": "Number of Orders in the Backlog",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-orders-in-the-backlog",
+      "topics": [
+        "Array",
+        "Heap (Priority Queue)",
+        "Simulation"
+      ],
+      "frequency": 92.6,
+      "acceptanceRate": "0.005480229559589422"
+    },
+    {
+      "id": "minesweeper",
+      "title": "Minesweeper",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minesweeper",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 76.5,
+      "acceptanceRate": "0.006902232236938091"
+    },
+    {
+      "id": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/top-k-frequent-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting",
+        "Quickselect"
+      ],
+      "frequency": 76.5,
+      "acceptanceRate": "0.006757424996843381"
+    },
+    {
+      "id": "employee-importance",
+      "title": "Employee Importance",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/employee-importance",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search"
+      ],
+      "frequency": 69.8,
+      "acceptanceRate": "0.006990672217903806"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 67.5,
+      "acceptanceRate": "0.005752127019869244"
+    },
+    {
+      "id": "defanging-an-ip-address",
+      "title": "Defanging an IP Address",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/defanging-an-ip-address",
+      "topics": [
+        "String"
+      ],
+      "frequency": 67.5,
+      "acceptanceRate": "0.009017843073917085"
+    }
+  ]
+}

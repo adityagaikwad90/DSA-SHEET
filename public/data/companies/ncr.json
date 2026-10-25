@@ -1,0 +1,57 @@
+{
+  "name": "NCR",
+  "displayName": "NCR",
+  "slug": "ncr",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "number-of-people-aware-of-a-secret",
+      "title": "Number of People Aware of a Secret",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-people-aware-of-a-secret",
+      "topics": [
+        "Dynamic Programming",
+        "Queue",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006064024859674416"
+    },
+    {
+      "id": "design-authentication-manager",
+      "title": "Design Authentication Manager",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-authentication-manager",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 89.8,
+      "acceptanceRate": "0.005885535607630959"
+    },
+    {
+      "id": "minimize-malware-spread",
+      "title": "Minimize Malware Spread",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimize-malware-spread",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 89.8,
+      "acceptanceRate": "0.004354806557800992"
+    }
+  ]
+}

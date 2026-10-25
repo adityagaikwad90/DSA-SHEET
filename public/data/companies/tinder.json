@@ -1,0 +1,58 @@
+{
+  "name": "Tinder",
+  "displayName": "Tinder",
+  "slug": "tinder",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-median-from-data-stream",
+      "title": "Find Median from Data Stream",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-median-from-data-stream",
+      "topics": [
+        "Two Pointers",
+        "Design",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Data Stream"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005512005325213046"
+    },
+    {
+      "id": "kth-largest-element-in-a-stream",
+      "title": "Kth Largest Element in a Stream",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/kth-largest-element-in-a-stream",
+      "topics": [
+        "Tree",
+        "Design",
+        "Binary Search Tree",
+        "Heap (Priority Queue)",
+        "Binary Tree",
+        "Data Stream"
+      ],
+      "frequency": 91.4,
+      "acceptanceRate": "0.006168770412216435"
+    },
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 76.6,
+      "acceptanceRate": "0.00524533758074244"
+    }
+  ]
+}

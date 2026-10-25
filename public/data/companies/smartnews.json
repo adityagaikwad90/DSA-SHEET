@@ -1,0 +1,28 @@
+{
+  "name": "smartnews",
+  "displayName": "SmartNews",
+  "slug": "smartnews",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004825730979730083"
+    }
+  ]
+}

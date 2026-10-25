@@ -1,0 +1,191 @@
+{
+  "name": "Zopsmart",
+  "displayName": "Zopsmart",
+  "slug": "zopsmart",
+  "total": 14,
+  "counts": {
+    "Easy": 2,
+    "Medium": 10,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "zigzag-conversion",
+      "title": "Zigzag Conversion",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/zigzag-conversion",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005537300526330285"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 96.7,
+      "acceptanceRate": "0.006842255882993122"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 89.2,
+      "acceptanceRate": "0.00633750410851753"
+    },
+    {
+      "id": "hexadecimal-and-hexatrigesimal-conversion",
+      "title": "Hexadecimal and Hexatrigesimal Conversion",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion",
+      "topics": [
+        "Math",
+        "String"
+      ],
+      "frequency": 80,
+      "acceptanceRate": "0.007924011347380161"
+    },
+    {
+      "id": "reverse-nodes-in-even-length-groups",
+      "title": "Reverse Nodes in Even Length Groups",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/reverse-nodes-in-even-length-groups",
+      "topics": [
+        "Linked List"
+      ],
+      "frequency": 75.7,
+      "acceptanceRate": "0.006554634438673592"
+    },
+    {
+      "id": "bulls-and-cows",
+      "title": "Bulls and Cows",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/bulls-and-cows",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 73.3,
+      "acceptanceRate": "0.005313814609719513"
+    },
+    {
+      "id": "reverse-words-in-a-string",
+      "title": "Reverse Words in a String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/reverse-words-in-a-string",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 73.3,
+      "acceptanceRate": "0.0058133266995909405"
+    },
+    {
+      "id": "broken-calculator",
+      "title": "Broken Calculator",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/broken-calculator",
+      "topics": [
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 67.1,
+      "acceptanceRate": "0.005654912168831509"
+    },
+    {
+      "id": "remove-k-digits",
+      "title": "Remove K Digits",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/remove-k-digits",
+      "topics": [
+        "String",
+        "Stack",
+        "Greedy",
+        "Monotonic Stack"
+      ],
+      "frequency": 67.1,
+      "acceptanceRate": "0.0037879931636299203"
+    },
+    {
+      "id": "restore-ip-addresses",
+      "title": "Restore IP Addresses",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/restore-ip-addresses",
+      "topics": [
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 62.5,
+      "acceptanceRate": "0.005736171163508679"
+    },
+    {
+      "id": "reverse-nodes-in-k-group",
+      "title": "Reverse Nodes in k-Group",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/reverse-nodes-in-k-group",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 62.5,
+      "acceptanceRate": "0.006751132930068967"
+    },
+    {
+      "id": "valid-anagram",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-anagram",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 58.5,
+      "acceptanceRate": "0.006876762542192251"
+    },
+    {
+      "id": "letter-combinations-of-a-phone-number",
+      "title": "Letter Combinations of a Phone Number",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/letter-combinations-of-a-phone-number",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 58.5,
+      "acceptanceRate": "0.006703754263545655"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 58.5,
+      "acceptanceRate": "0.0038866738149183288"
+    }
+  ]
+}

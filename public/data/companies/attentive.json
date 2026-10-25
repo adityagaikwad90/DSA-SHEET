@@ -1,0 +1,65 @@
+{
+  "name": "Attentive",
+  "displayName": "Attentive",
+  "slug": "attentive",
+  "total": 4,
+  "counts": {
+    "Easy": 2,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "remove-all-adjacent-duplicates-in-string-ii",
+      "title": "Remove All Adjacent Duplicates in String II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006203663148963834"
+    },
+    {
+      "id": "parse-lisp-expression",
+      "title": "Parse Lisp Expression",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/parse-lisp-expression",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005413676731793961"
+    },
+    {
+      "id": "find-pivot-index",
+      "title": "Find Pivot Index",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-pivot-index",
+      "topics": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "frequency": 67.8,
+      "acceptanceRate": "0.006412519801727221"
+    },
+    {
+      "id": "valid-palindrome-ii",
+      "title": "Valid Palindrome II",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome-ii",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Greedy"
+      ],
+      "frequency": 60,
+      "acceptanceRate": "0.004491364841791695"
+    }
+  ]
+}

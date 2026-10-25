@@ -1,0 +1,189 @@
+{
+  "name": "Datadog",
+  "displayName": "Datadog",
+  "slug": "datadog",
+  "total": 13,
+  "counts": {
+    "Easy": 3,
+    "Medium": 7,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "most-common-word",
+      "title": "Most Common Word",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/most-common-word",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0045464554412868565"
+    },
+    {
+      "id": "coin-change",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.004930611283432774"
+    },
+    {
+      "id": "meeting-scheduler",
+      "title": "Meeting Scheduler",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/meeting-scheduler",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 90.5,
+      "acceptanceRate": "0.005520073598936904"
+    },
+    {
+      "id": "valid-word-abbreviation",
+      "title": "Valid Word Abbreviation",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-word-abbreviation",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 86.7,
+      "acceptanceRate": "0.00370389684030397"
+    },
+    {
+      "id": "design-add-and-search-words-data-structure",
+      "title": "Design Add and Search Words Data Structure",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-add-and-search-words-data-structure",
+      "topics": [
+        "String",
+        "Depth-First Search",
+        "Design",
+        "Trie"
+      ],
+      "frequency": 86.7,
+      "acceptanceRate": "0.004917028119451945"
+    },
+    {
+      "id": "maximum-depth-of-n-ary-tree",
+      "title": "Maximum Depth of N-ary Tree",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/maximum-depth-of-n-ary-tree",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search"
+      ],
+      "frequency": 82,
+      "acceptanceRate": "0.0073881257340570735"
+    },
+    {
+      "id": "design-circular-queue",
+      "title": "Design Circular Queue",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-circular-queue",
+      "topics": [
+        "Array",
+        "Linked List",
+        "Design",
+        "Queue"
+      ],
+      "frequency": 72.3,
+      "acceptanceRate": "0.005571322651926797"
+    },
+    {
+      "id": "house-robber",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 72.3,
+      "acceptanceRate": "0.005368630423050881"
+    },
+    {
+      "id": "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",
+      "title": "People Whose List of Favorite Companies Is Not a Subset of Another List",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 72.3,
+      "acceptanceRate": "0.006095793624712454"
+    },
+    {
+      "id": "house-robber-ii",
+      "title": "House Robber II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 61.7,
+      "acceptanceRate": "0.004567977338774853"
+    },
+    {
+      "id": "maximum-vacation-days",
+      "title": "Maximum Vacation Days",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-vacation-days",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 61.7,
+      "acceptanceRate": "0.004683658002582383"
+    },
+    {
+      "id": "binary-tree-maximum-path-sum",
+      "title": "Binary Tree Maximum Path Sum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/binary-tree-maximum-path-sum",
+      "topics": [
+        "Dynamic Programming",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree",
+        "DP on Trees"
+      ],
+      "frequency": 53.3,
+      "acceptanceRate": "0.004289440098580753"
+    },
+    {
+      "id": "sliding-window-median",
+      "title": "Sliding Window Median",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/sliding-window-median",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window",
+        "Heap (Priority Queue)",
+        "Treap"
+      ],
+      "frequency": 53.3,
+      "acceptanceRate": "0.003920141397115873"
+    }
+  ]
+}

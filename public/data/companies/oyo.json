@@ -1,0 +1,120 @@
+{
+  "name": "oyo",
+  "displayName": "OYO",
+  "slug": "oyo",
+  "total": 8,
+  "counts": {
+    "Easy": 2,
+    "Medium": 5,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "koko-eating-bananas",
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/koko-eating-bananas",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00507170629723235"
+    },
+    {
+      "id": "movement-of-robots",
+      "title": "Movement of Robots",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/movement-of-robots",
+      "topics": [
+        "Array",
+        "Brainteaser",
+        "Sorting",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0028138877674606377"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 88.3,
+      "acceptanceRate": "0.004853661788917336"
+    },
+    {
+      "id": "move-zeroes",
+      "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/move-zeroes",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ],
+      "frequency": 88.3,
+      "acceptanceRate": "0.00645012931053769"
+    },
+    {
+      "id": "copy-list-with-random-pointer",
+      "title": "Copy List with Random Pointer",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/copy-list-with-random-pointer",
+      "topics": [
+        "Hash Table",
+        "Linked List"
+      ],
+      "frequency": 88.3,
+      "acceptanceRate": "0.0063884566460906955"
+    },
+    {
+      "id": "furthest-building-you-can-reach",
+      "title": "Furthest Building You Can Reach",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/furthest-building-you-can-reach",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 88.3,
+      "acceptanceRate": "0.005120214163959792"
+    },
+    {
+      "id": "house-robber-iii",
+      "title": "House Robber III",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber-iii",
+      "topics": [
+        "Dynamic Programming",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree",
+        "DP on Trees"
+      ],
+      "frequency": 88.3,
+      "acceptanceRate": "0.00564776654425966"
+    },
+    {
+      "id": "merge-k-sorted-lists",
+      "title": "Merge k Sorted Lists",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/merge-k-sorted-lists",
+      "topics": [
+        "Linked List",
+        "Divide and Conquer",
+        "Heap (Priority Queue)",
+        "Merge Sort",
+        "Tournament Sort"
+      ],
+      "frequency": 88.3,
+      "acceptanceRate": "0.0060784478716462255"
+    }
+  ]
+}

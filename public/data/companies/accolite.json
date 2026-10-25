@@ -1,0 +1,236 @@
+{
+  "name": "Accolite",
+  "displayName": "Accolite",
+  "slug": "accolite",
+  "total": 17,
+  "counts": {
+    "Easy": 3,
+    "Medium": 13,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004534106957353752"
+    },
+    {
+      "id": "replace-the-substring-for-balanced-string",
+      "title": "Replace the Substring for Balanced String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/replace-the-substring-for-balanced-string",
+      "topics": [
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004171294080102122"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 88.5,
+      "acceptanceRate": "0.0040019110558488"
+    },
+    {
+      "id": "rotate-non-negative-elements",
+      "title": "Rotate Non Negative Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotate-non-negative-elements",
+      "topics": [
+        "Array",
+        "Simulation"
+      ],
+      "frequency": 87.6,
+      "acceptanceRate": "0.004770364314761247"
+    },
+    {
+      "id": "merge-operations-to-turn-array-into-a-palindrome",
+      "title": "Merge Operations to Turn Array Into a Palindrome",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "frequency": 85,
+      "acceptanceRate": "0.006885599971674397"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 83.1,
+      "acceptanceRate": "0.005803618456370095"
+    },
+    {
+      "id": "gas-station",
+      "title": "Gas Station",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/gas-station",
+      "topics": [
+        "Array",
+        "Greedy"
+      ],
+      "frequency": 83.1,
+      "acceptanceRate": "0.004888859007269781"
+    },
+    {
+      "id": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/asteroid-collision",
+      "topics": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 76,
+      "acceptanceRate": "0.004932924151220907"
+    },
+    {
+      "id": "coin-change",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 76,
+      "acceptanceRate": "0.004930607616925841"
+    },
+    {
+      "id": "container-with-most-water",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/container-with-most-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "frequency": 76,
+      "acceptanceRate": "0.006103881654586658"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 76,
+      "acceptanceRate": "0.003886668706827204"
+    },
+    {
+      "id": "climbing-stairs",
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/climbing-stairs",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "frequency": 66.1,
+      "acceptanceRate": "0.005440645783661309"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 66.1,
+      "acceptanceRate": "0.007344438567310827"
+    },
+    {
+      "id": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-subarray",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming"
+      ],
+      "frequency": 66.1,
+      "acceptanceRate": "0.005399360192572644"
+    },
+    {
+      "id": "minimum-jumps-to-reach-home",
+      "title": "Minimum Jumps to Reach Home",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-jumps-to-reach-home",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Breadth-First Search"
+      ],
+      "frequency": 66.1,
+      "acceptanceRate": "0.0031169028340080973"
+    },
+    {
+      "id": "remove-duplicates-from-sorted-array-ii",
+      "title": "Remove Duplicates from Sorted Array II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ],
+      "frequency": 66.1,
+      "acceptanceRate": "0.006542136702600362"
+    },
+    {
+      "id": "create-maximum-number",
+      "title": "Create Maximum Number",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/create-maximum-number",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Stack",
+        "Greedy",
+        "Monotonic Stack"
+      ],
+      "frequency": 66.1,
+      "acceptanceRate": "0.0037528235162830794"
+    }
+  ]
+}

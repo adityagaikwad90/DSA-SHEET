@@ -1,0 +1,38 @@
+{
+  "name": "Tech Mahindra",
+  "displayName": "Tech Mahindra",
+  "slug": "tech-mahindra",
+  "total": 2,
+  "counts": {
+    "Easy": 2,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005752127002489667"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058036223610589445"
+    }
+  ]
+}

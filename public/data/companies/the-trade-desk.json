@@ -1,0 +1,96 @@
+{
+  "name": "The Trade Desk",
+  "displayName": "The Trade Desk",
+  "slug": "the-trade-desk",
+  "total": 6,
+  "counts": {
+    "Easy": 0,
+    "Medium": 4,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-the-length-of-the-longest-common-prefix",
+      "title": "Find the Length of the Longest Common Prefix",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006232793561692155"
+    },
+    {
+      "id": "word-ladder",
+      "title": "Word Ladder",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/word-ladder",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Breadth-First Search",
+        "Bidirectional Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004677984451108922"
+    },
+    {
+      "id": "spiral-matrix",
+      "title": "Spiral Matrix",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/spiral-matrix",
+      "topics": [
+        "Array",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.005814592762393077"
+    },
+    {
+      "id": "string-compression",
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-compression",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.006096659272018342"
+    },
+    {
+      "id": "unique-word-abbreviation",
+      "title": "Unique Word Abbreviation",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/unique-word-abbreviation",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Design"
+      ],
+      "frequency": 69.3,
+      "acceptanceRate": "0.002806153122743379"
+    },
+    {
+      "id": "word-abbreviation",
+      "title": "Word Abbreviation",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/word-abbreviation",
+      "topics": [
+        "Array",
+        "String",
+        "Greedy",
+        "Trie",
+        "Sorting"
+      ],
+      "frequency": 69.3,
+      "acceptanceRate": "0.006277388216009471"
+    }
+  ]
+}

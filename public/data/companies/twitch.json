@@ -1,0 +1,108 @@
+{
+  "name": "Twitch",
+  "displayName": "Twitch",
+  "slug": "twitch",
+  "total": 7,
+  "counts": {
+    "Easy": 2,
+    "Medium": 4,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "create-a-session-bar-chart",
+      "title": "Create a Session Bar Chart",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/create-a-session-bar-chart",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007424447811179334"
+    },
+    {
+      "id": "design-a-file-sharing-system",
+      "title": "Design a File Sharing System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-a-file-sharing-system",
+      "topics": [
+        "Hash Table",
+        "Design",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Data Stream"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004191887407746438"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004825722825290219"
+    },
+    {
+      "id": "toss-strange-coins",
+      "title": "Toss Strange Coins",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/toss-strange-coins",
+      "topics": [
+        "Array",
+        "Math",
+        "Dynamic Programming",
+        "Probability and Statistics"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058113878125231385"
+    },
+    {
+      "id": "reverse-vowels-of-a-string",
+      "title": "Reverse Vowels of a String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reverse-vowels-of-a-string",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 78.7,
+      "acceptanceRate": "0.006261267216966836"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 78.7,
+      "acceptanceRate": "0.0053025648312917985"
+    },
+    {
+      "id": "find-median-from-data-stream",
+      "title": "Find Median from Data Stream",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-median-from-data-stream",
+      "topics": [
+        "Two Pointers",
+        "Design",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Data Stream"
+      ],
+      "frequency": 78.7,
+      "acceptanceRate": "0.005512005325213046"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "GoDaddy",
+  "displayName": "GoDaddy",
+  "slug": "godaddy",
+  "total": 6,
+  "counts": {
+    "Easy": 2,
+    "Medium": 3,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "arranging-coins",
+      "title": "Arranging Coins",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/arranging-coins",
+      "topics": [
+        "Math",
+        "Binary Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004868868067426915"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005302573263470528"
+    },
+    {
+      "id": "ways-to-make-a-fair-array",
+      "title": "Ways to Make a Fair Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/ways-to-make-a-fair-array",
+      "topics": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006775100401606425"
+    },
+    {
+      "id": "string-compression",
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-compression",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 97.4,
+      "acceptanceRate": "0.006096663985091801"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 87.7,
+      "acceptanceRate": "0.004534116940466955"
+    },
+    {
+      "id": "minimum-degree-of-a-connected-trio-in-a-graph",
+      "title": "Minimum Degree of a Connected Trio in a Graph",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph",
+      "topics": [
+        "Graph Theory",
+        "Enumeration"
+      ],
+      "frequency": 77.9,
+      "acceptanceRate": "0.004495463802999445"
+    }
+  ]
+}

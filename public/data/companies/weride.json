@@ -1,0 +1,164 @@
+{
+  "name": "WeRide",
+  "displayName": "WeRide",
+  "slug": "weride",
+  "total": 10,
+  "counts": {
+    "Easy": 1,
+    "Medium": 3,
+    "Hard": 6
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximize-greatness-of-an-array",
+      "title": "Maximize Greatness of an Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximize-greatness-of-an-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006165164440152368"
+    },
+    {
+      "id": "find-edges-in-shortest-paths",
+      "title": "Find Edges in Shortest Paths",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-edges-in-shortest-paths",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Heap (Priority Queue)",
+        "Shortest Path"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004693012948639958"
+    },
+    {
+      "id": "detect-cycles-in-2d-grid",
+      "title": "Detect Cycles in 2D Grid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/detect-cycles-in-2d-grid",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 87.2,
+      "acceptanceRate": "0.006368807014286799"
+    },
+    {
+      "id": "count-paths-that-can-form-a-palindrome-in-a-tree",
+      "title": "Count Paths That Can Form a Palindrome in a Tree",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree",
+      "topics": [
+        "Hash Table",
+        "Bit Manipulation",
+        "Tree",
+        "Depth-First Search"
+      ],
+      "frequency": 87.2,
+      "acceptanceRate": "0.005254616161925467"
+    },
+    {
+      "id": "longest-increasing-path-in-a-matrix",
+      "title": "Longest Increasing Path in a Matrix",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Memoization",
+        "Matrix",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 87.2,
+      "acceptanceRate": "0.005718817350610269"
+    },
+    {
+      "id": "swim-in-rising-water",
+      "title": "Swim in Rising Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/swim-in-rising-water",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Minimax",
+        "Heap (Priority Queue)",
+        "Matrix",
+        "Dijkstra's Algorithm"
+      ],
+      "frequency": 87.2,
+      "acceptanceRate": "0.006833761541097487"
+    },
+    {
+      "id": "count-binary-substrings",
+      "title": "Count Binary Substrings",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-binary-substrings",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 77.1,
+      "acceptanceRate": "0.007063877089923181"
+    },
+    {
+      "id": "design-snake-game",
+      "title": "Design Snake Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-snake-game",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Queue",
+        "Simulation"
+      ],
+      "frequency": 77.1,
+      "acceptanceRate": "0.004012266755609909"
+    },
+    {
+      "id": "maximum-profit-in-job-scheduling",
+      "title": "Maximum Profit in Job Scheduling",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-profit-in-job-scheduling",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Sorting"
+      ],
+      "frequency": 77.1,
+      "acceptanceRate": "0.005487883942217621"
+    },
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 77.1,
+      "acceptanceRate": "0.00524533758074244"
+    }
+  ]
+}

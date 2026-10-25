@@ -1,0 +1,76 @@
+{
+  "name": "Altimetrik",
+  "displayName": "Altimetrik",
+  "slug": "altimetrik",
+  "total": 5,
+  "counts": {
+    "Easy": 4,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-number-of-pairs-in-array",
+      "title": "Maximum Number of Pairs in Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/maximum-number-of-pairs-in-array",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007636367889221557"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058036186104118035"
+    },
+    {
+      "id": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005452913723308535"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.004534109611050791"
+    },
+    {
+      "id": "swap-nodes-in-pairs",
+      "title": "Swap Nodes in Pairs",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/swap-nodes-in-pairs",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.007042727090202758"
+    }
+  ]
+}

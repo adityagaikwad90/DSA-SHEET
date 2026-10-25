@@ -1,0 +1,27 @@
+{
+  "name": "Fiverr",
+  "displayName": "Fiverr",
+  "slug": "fiverr",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "rotate-array",
+      "title": "Rotate Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotate-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Two Pointers"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004571838785765562"
+    }
+  ]
+}

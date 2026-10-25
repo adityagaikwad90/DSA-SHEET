@@ -1,0 +1,39 @@
+{
+  "name": "BlackStone",
+  "displayName": "BlackStone",
+  "slug": "blackstone",
+  "total": 2,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "reaching-points",
+      "title": "Reaching Points",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/reaching-points",
+      "topics": [
+        "Math",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003483922022932992"
+    },
+    {
+      "id": "make-the-string-great",
+      "title": "Make The String Great",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/make-the-string-great",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 89.7,
+      "acceptanceRate": "0.006880727919802477"
+    }
+  ]
+}

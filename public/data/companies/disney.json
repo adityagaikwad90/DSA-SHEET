@@ -1,0 +1,142 @@
+{
+  "name": "Disney",
+  "displayName": "Disney",
+  "slug": "disney",
+  "total": 9,
+  "counts": {
+    "Easy": 1,
+    "Medium": 7,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-value-at-a-given-index-in-a-bounded-array",
+      "title": "Maximum Value at a Given Index in a Bounded Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array",
+      "topics": [
+        "Math",
+        "Binary Search",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0038878018607117165"
+    },
+    {
+      "id": "remove-all-adjacent-duplicates-in-string-ii",
+      "title": "Remove All Adjacent Duplicates in String II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006203663148963834"
+    },
+    {
+      "id": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/top-k-frequent-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting",
+        "Quickselect"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006757415993485601"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.004853662815897278"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.007344430503167648"
+    },
+    {
+      "id": "daily-temperatures",
+      "title": "Daily Temperatures",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/daily-temperatures",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 87.9,
+      "acceptanceRate": "0.006927661161677606"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 87.9,
+      "acceptanceRate": "0.0038866718003273703"
+    },
+    {
+      "id": "meeting-rooms-ii",
+      "title": "Meeting Rooms II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/meeting-rooms-ii",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Prefix Sum"
+      ],
+      "frequency": 87.9,
+      "acceptanceRate": "0.005284515509539515"
+    },
+    {
+      "id": "merge-k-sorted-lists",
+      "title": "Merge k Sorted Lists",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/merge-k-sorted-lists",
+      "topics": [
+        "Linked List",
+        "Divide and Conquer",
+        "Heap (Priority Queue)",
+        "Merge Sort",
+        "Tournament Sort"
+      ],
+      "frequency": 87.9,
+      "acceptanceRate": "0.006078429277984894"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "name": "Intel",
+  "displayName": "Intel",
+  "slug": "intel",
+  "total": 15,
+  "counts": {
+    "Easy": 5,
+    "Medium": 9,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-nesting-depth-of-the-parentheses",
+      "title": "Maximum Nesting Depth of the Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008612871114135558"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803620444467007"
+    },
+    {
+      "id": "find-consecutive-integers-from-a-data-stream",
+      "title": "Find Consecutive Integers from a Data Stream",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream",
+      "topics": [
+        "Hash Table",
+        "Design",
+        "Queue",
+        "Counting",
+        "Data Stream"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005193330235919674"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 88.7,
+      "acceptanceRate": "0.0045341167600536315"
+    },
+    {
+      "id": "container-with-most-water",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/container-with-most-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.00610389213926025"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.006531451498975973"
+    },
+    {
+      "id": "copy-list-with-random-pointer",
+      "title": "Copy List with Random Pointer",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/copy-list-with-random-pointer",
+      "topics": [
+        "Hash Table",
+        "Linked List"
+      ],
+      "frequency": 75.6,
+      "acceptanceRate": "0.006388446845663478"
+    },
+    {
+      "id": "palindrome-number",
+      "title": "Palindrome Number",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/palindrome-number",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.006104360149806045"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.0040019092798101895"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.0048257102904015"
+    },
+    {
+      "id": "majority-element-ii",
+      "title": "Majority Element II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/majority-element-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sorting",
+        "Counting",
+        "Boyer–Moore Majority Vote Algorithm"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.005692215023666439"
+    },
+    {
+      "id": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-subarray",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.005399356046205398"
+    },
+    {
+      "id": "min-stack",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-stack",
+      "topics": [
+        "Stack",
+        "Design"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.005879064995952622"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.006842250693302014"
+    },
+    {
+      "id": "linked-list-cycle",
+      "title": "Linked List Cycle",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/linked-list-cycle",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers",
+        "Floyd's Cycle Finding Algorithm"
+      ],
+      "frequency": 65.6,
+      "acceptanceRate": "0.005524667307138507"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "name": "Ozon",
+  "displayName": "Ozon",
+  "slug": "ozon",
+  "total": 12,
+  "counts": {
+    "Easy": 6,
+    "Medium": 5,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "monotonic-array",
+      "title": "Monotonic Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/monotonic-array",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00627639861376335"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005302566992870624"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 90.3,
+      "acceptanceRate": "0.0045341182507174175"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 83.3,
+      "acceptanceRate": "0.006337492910642644"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 73.6,
+      "acceptanceRate": "0.005752124151487595"
+    },
+    {
+      "id": "squares-of-a-sorted-array",
+      "title": "Squares of a Sorted Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/squares-of-a-sorted-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 73.6,
+      "acceptanceRate": "0.007423232832950053"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 73.6,
+      "acceptanceRate": "0.005803621249727913"
+    },
+    {
+      "id": "valid-anagram",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-anagram",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 73.6,
+      "acceptanceRate": "0.006876761931556342"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 73.6,
+      "acceptanceRate": "0.004001909582145579"
+    },
+    {
+      "id": "min-stack",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-stack",
+      "topics": [
+        "Stack",
+        "Design"
+      ],
+      "frequency": 73.6,
+      "acceptanceRate": "0.005879065812429445"
+    },
+    {
+      "id": "department-top-three-salaries",
+      "title": "Department Top Three Salaries",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/department-top-three-salaries",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 73.6,
+      "acceptanceRate": "0.0062188209449479444"
+    },
+    {
+      "id": "department-highest-salary",
+      "title": "Department Highest Salary",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/department-highest-salary",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 70.1,
+      "acceptanceRate": "0.005992038487542602"
+    }
+  ]
+}

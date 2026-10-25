@@ -1,0 +1,249 @@
+{
+  "name": "Tinkoff",
+  "displayName": "Tinkoff",
+  "slug": "tinkoff",
+  "total": 19,
+  "counts": {
+    "Easy": 6,
+    "Medium": 13,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-first-and-last-position-of-element-in-sorted-array",
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00498056428515181"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003886676021209702"
+    },
+    {
+      "id": "search-in-rotated-sorted-array",
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/search-in-rotated-sorted-array",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 94,
+      "acceptanceRate": "0.004579984561801653"
+    },
+    {
+      "id": "find-the-longest-balanced-substring-of-a-binary-string",
+      "title": "Find the Longest Balanced Substring of a Binary String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string",
+      "topics": [
+        "String"
+      ],
+      "frequency": 86.6,
+      "acceptanceRate": "0.0046159664519860736"
+    },
+    {
+      "id": "is-subsequence",
+      "title": "Is Subsequence",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/is-subsequence",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 86.6,
+      "acceptanceRate": "0.004950178440973117"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 86.6,
+      "acceptanceRate": "0.005803622339319185"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 86.6,
+      "acceptanceRate": "0.006337500536424176"
+    },
+    {
+      "id": "simplify-path",
+      "title": "Simplify Path",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/simplify-path",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 86.3,
+      "acceptanceRate": "0.005168688605143443"
+    },
+    {
+      "id": "roman-to-integer",
+      "title": "Roman to Integer",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/roman-to-integer",
+      "topics": [
+        "Hash Table",
+        "Math",
+        "String"
+      ],
+      "frequency": 75.9,
+      "acceptanceRate": "0.00673104403707293"
+    },
+    {
+      "id": "event-emitter",
+      "title": "Event Emitter",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/event-emitter",
+      "topics": [],
+      "frequency": 75.9,
+      "acceptanceRate": "0.0075305543592865945"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 75.9,
+      "acceptanceRate": "0.0040019113351663985"
+    },
+    {
+      "id": "min-stack",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-stack",
+      "topics": [
+        "Stack",
+        "Design"
+      ],
+      "frequency": 75.9,
+      "acceptanceRate": "0.005879070763921007"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 75.9,
+      "acceptanceRate": "0.006531444598966342"
+    },
+    {
+      "id": "remove-nth-node-from-end-of-list",
+      "title": "Remove Nth Node From End of List",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list",
+      "topics": [
+        "Linked List",
+        "Two Pointers"
+      ],
+      "frequency": 75.9,
+      "acceptanceRate": "0.005289997204219672"
+    },
+    {
+      "id": "minimum-difference-between-highest-and-lowest-of-k-scores",
+      "title": "Minimum Difference Between Highest and Lowest of K Scores",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores",
+      "topics": [
+        "Array",
+        "Sliding Window",
+        "Sorting"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.006647045168542072"
+    },
+    {
+      "id": "summary-ranges",
+      "title": "Summary Ranges",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/summary-ranges",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.00548729070474973"
+    },
+    {
+      "id": "battleships-in-a-board",
+      "title": "Battleships in a Board",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/battleships-in-a-board",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Matrix"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.007786692484996988"
+    },
+    {
+      "id": "line-reflection",
+      "title": "Line Reflection",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/line-reflection",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.003643784155645392"
+    },
+    {
+      "id": "string-compression",
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-compression",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.006096659272018342"
+    }
+  ]
+}

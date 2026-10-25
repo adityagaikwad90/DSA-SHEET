@@ -1,0 +1,98 @@
+{
+  "name": "Cashfree",
+  "displayName": "Cashfree",
+  "slug": "cashfree",
+  "total": 6,
+  "counts": {
+    "Easy": 1,
+    "Medium": 4,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "roman-to-integer",
+      "title": "Roman to Integer",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/roman-to-integer",
+      "topics": [
+        "Hash Table",
+        "Math",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006731048701156742"
+    },
+    {
+      "id": "find-k-closest-elements",
+      "title": "Find K Closest Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-k-closest-elements",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Sliding Window",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00501997368886366"
+    },
+    {
+      "id": "house-robber-iv",
+      "title": "House Robber IV",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber-iv",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00644774263528976"
+    },
+    {
+      "id": "minimum-edge-reversals-so-every-node-is-reachable",
+      "title": "Minimum Edge Reversals So Every Node Is Reachable",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable",
+      "topics": [
+        "Dynamic Programming",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0060150472090198005"
+    },
+    {
+      "id": "maximum-erasure-value",
+      "title": "Maximum Erasure Value",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-erasure-value",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window"
+      ],
+      "frequency": 95.2,
+      "acceptanceRate": "0.006452505252632515"
+    },
+    {
+      "id": "sum-of-subarray-minimums",
+      "title": "Sum of Subarray Minimums",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sum-of-subarray-minimums",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 65.6,
+      "acceptanceRate": "0.003907144774688398"
+    }
+  ]
+}

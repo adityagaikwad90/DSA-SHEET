@@ -1,0 +1,212 @@
+{
+  "name": "Arcesium",
+  "displayName": "Arcesium",
+  "slug": "arcesium",
+  "total": 14,
+  "counts": {
+    "Easy": 0,
+    "Medium": 8,
+    "Hard": 6
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "house-robber-iv",
+      "title": "House Robber IV",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber-iv",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00644774263528976"
+    },
+    {
+      "id": "maximum-length-of-subarray-with-positive-product",
+      "title": "Maximum Length of Subarray With Positive Product",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0044857928719610266"
+    },
+    {
+      "id": "partition-array-into-two-arrays-to-minimize-sum-difference",
+      "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Meet in the Middle",
+        "Sorting",
+        "Ordered Set",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.002477914674894329"
+    },
+    {
+      "id": "count-collisions-on-a-road",
+      "title": "Count Collisions on a Road",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-collisions-on-a-road",
+      "topics": [
+        "String",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 97.5,
+      "acceptanceRate": "0.005803665491271604"
+    },
+    {
+      "id": "maximize-the-confusion-of-an-exam",
+      "title": "Maximize the Confusion of an Exam",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam",
+      "topics": [
+        "String",
+        "Binary Search",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 94.6,
+      "acceptanceRate": "0.0070667965118852635"
+    },
+    {
+      "id": "number-of-people-aware-of-a-secret",
+      "title": "Number of People Aware of a Secret",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-people-aware-of-a-secret",
+      "topics": [
+        "Dynamic Programming",
+        "Queue",
+        "Simulation"
+      ],
+      "frequency": 94.6,
+      "acceptanceRate": "0.006064024859674416"
+    },
+    {
+      "id": "cycle-length-queries-in-a-tree",
+      "title": "Cycle Length Queries in a Tree",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/cycle-length-queries-in-a-tree",
+      "topics": [
+        "Array",
+        "Tree",
+        "Binary Tree",
+        "Binary Lifting",
+        "Lowest Common Ancestor"
+      ],
+      "frequency": 94.6,
+      "acceptanceRate": "0.006117982873453854"
+    },
+    {
+      "id": "beautiful-towers-ii",
+      "title": "Beautiful Towers II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/beautiful-towers-ii",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 84,
+      "acceptanceRate": "0.003703434358125921"
+    },
+    {
+      "id": "russian-doll-envelopes",
+      "title": "Russian Doll Envelopes",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/russian-doll-envelopes",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Sorting",
+        "Longest Increasing Subsequence"
+      ],
+      "frequency": 84,
+      "acceptanceRate": "0.003833089964475047"
+    },
+    {
+      "id": "minimum-swaps-to-group-all-1s-together-ii",
+      "title": "Minimum Swaps to Group All 1's Together II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii",
+      "topics": [
+        "Array",
+        "Sliding Window"
+      ],
+      "frequency": 79.5,
+      "acceptanceRate": "0.006576485317144681"
+    },
+    {
+      "id": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer"
+      ],
+      "frequency": 69.7,
+      "acceptanceRate": "0.00478584058693581"
+    },
+    {
+      "id": "sudoku-solver",
+      "title": "Sudoku Solver",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/sudoku-solver",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Backtracking",
+        "Matrix",
+        "Algorithm X",
+        "Dancing Links"
+      ],
+      "frequency": 69.7,
+      "acceptanceRate": "0.006554736586059875"
+    },
+    {
+      "id": "longest-consecutive-sequence",
+      "title": "Longest Consecutive Sequence",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-consecutive-sequence",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Union-Find"
+      ],
+      "frequency": 61.4,
+      "acceptanceRate": "0.0047286032909986874"
+    },
+    {
+      "id": "find-median-from-data-stream",
+      "title": "Find Median from Data Stream",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-median-from-data-stream",
+      "topics": [
+        "Two Pointers",
+        "Design",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Data Stream"
+      ],
+      "frequency": 61.4,
+      "acceptanceRate": "0.00551199088616482"
+    }
+  ]
+}

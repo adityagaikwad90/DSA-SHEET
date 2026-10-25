@@ -1,0 +1,159 @@
+{
+  "name": "Nokia",
+  "displayName": "Nokia",
+  "slug": "nokia",
+  "total": 11,
+  "counts": {
+    "Easy": 6,
+    "Medium": 3,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-cost-of-buying-candies-with-discount",
+      "title": "Minimum Cost of Buying Candies With Discount",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007164475634767565"
+    },
+    {
+      "id": "valid-anagram",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-anagram",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006876761931556342"
+    },
+    {
+      "id": "validate-ip-address",
+      "title": "Validate IP Address",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/validate-ip-address",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.002858906655935261"
+    },
+    {
+      "id": "reverse-linked-list",
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reverse-linked-list",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 89.4,
+      "acceptanceRate": "0.008116096913130536"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.0048536634197521526"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.0045341182507174175"
+    },
+    {
+      "id": "koko-eating-bananas",
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/koko-eating-bananas",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.005071695875997547"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.004825718862808002"
+    },
+    {
+      "id": "check-if-it-is-a-good-array",
+      "title": "Check If It Is a Good Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/check-if-it-is-a-good-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Number Theory",
+        "Bézout's Lemma",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor",
+        "Extended Euclidean Algorithm"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.006601720718455824"
+    },
+    {
+      "id": "fizz-buzz",
+      "title": "Fizz Buzz",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/fizz-buzz",
+      "topics": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 87.4,
+      "acceptanceRate": "0.007599275494598342"
+    },
+    {
+      "id": "robot-collisions",
+      "title": "Robot Collisions",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/robot-collisions",
+      "topics": [
+        "Array",
+        "Stack",
+        "Sorting",
+        "Simulation"
+      ],
+      "frequency": 87.4,
+      "acceptanceRate": "0.006130771560323323"
+    }
+  ]
+}

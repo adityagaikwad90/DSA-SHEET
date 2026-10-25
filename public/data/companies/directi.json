@@ -1,0 +1,127 @@
+{
+  "name": "Directi",
+  "displayName": "Directi",
+  "slug": "directi",
+  "total": 8,
+  "counts": {
+    "Easy": 0,
+    "Medium": 5,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-the-winner-of-an-array-game",
+      "title": "Find the Winner of an Array Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-the-winner-of-an-array-game",
+      "topics": [
+        "Array",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005689397514550889"
+    },
+    {
+      "id": "largest-submatrix-with-rearrangements",
+      "title": "Largest Submatrix With Rearrangements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/largest-submatrix-with-rearrangements",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00801518824518874"
+    },
+    {
+      "id": "min-cost-to-connect-all-points",
+      "title": "Min Cost to Connect All Points",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-cost-to-connect-all-points",
+      "topics": [
+        "Array",
+        "Union-Find",
+        "Graph Theory",
+        "Minimum Spanning Tree",
+        "Prim's Algorithm",
+        "Kruskal's Algorithm",
+        "Borůvka's Algorithm"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007194172318512938"
+    },
+    {
+      "id": "minimum-cost-to-buy-apples",
+      "title": "Minimum Cost to Buy Apples",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-cost-to-buy-apples",
+      "topics": [
+        "Array",
+        "Graph Theory",
+        "Heap (Priority Queue)",
+        "Shortest Path"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006739933180938984"
+    },
+    {
+      "id": "number-of-sub-arrays-with-odd-sum",
+      "title": "Number of Sub-arrays With Odd Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum",
+      "topics": [
+        "Array",
+        "Math",
+        "Dynamic Programming",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0055585546973551826"
+    },
+    {
+      "id": "difference-between-maximum-and-minimum-price-sum",
+      "title": "Difference Between Maximum and Minimum Price Sum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Tree",
+        "Depth-First Search",
+        "DP on Trees"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0034683565275016566"
+    },
+    {
+      "id": "find-longest-awesome-substring",
+      "title": "Find Longest Awesome Substring",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-longest-awesome-substring",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Bit Manipulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004776340267207847"
+    },
+    {
+      "id": "maximum-xor-of-two-non-overlapping-subtrees",
+      "title": "Maximum XOR of Two Non-Overlapping Subtrees",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Graph Theory",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005162882527147088"
+    }
+  ]
+}

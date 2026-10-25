@@ -1,0 +1,67 @@
+{
+  "name": "Shopify",
+  "displayName": "Shopify",
+  "slug": "shopify",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 4,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "walking-robot-simulation",
+      "title": "Walking Robot Simulation",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/walking-robot-simulation",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006462284958094398"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.004825722526820416"
+    },
+    {
+      "id": "paint-house",
+      "title": "Paint House",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/paint-house",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 69.9,
+      "acceptanceRate": "0.006460408465897243"
+    },
+    {
+      "id": "encode-and-decode-tinyurl",
+      "title": "Encode and Decode TinyURL",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/encode-and-decode-tinyurl",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Design",
+        "Hash Function"
+      ],
+      "frequency": 64.3,
+      "acceptanceRate": "0.008631419086913865"
+    }
+  ]
+}

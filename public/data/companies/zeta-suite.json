@@ -1,0 +1,25 @@
+{
+  "name": "zeta suite",
+  "displayName": "Zeta Suite",
+  "slug": "zeta-suite",
+  "total": 1,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-equal-and-divisible-pairs-in-an-array",
+      "title": "Count Equal and Divisible Pairs in an Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008377880278872884"
+    }
+  ]
+}

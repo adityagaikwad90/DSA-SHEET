@@ -1,0 +1,27 @@
+{
+  "name": "DeltaX",
+  "displayName": "DeltaX",
+  "slug": "deltax",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 0,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "bus-routes",
+      "title": "Bus Routes",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/bus-routes",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Breadth-First Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0047602690011475796"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "name": "razorpay",
+  "displayName": "Razorpay",
+  "slug": "razorpay",
+  "total": 11,
+  "counts": {
+    "Easy": 1,
+    "Medium": 8,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "shortest-subarray-to-be-removed-to-make-array-sorted",
+      "title": "Shortest Subarray to be Removed to Make Array Sorted",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005137318814118949"
+    },
+    {
+      "id": "minimum-total-cost-to-make-arrays-unequal",
+      "title": "Minimum Total Cost to Make Arrays Unequal",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Greedy",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004175997094958543"
+    },
+    {
+      "id": "most-beautiful-item-for-each-query",
+      "title": "Most Beautiful Item for Each Query",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/most-beautiful-item-for-each-query",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Sorting"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.0061988141560126"
+    },
+    {
+      "id": "two-best-non-overlapping-events",
+      "title": "Two Best Non-Overlapping Events",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/two-best-non-overlapping-events",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.006388317964670593"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 93.4,
+      "acceptanceRate": "0.004825730979730083"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.00633750410851753"
+    },
+    {
+      "id": "first-unique-character-in-a-string",
+      "title": "First Unique Character in a String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/first-unique-character-in-a-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Queue",
+        "Counting"
+      ],
+      "frequency": 68,
+      "acceptanceRate": "0.00665413686368964"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 68,
+      "acceptanceRate": "0.005302558667894053"
+    },
+    {
+      "id": "rotate-array",
+      "title": "Rotate Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotate-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Two Pointers"
+      ],
+      "frequency": 68,
+      "acceptanceRate": "0.004571848819770865"
+    },
+    {
+      "id": "unique-paths",
+      "title": "Unique Paths",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/unique-paths",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Combinatorics"
+      ],
+      "frequency": 68,
+      "acceptanceRate": "0.006736986284683628"
+    },
+    {
+      "id": "smallest-good-base",
+      "title": "Smallest Good Base",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/smallest-good-base",
+      "topics": [
+        "Math",
+        "Binary Search"
+      ],
+      "frequency": 64.5,
+      "acceptanceRate": "0.004790105758567526"
+    }
+  ]
+}

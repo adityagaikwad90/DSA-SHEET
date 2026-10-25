@@ -1,0 +1,42 @@
+{
+  "name": "instabase",
+  "displayName": "Instabase",
+  "slug": "instabase",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "course-schedule-ii",
+      "title": "Course Schedule II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule-ii",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005644360294463655"
+    },
+    {
+      "id": "subarray-with-elements-greater-than-varying-threshold",
+      "title": "Subarray With Elements Greater Than Varying Threshold",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold",
+      "topics": [
+        "Array",
+        "Stack",
+        "Union-Find",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004633715798764342"
+    }
+  ]
+}

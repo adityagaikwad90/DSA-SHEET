@@ -1,0 +1,96 @@
+{
+  "name": "Faire",
+  "displayName": "Faire",
+  "slug": "faire",
+  "total": 6,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 4
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "word-search",
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/word-search",
+      "topics": [
+        "Array",
+        "String",
+        "Backtracking",
+        "Depth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004831295488670611"
+    },
+    {
+      "id": "sliding-window-maximum",
+      "title": "Sliding Window Maximum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/sliding-window-maximum",
+      "topics": [
+        "Array",
+        "Queue",
+        "Sliding Window",
+        "Heap (Priority Queue)",
+        "Monotonic Queue",
+        "Range Minimum/Maximum Query"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0049367391489181355"
+    },
+    {
+      "id": "integer-to-english-words",
+      "title": "Integer to English Words",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/integer-to-english-words",
+      "topics": [
+        "Math",
+        "String",
+        "Recursion"
+      ],
+      "frequency": 84.5,
+      "acceptanceRate": "0.0035309245732496595"
+    },
+    {
+      "id": "split-message-based-on-limit",
+      "title": "Split Message Based on Limit",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/split-message-based-on-limit",
+      "topics": [
+        "String",
+        "Enumeration"
+      ],
+      "frequency": 79.3,
+      "acceptanceRate": "0.004236855002450465"
+    },
+    {
+      "id": "tag-validator",
+      "title": "Tag Validator",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/tag-validator",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 73.5,
+      "acceptanceRate": "0.004190010664770707"
+    },
+    {
+      "id": "longest-mountain-in-array",
+      "title": "Longest Mountain in Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-mountain-in-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Enumeration"
+      ],
+      "frequency": 65.2,
+      "acceptanceRate": "0.004258729715906449"
+    }
+  ]
+}

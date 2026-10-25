@@ -1,0 +1,149 @@
+{
+  "name": "Karat",
+  "displayName": "Karat",
+  "slug": "karat",
+  "total": 10,
+  "counts": {
+    "Easy": 3,
+    "Medium": 6,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00524533758074244"
+    },
+    {
+      "id": "check-if-every-row-and-column-contains-all-numbers",
+      "title": "Check if Every Row and Column Contains All Numbers",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Matrix"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.005446720418391806"
+    },
+    {
+      "id": "find-words-that-can-be-formed-by-characters",
+      "title": "Find Words That Can Be Formed by Characters",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 88.7,
+      "acceptanceRate": "0.007180369375267181"
+    },
+    {
+      "id": "alert-using-same-key-card-three-or-more-times-in-a-one-hour-period",
+      "title": "Alert Using Same Key-Card Three or More Times in a One Hour Period",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 87.9,
+      "acceptanceRate": "0.004643433084319075"
+    },
+    {
+      "id": "word-search",
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/word-search",
+      "topics": [
+        "Array",
+        "String",
+        "Backtracking",
+        "Depth-First Search",
+        "Matrix"
+      ],
+      "frequency": 85.3,
+      "acceptanceRate": "0.004831301105809856"
+    },
+    {
+      "id": "ransom-note",
+      "title": "Ransom Note",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/ransom-note",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.00665611332730196"
+    },
+    {
+      "id": "maximal-square",
+      "title": "Maximal Square",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximal-square",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 64.6,
+      "acceptanceRate": "0.005105157566527542"
+    },
+    {
+      "id": "valid-sudoku",
+      "title": "Valid Sudoku",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/valid-sudoku",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Matrix"
+      ],
+      "frequency": 59.5,
+      "acceptanceRate": "0.006525285433751351"
+    },
+    {
+      "id": "high-access-employees",
+      "title": "High-Access Employees",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/high-access-employees",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 51.5,
+      "acceptanceRate": "0.004808256352621914"
+    },
+    {
+      "id": "jump-game",
+      "title": "Jump Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 51.5,
+      "acceptanceRate": "0.0041669104994474975"
+    }
+  ]
+}

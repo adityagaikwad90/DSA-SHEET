@@ -1,0 +1,84 @@
+{
+  "name": "Sony",
+  "displayName": "Sony",
+  "slug": "sony",
+  "total": 5,
+  "counts": {
+    "Easy": 3,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "number-of-good-pairs",
+      "title": "Number of Good Pairs",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/number-of-good-pairs",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008995549001894964"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058036223610589445"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004534114955543968"
+    },
+    {
+      "id": "random-pick-with-weight",
+      "title": "Random Pick with Weight",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/random-pick-with-weight",
+      "topics": [
+        "Array",
+        "Math",
+        "Binary Search",
+        "Prefix Sum",
+        "Randomized"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0049317337410403105"
+    },
+    {
+      "id": "subtree-removal-game-with-fibonacci-tree",
+      "title": "Subtree Removal Game with Fibonacci Tree",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Tree",
+        "Binary Tree",
+        "Game Theory",
+        "Sprague–Grundy Theorem"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005526462395543176"
+    }
+  ]
+}

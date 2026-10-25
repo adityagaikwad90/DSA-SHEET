@@ -1,0 +1,149 @@
+{
+  "name": "Mitsogo",
+  "displayName": "Mitsogo",
+  "slug": "mitsogo",
+  "total": 10,
+  "counts": {
+    "Easy": 2,
+    "Medium": 6,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "right-triangles",
+      "title": "Right Triangles",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/right-triangles",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Combinatorics",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00488724426534408"
+    },
+    {
+      "id": "find-the-integer-added-to-array-i",
+      "title": "Find the Integer Added to Array I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-the-integer-added-to-array-i",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.008291292991652816"
+    },
+    {
+      "id": "shortest-subarray-with-or-at-least-k-i",
+      "title": "Shortest Subarray With OR at Least K I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i",
+      "topics": [
+        "Array",
+        "Bit Manipulation",
+        "Sliding Window"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.004492710471187486"
+    },
+    {
+      "id": "delayed-count-of-equal-elements",
+      "title": "Delayed Count of Equal Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/delayed-count-of-equal-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Counting"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.007783251231527095"
+    },
+    {
+      "id": "find-the-integer-added-to-array-ii",
+      "title": "Find the Integer Added to Array II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-the-integer-added-to-array-ii",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting",
+        "Enumeration"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.003330506934770759"
+    },
+    {
+      "id": "maximum-total-reward-using-operations-i",
+      "title": "Maximum Total Reward Using Operations I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-total-reward-using-operations-i",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Sorting"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.003122683006473176"
+    },
+    {
+      "id": "minimum-substring-partition-of-equal-character-frequency",
+      "title": "Minimum Substring Partition of Equal Character Frequency",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Dynamic Programming",
+        "Counting"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.004061229908298102"
+    },
+    {
+      "id": "shortest-subarray-with-or-at-least-k-ii",
+      "title": "Shortest Subarray With OR at Least K II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii",
+      "topics": [
+        "Array",
+        "Bit Manipulation",
+        "Sliding Window"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.005013537928474199"
+    },
+    {
+      "id": "construct-string-with-minimum-cost",
+      "title": "Construct String with Minimum Cost",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/construct-string-with-minimum-cost",
+      "topics": [
+        "Array",
+        "String",
+        "Dynamic Programming",
+        "Suffix Array"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.0018861533377395904"
+    },
+    {
+      "id": "maximum-total-reward-using-operations-ii",
+      "title": "Maximum Total Reward Using Operations II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-total-reward-using-operations-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Sorting"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.0022086228869598675"
+    }
+  ]
+}

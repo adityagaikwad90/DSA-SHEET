@@ -1,0 +1,41 @@
+{
+  "name": "Sumo Logic",
+  "displayName": "Sumo Logic",
+  "slug": "sumo-logic",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimize-hamming-distance-after-swap-operations",
+      "title": "Minimize Hamming Distance After Swap Operations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Union-Find"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006976332383173534"
+    },
+    {
+      "id": "satisfiability-of-equality-equations",
+      "title": "Satisfiability of Equality Equations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/satisfiability-of-equality-equations",
+      "topics": [
+        "Array",
+        "String",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005227922284130604"
+    }
+  ]
+}

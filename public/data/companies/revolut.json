@@ -1,0 +1,150 @@
+{
+  "name": "Revolut",
+  "displayName": "Revolut",
+  "slug": "revolut",
+  "total": 10,
+  "counts": {
+    "Easy": 3,
+    "Medium": 7,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004853663857744087"
+    },
+    {
+      "id": "longest-increasing-subsequence",
+      "title": "Longest Increasing Subsequence",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-increasing-subsequence",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Longest Increasing Subsequence"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006009845723392173"
+    },
+    {
+      "id": "perfect-squares",
+      "title": "Perfect Squares",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/perfect-squares",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 93.5,
+      "acceptanceRate": "0.005699503150130614"
+    },
+    {
+      "id": "subarray-product-less-than-k",
+      "title": "Subarray Product Less Than K",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/subarray-product-less-than-k",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 90.6,
+      "acceptanceRate": "0.005490445799783963"
+    },
+    {
+      "id": "binary-tree-paths",
+      "title": "Binary Tree Paths",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/binary-tree-paths",
+      "topics": [
+        "String",
+        "Backtracking",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "frequency": 89.4,
+      "acceptanceRate": "0.0069528567047916915"
+    },
+    {
+      "id": "reverse-linked-list-ii",
+      "title": "Reverse Linked List II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/reverse-linked-list-ii",
+      "topics": [
+        "Linked List"
+      ],
+      "frequency": 89.4,
+      "acceptanceRate": "0.00526381307704386"
+    },
+    {
+      "id": "find-all-anagrams-in-a-string",
+      "title": "Find All Anagrams in a String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-all-anagrams-in-a-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 77.8,
+      "acceptanceRate": "0.005470393475933573"
+    },
+    {
+      "id": "restaurant-growth",
+      "title": "Restaurant Growth",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/restaurant-growth",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 77.8,
+      "acceptanceRate": "0.006024805259377934"
+    },
+    {
+      "id": "missing-number",
+      "title": "Missing Number",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/missing-number",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Binary Search",
+        "Bit Manipulation",
+        "Sorting"
+      ],
+      "frequency": 68.6,
+      "acceptanceRate": "0.007285160475282766"
+    },
+    {
+      "id": "simple-bank-system",
+      "title": "Simple Bank System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/simple-bank-system",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Simulation"
+      ],
+      "frequency": 68.6,
+      "acceptanceRate": "0.00694278740420452"
+    }
+  ]
+}

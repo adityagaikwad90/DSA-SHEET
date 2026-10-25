@@ -1,0 +1,98 @@
+{
+  "name": "Guidewire",
+  "displayName": "Guidewire",
+  "slug": "guidewire",
+  "total": 6,
+  "counts": {
+    "Easy": 0,
+    "Medium": 6,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximize-the-total-height-of-unique-towers",
+      "title": "Maximize the Total Height of Unique Towers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximize-the-total-height-of-unique-towers",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003786806972480865"
+    },
+    {
+      "id": "minimum-moves-to-spread-stones-over-grid",
+      "title": "Minimum Moves to Spread Stones Over Grid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Matrix",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004621795969629503"
+    },
+    {
+      "id": "minimum-number-of-operations-to-sort-a-binary-tree-by-level",
+      "title": "Minimum Number of Operations to Sort a Binary Tree by Level",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level",
+      "topics": [
+        "Tree",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007426234333995151"
+    },
+    {
+      "id": "print-words-vertically",
+      "title": "Print Words Vertically",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/print-words-vertically",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0068206129028273565"
+    },
+    {
+      "id": "construct-the-longest-new-string",
+      "title": "Construct the Longest New String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/construct-the-longest-new-string",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Greedy",
+        "Brainteaser"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.005338820148181326"
+    },
+    {
+      "id": "get-watched-videos-by-your-friends",
+      "title": "Get Watched Videos by Your Friends",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/get-watched-videos-by-your-friends",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Sorting"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.005446492616334012"
+    }
+  ]
+}

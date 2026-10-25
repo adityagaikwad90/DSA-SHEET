@@ -1,0 +1,28 @@
+{
+  "name": "Braze",
+  "displayName": "Braze",
+  "slug": "braze",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "candy-crush",
+      "title": "Candy Crush",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/candy-crush",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0077582419350945096"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "name": "Stripe",
+  "displayName": "Stripe",
+  "slug": "stripe",
+  "total": 12,
+  "counts": {
+    "Easy": 1,
+    "Medium": 10,
+    "Hard": 1
+  },
+  "featured": true,
+  "questions": [
+    {
+      "id": "calculate-amount-paid-in-taxes",
+      "title": "Calculate Amount Paid in Taxes",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/calculate-amount-paid-in-taxes",
+      "topics": [
+        "Array",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0069722103270301325"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005302562448151903"
+    },
+    {
+      "id": "minimum-penalty-for-a-shop",
+      "title": "Minimum Penalty for a Shop",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-penalty-for-a-shop",
+      "topics": [
+        "String",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00712514270659524"
+    },
+    {
+      "id": "invalid-transactions",
+      "title": "Invalid Transactions",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/invalid-transactions",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 96.8,
+      "acceptanceRate": "0.00326421544239195"
+    },
+    {
+      "id": "cheapest-flights-within-k-stops",
+      "title": "Cheapest Flights Within K Stops",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/cheapest-flights-within-k-stops",
+      "topics": [
+        "Dynamic Programming",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Heap (Priority Queue)",
+        "Shortest Path"
+      ],
+      "frequency": 88.9,
+      "acceptanceRate": "0.004272271281705025"
+    },
+    {
+      "id": "brace-expansion",
+      "title": "Brace Expansion",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/brace-expansion",
+      "topics": [
+        "String",
+        "Backtracking",
+        "Stack",
+        "Breadth-First Search",
+        "Sorting"
+      ],
+      "frequency": 83.6,
+      "acceptanceRate": "0.006690162486075366"
+    },
+    {
+      "id": "alert-using-same-key-card-three-or-more-times-in-a-one-hour-period",
+      "title": "Alert Using Same Key-Card Three or More Times in a One Hour Period",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.004643479776847977"
+    },
+    {
+      "id": "number-of-black-blocks",
+      "title": "Number of Black Blocks",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-black-blocks",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Enumeration"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.004099050735381835"
+    },
+    {
+      "id": "one-edit-distance",
+      "title": "One Edit Distance",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/one-edit-distance",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.003459620835061524"
+    },
+    {
+      "id": "simple-bank-system",
+      "title": "Simple Bank System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/simple-bank-system",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Simulation"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.00694278740420452"
+    },
+    {
+      "id": "parallel-courses-iii",
+      "title": "Parallel Courses III",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/parallel-courses-iii",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 67.3,
+      "acceptanceRate": "0.00667874352378537"
+    },
+    {
+      "id": "next-permutation",
+      "title": "Next Permutation",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/next-permutation",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ],
+      "frequency": 64.3,
+      "acceptanceRate": "0.0046395793145070224"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "PubMatic",
+  "displayName": "PubMatic",
+  "slug": "pubmatic",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "container-with-most-water",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/container-with-most-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006103881799650443"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock-iv",
+      "title": "Best Time to Buy and Sell Stock IV",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005157269108702527"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Asana",
+  "displayName": "Asana",
+  "slug": "asana",
+  "total": 5,
+  "counts": {
+    "Easy": 1,
+    "Medium": 4,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "k-closest-points-to-origin",
+      "title": "K Closest Points to Origin",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/k-closest-points-to-origin",
+      "topics": [
+        "Array",
+        "Math",
+        "Divide and Conquer",
+        "Geometry",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Quickselect",
+        "K-D Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006948458073490756"
+    },
+    {
+      "id": "product-of-array-except-self",
+      "title": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/product-of-array-except-self",
+      "topics": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006937972326505409"
+    },
+    {
+      "id": "maximum-repeating-substring",
+      "title": "Maximum Repeating Substring",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/maximum-repeating-substring",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "String Matching"
+      ],
+      "frequency": 88.7,
+      "acceptanceRate": "0.004256045705464394"
+    },
+    {
+      "id": "minimum-cost-path-with-edge-reversals",
+      "title": "Minimum Cost Path with Edge Reversals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals",
+      "topics": [
+        "Graph Theory",
+        "Heap (Priority Queue)",
+        "Shortest Path"
+      ],
+      "frequency": 88.7,
+      "acceptanceRate": "0.006151036429841454"
+    },
+    {
+      "id": "validate-binary-search-tree",
+      "title": "Validate Binary Search Tree",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/validate-binary-search-tree",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "frequency": 60.8,
+      "acceptanceRate": "0.0036499007467643697"
+    }
+  ]
+}

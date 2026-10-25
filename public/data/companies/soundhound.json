@@ -1,0 +1,39 @@
+{
+  "name": "SoundHound",
+  "displayName": "SoundHound",
+  "slug": "soundhound",
+  "total": 2,
+  "counts": {
+    "Easy": 1,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "check-if-array-is-sorted-and-rotated",
+      "title": "Check if Array Is Sorted and Rotated",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005781119909115533"
+    },
+    {
+      "id": "linked-list-in-binary-tree",
+      "title": "Linked List in Binary Tree",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/linked-list-in-binary-tree",
+      "topics": [
+        "Linked List",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005206337973554616"
+    }
+  ]
+}

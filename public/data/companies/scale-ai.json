@@ -1,0 +1,26 @@
+{
+  "name": "Scale AI",
+  "displayName": "Scale AI",
+  "slug": "scale-ai",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "gas-station",
+      "title": "Gas Station",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/gas-station",
+      "topics": [
+        "Array",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004888871573788137"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "name": "KLA",
+  "displayName": "KLA",
+  "slug": "kla",
+  "total": 8,
+  "counts": {
+    "Easy": 1,
+    "Medium": 4,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-product-of-first-and-last-elements-of-a-subsequence",
+      "title": "Maximum Product of First and Last Elements of a Subsequence",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0031848926482073653"
+    },
+    {
+      "id": "next-greater-element-ii",
+      "title": "Next Greater Element II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/next-greater-element-ii",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006933419738164237"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 93.6,
+      "acceptanceRate": "0.0048257102904015"
+    },
+    {
+      "id": "brick-wall",
+      "title": "Brick Wall",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/brick-wall",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 84.5,
+      "acceptanceRate": "0.005595874569875961"
+    },
+    {
+      "id": "maximum-fruits-harvested-after-at-most-k-steps",
+      "title": "Maximum Fruits Harvested After at Most K Steps",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 84.2,
+      "acceptanceRate": "0.006101090488516826"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 69,
+      "acceptanceRate": "0.005803620444467007"
+    },
+    {
+      "id": "find-median-from-data-stream",
+      "title": "Find Median from Data Stream",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-median-from-data-stream",
+      "topics": [
+        "Two Pointers",
+        "Design",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Data Stream"
+      ],
+      "frequency": 69,
+      "acceptanceRate": "0.005512000175520445"
+    },
+    {
+      "id": "reaching-points",
+      "title": "Reaching Points",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/reaching-points",
+      "topics": [
+        "Math",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor"
+      ],
+      "frequency": 69,
+      "acceptanceRate": "0.0034839751826425346"
+    }
+  ]
+}

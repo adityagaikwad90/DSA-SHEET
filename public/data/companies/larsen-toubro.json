@@ -1,0 +1,50 @@
+{
+  "name": "Larsen & Toubro",
+  "displayName": "Larsen & Toubro",
+  "slug": "larsen-toubro",
+  "total": 3,
+  "counts": {
+    "Easy": 3,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-the-sum-of-encrypted-integers",
+      "title": "Find the Sum of Encrypted Integers",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-the-sum-of-encrypted-integers",
+      "topics": [
+        "Array",
+        "Math"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007493104133106781"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004853661274518008"
+    },
+    {
+      "id": "longest-strictly-increasing-or-strictly-decreasing-subarray",
+      "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006480162117279542"
+    }
+  ]
+}

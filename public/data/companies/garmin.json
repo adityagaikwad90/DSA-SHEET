@@ -1,0 +1,64 @@
+{
+  "name": "Garmin",
+  "displayName": "Garmin",
+  "slug": "garmin",
+  "total": 4,
+  "counts": {
+    "Easy": 4,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-cost-of-buying-candies-with-discount",
+      "title": "Minimum Cost of Buying Candies With Discount",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007164475634767565"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058036178765062"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 89.2,
+      "acceptanceRate": "0.005752121271290462"
+    },
+    {
+      "id": "delete-columns-to-make-sorted",
+      "title": "Delete Columns to Make Sorted",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/delete-columns-to-make-sorted",
+      "topics": [
+        "Array",
+        "String",
+        "Longest Increasing Subsequence"
+      ],
+      "frequency": 89.2,
+      "acceptanceRate": "0.007821068161699618"
+    }
+  ]
+}

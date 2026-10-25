@@ -1,0 +1,54 @@
+{
+  "name": "AQR Capital Management",
+  "displayName": "AQR Capital Management",
+  "slug": "aqr-capital-management",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/add-two-numbers",
+      "topics": [
+        "Linked List",
+        "Math",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004955377164175985"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock-with-cooldown",
+      "title": "Best Time to Buy and Sell Stock with Cooldown",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006289731675176577"
+    },
+    {
+      "id": "jump-game-vi",
+      "title": "Jump Game VI",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game-vi",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Queue",
+        "Heap (Priority Queue)",
+        "Monotonic Queue"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004664594717205983"
+    }
+  ]
+}

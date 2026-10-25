@@ -1,0 +1,165 @@
+{
+  "name": "Whatnot",
+  "displayName": "Whatnot",
+  "slug": "whatnot",
+  "total": 11,
+  "counts": {
+    "Easy": 4,
+    "Medium": 7,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "remove-all-adjacent-duplicates-in-string",
+      "title": "Remove All Adjacent Duplicates In String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007427650730177637"
+    },
+    {
+      "id": "valid-palindrome-ii",
+      "title": "Valid Palindrome II",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome-ii",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004491378326989291"
+    },
+    {
+      "id": "knight-dialer",
+      "title": "Knight Dialer",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/knight-dialer",
+      "topics": [
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00622709324845737"
+    },
+    {
+      "id": "squares-of-a-sorted-array",
+      "title": "Squares of a Sorted Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/squares-of-a-sorted-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 79.9,
+      "acceptanceRate": "0.007423233652386323"
+    },
+    {
+      "id": "analyze-user-website-visit-pattern",
+      "title": "Analyze User Website Visit Pattern",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/analyze-user-website-visit-pattern",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 79.9,
+      "acceptanceRate": "0.004435789256706662"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 79.9,
+      "acceptanceRate": "0.00653144764809101"
+    },
+    {
+      "id": "first-bad-version",
+      "title": "First Bad Version",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/first-bad-version",
+      "topics": [
+        "Binary Search",
+        "Interactive"
+      ],
+      "frequency": 64.6,
+      "acceptanceRate": "0.004778537705294677"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 64.6,
+      "acceptanceRate": "0.007344441531412234"
+    },
+    {
+      "id": "k-closest-points-to-origin",
+      "title": "K Closest Points to Origin",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/k-closest-points-to-origin",
+      "topics": [
+        "Array",
+        "Math",
+        "Divide and Conquer",
+        "Geometry",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Quickselect",
+        "K-D Tree"
+      ],
+      "frequency": 64.6,
+      "acceptanceRate": "0.006948464732325604"
+    },
+    {
+      "id": "maximal-square",
+      "title": "Maximal Square",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximal-square",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 64.6,
+      "acceptanceRate": "0.005105154155919983"
+    },
+    {
+      "id": "meeting-rooms-ii",
+      "title": "Meeting Rooms II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/meeting-rooms-ii",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Prefix Sum"
+      ],
+      "frequency": 64.6,
+      "acceptanceRate": "0.0052845025342410645"
+    }
+  ]
+}

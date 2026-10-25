@@ -1,0 +1,120 @@
+{
+  "name": "Compass",
+  "displayName": "Compass",
+  "slug": "compass",
+  "total": 7,
+  "counts": {
+    "Easy": 1,
+    "Medium": 5,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "total-distance-traveled",
+      "title": "Total Distance Traveled",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/total-distance-traveled",
+      "topics": [
+        "Math",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004214698806891357"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00633748562611614"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005025842818764849"
+    },
+    {
+      "id": "camelcase-matching",
+      "title": "Camelcase Matching",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/camelcase-matching",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "String",
+        "Trie",
+        "String Matching"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.006615469267330114"
+    },
+    {
+      "id": "meeting-rooms-ii",
+      "title": "Meeting Rooms II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/meeting-rooms-ii",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Prefix Sum"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.005284522651395987"
+    },
+    {
+      "id": "reconstruct-itinerary",
+      "title": "Reconstruct Itinerary",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/reconstruct-itinerary",
+      "topics": [
+        "Array",
+        "String",
+        "Depth-First Search",
+        "Graph Theory",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Eulerian Circuit",
+        "Eulerian Path",
+        "Semi-Eulerian Graph"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.004514236792727408"
+    },
+    {
+      "id": "word-break",
+      "title": "Word Break",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/word-break",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Dynamic Programming",
+        "Trie",
+        "Memoization",
+        "Brute-Force Search"
+      ],
+      "frequency": 74.4,
+      "acceptanceRate": "0.005002405518447018"
+    }
+  ]
+}

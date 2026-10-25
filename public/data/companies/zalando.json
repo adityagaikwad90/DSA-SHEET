@@ -1,0 +1,39 @@
+{
+  "name": "Zalando",
+  "displayName": "Zalando",
+  "slug": "zalando",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005302562140417426"
+    },
+    {
+      "id": "string-without-aaa-or-bbb",
+      "title": "String Without AAA or BBB",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-without-aaa-or-bbb",
+      "topics": [
+        "String",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004575471367368546"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "name": "Rivian",
+  "displayName": "Rivian",
+  "slug": "rivian",
+  "total": 8,
+  "counts": {
+    "Easy": 1,
+    "Medium": 6,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004825722526820416"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006531447563585735"
+    },
+    {
+      "id": "degree-of-an-array",
+      "title": "Degree of an Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/degree-of-an-array",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 92.4,
+      "acceptanceRate": "0.005877490719144511"
+    },
+    {
+      "id": "basic-calculator-ii",
+      "title": "Basic Calculator II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/basic-calculator-ii",
+      "topics": [
+        "Math",
+        "String",
+        "Stack"
+      ],
+      "frequency": 81.7,
+      "acceptanceRate": "0.004727707403219298"
+    },
+    {
+      "id": "flatten-deeply-nested-array",
+      "title": "Flatten Deeply Nested Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/flatten-deeply-nested-array",
+      "topics": [],
+      "frequency": 81.7,
+      "acceptanceRate": "0.006628767451614837"
+    },
+    {
+      "id": "max-increase-to-keep-city-skyline",
+      "title": "Max Increase to Keep City Skyline",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/max-increase-to-keep-city-skyline",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Matrix"
+      ],
+      "frequency": 81.7,
+      "acceptanceRate": "0.008647435869040394"
+    },
+    {
+      "id": "string-compression",
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-compression",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 81.7,
+      "acceptanceRate": "0.006096660388761685"
+    },
+    {
+      "id": "merge-k-sorted-lists",
+      "title": "Merge k Sorted Lists",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/merge-k-sorted-lists",
+      "topics": [
+        "Linked List",
+        "Divide and Conquer",
+        "Heap (Priority Queue)",
+        "Merge Sort",
+        "Tournament Sort"
+      ],
+      "frequency": 81.7,
+      "acceptanceRate": "0.006078441000115255"
+    }
+  ]
+}

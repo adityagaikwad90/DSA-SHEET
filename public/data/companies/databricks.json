@@ -1,0 +1,352 @@
+{
+  "name": "Databricks",
+  "displayName": "Databricks",
+  "slug": "databricks",
+  "total": 25,
+  "counts": {
+    "Easy": 2,
+    "Medium": 18,
+    "Hard": 5
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "design-hit-counter",
+      "title": "Design Hit Counter",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-hit-counter",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Design",
+        "Queue",
+        "Data Stream"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006977371632636608"
+    },
+    {
+      "id": "find-all-anagrams-in-a-string",
+      "title": "Find All Anagrams in a String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-all-anagrams-in-a-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005470378491879417"
+    },
+    {
+      "id": "ip-to-cidr",
+      "title": "IP to CIDR",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/ip-to-cidr",
+      "topics": [
+        "String",
+        "Bit Manipulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005423994777740118"
+    },
+    {
+      "id": "design-tic-tac-toe",
+      "title": "Design Tic-Tac-Toe",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-tic-tac-toe",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 95,
+      "acceptanceRate": "0.005876972746850711"
+    },
+    {
+      "id": "step-by-step-directions-from-a-binary-tree-node-to-another",
+      "title": "Step-By-Step Directions From a Binary Tree Node to Another",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another",
+      "topics": [
+        "String",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree",
+        "Binary Lifting",
+        "Lowest Common Ancestor"
+      ],
+      "frequency": 85.4,
+      "acceptanceRate": "0.0056525212683151745"
+    },
+    {
+      "id": "house-robber",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 82,
+      "acceptanceRate": "0.005368630423050881"
+    },
+    {
+      "id": "house-robber-ii",
+      "title": "House Robber II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 78.9,
+      "acceptanceRate": "0.004567977338774853"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 77.8,
+      "acceptanceRate": "0.005025842818764849"
+    },
+    {
+      "id": "rle-iterator",
+      "title": "RLE Iterator",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rle-iterator",
+      "topics": [
+        "Array",
+        "Design",
+        "Counting",
+        "Iterator"
+      ],
+      "frequency": 66.9,
+      "acceptanceRate": "0.005965949367088608"
+    },
+    {
+      "id": "number-of-recent-calls",
+      "title": "Number of Recent Calls",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/number-of-recent-calls",
+      "topics": [
+        "Design",
+        "Queue",
+        "Data Stream"
+      ],
+      "frequency": 64.9,
+      "acceptanceRate": "0.007918651578697476"
+    },
+    {
+      "id": "shortest-path-in-a-grid-with-obstacles-elimination",
+      "title": "Shortest Path in a Grid with Obstacles Elimination",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 64.9,
+      "acceptanceRate": "0.004678145707974713"
+    },
+    {
+      "id": "closest-leaf-in-a-binary-tree",
+      "title": "Closest Leaf in a Binary Tree",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/closest-leaf-in-a-binary-tree",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "frequency": 62.7,
+      "acceptanceRate": "0.004745239363472934"
+    },
+    {
+      "id": "longest-palindrome-by-concatenating-two-letter-words",
+      "title": "Longest Palindrome by Concatenating Two Letter Words",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Greedy",
+        "Counting"
+      ],
+      "frequency": 62.7,
+      "acceptanceRate": "0.005342990734019386"
+    },
+    {
+      "id": "snapshot-array",
+      "title": "Snapshot Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/snapshot-array",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Binary Search",
+        "Design",
+        "Persistent Data Structure"
+      ],
+      "frequency": 62.7,
+      "acceptanceRate": "0.0036822475638806024"
+    },
+    {
+      "id": "permutation-in-string",
+      "title": "Permutation in String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/permutation-in-string",
+      "topics": [
+        "Hash Table",
+        "Two Pointers",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 55.8,
+      "acceptanceRate": "0.004992702654575315"
+    },
+    {
+      "id": "unique-paths-iii",
+      "title": "Unique Paths III",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/unique-paths-iii",
+      "topics": [
+        "Array",
+        "Backtracking",
+        "Bit Manipulation",
+        "Matrix",
+        "Hamiltonian Path"
+      ],
+      "frequency": 55.8,
+      "acceptanceRate": "0.008301452854112386"
+    },
+    {
+      "id": "minimum-knight-moves",
+      "title": "Minimum Knight Moves",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-knight-moves",
+      "topics": [
+        "Breadth-First Search",
+        "Heuristic Search",
+        "Bidirectional Search",
+        "A* Search"
+      ],
+      "frequency": 46.2,
+      "acceptanceRate": "0.004213198725710723"
+    },
+    {
+      "id": "shortest-path-in-binary-matrix",
+      "title": "Shortest Path in Binary Matrix",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/shortest-path-in-binary-matrix",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 46.2,
+      "acceptanceRate": "0.005229657384867227"
+    },
+    {
+      "id": "count-integers-in-intervals",
+      "title": "Count Integers in Intervals",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-integers-in-intervals",
+      "topics": [
+        "Design",
+        "Segment Tree",
+        "Ordered Set"
+      ],
+      "frequency": 46.2,
+      "acceptanceRate": "0.0036384812485441413"
+    },
+    {
+      "id": "minimum-cost-to-reach-destination-in-time",
+      "title": "Minimum Cost to Reach Destination in Time",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Graph Theory",
+        "Dijkstra's Algorithm"
+      ],
+      "frequency": 46.2,
+      "acceptanceRate": "0.0042688752287551035"
+    },
+    {
+      "id": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotting-oranges",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 44.4,
+      "acceptanceRate": "0.005959385783887344"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 38.6,
+      "acceptanceRate": "0.005803619385273128"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 38.6,
+      "acceptanceRate": "0.0053025827543450674"
+    },
+    {
+      "id": "string-to-integer-atoi",
+      "title": "String to Integer (atoi)",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-to-integer-atoi",
+      "topics": [
+        "String"
+      ],
+      "frequency": 38.6,
+      "acceptanceRate": "0.002191935324422121"
+    },
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 38.6,
+      "acceptanceRate": "0.005245330526122124"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "EY",
+  "displayName": "EY",
+  "slug": "ey",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803618336750189"
+    },
+    {
+      "id": "binary-subarrays-with-sum",
+      "title": "Binary Subarrays With Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/binary-subarrays-with-sum",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007003143655459018"
+    },
+    {
+      "id": "wiggle-sort-ii",
+      "title": "Wiggle Sort II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/wiggle-sort-ii",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Greedy",
+        "Sorting",
+        "Quickselect"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0038581619923140943"
+    }
+  ]
+}

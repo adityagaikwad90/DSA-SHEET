@@ -1,0 +1,79 @@
+{
+  "name": "HP",
+  "displayName": "HP",
+  "slug": "hp",
+  "total": 5,
+  "counts": {
+    "Easy": 3,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-recolors-to-get-k-consecutive-black-blocks",
+      "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks",
+      "topics": [
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006908002463060988"
+    },
+    {
+      "id": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+      "title": "Minimum Cost Homecoming of a Robot in a Grid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid",
+      "topics": [
+        "Array",
+        "Greedy"
+      ],
+      "frequency": 91,
+      "acceptanceRate": "0.005190794583459966"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 90.9,
+      "acceptanceRate": "0.004534118073469816"
+    },
+    {
+      "id": "longest-palindrome",
+      "title": "Longest Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-palindrome",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Greedy"
+      ],
+      "frequency": 75.6,
+      "acceptanceRate": "0.005632479216740173"
+    },
+    {
+      "id": "valid-parenthesis-string",
+      "title": "Valid Parenthesis String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/valid-parenthesis-string",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Stack",
+        "Greedy",
+        "Bracket Sequences"
+      ],
+      "frequency": 75.3,
+      "acceptanceRate": "0.004294922080612352"
+    }
+  ]
+}

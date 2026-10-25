@@ -1,0 +1,307 @@
+{
+  "name": "Zenefits",
+  "displayName": "Zenefits",
+  "slug": "zenefits",
+  "total": 21,
+  "counts": {
+    "Easy": 5,
+    "Medium": 11,
+    "Hard": 5
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "excel-sheet-column-title",
+      "title": "Excel Sheet Column Title",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/excel-sheet-column-title",
+      "topics": [
+        "Math",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004785676297058764"
+    },
+    {
+      "id": "majority-element",
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/majority-element",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Counting",
+        "Boyer–Moore Majority Vote Algorithm"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006653561111713344"
+    },
+    {
+      "id": "reverse-linked-list",
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reverse-linked-list",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008116099464806325"
+    },
+    {
+      "id": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0054529260973630945"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004534117565777962"
+    },
+    {
+      "id": "convert-sorted-list-to-binary-search-tree",
+      "title": "Convert Sorted List to Binary Search Tree",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree",
+      "topics": [
+        "Linked List",
+        "Divide and Conquer",
+        "Tree",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0067593753216391465"
+    },
+    {
+      "id": "course-schedule",
+      "title": "Course Schedule",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005241174298551212"
+    },
+    {
+      "id": "course-schedule-ii",
+      "title": "Course Schedule II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule-ii",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005644360294463655"
+    },
+    {
+      "id": "flatten-2d-vector",
+      "title": "Flatten 2D Vector",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/flatten-2d-vector",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Design",
+        "Iterator"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0050558634433994455"
+    },
+    {
+      "id": "generate-parentheses",
+      "title": "Generate Parentheses",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/generate-parentheses",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007971338523353258"
+    },
+    {
+      "id": "graph-valid-tree",
+      "title": "Graph Valid Tree",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/graph-valid-tree",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005019221829169965"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004825727256052667"
+    },
+    {
+      "id": "majority-element-ii",
+      "title": "Majority Element II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/majority-element-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sorting",
+        "Counting",
+        "Boyer–Moore Majority Vote Algorithm"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005692225911824858"
+    },
+    {
+      "id": "min-stack",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-stack",
+      "topics": [
+        "Stack",
+        "Design"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005879071462179459"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00653144764809101"
+    },
+    {
+      "id": "verify-preorder-sequence-in-binary-search-tree",
+      "title": "Verify Preorder Sequence in Binary Search Tree",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree",
+      "topics": [
+        "Array",
+        "Stack",
+        "Tree",
+        "Binary Search Tree",
+        "Recursion",
+        "Monotonic Stack",
+        "Binary Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00518863877046732"
+    },
+    {
+      "id": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004785841628499309"
+    },
+    {
+      "id": "n-queens-ii",
+      "title": "N-Queens II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/n-queens-ii",
+      "topics": [
+        "Backtracking",
+        "Algorithm X"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007950434453557817"
+    },
+    {
+      "id": "shortest-distance-from-all-buildings",
+      "title": "Shortest Distance from All Buildings",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/shortest-distance-from-all-buildings",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004502211518468349"
+    },
+    {
+      "id": "sliding-window-maximum",
+      "title": "Sliding Window Maximum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/sliding-window-maximum",
+      "topics": [
+        "Array",
+        "Queue",
+        "Sliding Window",
+        "Heap (Priority Queue)",
+        "Monotonic Queue",
+        "Range Minimum/Maximum Query"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004936745046250439"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006842255974135337"
+    }
+  ]
+}

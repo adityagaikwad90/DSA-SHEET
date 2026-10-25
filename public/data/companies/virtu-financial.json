@@ -1,0 +1,129 @@
+{
+  "name": "Virtu Financial",
+  "displayName": "Virtu Financial",
+  "slug": "virtu-financial",
+  "total": 9,
+  "counts": {
+    "Easy": 6,
+    "Medium": 1,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "array-transformation",
+      "title": "Array Transformation",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/array-transformation",
+      "topics": [
+        "Array",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005392234422961298"
+    },
+    {
+      "id": "how-many-apples-can-you-put-into-the-basket",
+      "title": "How Many Apples Can You Put into the Basket",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0067041655873391805"
+    },
+    {
+      "id": "optimal-account-balancing",
+      "title": "Optimal Account Balancing",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/optimal-account-balancing",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005089870384122055"
+    },
+    {
+      "id": "count-substrings-with-only-one-distinct-letter",
+      "title": "Count Substrings with Only One Distinct Letter",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter",
+      "topics": [
+        "Math",
+        "String"
+      ],
+      "frequency": 92.8,
+      "acceptanceRate": "0.008099158897446291"
+    },
+    {
+      "id": "hexspeak",
+      "title": "Hexspeak",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/hexspeak",
+      "topics": [
+        "Math",
+        "String"
+      ],
+      "frequency": 92.8,
+      "acceptanceRate": "0.005794231597072751"
+    },
+    {
+      "id": "count-number-of-homogenous-substrings",
+      "title": "Count Number of Homogenous Substrings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-number-of-homogenous-substrings",
+      "topics": [
+        "Math",
+        "String"
+      ],
+      "frequency": 91,
+      "acceptanceRate": "0.0057316184782335656"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 88.4,
+      "acceptanceRate": "0.004534117415370311"
+    },
+    {
+      "id": "reaching-points",
+      "title": "Reaching Points",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/reaching-points",
+      "topics": [
+        "Math",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor"
+      ],
+      "frequency": 79.2,
+      "acceptanceRate": "0.0034839751826425346"
+    },
+    {
+      "id": "is-subsequence",
+      "title": "Is Subsequence",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/is-subsequence",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 55.9,
+      "acceptanceRate": "0.004950177529822986"
+    }
+  ]
+}

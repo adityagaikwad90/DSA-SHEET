@@ -1,0 +1,107 @@
+{
+  "name": "Flexport",
+  "displayName": "Flexport",
+  "slug": "flexport",
+  "total": 7,
+  "counts": {
+    "Easy": 0,
+    "Medium": 7,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006337481712669462"
+    },
+    {
+      "id": "clone-graph",
+      "title": "Clone Graph",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/clone-graph",
+      "topics": [
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory"
+      ],
+      "frequency": 98.2,
+      "acceptanceRate": "0.006640734533539656"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 91.5,
+      "acceptanceRate": "0.005025842786660513"
+    },
+    {
+      "id": "letter-combinations-of-a-phone-number",
+      "title": "Letter Combinations of a Phone Number",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/letter-combinations-of-a-phone-number",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 77.1,
+      "acceptanceRate": "0.006703749726347986"
+    },
+    {
+      "id": "bulls-and-cows",
+      "title": "Bulls and Cows",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/bulls-and-cows",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 63.5,
+      "acceptanceRate": "0.005313798754210995"
+    },
+    {
+      "id": "my-calendar-i",
+      "title": "My Calendar I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/my-calendar-i",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Design",
+        "Segment Tree",
+        "Ordered Set"
+      ],
+      "frequency": 63.5,
+      "acceptanceRate": "0.005842548951284074"
+    },
+    {
+      "id": "validate-ip-address",
+      "title": "Validate IP Address",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/validate-ip-address",
+      "topics": [
+        "String"
+      ],
+      "frequency": 63.5,
+      "acceptanceRate": "0.002858906655935261"
+    }
+  ]
+}

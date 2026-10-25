@@ -1,0 +1,26 @@
+{
+  "name": "Devsinc",
+  "displayName": "Devsinc",
+  "slug": "devsinc",
+  "total": 1,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803618336750189"
+    }
+  ]
+}

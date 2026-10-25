@@ -1,0 +1,164 @@
+{
+  "name": "VK",
+  "displayName": "VK",
+  "slug": "vk",
+  "total": 12,
+  "counts": {
+    "Easy": 6,
+    "Medium": 6,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximize-distance-to-closest-person",
+      "title": "Maximize Distance to Closest Person",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximize-distance-to-closest-person",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005014144723563999"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 86.8,
+      "acceptanceRate": "0.005803622308911278"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 86.8,
+      "acceptanceRate": "0.004534117415370311"
+    },
+    {
+      "id": "move-zeroes",
+      "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/move-zeroes",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ],
+      "frequency": 80,
+      "acceptanceRate": "0.006450128371025824"
+    },
+    {
+      "id": "summary-ranges",
+      "title": "Summary Ranges",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/summary-ranges",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 80,
+      "acceptanceRate": "0.00548729070474973"
+    },
+    {
+      "id": "longest-subarray-of-1s-after-deleting-one-element",
+      "title": "Longest Subarray of 1's After Deleting One Element",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Sliding Window"
+      ],
+      "frequency": 80,
+      "acceptanceRate": "0.007164373235285464"
+    },
+    {
+      "id": "symmetric-tree",
+      "title": "Symmetric Tree",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/symmetric-tree",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "frequency": 70.4,
+      "acceptanceRate": "0.006218974931496199"
+    },
+    {
+      "id": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 70.4,
+      "acceptanceRate": "0.005452924144923419"
+    },
+    {
+      "id": "compare-version-numbers",
+      "title": "Compare Version Numbers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/compare-version-numbers",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 70.4,
+      "acceptanceRate": "0.004713094428566315"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 70.4,
+      "acceptanceRate": "0.004001913168512742"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 70.4,
+      "acceptanceRate": "0.0053025648312917985"
+    },
+    {
+      "id": "permutation-in-string",
+      "title": "Permutation in String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/permutation-in-string",
+      "topics": [
+        "Hash Table",
+        "Two Pointers",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 70.4,
+      "acceptanceRate": "0.004992714672574866"
+    }
+  ]
+}

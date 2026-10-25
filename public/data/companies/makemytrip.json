@@ -1,0 +1,188 @@
+{
+  "name": "MakeMyTrip",
+  "displayName": "MakeMyTrip",
+  "slug": "makemytrip",
+  "total": 13,
+  "counts": {
+    "Easy": 0,
+    "Medium": 10,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007344434367703669"
+    },
+    {
+      "id": "house-robber",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005368626272034985"
+    },
+    {
+      "id": "house-robber-ii",
+      "title": "House Robber II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004567983757390316"
+    },
+    {
+      "id": "length-of-longest-subarray-with-at-most-k-frequency",
+      "title": "Length of Longest Subarray With at Most K Frequency",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006051901443211525"
+    },
+    {
+      "id": "longest-ideal-subsequence",
+      "title": "Longest Ideal Subsequence",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-ideal-subsequence",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004656825216579058"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004001910272620233"
+    },
+    {
+      "id": "maximum-sum-circular-subarray",
+      "title": "Maximum Sum Circular Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-sum-circular-subarray",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming",
+        "Queue",
+        "Monotonic Queue"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0051744158991025154"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005302568137675617"
+    },
+    {
+      "id": "multiply-strings",
+      "title": "Multiply Strings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/multiply-strings",
+      "topics": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004485988672003263"
+    },
+    {
+      "id": "reachable-nodes-with-restrictions",
+      "title": "Reachable Nodes With Restrictions",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/reachable-nodes-with-restrictions",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006095439495059237"
+    },
+    {
+      "id": "first-missing-positive",
+      "title": "First Missing Positive",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/first-missing-positive",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004397277847523789"
+    },
+    {
+      "id": "longest-valid-parentheses",
+      "title": "Longest Valid Parentheses",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/longest-valid-parentheses",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004136898151059135"
+    },
+    {
+      "id": "sum-of-special-evenly-spaced-elements-in-array",
+      "title": "Sum Of Special Evenly-Spaced Elements In Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/sum-of-special-evenly-spaced-elements-in-array",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Sqrt Decomposition"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004984717977215894"
+    }
+  ]
+}

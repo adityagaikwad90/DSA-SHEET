@@ -1,0 +1,90 @@
+{
+  "name": "Optum",
+  "displayName": "Optum",
+  "slug": "optum",
+  "total": 6,
+  "counts": {
+    "Easy": 2,
+    "Medium": 3,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "reverse-prefix-of-word",
+      "title": "Reverse Prefix of Word",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reverse-prefix-of-word",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008653675763252494"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803621249727913"
+    },
+    {
+      "id": "bank-account-summary",
+      "title": "Bank Account Summary",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/bank-account-summary",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005238137709596861"
+    },
+    {
+      "id": "longest-common-subsequence",
+      "title": "Longest Common Subsequence",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-common-subsequence",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Longest Common Subsequence"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005966797109416326"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004001909582145579"
+    },
+    {
+      "id": "all-oone-data-structure",
+      "title": "All O`one Data Structure",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/all-oone-data-structure",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004469070851048644"
+    }
+  ]
+}

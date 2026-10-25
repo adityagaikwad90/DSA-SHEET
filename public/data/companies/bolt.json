@@ -1,0 +1,80 @@
+{
+  "name": "Bolt",
+  "displayName": "Bolt",
+  "slug": "bolt",
+  "total": 5,
+  "counts": {
+    "Easy": 3,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005752117224113611"
+    },
+    {
+      "id": "check-if-all-characters-have-equal-number-of-occurrences",
+      "title": "Check if All Characters Have Equal Number of Occurrences",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007976732698136271"
+    },
+    {
+      "id": "minimum-string-length-after-removing-substrings",
+      "title": "Minimum String Length After Removing Substrings",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-string-length-after-removing-substrings",
+      "topics": [
+        "String",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 90.4,
+      "acceptanceRate": "0.00769166209367636"
+    },
+    {
+      "id": "subarray-sum-equals-k",
+      "title": "Subarray Sum Equals K",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/subarray-sum-equals-k",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 90.4,
+      "acceptanceRate": "0.00483507311469223"
+    },
+    {
+      "id": "get-watched-videos-by-your-friends",
+      "title": "Get Watched Videos by Your Friends",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/get-watched-videos-by-your-friends",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Sorting"
+      ],
+      "frequency": 71.4,
+      "acceptanceRate": "0.005446492616334012"
+    }
+  ]
+}

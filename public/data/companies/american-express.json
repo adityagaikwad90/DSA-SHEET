@@ -1,0 +1,398 @@
+{
+  "name": "American Express",
+  "displayName": "American Express",
+  "slug": "american-express",
+  "total": 28,
+  "counts": {
+    "Easy": 8,
+    "Medium": 14,
+    "Hard": 6
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803619600258055"
+    },
+    {
+      "id": "maximum-area-of-two-non-overlapping-square-submatrices",
+      "title": "Maximum Area of Two Non-Overlapping Square Submatrices",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-area-of-two-non-overlapping-square-submatrices",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004093107098915563"
+    },
+    {
+      "id": "minimum-moves-to-spread-stones-over-grid",
+      "title": "Minimum Moves to Spread Stones Over Grid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Matrix",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004621795969629503"
+    },
+    {
+      "id": "valid-anagram",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-anagram",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 92.8,
+      "acceptanceRate": "0.006876754223751168"
+    },
+    {
+      "id": "minimum-deletions-to-make-character-frequencies-unique",
+      "title": "Minimum Deletions to Make Character Frequencies Unique",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 90.5,
+      "acceptanceRate": "0.006158637634162597"
+    },
+    {
+      "id": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/top-k-frequent-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting",
+        "Quickselect"
+      ],
+      "frequency": 89.6,
+      "acceptanceRate": "0.006757403370276839"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 89,
+      "acceptanceRate": "0.005302580879627763"
+    },
+    {
+      "id": "ugly-number-iii",
+      "title": "Ugly Number III",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/ugly-number-iii",
+      "topics": [
+        "Math",
+        "Binary Search",
+        "Combinatorics",
+        "Number Theory",
+        "Least Common Multiple",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor",
+        "Inclusion-Exclusion Principle"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.0032248087034870434"
+    },
+    {
+      "id": "divide-an-array-into-subarrays-with-minimum-cost-ii",
+      "title": "Divide an Array Into Subarrays With Minimum Cost II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.005444664746660491"
+    },
+    {
+      "id": "maximum-equal-frequency",
+      "title": "Maximum Equal Frequency",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-equal-frequency",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.0038806360107494775"
+    },
+    {
+      "id": "divide-an-array-into-subarrays-with-minimum-cost-i",
+      "title": "Divide an Array Into Subarrays With Minimum Cost I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Enumeration"
+      ],
+      "frequency": 85.2,
+      "acceptanceRate": "0.008030449532795973"
+    },
+    {
+      "id": "percentage-of-letter-in-string",
+      "title": "Percentage of Letter in String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/percentage-of-letter-in-string",
+      "topics": [
+        "String"
+      ],
+      "frequency": 85.2,
+      "acceptanceRate": "0.007556038657441279"
+    },
+    {
+      "id": "equal-sum-arrays-with-minimum-number-of-operations",
+      "title": "Equal Sum Arrays With Minimum Number of Operations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Greedy",
+        "Counting"
+      ],
+      "frequency": 85.2,
+      "acceptanceRate": "0.005499266216612856"
+    },
+    {
+      "id": "maximize-the-topmost-element-after-k-moves",
+      "title": "Maximize the Topmost Element After K Moves",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves",
+      "topics": [
+        "Array",
+        "Greedy"
+      ],
+      "frequency": 85.2,
+      "acceptanceRate": "0.0024270271548869336"
+    },
+    {
+      "id": "maximum-xor-after-operations",
+      "title": "Maximum XOR After Operations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-xor-after-operations",
+      "topics": [
+        "Array",
+        "Math",
+        "Bit Manipulation"
+      ],
+      "frequency": 85.2,
+      "acceptanceRate": "0.0080086979129736"
+    },
+    {
+      "id": "find-a-value-of-a-mysterious-function-closest-to-target",
+      "title": "Find a Value of a Mysterious Function Closest to Target",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Bit Manipulation",
+        "Segment Tree",
+        "Sparse Table"
+      ],
+      "frequency": 85.2,
+      "acceptanceRate": "0.004833249274996848"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 82.6,
+      "acceptanceRate": "0.005752115273152004"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 82.6,
+      "acceptanceRate": "0.004001909291123964"
+    },
+    {
+      "id": "find-n-unique-integers-sum-up-to-zero",
+      "title": "Find N Unique Integers Sum up to Zero",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero",
+      "topics": [
+        "Array",
+        "Math"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.007849235655311905"
+    },
+    {
+      "id": "isomorphic-strings",
+      "title": "Isomorphic Strings",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/isomorphic-strings",
+      "topics": [
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 65.3,
+      "acceptanceRate": "0.004925797853031167"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 65.3,
+      "acceptanceRate": "0.0048536656489020944"
+    },
+    {
+      "id": "linked-list-cycle-ii",
+      "title": "Linked List Cycle II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/linked-list-cycle-ii",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers",
+        "Floyd's Cycle Finding Algorithm"
+      ],
+      "frequency": 65.3,
+      "acceptanceRate": "0.00594474318511924"
+    },
+    {
+      "id": "permutations",
+      "title": "Permutations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/permutations",
+      "topics": [
+        "Array",
+        "Backtracking"
+      ],
+      "frequency": 65.3,
+      "acceptanceRate": "0.008243515942702132"
+    },
+    {
+      "id": "rotate-array",
+      "title": "Rotate Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotate-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Two Pointers"
+      ],
+      "frequency": 65.3,
+      "acceptanceRate": "0.004571837857387257"
+    },
+    {
+      "id": "merge-k-sorted-lists",
+      "title": "Merge k Sorted Lists",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/merge-k-sorted-lists",
+      "topics": [
+        "Linked List",
+        "Divide and Conquer",
+        "Heap (Priority Queue)",
+        "Merge Sort",
+        "Tournament Sort"
+      ],
+      "frequency": 65.3,
+      "acceptanceRate": "0.00607841865813681"
+    },
+    {
+      "id": "count-square-submatrices-with-all-ones",
+      "title": "Count Square Submatrices with All Ones",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-square-submatrices-with-all-ones",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 52.8,
+      "acceptanceRate": "0.00808882915726266"
+    },
+    {
+      "id": "check-if-it-is-a-good-array",
+      "title": "Check If It Is a Good Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/check-if-it-is-a-good-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Number Theory",
+        "Bézout's Lemma",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor",
+        "Extended Euclidean Algorithm"
+      ],
+      "frequency": 52.8,
+      "acceptanceRate": "0.006601720718455824"
+    },
+    {
+      "id": "sliding-window-maximum",
+      "title": "Sliding Window Maximum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/sliding-window-maximum",
+      "topics": [
+        "Array",
+        "Queue",
+        "Sliding Window",
+        "Heap (Priority Queue)",
+        "Monotonic Queue",
+        "Range Minimum/Maximum Query"
+      ],
+      "frequency": 52.8,
+      "acceptanceRate": "0.004936754543188356"
+    }
+  ]
+}

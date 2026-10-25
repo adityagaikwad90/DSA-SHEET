@@ -1,0 +1,83 @@
+{
+  "name": "IMC",
+  "displayName": "IMC",
+  "slug": "imc",
+  "total": 5,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 4
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "lfu-cache",
+      "title": "LFU Cache",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/lfu-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00505129874503289"
+    },
+    {
+      "id": "minimum-space-wasted-from-packaging",
+      "title": "Minimum Space Wasted From Packaging",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-space-wasted-from-packaging",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Sorting",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0033991092960622437"
+    },
+    {
+      "id": "special-binary-string",
+      "title": "Special Binary String",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/special-binary-string",
+      "topics": [
+        "String",
+        "Divide and Conquer",
+        "Sorting"
+      ],
+      "frequency": 84.1,
+      "acceptanceRate": "0.007941684879036865"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 84.1,
+      "acceptanceRate": "0.006842250693302014"
+    },
+    {
+      "id": "unique-paths-ii",
+      "title": "Unique Paths II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/unique-paths-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 80,
+      "acceptanceRate": "0.004523934512604255"
+    }
+  ]
+}

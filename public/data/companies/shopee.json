@@ -1,0 +1,116 @@
+{
+  "name": "Shopee",
+  "displayName": "Shopee",
+  "slug": "shopee",
+  "total": 7,
+  "counts": {
+    "Easy": 0,
+    "Medium": 7,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-pairs-in-two-arrays",
+      "title": "Count Pairs in Two Arrays",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-pairs-in-two-arrays",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006027657398841116"
+    },
+    {
+      "id": "jump-game",
+      "title": "Jump Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004166916763692379"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003886672015984904"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004825722526820416"
+    },
+    {
+      "id": "random-pick-with-weight",
+      "title": "Random Pick with Weight",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/random-pick-with-weight",
+      "topics": [
+        "Array",
+        "Math",
+        "Binary Search",
+        "Prefix Sum",
+        "Randomized"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0049317337410403105"
+    },
+    {
+      "id": "serialize-and-deserialize-bst",
+      "title": "Serialize and Deserialize BST",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/serialize-and-deserialize-bst",
+      "topics": [
+        "String",
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Design",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006013890396546397"
+    },
+    {
+      "id": "word-search",
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/word-search",
+      "topics": [
+        "Array",
+        "String",
+        "Backtracking",
+        "Depth-First Search",
+        "Matrix"
+      ],
+      "frequency": 68.5,
+      "acceptanceRate": "0.004831303381206948"
+    }
+  ]
+}

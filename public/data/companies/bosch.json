@@ -1,0 +1,25 @@
+{
+  "name": "Bosch",
+  "displayName": "Bosch",
+  "slug": "bosch",
+  "total": 1,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "palindrome-number",
+      "title": "Palindrome Number",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/palindrome-number",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006104361601095779"
+    }
+  ]
+}

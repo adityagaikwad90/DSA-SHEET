@@ -1,0 +1,321 @@
+{
+  "name": "Dropbox",
+  "displayName": "Dropbox",
+  "slug": "dropbox",
+  "total": 22,
+  "counts": {
+    "Easy": 2,
+    "Medium": 10,
+    "Hard": 10
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "simple-bank-system",
+      "title": "Simple Bank System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/simple-bank-system",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006942754817804559"
+    },
+    {
+      "id": "web-crawler",
+      "title": "Web Crawler",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/web-crawler",
+      "topics": [
+        "String",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Interactive"
+      ],
+      "frequency": 95,
+      "acceptanceRate": "0.006916142819792887"
+    },
+    {
+      "id": "web-crawler-multithreaded",
+      "title": "Web Crawler Multithreaded",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/web-crawler-multithreaded",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Concurrency"
+      ],
+      "frequency": 95,
+      "acceptanceRate": "0.005149163940801061"
+    },
+    {
+      "id": "minimize-malware-spread",
+      "title": "Minimize Malware Spread",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimize-malware-spread",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 95,
+      "acceptanceRate": "0.004354806557800992"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.005803618336750189"
+    },
+    {
+      "id": "word-pattern",
+      "title": "Word Pattern",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/word-pattern",
+      "topics": [
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.004480819015713726"
+    },
+    {
+      "id": "design-hit-counter",
+      "title": "Design Hit Counter",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-hit-counter",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Design",
+        "Queue",
+        "Data Stream"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.006977357911752097"
+    },
+    {
+      "id": "find-duplicate-file-in-system",
+      "title": "Find Duplicate File in System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-duplicate-file-in-system",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.006754363440276443"
+    },
+    {
+      "id": "game-of-life",
+      "title": "Game of Life",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/game-of-life",
+      "topics": [
+        "Array",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.007314679242620763"
+    },
+    {
+      "id": "letter-combinations-of-a-phone-number",
+      "title": "Letter Combinations of a Phone Number",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/letter-combinations-of-a-phone-number",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.0067037483711917135"
+    },
+    {
+      "id": "seat-reservation-manager",
+      "title": "Seat Reservation Manager",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/seat-reservation-manager",
+      "topics": [
+        "Design",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.006754353512624207"
+    },
+    {
+      "id": "word-pattern-ii",
+      "title": "Word Pattern II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/word-pattern-ii",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.004917256067698546"
+    },
+    {
+      "id": "check-if-it-is-a-good-array",
+      "title": "Check If It Is a Good Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/check-if-it-is-a-good-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Number Theory",
+        "Bézout's Lemma",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor",
+        "Extended Euclidean Algorithm"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.006601720718455824"
+    },
+    {
+      "id": "design-a-text-editor",
+      "title": "Design a Text Editor",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/design-a-text-editor",
+      "topics": [
+        "Linked List",
+        "String",
+        "Stack",
+        "Design",
+        "Simulation",
+        "Doubly-Linked List"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.005223720192809031"
+    },
+    {
+      "id": "grid-illumination",
+      "title": "Grid Illumination",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/grid-illumination",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.004021090549124206"
+    },
+    {
+      "id": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.004785843065311632"
+    },
+    {
+      "id": "minimize-malware-spread-ii",
+      "title": "Minimize Malware Spread II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimize-malware-spread-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.004630495395274171"
+    },
+    {
+      "id": "number-of-valid-words-for-each-puzzle",
+      "title": "Number of Valid Words for Each Puzzle",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/number-of-valid-words-for-each-puzzle",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Bit Manipulation",
+        "Trie"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.00482873706885089"
+    },
+    {
+      "id": "word-break-ii",
+      "title": "Word Break II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/word-break-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Dynamic Programming",
+        "Backtracking",
+        "Trie",
+        "Memoization"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.005638988950833217"
+    },
+    {
+      "id": "guess-the-word",
+      "title": "Guess the Word",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/guess-the-word",
+      "topics": [
+        "Array",
+        "Math",
+        "String",
+        "Minimax",
+        "Interactive",
+        "Game Theory"
+      ],
+      "frequency": 85.6,
+      "acceptanceRate": "0.0036545858422984217"
+    },
+    {
+      "id": "candy",
+      "title": "Candy",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/candy",
+      "topics": [
+        "Array",
+        "Greedy"
+      ],
+      "frequency": 75,
+      "acceptanceRate": "0.004941936345792183"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.005302574263034603"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Mercari",
+  "displayName": "Mercari",
+  "slug": "mercari",
+  "total": 6,
+  "counts": {
+    "Easy": 3,
+    "Medium": 3,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-largest-group",
+      "title": "Count Largest Group",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-largest-group",
+      "topics": [
+        "Hash Table",
+        "Math",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007464797471545188"
+    },
+    {
+      "id": "crawler-log-folder",
+      "title": "Crawler Log Folder",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/crawler-log-folder",
+      "topics": [
+        "Array",
+        "String",
+        "Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0071747590720372244"
+    },
+    {
+      "id": "minimum-subsequence-in-non-increasing-order",
+      "title": "Minimum Subsequence in Non-Increasing Order",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007422740657539236"
+    },
+    {
+      "id": "design-underground-system",
+      "title": "Design Underground System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-underground-system",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Design"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007474657219296046"
+    },
+    {
+      "id": "max-difference-you-can-get-from-changing-an-integer",
+      "title": "Max Difference You Can Get From Changing an Integer",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer",
+      "topics": [
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004860729978619169"
+    },
+    {
+      "id": "smallest-missing-non-negative-integer-after-operations",
+      "title": "Smallest Missing Non-negative Integer After Operations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005568586167967875"
+    }
+  ]
+}

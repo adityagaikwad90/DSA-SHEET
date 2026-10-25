@@ -25,11 +25,8 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/questions" element={<Questions />} />
-        <Route path="/sheet" element={
-          <PrivateRoute>
-            <MySheet />
-          </PrivateRoute>
-        } />
+        <Route path="/top-100" element={<Questions />} />
+        <Route path="/sheet" element={<MySheet />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dsa-vault" element={

@@ -1,0 +1,91 @@
+{
+  "name": "Ripple",
+  "displayName": "Ripple",
+  "slug": "ripple",
+  "total": 6,
+  "counts": {
+    "Easy": 1,
+    "Medium": 4,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005302562102250053"
+    },
+    {
+      "id": "remove-all-adjacent-duplicates-in-string",
+      "title": "Remove All Adjacent Duplicates In String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 89,
+      "acceptanceRate": "0.007427654418523386"
+    },
+    {
+      "id": "car-fleet",
+      "title": "Car Fleet",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/car-fleet",
+      "topics": [
+        "Array",
+        "Stack",
+        "Sorting",
+        "Monotonic Stack"
+      ],
+      "frequency": 89,
+      "acceptanceRate": "0.005582515767344079"
+    },
+    {
+      "id": "koko-eating-bananas",
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/koko-eating-bananas",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 89,
+      "acceptanceRate": "0.0050716944280361645"
+    },
+    {
+      "id": "string-compression",
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-compression",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 89,
+      "acceptanceRate": "0.006096660388761685"
+    },
+    {
+      "id": "basic-calculator",
+      "title": "Basic Calculator",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/basic-calculator",
+      "topics": [
+        "Math",
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 89,
+      "acceptanceRate": "0.004727951868672598"
+    }
+  ]
+}

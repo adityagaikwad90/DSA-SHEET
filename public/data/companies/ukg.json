@@ -1,0 +1,165 @@
+{
+  "name": "UKG",
+  "displayName": "UKG",
+  "slug": "ukg",
+  "total": 11,
+  "counts": {
+    "Easy": 3,
+    "Medium": 5,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-area-rectangle-with-point-constraints-i",
+      "title": "Maximum Area Rectangle With Point Constraints I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i",
+      "topics": [
+        "Array",
+        "Math",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Geometry",
+        "Sorting",
+        "Enumeration"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005109275918006194"
+    },
+    {
+      "id": "maximum-area-rectangle-with-point-constraints-ii",
+      "title": "Maximum Area Rectangle With Point Constraints II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii",
+      "topics": [
+        "Array",
+        "Math",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Geometry",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.002433126182112942"
+    },
+    {
+      "id": "split-array-largest-sum",
+      "title": "Split Array Largest Sum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/split-array-largest-sum",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Greedy",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006163990825688074"
+    },
+    {
+      "id": "special-binary-string",
+      "title": "Special Binary String",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/special-binary-string",
+      "topics": [
+        "String",
+        "Divide and Conquer",
+        "Sorting"
+      ],
+      "frequency": 94.9,
+      "acceptanceRate": "0.007941563930156941"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 79.1,
+      "acceptanceRate": "0.005803622308911278"
+    },
+    {
+      "id": "count-the-number-of-good-subsequences",
+      "title": "Count the Number of Good Subsequences",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-the-number-of-good-subsequences",
+      "topics": [
+        "Hash Table",
+        "Math",
+        "String",
+        "Combinatorics",
+        "Counting"
+      ],
+      "frequency": 79.1,
+      "acceptanceRate": "0.004749343257443082"
+    },
+    {
+      "id": "valid-word",
+      "title": "Valid Word",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-word",
+      "topics": [
+        "String"
+      ],
+      "frequency": 72.5,
+      "acceptanceRate": "0.005087176789505611"
+    },
+    {
+      "id": "maximize-greatness-of-an-array",
+      "title": "Maximize Greatness of an Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximize-greatness-of-an-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 72.5,
+      "acceptanceRate": "0.006165164440152368"
+    },
+    {
+      "id": "minimum-length-of-anagram-concatenation",
+      "title": "Minimum Length of Anagram Concatenation",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-length-of-anagram-concatenation",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 72.5,
+      "acceptanceRate": "0.003980434290884415"
+    },
+    {
+      "id": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 63.3,
+      "acceptanceRate": "0.005452924144923419"
+    },
+    {
+      "id": "make-a-positive-array",
+      "title": "Make a Positive Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/make-a-positive-array",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Prefix Sum"
+      ],
+      "frequency": 63.3,
+      "acceptanceRate": "0.0037215909090909088"
+    }
+  ]
+}

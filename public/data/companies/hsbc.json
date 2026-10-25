@@ -1,0 +1,103 @@
+{
+  "name": "HSBC",
+  "displayName": "HSBC",
+  "slug": "hsbc",
+  "total": 7,
+  "counts": {
+    "Easy": 5,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-69-number",
+      "title": "Maximum 69 Number",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/maximum-69-number",
+      "topics": [
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008463091455659233"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803619454625748"
+    },
+    {
+      "id": "battleships-in-a-board",
+      "title": "Battleships in a Board",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/battleships-in-a-board",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007786692484996988"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 92.4,
+      "acceptanceRate": "0.0038866711773173617"
+    },
+    {
+      "id": "climbing-stairs",
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/climbing-stairs",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "frequency": 92.3,
+      "acceptanceRate": "0.0054406495558291775"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 81.7,
+      "acceptanceRate": "0.00575212358226915"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 81.7,
+      "acceptanceRate": "0.004853664894040156"
+    }
+  ]
+}

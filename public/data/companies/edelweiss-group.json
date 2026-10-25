@@ -1,0 +1,27 @@
+{
+  "name": "Edelweiss Group",
+  "displayName": "Edelweiss Group",
+  "slug": "edelweiss-group",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-if-array-can-be-sorted",
+      "title": "Find if Array Can Be Sorted",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-if-array-can-be-sorted",
+      "topics": [
+        "Array",
+        "Bit Manipulation",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006614378801042572"
+    }
+  ]
+}

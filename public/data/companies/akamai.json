@@ -1,0 +1,205 @@
+{
+  "name": "Akamai",
+  "displayName": "Akamai",
+  "slug": "akamai",
+  "total": 15,
+  "counts": {
+    "Easy": 8,
+    "Medium": 7,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005752114733108133"
+    },
+    {
+      "id": "n-repeated-element-in-size-2n-array",
+      "title": "N-Repeated Element in Size 2N Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Pigeonhole Principle"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008004390995183013"
+    },
+    {
+      "id": "contiguous-array",
+      "title": "Contiguous Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/contiguous-array",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 89.6,
+      "acceptanceRate": "0.005261869124020135"
+    },
+    {
+      "id": "add-two-integers",
+      "title": "Add Two Integers",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/add-two-integers",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 82.3,
+      "acceptanceRate": "0.00879594963010603"
+    },
+    {
+      "id": "first-unique-character-in-a-string",
+      "title": "First Unique Character in a String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/first-unique-character-in-a-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Queue",
+        "Counting"
+      ],
+      "frequency": 72,
+      "acceptanceRate": "0.006654118168560015"
+    },
+    {
+      "id": "longest-palindrome",
+      "title": "Longest Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-palindrome",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Greedy"
+      ],
+      "frequency": 72,
+      "acceptanceRate": "0.005632481741444787"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 72,
+      "acceptanceRate": "0.0058036186104118035"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 72,
+      "acceptanceRate": "0.004001908604659137"
+    },
+    {
+      "id": "palindromic-substrings",
+      "title": "Palindromic Substrings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/palindromic-substrings",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 72,
+      "acceptanceRate": "0.0073337611455972975"
+    },
+    {
+      "id": "spiral-matrix",
+      "title": "Spiral Matrix",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/spiral-matrix",
+      "topics": [
+        "Array",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 72,
+      "acceptanceRate": "0.005814585102984351"
+    },
+    {
+      "id": "unique-paths",
+      "title": "Unique Paths",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/unique-paths",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Combinatorics"
+      ],
+      "frequency": 72,
+      "acceptanceRate": "0.006736986171454474"
+    },
+    {
+      "id": "defuse-the-bomb",
+      "title": "Defuse the Bomb",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/defuse-the-bomb",
+      "topics": [
+        "Array",
+        "Sliding Window"
+      ],
+      "frequency": 64.1,
+      "acceptanceRate": "0.00795576760183783"
+    },
+    {
+      "id": "minimum-absolute-difference",
+      "title": "Minimum Absolute Difference",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-absolute-difference",
+      "topics": [
+        "Array",
+        "Sorting"
+      ],
+      "frequency": 64.1,
+      "acceptanceRate": "0.0075163024752197575"
+    },
+    {
+      "id": "course-schedule",
+      "title": "Course Schedule",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 64.1,
+      "acceptanceRate": "0.005241167531033891"
+    },
+    {
+      "id": "find-peak-element",
+      "title": "Find Peak Element",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-peak-element",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 64.1,
+      "acceptanceRate": "0.004726734720133446"
+    }
+  ]
+}

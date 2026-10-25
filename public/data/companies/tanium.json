@@ -1,0 +1,39 @@
+{
+  "name": "Tanium",
+  "displayName": "Tanium",
+  "slug": "tanium",
+  "total": 2,
+  "counts": {
+    "Easy": 1,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "jump-game-iii",
+      "title": "Jump Game III",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game-iii",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007051278295261647"
+    },
+    {
+      "id": "reverse-only-letters",
+      "title": "Reverse Only Letters",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reverse-only-letters",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 80.6,
+      "acceptanceRate": "0.006929945451535786"
+    }
+  ]
+}

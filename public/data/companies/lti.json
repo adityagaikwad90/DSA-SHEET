@@ -1,0 +1,145 @@
+{
+  "name": "LTI",
+  "displayName": "LTI",
+  "slug": "lti",
+  "total": 10,
+  "counts": {
+    "Easy": 4,
+    "Medium": 5,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "move-zeroes",
+      "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/move-zeroes",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00645013262231545"
+    },
+    {
+      "id": "maximum-white-tiles-covered-by-a-carpet",
+      "title": "Maximum White Tiles Covered by a Carpet",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Greedy",
+        "Sliding Window",
+        "Sorting",
+        "Prefix Sum"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.0036797398532115665"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 91.9,
+      "acceptanceRate": "0.005803620444467007"
+    },
+    {
+      "id": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 80.9,
+      "acceptanceRate": "0.005452915356508979"
+    },
+    {
+      "id": "count-zero-request-servers",
+      "title": "Count Zero Request Servers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-zero-request-servers",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window",
+        "Sorting"
+      ],
+      "frequency": 80.9,
+      "acceptanceRate": "0.0036814929363352816"
+    },
+    {
+      "id": "second-highest-salary",
+      "title": "Second Highest Salary",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/second-highest-salary",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 80.9,
+      "acceptanceRate": "0.004876279088821522"
+    },
+    {
+      "id": "closest-subsequence-sum",
+      "title": "Closest Subsequence Sum",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/closest-subsequence-sum",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Meet in the Middle",
+        "Sorting",
+        "Bitmask"
+      ],
+      "frequency": 80.9,
+      "acceptanceRate": "0.00453283480056364"
+    },
+    {
+      "id": "palindrome-number",
+      "title": "Palindrome Number",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/palindrome-number",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 80.5,
+      "acceptanceRate": "0.006104360149806045"
+    },
+    {
+      "id": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/add-two-numbers",
+      "topics": [
+        "Linked List",
+        "Math",
+        "Recursion"
+      ],
+      "frequency": 80.5,
+      "acceptanceRate": "0.004955379978429951"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 80.5,
+      "acceptanceRate": "0.0040019092798101895"
+    }
+  ]
+}

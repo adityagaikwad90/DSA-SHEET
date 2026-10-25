@@ -1,0 +1,208 @@
+{
+  "name": "SoFi",
+  "displayName": "SoFi",
+  "slug": "sofi",
+  "total": 14,
+  "counts": {
+    "Easy": 1,
+    "Medium": 9,
+    "Hard": 4
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-number-of-steps-to-make-two-strings-anagram",
+      "title": "Minimum Number of Steps to Make Two Strings Anagram",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008261462700472483"
+    },
+    {
+      "id": "longest-mountain-in-array",
+      "title": "Longest Mountain in Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-mountain-in-array",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Enumeration"
+      ],
+      "frequency": 91.6,
+      "acceptanceRate": "0.004258729715906449"
+    },
+    {
+      "id": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/top-k-frequent-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting",
+        "Quickselect"
+      ],
+      "frequency": 91.6,
+      "acceptanceRate": "0.00675742609449208"
+    },
+    {
+      "id": "insert-delete-getrandom-o1",
+      "title": "Insert Delete GetRandom O(1)",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/insert-delete-getrandom-o1",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Design",
+        "Randomized"
+      ],
+      "frequency": 86,
+      "acceptanceRate": "0.005556927324599951"
+    },
+    {
+      "id": "minimum-window-substring",
+      "title": "Minimum Window Substring",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-window-substring",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 86,
+      "acceptanceRate": "0.004869702568811626"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 78.8,
+      "acceptanceRate": "0.004825721819748393"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 78.8,
+      "acceptanceRate": "0.006531446359659076"
+    },
+    {
+      "id": "maximum-number-of-non-overlapping-palindrome-substrings",
+      "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 78.8,
+      "acceptanceRate": "0.006088060447802655"
+    },
+    {
+      "id": "degree-of-an-array",
+      "title": "Degree of an Array",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/degree-of-an-array",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 68.7,
+      "acceptanceRate": "0.005877490719144511"
+    },
+    {
+      "id": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/asteroid-collision",
+      "topics": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 68.7,
+      "acceptanceRate": "0.004932935390120391"
+    },
+    {
+      "id": "meeting-scheduler",
+      "title": "Meeting Scheduler",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/meeting-scheduler",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 68.7,
+      "acceptanceRate": "0.005520068282760137"
+    },
+    {
+      "id": "merge-k-sorted-lists",
+      "title": "Merge k Sorted Lists",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/merge-k-sorted-lists",
+      "topics": [
+        "Linked List",
+        "Divide and Conquer",
+        "Heap (Priority Queue)",
+        "Merge Sort",
+        "Tournament Sort"
+      ],
+      "frequency": 68.7,
+      "acceptanceRate": "0.006078441330827581"
+    },
+    {
+      "id": "maximum-number-of-alloys",
+      "title": "Maximum Number of Alloys",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-number-of-alloys",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 68.5,
+      "acceptanceRate": "0.00411931712054989"
+    },
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 68.5,
+      "acceptanceRate": "0.00524533758074244"
+    }
+  ]
+}

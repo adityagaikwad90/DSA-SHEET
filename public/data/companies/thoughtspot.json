@@ -1,0 +1,82 @@
+{
+  "name": "thoughtspot",
+  "displayName": "ThoughtSpot",
+  "slug": "thoughtspot",
+  "total": 5,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-paths-that-can-form-a-palindrome-in-a-tree",
+      "title": "Count Paths That Can Form a Palindrome in a Tree",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree",
+      "topics": [
+        "Hash Table",
+        "Bit Manipulation",
+        "Tree",
+        "Depth-First Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005254616161925467"
+    },
+    {
+      "id": "selling-pieces-of-wood",
+      "title": "Selling Pieces of Wood",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/selling-pieces-of-wood",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005334031546542258"
+    },
+    {
+      "id": "count-pairs-of-connectable-servers-in-a-weighted-tree-network",
+      "title": "Count Pairs of Connectable Servers in a Weighted Tree Network",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network",
+      "topics": [
+        "Array",
+        "Tree",
+        "Depth-First Search"
+      ],
+      "frequency": 94.3,
+      "acceptanceRate": "0.005600739941421304"
+    },
+    {
+      "id": "best-team-with-no-conflicts",
+      "title": "Best Team With No Conflicts",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/best-team-with-no-conflicts",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Sorting",
+        "Longest Increasing Subsequence"
+      ],
+      "frequency": 90.6,
+      "acceptanceRate": "0.005095133088751854"
+    },
+    {
+      "id": "largest-rectangle-in-histogram",
+      "title": "Largest Rectangle in Histogram",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/largest-rectangle-in-histogram",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack",
+        "Range Minimum/Maximum Query"
+      ],
+      "frequency": 77.4,
+      "acceptanceRate": "0.005106154700157858"
+    }
+  ]
+}

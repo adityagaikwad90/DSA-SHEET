@@ -1,0 +1,156 @@
+{
+  "name": "Affirm",
+  "displayName": "Affirm",
+  "slug": "affirm",
+  "total": 10,
+  "counts": {
+    "Easy": 1,
+    "Medium": 6,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "insert-delete-getrandom-o1",
+      "title": "Insert Delete GetRandom O(1)",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/insert-delete-getrandom-o1",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Design",
+        "Randomized"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0055569547205650185"
+    },
+    {
+      "id": "shortest-uncommon-substring-in-an-array",
+      "title": "Shortest Uncommon Substring in an Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/shortest-uncommon-substring-in-an-array",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Trie"
+      ],
+      "frequency": 87.6,
+      "acceptanceRate": "0.005116679539612799"
+    },
+    {
+      "id": "parse-lisp-expression",
+      "title": "Parse Lisp Expression",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/parse-lisp-expression",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 78.2,
+      "acceptanceRate": "0.005413676731793961"
+    },
+    {
+      "id": "insert-delete-getrandom-o1-duplicates-allowed",
+      "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Design",
+        "Randomized"
+      ],
+      "frequency": 69.6,
+      "acceptanceRate": "0.0037161259498148607"
+    },
+    {
+      "id": "design-hit-counter",
+      "title": "Design Hit Counter",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-hit-counter",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Design",
+        "Queue",
+        "Data Stream"
+      ],
+      "frequency": 65.4,
+      "acceptanceRate": "0.006977375298663756"
+    },
+    {
+      "id": "valid-anagram",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-anagram",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 60,
+      "acceptanceRate": "0.006876752358139071"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 60,
+      "acceptanceRate": "0.007344437609689135"
+    },
+    {
+      "id": "coin-change",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 52.3,
+      "acceptanceRate": "0.00493060707877832"
+    },
+    {
+      "id": "string-compression",
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-compression",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 52.3,
+      "acceptanceRate": "0.0060966560353887134"
+    },
+    {
+      "id": "optimal-account-balancing",
+      "title": "Optimal Account Balancing",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/optimal-account-balancing",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "frequency": 52.3,
+      "acceptanceRate": "0.005089892618299192"
+    }
+  ]
+}

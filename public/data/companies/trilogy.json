@@ -1,0 +1,95 @@
+{
+  "name": "Trilogy",
+  "displayName": "Trilogy",
+  "slug": "trilogy",
+  "total": 6,
+  "counts": {
+    "Easy": 0,
+    "Medium": 4,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "bitwise-xor-of-all-pairings",
+      "title": "Bitwise XOR of All Pairings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/bitwise-xor-of-all-pairings",
+      "topics": [
+        "Array",
+        "Bit Manipulation",
+        "Brainteaser"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006688211427444051"
+    },
+    {
+      "id": "fraction-addition-and-subtraction",
+      "title": "Fraction Addition and Subtraction",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/fraction-addition-and-subtraction",
+      "topics": [
+        "Math",
+        "String",
+        "Simulation",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006670944027675936"
+    },
+    {
+      "id": "range-product-queries-of-powers",
+      "title": "Range Product Queries of Powers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/range-product-queries-of-powers",
+      "topics": [
+        "Array",
+        "Bit Manipulation",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006119820771778668"
+    },
+    {
+      "id": "substring-xor-queries",
+      "title": "Substring XOR Queries",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/substring-xor-queries",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Bit Manipulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0036159585230146683"
+    },
+    {
+      "id": "handling-sum-queries-after-update",
+      "title": "Handling Sum Queries After Update",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/handling-sum-queries-after-update",
+      "topics": [
+        "Array",
+        "Segment Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0032375036116729272"
+    },
+    {
+      "id": "minimum-time-to-kill-all-monsters",
+      "title": "Minimum Time to Kill All Monsters",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-time-to-kill-all-monsters",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005638817111685329"
+    }
+  ]
+}

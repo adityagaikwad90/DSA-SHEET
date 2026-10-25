@@ -1,0 +1,39 @@
+{
+  "name": "Canonical",
+  "displayName": "Canonical",
+  "slug": "canonical",
+  "total": 2,
+  "counts": {
+    "Easy": 1,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "divide-a-string-into-groups-of-size-k",
+      "title": "Divide a String Into Groups of Size k",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/divide-a-string-into-groups-of-size-k",
+      "topics": [
+        "String",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007694999594573256"
+    },
+    {
+      "id": "evaluate-reverse-polish-notation",
+      "title": "Evaluate Reverse Polish Notation",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/evaluate-reverse-polish-notation",
+      "topics": [
+        "Array",
+        "Math",
+        "Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005897492721057336"
+    }
+  ]
+}

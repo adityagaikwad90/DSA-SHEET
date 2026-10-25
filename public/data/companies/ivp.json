@@ -1,0 +1,43 @@
+{
+  "name": "IVP",
+  "displayName": "IVP",
+  "slug": "ivp",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-time-to-break-locks-i",
+      "title": "Minimum Time to Break Locks I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-time-to-break-locks-i",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Breadth-First Search",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003281691660373287"
+    },
+    {
+      "id": "minimum-time-to-break-locks-ii",
+      "title": "Minimum Time to Break Locks II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-time-to-break-locks-ii",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Graph Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0046049661399548535"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Avalara",
+  "displayName": "Avalara",
+  "slug": "avalara",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 0,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "abbreviating-the-product-of-a-range",
+      "title": "Abbreviating the Product of a Range",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/abbreviating-the-product-of-a-range",
+      "topics": [
+        "Math",
+        "Number Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0024718994993860395"
+    }
+  ]
+}

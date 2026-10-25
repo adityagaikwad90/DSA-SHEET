@@ -1,0 +1,54 @@
+{
+  "name": "fourkites",
+  "displayName": "FourKites",
+  "slug": "fourkites",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "longest-unequal-adjacent-groups-subsequence-i",
+      "title": "Longest Unequal Adjacent Groups Subsequence I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i",
+      "topics": [
+        "Array",
+        "String",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006675669970750032"
+    },
+    {
+      "id": "longest-subarray-with-maximum-bitwise-and",
+      "title": "Longest Subarray With Maximum Bitwise AND",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and",
+      "topics": [
+        "Array",
+        "Bit Manipulation",
+        "Brainteaser"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006535606738622138"
+    },
+    {
+      "id": "longest-unequal-adjacent-groups-subsequence-ii",
+      "title": "Longest Unequal Adjacent Groups Subsequence II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii",
+      "topics": [
+        "Array",
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005131204706025047"
+    }
+  ]
+}

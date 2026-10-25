@@ -1,0 +1,43 @@
+{
+  "name": "Zluri",
+  "displayName": "Zluri",
+  "slug": "zluri",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-array-hopping-score-i",
+      "title": "Maximum Array Hopping Score I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-array-hopping-score-i",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Stack",
+        "Greedy",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007731986173889923"
+    },
+    {
+      "id": "maximum-array-hopping-score-ii",
+      "title": "Maximum Array Hopping Score II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-array-hopping-score-ii",
+      "topics": [
+        "Array",
+        "Stack",
+        "Greedy",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006029481692819781"
+    }
+  ]
+}

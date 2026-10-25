@@ -1,0 +1,26 @@
+{
+  "name": "Paycom",
+  "displayName": "Paycom",
+  "slug": "paycom",
+  "total": 1,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-absolute-difference",
+      "title": "Minimum Absolute Difference",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-absolute-difference",
+      "topics": [
+        "Array",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0075163024752197575"
+    }
+  ]
+}

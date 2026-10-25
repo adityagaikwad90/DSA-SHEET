@@ -1,0 +1,25 @@
+{
+  "name": "Lenskart",
+  "displayName": "Lenskart",
+  "slug": "lenskart",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 0,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "valid-number",
+      "title": "Valid Number",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/valid-number",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0023813237806407793"
+    }
+  ]
+}

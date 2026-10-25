@@ -1,0 +1,120 @@
+{
+  "name": "Nagarro",
+  "displayName": "Nagarro",
+  "slug": "nagarro",
+  "total": 8,
+  "counts": {
+    "Easy": 4,
+    "Medium": 4,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "implement-stack-using-queues",
+      "title": "Implement Stack using Queues",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/implement-stack-using-queues",
+      "topics": [
+        "Stack",
+        "Design",
+        "Queue"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0070509282018550445"
+    },
+    {
+      "id": "linked-list-cycle",
+      "title": "Linked List Cycle",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/linked-list-cycle",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers",
+        "Floyd's Cycle Finding Algorithm"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00552466585163941"
+    },
+    {
+      "id": "smallest-pair-with-different-frequencies",
+      "title": "Smallest Pair With Different Frequencies",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/smallest-pair-with-different-frequencies",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006859289367160301"
+    },
+    {
+      "id": "valid-anagram",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-anagram",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006876761994304275"
+    },
+    {
+      "id": "count-number-of-ways-to-place-houses",
+      "title": "Count Number of Ways to Place Houses",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-number-of-ways-to-place-houses",
+      "topics": [
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004435087322669983"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004001909965539573"
+    },
+    {
+      "id": "sort-colors",
+      "title": "Sort Colors",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sort-colors",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting",
+        "Quicksort",
+        "Bubble Sort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007029499941944048"
+    },
+    {
+      "id": "using-a-robot-to-print-the-lexicographically-smallest-string",
+      "title": "Using a Robot to Print the Lexicographically Smallest String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Stack",
+        "Greedy"
+      ],
+      "frequency": 67,
+      "acceptanceRate": "0.0062238787865421304"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "name": "opentext",
+  "displayName": "OpenText",
+  "slug": "opentext",
+  "total": 7,
+  "counts": {
+    "Easy": 5,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "defuse-the-bomb",
+      "title": "Defuse the Bomb",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/defuse-the-bomb",
+      "topics": [
+        "Array",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007955793837189903"
+    },
+    {
+      "id": "filter-characters-by-frequency",
+      "title": "Filter Characters by Frequency",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/filter-characters-by-frequency",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008640308582449373"
+    },
+    {
+      "id": "largest-3-same-digit-number-in-string",
+      "title": "Largest 3-Same-Digit Number in String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/largest-3-same-digit-number-in-string",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007268494433461658"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004853661788917336"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004534117816457164"
+    },
+    {
+      "id": "find-the-winner-of-the-circular-game",
+      "title": "Find the Winner of the Circular Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-the-winner-of-the-circular-game",
+      "topics": [
+        "Array",
+        "Math",
+        "Recursion",
+        "Queue",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008237482059060048"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0038866738149183288"
+    }
+  ]
+}

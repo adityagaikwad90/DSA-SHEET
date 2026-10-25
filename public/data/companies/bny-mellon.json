@@ -1,0 +1,262 @@
+{
+  "name": "BNY Mellon",
+  "displayName": "BNY Mellon",
+  "slug": "bny-mellon",
+  "total": 18,
+  "counts": {
+    "Easy": 1,
+    "Medium": 10,
+    "Hard": 7
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
+      "title": "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0041569774867347056"
+    },
+    {
+      "id": "minimize-length-of-array-using-operations",
+      "title": "Minimize Length of Array Using Operations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimize-length-of-array-using-operations",
+      "topics": [
+        "Array",
+        "Math",
+        "Greedy",
+        "Number Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003620079311345391"
+    },
+    {
+      "id": "sum-of-distances",
+      "title": "Sum of Distances",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sum-of-distances",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005015233760895636"
+    },
+    {
+      "id": "cherry-pickup",
+      "title": "Cherry Pickup",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/cherry-pickup",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004074181020637922"
+    },
+    {
+      "id": "count-visited-nodes-in-a-directed-graph",
+      "title": "Count Visited Nodes in a Directed Graph",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph",
+      "topics": [
+        "Dynamic Programming",
+        "Depth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Memoization",
+        "Kosaraju's Algorithm",
+        "Tarjan's SCC Algorithm"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003138402332824185"
+    },
+    {
+      "id": "minimize-malware-spread",
+      "title": "Minimize Malware Spread",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimize-malware-spread",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004354806557800992"
+    },
+    {
+      "id": "lexicographically-maximum-mex-array",
+      "title": "Lexicographically Maximum MEX Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/lexicographically-maximum-mex-array",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Greedy",
+        "Queue"
+      ],
+      "frequency": 88.1,
+      "acceptanceRate": "0.005377436353247412"
+    },
+    {
+      "id": "bitwise-ors-of-subarrays",
+      "title": "Bitwise ORs of Subarrays",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/bitwise-ors-of-subarrays",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Bit Manipulation"
+      ],
+      "frequency": 86.3,
+      "acceptanceRate": "0.005705287173891479"
+    },
+    {
+      "id": "car-fleet",
+      "title": "Car Fleet",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/car-fleet",
+      "topics": [
+        "Array",
+        "Stack",
+        "Sorting",
+        "Monotonic Stack"
+      ],
+      "frequency": 86.3,
+      "acceptanceRate": "0.005582488770282246"
+    },
+    {
+      "id": "find-the-maximum-length-of-a-good-subsequence-ii",
+      "title": "Find the Maximum Length of a Good Subsequence II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Dynamic Programming"
+      ],
+      "frequency": 78.6,
+      "acceptanceRate": "0.0025491629505080783"
+    },
+    {
+      "id": "lfu-cache",
+      "title": "LFU Cache",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/lfu-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 78.6,
+      "acceptanceRate": "0.0050512870503299605"
+    },
+    {
+      "id": "merge-intervals",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/merge-intervals",
+      "topics": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "frequency": 78.1,
+      "acceptanceRate": "0.005302580516468156"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 75.5,
+      "acceptanceRate": "0.005752117224113611"
+    },
+    {
+      "id": "count-number-of-maximum-bitwise-or-subsets",
+      "title": "Count Number of Maximum Bitwise-OR Subsets",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets",
+      "topics": [
+        "Array",
+        "Backtracking",
+        "Bit Manipulation",
+        "Enumeration"
+      ],
+      "frequency": 75.5,
+      "acceptanceRate": "0.008944715356145888"
+    },
+    {
+      "id": "kth-largest-element-in-an-array",
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/kth-largest-element-in-an-array",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Quickselect"
+      ],
+      "frequency": 75.5,
+      "acceptanceRate": "0.006941742121123445"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 75.5,
+      "acceptanceRate": "0.0040019096716004815"
+    },
+    {
+      "id": "palindromic-substrings",
+      "title": "Palindromic Substrings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/palindromic-substrings",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 75.5,
+      "acceptanceRate": "0.007333758449619389"
+    },
+    {
+      "id": "count-good-subarrays",
+      "title": "Count Good Subarrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-good-subarrays",
+      "topics": [
+        "Array",
+        "Stack",
+        "Bit Manipulation",
+        "Monotonic Stack"
+      ],
+      "frequency": 75.5,
+      "acceptanceRate": "0.002619244099686417"
+    }
+  ]
+}

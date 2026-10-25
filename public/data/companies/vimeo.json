@@ -1,0 +1,79 @@
+{
+  "name": "Vimeo",
+  "displayName": "Vimeo",
+  "slug": "vimeo",
+  "total": 5,
+  "counts": {
+    "Easy": 0,
+    "Medium": 4,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "3sum",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/3sum",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004007312932178484"
+    },
+    {
+      "id": "flower-planting-with-no-adjacent",
+      "title": "Flower Planting With No Adjacent",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/flower-planting-with-no-adjacent",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Graph Coloring"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005440791958753783"
+    },
+    {
+      "id": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-subarray",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00539935960170864"
+    },
+    {
+      "id": "min-stack",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-stack",
+      "topics": [
+        "Stack",
+        "Design"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005879072836885574"
+    },
+    {
+      "id": "count-pairs-with-xor-in-a-range",
+      "title": "Count Pairs With XOR in a Range",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-pairs-with-xor-in-a-range",
+      "topics": [
+        "Array",
+        "Bit Manipulation",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004689496910856134"
+    }
+  ]
+}

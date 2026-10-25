@@ -1,0 +1,264 @@
+{
+  "name": "Roku",
+  "displayName": "Roku",
+  "slug": "roku",
+  "total": 18,
+  "counts": {
+    "Easy": 2,
+    "Medium": 10,
+    "Hard": 6
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006337496964323857"
+    },
+    {
+      "id": "maximum-points-you-can-obtain-from-cards",
+      "title": "Maximum Points You Can Obtain from Cards",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards",
+      "topics": [
+        "Array",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00585349580976061"
+    },
+    {
+      "id": "minimum-cost-for-tickets",
+      "title": "Minimum Cost For Tickets",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-cost-for-tickets",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006751391719440304"
+    },
+    {
+      "id": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/top-k-frequent-elements",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting",
+        "Quickselect"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006757424996843381"
+    },
+    {
+      "id": "shortest-path-to-get-all-keys",
+      "title": "Shortest Path to Get All Keys",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/shortest-path-to-get-all-keys",
+      "topics": [
+        "Array",
+        "Bit Manipulation",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005519189216451389"
+    },
+    {
+      "id": "backspace-string-compare",
+      "title": "Backspace String Compare",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/backspace-string-compare",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.005032324194922896"
+    },
+    {
+      "id": "valid-palindrome-ii",
+      "title": "Valid Palindrome II",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome-ii",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Greedy"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.004491376325828373"
+    },
+    {
+      "id": "3sum",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/3sum",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.004007313918415385"
+    },
+    {
+      "id": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/asteroid-collision",
+      "topics": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.0049329332336914425"
+    },
+    {
+      "id": "max-area-of-island",
+      "title": "Max Area of Island",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/max-area-of-island",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.0074323591869079"
+    },
+    {
+      "id": "multiply-strings",
+      "title": "Multiply Strings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/multiply-strings",
+      "topics": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.004486000467037326"
+    },
+    {
+      "id": "valid-parenthesis-string",
+      "title": "Valid Parenthesis String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/valid-parenthesis-string",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Stack",
+        "Greedy",
+        "Bracket Sequences"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.0042949285386013804"
+    },
+    {
+      "id": "24-game",
+      "title": "24 Game",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/24-game",
+      "topics": [
+        "Array",
+        "Math",
+        "Backtracking"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.0059710177495854565"
+    },
+    {
+      "id": "vertical-order-traversal-of-a-binary-tree",
+      "title": "Vertical Order Traversal of a Binary Tree",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree",
+      "topics": [
+        "Hash Table",
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Sorting",
+        "Binary Tree"
+      ],
+      "frequency": 87.1,
+      "acceptanceRate": "0.005489266144683505"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 86.9,
+      "acceptanceRate": "0.004825722526820416"
+    },
+    {
+      "id": "longest-valid-parentheses",
+      "title": "Longest Valid Parentheses",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/longest-valid-parentheses",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 86.9,
+      "acceptanceRate": "0.004136905561223635"
+    },
+    {
+      "id": "max-stack",
+      "title": "Max Stack",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/max-stack",
+      "topics": [
+        "Linked List",
+        "Stack",
+        "Design",
+        "Doubly-Linked List",
+        "Ordered Set"
+      ],
+      "frequency": 86.9,
+      "acceptanceRate": "0.004605367210330505"
+    },
+    {
+      "id": "three-equal-parts",
+      "title": "Three Equal Parts",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/three-equal-parts",
+      "topics": [
+        "Array",
+        "Math"
+      ],
+      "frequency": 86.9,
+      "acceptanceRate": "0.004185813046156655"
+    }
+  ]
+}

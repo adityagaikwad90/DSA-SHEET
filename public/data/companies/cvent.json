@@ -1,0 +1,26 @@
+{
+  "name": "CVENT",
+  "displayName": "CVENT",
+  "slug": "cvent",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "copy-list-with-random-pointer",
+      "title": "Copy List with Random Pointer",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/copy-list-with-random-pointer",
+      "topics": [
+        "Hash Table",
+        "Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006388445457763472"
+    }
+  ]
+}

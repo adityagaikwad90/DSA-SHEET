@@ -1,0 +1,223 @@
+{
+  "name": "Hudson River Trading",
+  "displayName": "Hudson River Trading",
+  "slug": "hudson-river-trading",
+  "total": 16,
+  "counts": {
+    "Easy": 6,
+    "Medium": 5,
+    "Hard": 5
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "convert-integer-to-the-sum-of-two-no-zero-integers",
+      "title": "Convert Integer to the Sum of Two No-Zero Integers",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005911383660557149"
+    },
+    {
+      "id": "detect-pattern-of-length-m-repeated-k-or-more-times",
+      "title": "Detect Pattern of Length M Repeated K or More Times",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times",
+      "topics": [
+        "Array",
+        "Enumeration"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00443478651281821"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004853664894040156"
+    },
+    {
+      "id": "largest-combination-with-bitwise-and-greater-than-zero",
+      "title": "Largest Combination With Bitwise AND Greater Than Zero",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Bit Manipulation",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008072528815133815"
+    },
+    {
+      "id": "block-placement-queries",
+      "title": "Block Placement Queries",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/block-placement-queries",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Ordered Set"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004097055873502862"
+    },
+    {
+      "id": "maximum-score-from-grid-operations",
+      "title": "Maximum Score From Grid Operations",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-score-from-grid-operations",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0063297242637991415"
+    },
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00524533758074244"
+    },
+    {
+      "id": "maximum-69-number",
+      "title": "Maximum 69 Number",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/maximum-69-number",
+      "topics": [
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.008463091455659233"
+    },
+    {
+      "id": "number-of-steps-to-reduce-a-number-to-zero",
+      "title": "Number of Steps to Reduce a Number to Zero",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero",
+      "topics": [
+        "Math",
+        "Bit Manipulation"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.008593672018824413"
+    },
+    {
+      "id": "apply-operations-to-make-all-array-elements-equal-to-zero",
+      "title": "Apply Operations to Make All Array Elements Equal to Zero",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero",
+      "topics": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.003330320905700061"
+    },
+    {
+      "id": "count-unguarded-cells-in-the-grid",
+      "title": "Count Unguarded Cells in the Grid",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-unguarded-cells-in-the-grid",
+      "topics": [
+        "Array",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.006915321129138879"
+    },
+    {
+      "id": "maximum-total-importance-of-roads",
+      "title": "Maximum Total Importance of Roads",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-total-importance-of-roads",
+      "topics": [
+        "Greedy",
+        "Graph Theory",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.006915748317275967"
+    },
+    {
+      "id": "add-edges-to-make-degrees-of-all-nodes-even",
+      "title": "Add Edges to Make Degrees of All Nodes Even",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even",
+      "topics": [
+        "Hash Table",
+        "Graph Theory"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.0037423079631063853"
+    },
+    {
+      "id": "longest-path-with-different-adjacent-characters",
+      "title": "Longest Path With Different Adjacent Characters",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/longest-path-with-different-adjacent-characters",
+      "topics": [
+        "Array",
+        "String",
+        "Tree",
+        "Depth-First Search",
+        "Graph Theory",
+        "Topological Sort"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.005404861979496614"
+    },
+    {
+      "id": "shortest-word-distance",
+      "title": "Shortest Word Distance",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/shortest-word-distance",
+      "topics": [
+        "Array",
+        "String"
+      ],
+      "frequency": 62.5,
+      "acceptanceRate": "0.0066435645665239695"
+    },
+    {
+      "id": "design-memory-allocator",
+      "title": "Design Memory Allocator",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-memory-allocator",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Simulation"
+      ],
+      "frequency": 62.5,
+      "acceptanceRate": "0.0051036668574195535"
+    }
+  ]
+}

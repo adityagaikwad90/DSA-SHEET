@@ -1,0 +1,159 @@
+{
+  "name": "Dream11",
+  "displayName": "Dream11",
+  "slug": "dream11",
+  "total": 11,
+  "counts": {
+    "Easy": 1,
+    "Medium": 9,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "final-prices-with-a-special-discount-in-a-shop",
+      "title": "Final Prices With a Special Discount in a Shop",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008439697856807257"
+    },
+    {
+      "id": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/asteroid-collision",
+      "topics": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0049329288066519645"
+    },
+    {
+      "id": "3sum",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/3sum",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.0040073098572434565"
+    },
+    {
+      "id": "3sum-closest",
+      "title": "3Sum Closest",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/3sum-closest",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.004767366212799993"
+    },
+    {
+      "id": "container-with-most-water",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/container-with-most-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.006103889136131124"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.004001907909075628"
+    },
+    {
+      "id": "minimum-falling-path-sum",
+      "title": "Minimum Falling Path Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-falling-path-sum",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.006082277728760594"
+    },
+    {
+      "id": "partition-equal-subset-sum",
+      "title": "Partition Equal Subset Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/partition-equal-subset-sum",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Knapsack Problem",
+        "0-1 Knapsack"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.005009687441012712"
+    },
+    {
+      "id": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotting-oranges",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.005959387060065701"
+    },
+    {
+      "id": "minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+      "title": "Minimum Number of Increments on Subarrays to Form a Target Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Stack",
+        "Greedy",
+        "Monotonic Stack"
+      ],
+      "frequency": 76.4,
+      "acceptanceRate": "0.007832981179324648"
+    },
+    {
+      "id": "gas-station",
+      "title": "Gas Station",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/gas-station",
+      "topics": [
+        "Array",
+        "Greedy"
+      ],
+      "frequency": 67.6,
+      "acceptanceRate": "0.0048888693819070335"
+    }
+  ]
+}

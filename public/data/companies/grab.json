@@ -1,0 +1,239 @@
+{
+  "name": "Grab",
+  "displayName": "Grab",
+  "slug": "grab",
+  "total": 17,
+  "counts": {
+    "Easy": 3,
+    "Medium": 14,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "accounts-merge",
+      "title": "Accounts Merge",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/accounts-merge",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006219324052486875"
+    },
+    {
+      "id": "adding-two-negabinary-numbers",
+      "title": "Adding Two Negabinary Numbers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/adding-two-negabinary-numbers",
+      "topics": [
+        "Array",
+        "Math"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0038321432097140405"
+    },
+    {
+      "id": "coin-change",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004930609010765978"
+    },
+    {
+      "id": "minimum-cost-for-tickets",
+      "title": "Minimum Cost For Tickets",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-cost-for-tickets",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006751391719440304"
+    },
+    {
+      "id": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+      "title": "Minimum Number of Food Buckets to Feed the Hamsters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004857747684177339"
+    },
+    {
+      "id": "reconstruct-a-2-row-binary-matrix",
+      "title": "Reconstruct a 2-Row Binary Matrix",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0049511822619794366"
+    },
+    {
+      "id": "repeated-substring-pattern",
+      "title": "Repeated Substring Pattern",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/repeated-substring-pattern",
+      "topics": [
+        "String",
+        "String Matching",
+        "Z Algorithm",
+        "Knuth–Morris–Pratt Algorithm"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.004894000493969639"
+    },
+    {
+      "id": "daily-temperatures",
+      "title": "Daily Temperatures",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/daily-temperatures",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.006927663311703648"
+    },
+    {
+      "id": "house-robber",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.00536863045149925"
+    },
+    {
+      "id": "simplify-path",
+      "title": "Simplify Path",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/simplify-path",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 92.1,
+      "acceptanceRate": "0.005168683748367632"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 81,
+      "acceptanceRate": "0.003886671216853797"
+    },
+    {
+      "id": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "topics": [
+        "String",
+        "Bit Manipulation",
+        "Simulation"
+      ],
+      "frequency": 81,
+      "acceptanceRate": "0.0063735869453789736"
+    },
+    {
+      "id": "subarray-sum-equals-k",
+      "title": "Subarray Sum Equals K",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/subarray-sum-equals-k",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 81,
+      "acceptanceRate": "0.004835074565217614"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.005803619454625748"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.004534118073469816"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.007344432435438076"
+    },
+    {
+      "id": "jump-game-ii",
+      "title": "Jump Game II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.004366654659991473"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Cloudera",
+  "displayName": "Cloudera",
+  "slug": "cloudera",
+  "total": 2,
+  "counts": {
+    "Easy": 2,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "number-complement",
+      "title": "Number Complement",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/number-complement",
+      "topics": [
+        "Bit Manipulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007061886869047517"
+    },
+    {
+      "id": "complement-of-base-10-integer",
+      "title": "Complement of Base 10 Integer",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/complement-of-base-10-integer",
+      "topics": [
+        "Bit Manipulation"
+      ],
+      "frequency": 97.5,
+      "acceptanceRate": "0.006339393309359702"
+    }
+  ]
+}

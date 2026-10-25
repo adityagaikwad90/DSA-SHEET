@@ -1,0 +1,27 @@
+{
+  "name": "Sentry",
+  "displayName": "Sentry",
+  "slug": "sentry",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 0,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "text-justification",
+      "title": "Text Justification",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/text-justification",
+      "topics": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00524533758074244"
+    }
+  ]
+}

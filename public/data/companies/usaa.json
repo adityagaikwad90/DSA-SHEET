@@ -1,0 +1,54 @@
+{
+  "name": "USAA",
+  "displayName": "USAA",
+  "slug": "usaa",
+  "total": 3,
+  "counts": {
+    "Easy": 2,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004853662441250515"
+    },
+    {
+      "id": "longest-word-in-dictionary-through-deleting",
+      "title": "Longest Word in Dictionary through Deleting",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-word-in-dictionary-through-deleting",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 88.9,
+      "acceptanceRate": "0.005314760112835917"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 88.8,
+      "acceptanceRate": "0.004534117415370311"
+    }
+  ]
+}

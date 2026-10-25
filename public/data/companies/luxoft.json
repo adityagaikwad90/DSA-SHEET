@@ -1,0 +1,26 @@
+{
+  "name": "Luxoft",
+  "displayName": "Luxoft",
+  "slug": "luxoft",
+  "total": 1,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "reverse-linked-list",
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reverse-linked-list",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.008116095568220853"
+    }
+  ]
+}

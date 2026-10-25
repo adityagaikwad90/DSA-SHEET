@@ -1,0 +1,109 @@
+{
+  "name": "Dunzo",
+  "displayName": "Dunzo",
+  "slug": "dunzo",
+  "total": 7,
+  "counts": {
+    "Easy": 0,
+    "Medium": 4,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-complete-tree-nodes",
+      "title": "Count Complete Tree Nodes",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-complete-tree-nodes",
+      "topics": [
+        "Binary Search",
+        "Bit Manipulation",
+        "Tree",
+        "Binary Tree"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007213840721421747"
+    },
+    {
+      "id": "number-of-distinct-substrings-in-a-string",
+      "title": "Number of Distinct Substrings in a String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-distinct-substrings-in-a-string",
+      "topics": [
+        "String",
+        "Trie",
+        "Rolling Hash",
+        "Suffix Array",
+        "Hash Function"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00644392033542977"
+    },
+    {
+      "id": "stone-game-vii",
+      "title": "Stone Game VII",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/stone-game-vii",
+      "topics": [
+        "Array",
+        "Math",
+        "Dynamic Programming",
+        "Minimax",
+        "Game Theory",
+        "Zero-Sum Game"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005941549217485825"
+    },
+    {
+      "id": "ways-to-make-a-fair-array",
+      "title": "Ways to Make a Fair Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/ways-to-make-a-fair-array",
+      "topics": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006775100401606425"
+    },
+    {
+      "id": "build-array-where-you-can-find-the-maximum-exactly-k-comparisons",
+      "title": "Build Array Where You Can Find The Maximum Exactly K Comparisons",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons",
+      "topics": [
+        "Dynamic Programming",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0065190143246930425"
+    },
+    {
+      "id": "find-all-good-strings",
+      "title": "Find All Good Strings",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-all-good-strings",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "String Matching"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0046498896247240615"
+    },
+    {
+      "id": "number-of-ways-to-form-a-target-string-given-a-dictionary",
+      "title": "Number of Ways to Form a Target String Given a Dictionary",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary",
+      "topics": [
+        "Array",
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005620837795585756"
+    }
+  ]
+}

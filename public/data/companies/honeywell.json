@@ -1,0 +1,52 @@
+{
+  "name": "Honeywell",
+  "displayName": "Honeywell",
+  "slug": "honeywell",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-distance-to-the-target-element",
+      "title": "Minimum Distance to the Target Element",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-distance-to-the-target-element",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006429167575729241"
+    },
+    {
+      "id": "count-zero-request-servers",
+      "title": "Count Zero Request Servers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-zero-request-servers",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0036814929363352816"
+    },
+    {
+      "id": "maximum-matrix-sum",
+      "title": "Maximum Matrix Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-matrix-sum",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006749862694329556"
+    }
+  ]
+}

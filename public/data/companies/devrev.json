@@ -1,0 +1,84 @@
+{
+  "name": "DevRev",
+  "displayName": "DevRev",
+  "slug": "devrev",
+  "total": 5,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803618336750189"
+    },
+    {
+      "id": "lfu-cache",
+      "title": "LFU Cache",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/lfu-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0050512870503299605"
+    },
+    {
+      "id": "shortest-subarray-with-sum-at-least-k",
+      "title": "Shortest Subarray with Sum at Least K",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Queue",
+        "Sliding Window",
+        "Heap (Priority Queue)",
+        "Prefix Sum",
+        "Monotonic Queue"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003327401254183281"
+    },
+    {
+      "id": "count-square-submatrices-with-all-ones",
+      "title": "Count Square Submatrices with All Ones",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-square-submatrices-with-all-ones",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.008088832207780599"
+    },
+    {
+      "id": "maximum-subsequence-score",
+      "title": "Maximum Subsequence Score",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-subsequence-score",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 74.6,
+      "acceptanceRate": "0.0055101879013716"
+    }
+  ]
+}

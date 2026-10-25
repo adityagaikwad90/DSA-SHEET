@@ -1,0 +1,79 @@
+{
+  "name": "VMware",
+  "displayName": "VMware",
+  "slug": "vmware",
+  "total": 5,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "break-a-palindrome",
+      "title": "Break a Palindrome",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/break-a-palindrome",
+      "topics": [
+        "String",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005163866550886599"
+    },
+    {
+      "id": "find-palindrome-with-fixed-length",
+      "title": "Find Palindrome With Fixed Length",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-palindrome-with-fixed-length",
+      "topics": [
+        "Array",
+        "Math"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003832949081088202"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005025873265410447"
+    },
+    {
+      "id": "make-array-non-decreasing-or-non-increasing",
+      "title": "Make Array Non-decreasing or Non-increasing",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006475550283379466"
+    },
+    {
+      "id": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004785841052623307"
+    }
+  ]
+}

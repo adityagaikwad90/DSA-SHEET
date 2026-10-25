@@ -1,0 +1,78 @@
+{
+  "name": "WorldQuant",
+  "displayName": "WorldQuant",
+  "slug": "worldquant",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "meeting-rooms-ii",
+      "title": "Meeting Rooms II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/meeting-rooms-ii",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0052845025342410645"
+    },
+    {
+      "id": "find-median-from-data-stream",
+      "title": "Find Median from Data Stream",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-median-from-data-stream",
+      "topics": [
+        "Two Pointers",
+        "Design",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Data Stream"
+      ],
+      "frequency": 83.2,
+      "acceptanceRate": "0.005512009040932574"
+    },
+    {
+      "id": "minimum-number-of-visited-cells-in-a-grid",
+      "title": "Minimum Number of Visited Cells in a Grid",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Stack",
+        "Breadth-First Search",
+        "Union-Find",
+        "Heap (Priority Queue)",
+        "Matrix",
+        "Monotonic Stack"
+      ],
+      "frequency": 83.2,
+      "acceptanceRate": "0.0023970409627912114"
+    },
+    {
+      "id": "maximal-rectangle",
+      "title": "Maximal Rectangle",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximal-rectangle",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Stack",
+        "Matrix",
+        "Monotonic Stack"
+      ],
+      "frequency": 82.8,
+      "acceptanceRate": "0.006008945139648856"
+    }
+  ]
+}

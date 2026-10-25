@@ -1,0 +1,80 @@
+{
+  "name": "Indeed",
+  "displayName": "Indeed",
+  "slug": "indeed",
+  "total": 5,
+  "counts": {
+    "Easy": 1,
+    "Medium": 3,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "sum-of-even-numbers-after-queries",
+      "title": "Sum of Even Numbers After Queries",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sum-of-even-numbers-after-queries",
+      "topics": [
+        "Array",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006914587908317321"
+    },
+    {
+      "id": "binary-tree-tilt",
+      "title": "Binary Tree Tilt",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/binary-tree-tilt",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree",
+        "DP on Trees"
+      ],
+      "frequency": 97.4,
+      "acceptanceRate": "0.006665467567081446"
+    },
+    {
+      "id": "find-players-with-zero-or-one-losses",
+      "title": "Find Players With Zero or One Losses",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-players-with-zero-or-one-losses",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sorting",
+        "Counting"
+      ],
+      "frequency": 97.4,
+      "acceptanceRate": "0.007238460271264621"
+    },
+    {
+      "id": "minimum-moves-to-equal-array-elements",
+      "title": "Minimum Moves to Equal Array Elements",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements",
+      "topics": [
+        "Array",
+        "Math"
+      ],
+      "frequency": 97.4,
+      "acceptanceRate": "0.0059267739242231"
+    },
+    {
+      "id": "minimum-cost-to-split-an-array",
+      "title": "Minimum Cost to Split an Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-cost-to-split-an-array",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Dynamic Programming",
+        "Counting"
+      ],
+      "frequency": 97.4,
+      "acceptanceRate": "0.004536763601781871"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Analytics quotient",
+  "displayName": "Analytics quotient",
+  "slug": "analytics-quotient",
+  "total": 2,
+  "counts": {
+    "Easy": 2,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "the-number-of-users-that-are-eligible-for-discount",
+      "title": "The Number of Users That Are Eligible for Discount",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005063334087310563"
+    },
+    {
+      "id": "the-users-that-are-eligible-for-discount",
+      "title": "The Users That Are Eligible for Discount",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/the-users-that-are-eligible-for-discount",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005096949327817993"
+    }
+  ]
+}

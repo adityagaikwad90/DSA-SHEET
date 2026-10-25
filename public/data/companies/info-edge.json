@@ -1,0 +1,108 @@
+{
+  "name": "Info Edge",
+  "displayName": "Info Edge",
+  "slug": "info-edge",
+  "total": 7,
+  "counts": {
+    "Easy": 1,
+    "Medium": 5,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-the-maximum-factor-score-of-array",
+      "title": "Find the Maximum Factor Score of Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-the-maximum-factor-score-of-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Number Theory",
+        "Least Common Multiple"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004118399948155469"
+    },
+    {
+      "id": "count-almost-equal-pairs-i",
+      "title": "Count Almost Equal Pairs I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-almost-equal-pairs-i",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sorting",
+        "Counting",
+        "Enumeration"
+      ],
+      "frequency": 97.6,
+      "acceptanceRate": "0.0038380406224737275"
+    },
+    {
+      "id": "find-the-minimum-and-maximum-number-of-nodes-between-critical-points",
+      "title": "Find the Minimum and Maximum Number of Nodes Between Critical Points",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points",
+      "topics": [
+        "Linked List"
+      ],
+      "frequency": 94.9,
+      "acceptanceRate": "0.007298741785722297"
+    },
+    {
+      "id": "two-out-of-three",
+      "title": "Two Out of Three",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-out-of-three",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Bit Manipulation"
+      ],
+      "frequency": 84.4,
+      "acceptanceRate": "0.0077880863124533154"
+    },
+    {
+      "id": "subrectangle-queries",
+      "title": "Subrectangle Queries",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/subrectangle-queries",
+      "topics": [
+        "Array",
+        "Design",
+        "Matrix"
+      ],
+      "frequency": 72.9,
+      "acceptanceRate": "0.008652801369241342"
+    },
+    {
+      "id": "bus-routes",
+      "title": "Bus Routes",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/bus-routes",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Breadth-First Search"
+      ],
+      "frequency": 72.9,
+      "acceptanceRate": "0.0047602690011475796"
+    },
+    {
+      "id": "sort-colors",
+      "title": "Sort Colors",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sort-colors",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting",
+        "Quicksort",
+        "Bubble Sort"
+      ],
+      "frequency": 63.8,
+      "acceptanceRate": "0.007029499627522785"
+    }
+  ]
+}

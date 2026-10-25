@@ -1,0 +1,79 @@
+{
+  "name": "Tripadvisor",
+  "displayName": "Tripadvisor",
+  "slug": "tripadvisor",
+  "total": 5,
+  "counts": {
+    "Easy": 3,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004534115794435866"
+    },
+    {
+      "id": "find-common-characters",
+      "title": "Find Common Characters",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-common-characters",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 89,
+      "acceptanceRate": "0.00748763267296839"
+    },
+    {
+      "id": "ransom-note",
+      "title": "Ransom Note",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/ransom-note",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 74.1,
+      "acceptanceRate": "0.006656118581889899"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 66,
+      "acceptanceRate": "0.00482572276559634"
+    },
+    {
+      "id": "min-stack",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-stack",
+      "topics": [
+        "Stack",
+        "Design"
+      ],
+      "frequency": 66,
+      "acceptanceRate": "0.005879070763921007"
+    }
+  ]
+}

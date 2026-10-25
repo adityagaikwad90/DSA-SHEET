@@ -1,0 +1,86 @@
+{
+  "name": "Duolingo",
+  "displayName": "Duolingo",
+  "slug": "duolingo",
+  "total": 5,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "encrypt-and-decrypt-strings",
+      "title": "Encrypt and Decrypt Strings",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/encrypt-and-decrypt-strings",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Design",
+        "Trie"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003913249243811601"
+    },
+    {
+      "id": "longest-increasing-path-in-a-matrix",
+      "title": "Longest Increasing Path in a Matrix",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Memoization",
+        "Matrix",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 92.7,
+      "acceptanceRate": "0.005718813063448473"
+    },
+    {
+      "id": "task-scheduler-ii",
+      "title": "Task Scheduler II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/task-scheduler-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Simulation"
+      ],
+      "frequency": 87.9,
+      "acceptanceRate": "0.005510435233069636"
+    },
+    {
+      "id": "k-radius-subarray-averages",
+      "title": "K Radius Subarray Averages",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/k-radius-subarray-averages",
+      "topics": [
+        "Array",
+        "Sliding Window"
+      ],
+      "frequency": 83.3,
+      "acceptanceRate": "0.004656664148870424"
+    },
+    {
+      "id": "minimum-number-of-people-to-teach",
+      "title": "Minimum Number of People to Teach",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-number-of-people-to-teach",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Greedy"
+      ],
+      "frequency": 83.3,
+      "acceptanceRate": "0.00672602303487076"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "jio",
+  "displayName": "Jio",
+  "slug": "jio",
+  "total": 4,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximize-the-number-of-target-nodes-after-connecting-trees-i",
+      "title": "Maximize the Number of Target Nodes After Connecting Trees I",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006901033472904616"
+    },
+    {
+      "id": "maximize-the-number-of-target-nodes-after-connecting-trees-ii",
+      "title": "Maximize the Number of Target Nodes After Connecting Trees II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007254895951454228"
+    },
+    {
+      "id": "reverse-linked-list",
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reverse-linked-list",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 65.4,
+      "acceptanceRate": "0.008116099171587073"
+    },
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 65.4,
+      "acceptanceRate": "0.007344443377157138"
+    }
+  ]
+}

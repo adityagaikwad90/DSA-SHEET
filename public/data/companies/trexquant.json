@@ -1,0 +1,62 @@
+{
+  "name": "Trexquant",
+  "displayName": "Trexquant",
+  "slug": "trexquant",
+  "total": 4,
+  "counts": {
+    "Easy": 1,
+    "Medium": 3,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00575212444199731"
+    },
+    {
+      "id": "brick-wall",
+      "title": "Brick Wall",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/brick-wall",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005595874569875961"
+    },
+    {
+      "id": "koko-eating-bananas",
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/koko-eating-bananas",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0050717010478791525"
+    },
+    {
+      "id": "max-difference-you-can-get-from-changing-an-integer",
+      "title": "Max Difference You Can Get From Changing an Integer",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer",
+      "topics": [
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004860729978619169"
+    }
+  ]
+}

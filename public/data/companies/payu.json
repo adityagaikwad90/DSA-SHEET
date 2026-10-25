@@ -1,0 +1,26 @@
+{
+  "name": "PayU",
+  "displayName": "PayU",
+  "slug": "payu",
+  "total": 1,
+  "counts": {
+    "Easy": 1,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-operations-to-obtain-zero",
+      "title": "Count Operations to Obtain Zero",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/count-operations-to-obtain-zero",
+      "topics": [
+        "Math",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007980554049964918"
+    }
+  ]
+}

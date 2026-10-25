@@ -1,0 +1,50 @@
+{
+  "name": "Activision",
+  "displayName": "Activision",
+  "slug": "activision",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "reformat-phone-number",
+      "title": "Reformat Phone Number",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/reformat-phone-number",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00680282643208495"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006337480127573663"
+    },
+    {
+      "id": "number-of-divisible-triplet-sums",
+      "title": "Number of Divisible Triplet Sums",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-divisible-triplet-sums",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 89.6,
+      "acceptanceRate": "0.006760404243299228"
+    }
+  ]
+}

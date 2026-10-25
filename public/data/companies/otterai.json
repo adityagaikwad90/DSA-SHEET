@@ -1,0 +1,37 @@
+{
+  "name": "Otter.ai",
+  "displayName": "Otter.ai",
+  "slug": "otterai",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "flatten-deeply-nested-array",
+      "title": "Flatten Deeply Nested Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/flatten-deeply-nested-array",
+      "topics": [],
+      "frequency": 100,
+      "acceptanceRate": "0.006628767451614837"
+    },
+    {
+      "id": "trapping-rain-water-ii",
+      "title": "Trapping Rain Water II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water-ii",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Heap (Priority Queue)",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006432132552120841"
+    }
+  ]
+}

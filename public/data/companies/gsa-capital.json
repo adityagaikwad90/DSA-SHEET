@@ -1,0 +1,27 @@
+{
+  "name": "GSA Capital",
+  "displayName": "GSA Capital",
+  "slug": "gsa-capital",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximal-square",
+      "title": "Maximal Square",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximal-square",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005105149951983008"
+    }
+  ]
+}

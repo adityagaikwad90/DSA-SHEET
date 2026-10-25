@@ -1,0 +1,128 @@
+{
+  "name": "Teradata",
+  "displayName": "Teradata",
+  "slug": "teradata",
+  "total": 8,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 5
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximize-the-minimum-powered-city",
+      "title": "Maximize the Minimum Powered City",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximize-the-minimum-powered-city",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Greedy",
+        "Queue",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006126555998499612"
+    },
+    {
+      "id": "minimum-cost-to-hire-k-workers",
+      "title": "Minimum Cost to Hire K Workers",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006387832555315193"
+    },
+    {
+      "id": "remove-boxes",
+      "title": "Remove Boxes",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/remove-boxes",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004993493295901508"
+    },
+    {
+      "id": "minimum-jumps-to-reach-end-via-prime-teleportation",
+      "title": "Minimum Jumps to Reach End via Prime Teleportation",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Breadth-First Search",
+        "Number Theory"
+      ],
+      "frequency": 98.5,
+      "acceptanceRate": "0.0044180966793250145"
+    },
+    {
+      "id": "find-the-sum-of-the-power-of-all-subsequences",
+      "title": "Find the Sum of the Power of All Subsequences",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-the-sum-of-the-power-of-all-subsequences",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Knapsack Problem",
+        "0-1 Knapsack"
+      ],
+      "frequency": 91.3,
+      "acceptanceRate": "0.003897128861069533"
+    },
+    {
+      "id": "minimum-operations-to-make-binary-palindrome",
+      "title": "Minimum Operations to Make Binary Palindrome",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Bit Manipulation"
+      ],
+      "frequency": 86.3,
+      "acceptanceRate": "0.0051032744226390545"
+    },
+    {
+      "id": "reducing-dishes",
+      "title": "Reducing Dishes",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/reducing-dishes",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 73.6,
+      "acceptanceRate": "0.007687334484970349"
+    },
+    {
+      "id": "count-pairs-in-two-arrays",
+      "title": "Count Pairs in Two Arrays",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-pairs-in-two-arrays",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Sorting"
+      ],
+      "frequency": 66.6,
+      "acceptanceRate": "0.006027657398841116"
+    }
+  ]
+}

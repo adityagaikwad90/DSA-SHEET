@@ -1,0 +1,38 @@
+{
+  "name": "Thomson Reuters",
+  "displayName": "Thomson Reuters",
+  "slug": "thomson-reuters",
+  "total": 2,
+  "counts": {
+    "Easy": 1,
+    "Medium": 1,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "minimum-time-to-type-word-using-special-typewriter",
+      "title": "Minimum Time to Type Word Using Special Typewriter",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter",
+      "topics": [
+        "String",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00790712094872164"
+    },
+    {
+      "id": "longest-substring-of-all-vowels-in-order",
+      "title": "Longest Substring Of All Vowels in Order",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-of-all-vowels-in-order",
+      "topics": [
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 97.6,
+      "acceptanceRate": "0.005260578790026813"
+    }
+  ]
+}

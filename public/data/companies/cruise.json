@@ -1,0 +1,45 @@
+{
+  "name": "Cruise",
+  "displayName": "Cruise",
+  "slug": "cruise",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "course-schedule",
+      "title": "Course Schedule",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005241165332064123"
+    },
+    {
+      "id": "synonymous-sentences",
+      "title": "Synonymous Sentences",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/synonymous-sentences",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Backtracking",
+        "Sort",
+        "Union-Find"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0057587396289736185"
+    }
+  ]
+}

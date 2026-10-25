@@ -1,0 +1,95 @@
+{
+  "name": "Harness",
+  "displayName": "Harness",
+  "slug": "harness",
+  "total": 6,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "3sum-closest",
+      "title": "3Sum Closest",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/3sum-closest",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0047673712766763045"
+    },
+    {
+      "id": "cherry-pickup",
+      "title": "Cherry Pickup",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/cherry-pickup",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004074181020637922"
+    },
+    {
+      "id": "count-good-subarrays",
+      "title": "Count Good Subarrays",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-good-subarrays",
+      "topics": [
+        "Array",
+        "Stack",
+        "Bit Manipulation",
+        "Monotonic Stack"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.002619244099686417"
+    },
+    {
+      "id": "minimum-window-substring",
+      "title": "Minimum Window Substring",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-window-substring",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 89.1,
+      "acceptanceRate": "0.00486969605056499"
+    },
+    {
+      "id": "longest-substring-with-at-least-k-repeating-characters",
+      "title": "Longest Substring with At Least K Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Divide and Conquer",
+        "Sliding Window"
+      ],
+      "frequency": 88.8,
+      "acceptanceRate": "0.0046874977213299555"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 88.8,
+      "acceptanceRate": "0.004825711823933602"
+    }
+  ]
+}

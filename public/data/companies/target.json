@@ -1,0 +1,102 @@
+{
+  "name": "Target",
+  "displayName": "Target",
+  "slug": "target",
+  "total": 6,
+  "counts": {
+    "Easy": 1,
+    "Medium": 4,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "sort-colors",
+      "title": "Sort Colors",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sort-colors",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting",
+        "Quicksort",
+        "Bubble Sort"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007029500256364891"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.004853662745052489"
+    },
+    {
+      "id": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-subarray",
+      "topics": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.005399359118735593"
+    },
+    {
+      "id": "product-of-the-last-k-numbers",
+      "title": "Product of the Last K Numbers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/product-of-the-last-k-numbers",
+      "topics": [
+        "Array",
+        "Math",
+        "Design",
+        "Data Stream",
+        "Prefix Sum"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.006308162635677758"
+    },
+    {
+      "id": "sort-characters-by-frequency",
+      "title": "Sort Characters By Frequency",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sort-characters-by-frequency",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.007589009936179747"
+    },
+    {
+      "id": "longest-path-with-different-adjacent-characters",
+      "title": "Longest Path With Different Adjacent Characters",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/longest-path-with-different-adjacent-characters",
+      "topics": [
+        "Array",
+        "String",
+        "Tree",
+        "Depth-First Search",
+        "Graph Theory",
+        "Topological Sort"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.005404861979496614"
+    }
+  ]
+}

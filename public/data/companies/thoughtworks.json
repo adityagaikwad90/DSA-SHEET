@@ -1,0 +1,48 @@
+{
+  "name": "ThoughtWorks",
+  "displayName": "ThoughtWorks",
+  "slug": "thoughtworks",
+  "total": 3,
+  "counts": {
+    "Easy": 3,
+    "Medium": 0,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-closest-number-to-zero",
+      "title": "Find Closest Number to Zero",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/find-closest-number-to-zero",
+      "topics": [
+        "Array"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004823718322151775"
+    },
+    {
+      "id": "number-of-bit-changes-to-make-two-integers-equal",
+      "title": "Number of Bit Changes to Make Two Integers Equal",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal",
+      "topics": [
+        "Bit Manipulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00635992131331819"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005803622339319185"
+    }
+  ]
+}

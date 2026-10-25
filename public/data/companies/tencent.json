@@ -1,0 +1,53 @@
+{
+  "name": "Tencent",
+  "displayName": "Tencent",
+  "slug": "tencent",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006337500536424176"
+    },
+    {
+      "id": "minimum-factorization",
+      "title": "Minimum Factorization",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-factorization",
+      "topics": [
+        "Math",
+        "Greedy",
+        "Prime Factorization"
+      ],
+      "frequency": 90.2,
+      "acceptanceRate": "0.003403877662479519"
+    },
+    {
+      "id": "remove-boxes",
+      "title": "Remove Boxes",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/remove-boxes",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "frequency": 90.2,
+      "acceptanceRate": "0.004993493295901508"
+    }
+  ]
+}

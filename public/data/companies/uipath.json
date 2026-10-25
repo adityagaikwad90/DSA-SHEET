@@ -1,0 +1,192 @@
+{
+  "name": "UiPath",
+  "displayName": "UiPath",
+  "slug": "uipath",
+  "total": 13,
+  "counts": {
+    "Easy": 0,
+    "Medium": 7,
+    "Hard": 6
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "integer-to-roman",
+      "title": "Integer to Roman",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/integer-to-roman",
+      "topics": [
+        "Hash Table",
+        "Math",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007185729393490961"
+    },
+    {
+      "id": "min-stack",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-stack",
+      "topics": [
+        "Stack",
+        "Design"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005879072836885574"
+    },
+    {
+      "id": "escape-a-large-maze",
+      "title": "Escape a Large Maze",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/escape-a-large-maze",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Bidirectional Search"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003731046270296667"
+    },
+    {
+      "id": "as-far-from-land-as-possible",
+      "title": "As Far from Land as Possible",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/as-far-from-land-as-possible",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.005259333627832885"
+    },
+    {
+      "id": "sorting-three-groups",
+      "title": "Sorting Three Groups",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sorting-three-groups",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming"
+      ],
+      "frequency": 97.2,
+      "acceptanceRate": "0.004363070507611879"
+    },
+    {
+      "id": "longest-repeating-character-replacement",
+      "title": "Longest Repeating Character Replacement",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-repeating-character-replacement",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.006087676341532788"
+    },
+    {
+      "id": "satisfiability-of-equality-equations",
+      "title": "Satisfiability of Equality Equations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/satisfiability-of-equality-equations",
+      "topics": [
+        "Array",
+        "String",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.005227892099124692"
+    },
+    {
+      "id": "subsets-ii",
+      "title": "Subsets II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/subsets-ii",
+      "topics": [
+        "Array",
+        "Backtracking",
+        "Bit Manipulation"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.0062132562354362654"
+    },
+    {
+      "id": "burst-balloons",
+      "title": "Burst Balloons",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/burst-balloons",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.006457417074808334"
+    },
+    {
+      "id": "collect-coins-in-a-tree",
+      "title": "Collect Coins in a Tree",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/collect-coins-in-a-tree",
+      "topics": [
+        "Array",
+        "Tree",
+        "Graph Theory",
+        "Topological Sort"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.004018351976288598"
+    },
+    {
+      "id": "making-a-large-island",
+      "title": "Making A Large Island",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/making-a-large-island",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.005732221093462556"
+    },
+    {
+      "id": "russian-doll-envelopes",
+      "title": "Russian Doll Envelopes",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/russian-doll-envelopes",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Sorting",
+        "Longest Increasing Subsequence"
+      ],
+      "frequency": 88,
+      "acceptanceRate": "0.003833090980833449"
+    },
+    {
+      "id": "binary-tree-cameras",
+      "title": "Binary Tree Cameras",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/binary-tree-cameras",
+      "topics": [
+        "Dynamic Programming",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree",
+        "DP on Trees"
+      ],
+      "frequency": 64.4,
+      "acceptanceRate": "0.004824933214603739"
+    }
+  ]
+}

@@ -1,0 +1,4232 @@
+[
+  {
+    "name": "Google",
+    "displayName": "Google",
+    "slug": "google",
+    "total": 2324,
+    "easy": 612,
+    "medium": 1215,
+    "hard": 497,
+    "featured": true
+  },
+  {
+    "name": "Amazon",
+    "displayName": "Amazon",
+    "slug": "amazon",
+    "total": 2015,
+    "easy": 539,
+    "medium": 1086,
+    "hard": 390,
+    "featured": true
+  },
+  {
+    "name": "Meta",
+    "displayName": "Meta",
+    "slug": "meta",
+    "total": 1396,
+    "easy": 439,
+    "medium": 752,
+    "hard": 205,
+    "featured": true
+  },
+  {
+    "name": "Microsoft",
+    "displayName": "Microsoft",
+    "slug": "microsoft",
+    "total": 1371,
+    "easy": 393,
+    "medium": 741,
+    "hard": 237,
+    "featured": true
+  },
+  {
+    "name": "Bloomberg",
+    "displayName": "Bloomberg",
+    "slug": "bloomberg",
+    "total": 1239,
+    "easy": 403,
+    "medium": 649,
+    "hard": 187,
+    "featured": true
+  },
+  {
+    "name": "Uber",
+    "displayName": "Uber",
+    "slug": "uber",
+    "total": 336,
+    "easy": 41,
+    "medium": 194,
+    "hard": 101,
+    "featured": true
+  },
+  {
+    "name": "TikTok",
+    "displayName": "TikTok",
+    "slug": "tiktok",
+    "total": 317,
+    "easy": 27,
+    "medium": 225,
+    "hard": 65,
+    "featured": true
+  },
+  {
+    "name": "Apple",
+    "displayName": "Apple",
+    "slug": "apple",
+    "total": 282,
+    "easy": 68,
+    "medium": 170,
+    "hard": 44,
+    "featured": true
+  },
+  {
+    "name": "Oracle",
+    "displayName": "Oracle",
+    "slug": "oracle",
+    "total": 282,
+    "easy": 51,
+    "medium": 182,
+    "hard": 49,
+    "featured": true
+  },
+  {
+    "name": "tcs",
+    "displayName": "TCS",
+    "slug": "tcs",
+    "total": 264,
+    "easy": 119,
+    "medium": 121,
+    "hard": 24,
+    "featured": true
+  },
+  {
+    "name": "Infosys",
+    "displayName": "Infosys",
+    "slug": "infosys",
+    "total": 254,
+    "easy": 55,
+    "medium": 138,
+    "hard": 61,
+    "featured": true
+  },
+  {
+    "name": "Goldman Sachs",
+    "displayName": "Goldman Sachs",
+    "slug": "goldman-sachs",
+    "total": 246,
+    "easy": 42,
+    "medium": 159,
+    "hard": 45,
+    "featured": true
+  },
+  {
+    "name": "Salesforce",
+    "displayName": "Salesforce",
+    "slug": "salesforce",
+    "total": 196,
+    "easy": 25,
+    "medium": 120,
+    "hard": 51,
+    "featured": true
+  },
+  {
+    "name": "LinkedIn",
+    "displayName": "LinkedIn",
+    "slug": "linkedin",
+    "total": 171,
+    "easy": 25,
+    "medium": 110,
+    "hard": 36,
+    "featured": true
+  },
+  {
+    "name": "IBM",
+    "displayName": "IBM",
+    "slug": "ibm",
+    "total": 166,
+    "easy": 51,
+    "medium": 98,
+    "hard": 17,
+    "featured": false
+  },
+  {
+    "name": "Visa",
+    "displayName": "Visa",
+    "slug": "visa",
+    "total": 150,
+    "easy": 33,
+    "medium": 92,
+    "hard": 25,
+    "featured": false
+  },
+  {
+    "name": "Adobe",
+    "displayName": "Adobe",
+    "slug": "adobe",
+    "total": 147,
+    "easy": 31,
+    "medium": 92,
+    "hard": 24,
+    "featured": true
+  },
+  {
+    "name": "Zoho",
+    "displayName": "Zoho",
+    "slug": "zoho",
+    "total": 144,
+    "easy": 53,
+    "medium": 77,
+    "hard": 14,
+    "featured": false
+  },
+  {
+    "name": "Walmart Labs",
+    "displayName": "Walmart Labs",
+    "slug": "walmart-labs",
+    "total": 135,
+    "easy": 21,
+    "medium": 90,
+    "hard": 24,
+    "featured": false
+  },
+  {
+    "name": "Nvidia",
+    "displayName": "Nvidia",
+    "slug": "nvidia",
+    "total": 131,
+    "easy": 30,
+    "medium": 85,
+    "hard": 16,
+    "featured": false
+  },
+  {
+    "name": "Yandex",
+    "displayName": "Yandex",
+    "slug": "yandex",
+    "total": 120,
+    "easy": 46,
+    "medium": 65,
+    "hard": 9,
+    "featured": false
+  },
+  {
+    "name": "DE Shaw",
+    "displayName": "DE Shaw",
+    "slug": "de-shaw",
+    "total": 107,
+    "easy": 15,
+    "medium": 63,
+    "hard": 29,
+    "featured": false
+  },
+  {
+    "name": "Accenture",
+    "displayName": "Accenture",
+    "slug": "accenture",
+    "total": 101,
+    "easy": 47,
+    "medium": 43,
+    "hard": 11,
+    "featured": false
+  },
+  {
+    "name": "Snowflake",
+    "displayName": "Snowflake",
+    "slug": "snowflake",
+    "total": 100,
+    "easy": 14,
+    "medium": 65,
+    "hard": 21,
+    "featured": false
+  },
+  {
+    "name": "Flipkart",
+    "displayName": "Flipkart",
+    "slug": "flipkart",
+    "total": 93,
+    "easy": 6,
+    "medium": 61,
+    "hard": 26,
+    "featured": true
+  },
+  {
+    "name": "PayPal",
+    "displayName": "PayPal",
+    "slug": "paypal",
+    "total": 93,
+    "easy": 16,
+    "medium": 63,
+    "hard": 14,
+    "featured": true
+  },
+  {
+    "name": "PhonePe",
+    "displayName": "PhonePe",
+    "slug": "phonepe",
+    "total": 92,
+    "easy": 3,
+    "medium": 52,
+    "hard": 37,
+    "featured": false
+  },
+  {
+    "name": "Snap",
+    "displayName": "Snap",
+    "slug": "snap",
+    "total": 83,
+    "easy": 5,
+    "medium": 49,
+    "hard": 29,
+    "featured": false
+  },
+  {
+    "name": "Cisco",
+    "displayName": "Cisco",
+    "slug": "cisco",
+    "total": 77,
+    "easy": 18,
+    "medium": 45,
+    "hard": 14,
+    "featured": false
+  },
+  {
+    "name": "Citadel",
+    "displayName": "Citadel",
+    "slug": "citadel",
+    "total": 75,
+    "easy": 6,
+    "medium": 44,
+    "hard": 25,
+    "featured": false
+  },
+  {
+    "name": "Nutanix",
+    "displayName": "Nutanix",
+    "slug": "nutanix",
+    "total": 70,
+    "easy": 3,
+    "medium": 49,
+    "hard": 18,
+    "featured": false
+  },
+  {
+    "name": "DoorDash",
+    "displayName": "DoorDash",
+    "slug": "doordash",
+    "total": 69,
+    "easy": 7,
+    "medium": 38,
+    "hard": 24,
+    "featured": false
+  },
+  {
+    "name": "Expedia",
+    "displayName": "Expedia",
+    "slug": "expedia",
+    "total": 68,
+    "easy": 13,
+    "medium": 48,
+    "hard": 7,
+    "featured": false
+  },
+  {
+    "name": "eBay",
+    "displayName": "eBay",
+    "slug": "ebay",
+    "total": 67,
+    "easy": 10,
+    "medium": 44,
+    "hard": 13,
+    "featured": false
+  },
+  {
+    "name": "ServiceNow",
+    "displayName": "ServiceNow",
+    "slug": "servicenow",
+    "total": 65,
+    "easy": 6,
+    "medium": 45,
+    "hard": 14,
+    "featured": false
+  },
+  {
+    "name": "Airbnb",
+    "displayName": "Airbnb",
+    "slug": "airbnb",
+    "total": 62,
+    "easy": 11,
+    "medium": 30,
+    "hard": 21,
+    "featured": false
+  },
+  {
+    "name": "Capital One",
+    "displayName": "Capital One",
+    "slug": "capital-one",
+    "total": 61,
+    "easy": 13,
+    "medium": 38,
+    "hard": 10,
+    "featured": false
+  },
+  {
+    "name": "Morgan Stanley",
+    "displayName": "Morgan Stanley",
+    "slug": "morgan-stanley",
+    "total": 60,
+    "easy": 14,
+    "medium": 37,
+    "hard": 9,
+    "featured": false
+  },
+  {
+    "name": "ByteDance",
+    "displayName": "ByteDance",
+    "slug": "bytedance",
+    "total": 59,
+    "easy": 2,
+    "medium": 48,
+    "hard": 9,
+    "featured": true
+  },
+  {
+    "name": "Roblox",
+    "displayName": "Roblox",
+    "slug": "roblox",
+    "total": 58,
+    "easy": 11,
+    "medium": 37,
+    "hard": 10,
+    "featured": false
+  },
+  {
+    "name": "Atlassian",
+    "displayName": "Atlassian",
+    "slug": "atlassian",
+    "total": 57,
+    "easy": 5,
+    "medium": 37,
+    "hard": 15,
+    "featured": false
+  },
+  {
+    "name": "Anduril",
+    "displayName": "Anduril",
+    "slug": "anduril",
+    "total": 56,
+    "easy": 8,
+    "medium": 40,
+    "hard": 8,
+    "featured": false
+  },
+  {
+    "name": "Intuit",
+    "displayName": "Intuit",
+    "slug": "intuit",
+    "total": 56,
+    "easy": 7,
+    "medium": 30,
+    "hard": 19,
+    "featured": false
+  },
+  {
+    "name": "Samsung",
+    "displayName": "Samsung",
+    "slug": "samsung",
+    "total": 55,
+    "easy": 8,
+    "medium": 30,
+    "hard": 17,
+    "featured": false
+  },
+  {
+    "name": "EPAM Systems",
+    "displayName": "EPAM Systems",
+    "slug": "epam-systems",
+    "total": 52,
+    "easy": 17,
+    "medium": 31,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Qualcomm",
+    "displayName": "Qualcomm",
+    "slug": "qualcomm",
+    "total": 52,
+    "easy": 23,
+    "medium": 22,
+    "hard": 7,
+    "featured": false
+  },
+  {
+    "name": "Cognizant",
+    "displayName": "Cognizant",
+    "slug": "cognizant",
+    "total": 51,
+    "easy": 29,
+    "medium": 18,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Wix",
+    "displayName": "Wix",
+    "slug": "wix",
+    "total": 51,
+    "easy": 17,
+    "medium": 27,
+    "hard": 7,
+    "featured": false
+  },
+  {
+    "name": "X",
+    "displayName": "X",
+    "slug": "x",
+    "total": 51,
+    "easy": 8,
+    "medium": 31,
+    "hard": 12,
+    "featured": true
+  },
+  {
+    "name": "Palo Alto Networks",
+    "displayName": "Palo Alto Networks",
+    "slug": "palo-alto-networks",
+    "total": 50,
+    "easy": 13,
+    "medium": 30,
+    "hard": 7,
+    "featured": false
+  },
+  {
+    "name": "Coupang",
+    "displayName": "Coupang",
+    "slug": "coupang",
+    "total": 48,
+    "easy": 3,
+    "medium": 32,
+    "hard": 13,
+    "featured": false
+  },
+  {
+    "name": "Sprinklr",
+    "displayName": "Sprinklr",
+    "slug": "sprinklr",
+    "total": 45,
+    "easy": 1,
+    "medium": 22,
+    "hard": 22,
+    "featured": false
+  },
+  {
+    "name": "Pinterest",
+    "displayName": "Pinterest",
+    "slug": "pinterest",
+    "total": 41,
+    "easy": 1,
+    "medium": 25,
+    "hard": 15,
+    "featured": false
+  },
+  {
+    "name": "Deloitte",
+    "displayName": "Deloitte",
+    "slug": "deloitte",
+    "total": 40,
+    "easy": 16,
+    "medium": 22,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Tesla",
+    "displayName": "Tesla",
+    "slug": "tesla",
+    "total": 40,
+    "easy": 8,
+    "medium": 26,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "Media.net",
+    "displayName": "Media.net",
+    "slug": "medianet",
+    "total": 39,
+    "easy": 5,
+    "medium": 18,
+    "hard": 16,
+    "featured": false
+  },
+  {
+    "name": "Agoda",
+    "displayName": "Agoda",
+    "slug": "agoda",
+    "total": 38,
+    "easy": 12,
+    "medium": 24,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Arista Networks",
+    "displayName": "Arista Networks",
+    "slug": "arista-networks",
+    "total": 37,
+    "easy": 9,
+    "medium": 25,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Meesho",
+    "displayName": "Meesho",
+    "slug": "meesho",
+    "total": 36,
+    "easy": 1,
+    "medium": 19,
+    "hard": 16,
+    "featured": false
+  },
+  {
+    "name": "Swiggy",
+    "displayName": "Swiggy",
+    "slug": "swiggy",
+    "total": 35,
+    "easy": 6,
+    "medium": 24,
+    "hard": 5,
+    "featured": true
+  },
+  {
+    "name": "josh technology",
+    "displayName": "Josh Technology",
+    "slug": "josh-technology",
+    "total": 34,
+    "easy": 7,
+    "medium": 25,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "SAP",
+    "displayName": "SAP",
+    "slug": "sap",
+    "total": 34,
+    "easy": 13,
+    "medium": 16,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Capgemini",
+    "displayName": "Capgemini",
+    "slug": "capgemini",
+    "total": 33,
+    "easy": 17,
+    "medium": 14,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Autodesk",
+    "displayName": "Autodesk",
+    "slug": "autodesk",
+    "total": 32,
+    "easy": 10,
+    "medium": 16,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "Rubrik",
+    "displayName": "Rubrik",
+    "slug": "rubrik",
+    "total": 32,
+    "easy": 2,
+    "medium": 20,
+    "hard": 10,
+    "featured": false
+  },
+  {
+    "name": "Rippling",
+    "displayName": "Rippling",
+    "slug": "rippling",
+    "total": 30,
+    "easy": 2,
+    "medium": 21,
+    "hard": 7,
+    "featured": false
+  },
+  {
+    "name": "Yahoo",
+    "displayName": "Yahoo",
+    "slug": "yahoo",
+    "total": 30,
+    "easy": 10,
+    "medium": 17,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Zomato",
+    "displayName": "Zomato",
+    "slug": "zomato",
+    "total": 30,
+    "easy": 2,
+    "medium": 18,
+    "hard": 10,
+    "featured": true
+  },
+  {
+    "name": "Squarepoint Capital",
+    "displayName": "Squarepoint Capital",
+    "slug": "squarepoint-capital",
+    "total": 29,
+    "easy": 2,
+    "medium": 18,
+    "hard": 9,
+    "featured": false
+  },
+  {
+    "name": "Turing",
+    "displayName": "Turing",
+    "slug": "turing",
+    "total": 29,
+    "easy": 5,
+    "medium": 19,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "American Express",
+    "displayName": "American Express",
+    "slug": "american-express",
+    "total": 28,
+    "easy": 8,
+    "medium": 14,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "Docusign",
+    "displayName": "Docusign",
+    "slug": "docusign",
+    "total": 28,
+    "easy": 3,
+    "medium": 18,
+    "hard": 7,
+    "featured": false
+  },
+  {
+    "name": "HashedIn",
+    "displayName": "HashedIn",
+    "slug": "hashedin",
+    "total": 28,
+    "easy": 2,
+    "medium": 19,
+    "hard": 7,
+    "featured": false
+  },
+  {
+    "name": "Netflix",
+    "displayName": "Netflix",
+    "slug": "netflix",
+    "total": 28,
+    "easy": 4,
+    "medium": 19,
+    "hard": 5,
+    "featured": true
+  },
+  {
+    "name": "Tekion",
+    "displayName": "Tekion",
+    "slug": "tekion",
+    "total": 28,
+    "easy": 1,
+    "medium": 18,
+    "hard": 9,
+    "featured": false
+  },
+  {
+    "name": "Waymo",
+    "displayName": "Waymo",
+    "slug": "waymo",
+    "total": 28,
+    "easy": 1,
+    "medium": 16,
+    "hard": 11,
+    "featured": false
+  },
+  {
+    "name": "Yelp",
+    "displayName": "Yelp",
+    "slug": "yelp",
+    "total": 28,
+    "easy": 8,
+    "medium": 15,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Grammarly",
+    "displayName": "Grammarly",
+    "slug": "grammarly",
+    "total": 27,
+    "easy": 7,
+    "medium": 18,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "MathWorks",
+    "displayName": "MathWorks",
+    "slug": "mathworks",
+    "total": 27,
+    "easy": 5,
+    "medium": 14,
+    "hard": 8,
+    "featured": false
+  },
+  {
+    "name": "Zeta",
+    "displayName": "Zeta",
+    "slug": "zeta",
+    "total": 27,
+    "easy": 0,
+    "medium": 18,
+    "hard": 9,
+    "featured": false
+  },
+  {
+    "name": "Databricks",
+    "displayName": "Databricks",
+    "slug": "databricks",
+    "total": 25,
+    "easy": 2,
+    "medium": 18,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Lyft",
+    "displayName": "Lyft",
+    "slug": "lyft",
+    "total": 25,
+    "easy": 0,
+    "medium": 20,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "MongoDB",
+    "displayName": "MongoDB",
+    "slug": "mongodb",
+    "total": 25,
+    "easy": 4,
+    "medium": 16,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Paytm",
+    "displayName": "Paytm",
+    "slug": "paytm",
+    "total": 25,
+    "easy": 5,
+    "medium": 17,
+    "hard": 3,
+    "featured": true
+  },
+  {
+    "name": "Ola Cabs",
+    "displayName": "Ola Cabs",
+    "slug": "ola-cabs",
+    "total": 24,
+    "easy": 5,
+    "medium": 14,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Okta",
+    "displayName": "Okta",
+    "slug": "okta",
+    "total": 23,
+    "easy": 0,
+    "medium": 15,
+    "hard": 8,
+    "featured": false
+  },
+  {
+    "name": "Dropbox",
+    "displayName": "Dropbox",
+    "slug": "dropbox",
+    "total": 22,
+    "easy": 2,
+    "medium": 10,
+    "hard": 10,
+    "featured": false
+  },
+  {
+    "name": "Siemens",
+    "displayName": "Siemens",
+    "slug": "siemens",
+    "total": 22,
+    "easy": 5,
+    "medium": 14,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Zenefits",
+    "displayName": "Zenefits",
+    "slug": "zenefits",
+    "total": 21,
+    "easy": 5,
+    "medium": 11,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Two Sigma",
+    "displayName": "Two Sigma",
+    "slug": "two-sigma",
+    "total": 20,
+    "easy": 3,
+    "medium": 12,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Wells Fargo",
+    "displayName": "Wells Fargo",
+    "slug": "wells-fargo",
+    "total": 20,
+    "easy": 9,
+    "medium": 9,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Barclays",
+    "displayName": "Barclays",
+    "slug": "barclays",
+    "total": 19,
+    "easy": 5,
+    "medium": 11,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Deutsche Bank",
+    "displayName": "Deutsche Bank",
+    "slug": "deutsche-bank",
+    "total": 19,
+    "easy": 6,
+    "medium": 7,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "Juspay",
+    "displayName": "Juspay",
+    "slug": "juspay",
+    "total": 19,
+    "easy": 1,
+    "medium": 13,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Quora",
+    "displayName": "Quora",
+    "slug": "quora",
+    "total": 19,
+    "easy": 7,
+    "medium": 9,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Tinkoff",
+    "displayName": "Tinkoff",
+    "slug": "tinkoff",
+    "total": 19,
+    "easy": 6,
+    "medium": 13,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Akuna Capital",
+    "displayName": "Akuna Capital",
+    "slug": "akuna-capital",
+    "total": 18,
+    "easy": 1,
+    "medium": 8,
+    "hard": 9,
+    "featured": false
+  },
+  {
+    "name": "BNY Mellon",
+    "displayName": "BNY Mellon",
+    "slug": "bny-mellon",
+    "total": 18,
+    "easy": 1,
+    "medium": 10,
+    "hard": 7,
+    "featured": false
+  },
+  {
+    "name": "OpenAI",
+    "displayName": "OpenAI",
+    "slug": "openai",
+    "total": 18,
+    "easy": 1,
+    "medium": 15,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Roku",
+    "displayName": "Roku",
+    "slug": "roku",
+    "total": 18,
+    "easy": 2,
+    "medium": 10,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "Wipro",
+    "displayName": "Wipro",
+    "slug": "wipro",
+    "total": 18,
+    "easy": 15,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Accolite",
+    "displayName": "Accolite",
+    "slug": "accolite",
+    "total": 17,
+    "easy": 3,
+    "medium": 13,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "AMD",
+    "displayName": "AMD",
+    "slug": "amd",
+    "total": 17,
+    "easy": 9,
+    "medium": 8,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Booking.com",
+    "displayName": "Booking.com",
+    "slug": "bookingcom",
+    "total": 17,
+    "easy": 3,
+    "medium": 10,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Grab",
+    "displayName": "Grab",
+    "slug": "grab",
+    "total": 17,
+    "easy": 3,
+    "medium": 14,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "HCL",
+    "displayName": "HCL",
+    "slug": "hcl",
+    "total": 17,
+    "easy": 9,
+    "medium": 6,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "IXL",
+    "displayName": "IXL",
+    "slug": "ixl",
+    "total": 17,
+    "easy": 3,
+    "medium": 11,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Myntra",
+    "displayName": "Myntra",
+    "slug": "myntra",
+    "total": 17,
+    "easy": 3,
+    "medium": 12,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Verkada",
+    "displayName": "Verkada",
+    "slug": "verkada",
+    "total": 17,
+    "easy": 4,
+    "medium": 10,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Wayfair",
+    "displayName": "Wayfair",
+    "slug": "wayfair",
+    "total": 17,
+    "easy": 4,
+    "medium": 11,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Epic Systems",
+    "displayName": "Epic Systems",
+    "slug": "epic-systems",
+    "total": 16,
+    "easy": 4,
+    "medium": 11,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Geico",
+    "displayName": "Geico",
+    "slug": "geico",
+    "total": 16,
+    "easy": 1,
+    "medium": 14,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Hudson River Trading",
+    "displayName": "Hudson River Trading",
+    "slug": "hudson-river-trading",
+    "total": 16,
+    "easy": 6,
+    "medium": 5,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "ZScaler",
+    "displayName": "ZScaler",
+    "slug": "zscaler",
+    "total": 16,
+    "easy": 4,
+    "medium": 6,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "Akamai",
+    "displayName": "Akamai",
+    "slug": "akamai",
+    "total": 15,
+    "easy": 8,
+    "medium": 7,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Intel",
+    "displayName": "Intel",
+    "slug": "intel",
+    "total": 15,
+    "easy": 5,
+    "medium": 9,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Pocket Gems",
+    "displayName": "Pocket Gems",
+    "slug": "pocket-gems",
+    "total": 15,
+    "easy": 1,
+    "medium": 10,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Robinhood",
+    "displayName": "Robinhood",
+    "slug": "robinhood",
+    "total": 15,
+    "easy": 3,
+    "medium": 11,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Sigmoid",
+    "displayName": "Sigmoid",
+    "slug": "sigmoid",
+    "total": 15,
+    "easy": 3,
+    "medium": 10,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Spotify",
+    "displayName": "Spotify",
+    "slug": "spotify",
+    "total": 15,
+    "easy": 8,
+    "medium": 3,
+    "hard": 4,
+    "featured": true
+  },
+  {
+    "name": "Arcesium",
+    "displayName": "Arcesium",
+    "slug": "arcesium",
+    "total": 14,
+    "easy": 0,
+    "medium": 8,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "Dell",
+    "displayName": "Dell",
+    "slug": "dell",
+    "total": 14,
+    "easy": 7,
+    "medium": 5,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "General Motors",
+    "displayName": "General Motors",
+    "slug": "general-motors",
+    "total": 14,
+    "easy": 0,
+    "medium": 9,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Jane Street",
+    "displayName": "Jane Street",
+    "slug": "jane-street",
+    "total": 14,
+    "easy": 7,
+    "medium": 4,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Mastercard",
+    "displayName": "Mastercard",
+    "slug": "mastercard",
+    "total": 14,
+    "easy": 4,
+    "medium": 7,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "SoFi",
+    "displayName": "SoFi",
+    "slug": "sofi",
+    "total": 14,
+    "easy": 1,
+    "medium": 9,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Zopsmart",
+    "displayName": "Zopsmart",
+    "slug": "zopsmart",
+    "total": 14,
+    "easy": 2,
+    "medium": 10,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "BitGo",
+    "displayName": "BitGo",
+    "slug": "bitgo",
+    "total": 13,
+    "easy": 0,
+    "medium": 9,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Datadog",
+    "displayName": "Datadog",
+    "slug": "datadog",
+    "total": 13,
+    "easy": 3,
+    "medium": 7,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Huawei",
+    "displayName": "Huawei",
+    "slug": "huawei",
+    "total": 13,
+    "easy": 4,
+    "medium": 6,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "InMobi",
+    "displayName": "InMobi",
+    "slug": "inmobi",
+    "total": 13,
+    "easy": 0,
+    "medium": 4,
+    "hard": 9,
+    "featured": false
+  },
+  {
+    "name": "MakeMyTrip",
+    "displayName": "MakeMyTrip",
+    "slug": "makemytrip",
+    "total": 13,
+    "easy": 0,
+    "medium": 10,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Nuro",
+    "displayName": "Nuro",
+    "slug": "nuro",
+    "total": 13,
+    "easy": 0,
+    "medium": 10,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "UiPath",
+    "displayName": "UiPath",
+    "slug": "uipath",
+    "total": 13,
+    "easy": 0,
+    "medium": 7,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "CrowdStrike",
+    "displayName": "CrowdStrike",
+    "slug": "crowdstrike",
+    "total": 12,
+    "easy": 2,
+    "medium": 9,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Moloco",
+    "displayName": "Moloco",
+    "slug": "moloco",
+    "total": 12,
+    "easy": 0,
+    "medium": 7,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "NetApp",
+    "displayName": "NetApp",
+    "slug": "netapp",
+    "total": 12,
+    "easy": 4,
+    "medium": 8,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Ozon",
+    "displayName": "Ozon",
+    "slug": "ozon",
+    "total": 12,
+    "easy": 6,
+    "medium": 5,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Stripe",
+    "displayName": "Stripe",
+    "slug": "stripe",
+    "total": 12,
+    "easy": 1,
+    "medium": 10,
+    "hard": 1,
+    "featured": true
+  },
+  {
+    "name": "VK",
+    "displayName": "VK",
+    "slug": "vk",
+    "total": 12,
+    "easy": 6,
+    "medium": 6,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Cloudflare",
+    "displayName": "Cloudflare",
+    "slug": "cloudflare",
+    "total": 11,
+    "easy": 1,
+    "medium": 8,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Coinbase",
+    "displayName": "Coinbase",
+    "slug": "coinbase",
+    "total": 11,
+    "easy": 2,
+    "medium": 8,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "DP world",
+    "displayName": "DP world",
+    "slug": "dp-world",
+    "total": 11,
+    "easy": 0,
+    "medium": 7,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Dream11",
+    "displayName": "Dream11",
+    "slug": "dream11",
+    "total": 11,
+    "easy": 1,
+    "medium": 9,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Nokia",
+    "displayName": "Nokia",
+    "slug": "nokia",
+    "total": 11,
+    "easy": 6,
+    "medium": 3,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "PornHub",
+    "displayName": "PornHub",
+    "slug": "pornhub",
+    "total": 11,
+    "easy": 1,
+    "medium": 9,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "razorpay",
+    "displayName": "Razorpay",
+    "slug": "razorpay",
+    "total": 11,
+    "easy": 1,
+    "medium": 8,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Twilio",
+    "displayName": "Twilio",
+    "slug": "twilio",
+    "total": 11,
+    "easy": 2,
+    "medium": 9,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "UKG",
+    "displayName": "UKG",
+    "slug": "ukg",
+    "total": 11,
+    "easy": 3,
+    "medium": 5,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Whatnot",
+    "displayName": "Whatnot",
+    "slug": "whatnot",
+    "total": 11,
+    "easy": 4,
+    "medium": 7,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Wissen Technology",
+    "displayName": "Wissen Technology",
+    "slug": "wissen-technology",
+    "total": 11,
+    "easy": 1,
+    "medium": 9,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Affirm",
+    "displayName": "Affirm",
+    "slug": "affirm",
+    "total": 10,
+    "easy": 1,
+    "medium": 6,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Applied Intuition",
+    "displayName": "Applied Intuition",
+    "slug": "applied-intuition",
+    "total": 10,
+    "easy": 0,
+    "medium": 7,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Aurora",
+    "displayName": "Aurora",
+    "slug": "aurora",
+    "total": 10,
+    "easy": 0,
+    "medium": 6,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Baidu",
+    "displayName": "Baidu",
+    "slug": "baidu",
+    "total": 10,
+    "easy": 0,
+    "medium": 5,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "BlackRock",
+    "displayName": "BlackRock",
+    "slug": "blackrock",
+    "total": 10,
+    "easy": 5,
+    "medium": 5,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Criteo",
+    "displayName": "Criteo",
+    "slug": "criteo",
+    "total": 10,
+    "easy": 7,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "FreshWorks",
+    "displayName": "FreshWorks",
+    "slug": "freshworks",
+    "total": 10,
+    "easy": 2,
+    "medium": 7,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Hubspot",
+    "displayName": "Hubspot",
+    "slug": "hubspot",
+    "total": 10,
+    "easy": 3,
+    "medium": 6,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Karat",
+    "displayName": "Karat",
+    "slug": "karat",
+    "total": 10,
+    "easy": 3,
+    "medium": 6,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "LTI",
+    "displayName": "LTI",
+    "slug": "lti",
+    "total": 10,
+    "easy": 4,
+    "medium": 5,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Millennium",
+    "displayName": "Millennium",
+    "slug": "millennium",
+    "total": 10,
+    "easy": 1,
+    "medium": 6,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Mitsogo",
+    "displayName": "Mitsogo",
+    "slug": "mitsogo",
+    "total": 10,
+    "easy": 2,
+    "medium": 6,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "PayPay",
+    "displayName": "PayPay",
+    "slug": "paypay",
+    "total": 10,
+    "easy": 3,
+    "medium": 6,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Revolut",
+    "displayName": "Revolut",
+    "slug": "revolut",
+    "total": 10,
+    "easy": 3,
+    "medium": 7,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "SIG",
+    "displayName": "SIG",
+    "slug": "sig",
+    "total": 10,
+    "easy": 0,
+    "medium": 7,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "WeRide",
+    "displayName": "WeRide",
+    "slug": "weride",
+    "total": 10,
+    "easy": 1,
+    "medium": 3,
+    "hard": 6,
+    "featured": false
+  },
+  {
+    "name": "Confluent",
+    "displayName": "Confluent",
+    "slug": "confluent",
+    "total": 9,
+    "easy": 0,
+    "medium": 6,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Coursera",
+    "displayName": "Coursera",
+    "slug": "coursera",
+    "total": 9,
+    "easy": 1,
+    "medium": 4,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Disney",
+    "displayName": "Disney",
+    "slug": "disney",
+    "total": 9,
+    "easy": 1,
+    "medium": 7,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Instacart",
+    "displayName": "Instacart",
+    "slug": "instacart",
+    "total": 9,
+    "easy": 2,
+    "medium": 6,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Publicis Sapient",
+    "displayName": "Publicis Sapient",
+    "slug": "publicis-sapient",
+    "total": 9,
+    "easy": 2,
+    "medium": 5,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Virtu Financial",
+    "displayName": "Virtu Financial",
+    "slug": "virtu-financial",
+    "total": 9,
+    "easy": 6,
+    "medium": 1,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Avito",
+    "displayName": "Avito",
+    "slug": "avito",
+    "total": 8,
+    "easy": 2,
+    "medium": 6,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Axon",
+    "displayName": "Axon",
+    "slug": "axon",
+    "total": 8,
+    "easy": 1,
+    "medium": 7,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Directi",
+    "displayName": "Directi",
+    "slug": "directi",
+    "total": 8,
+    "easy": 0,
+    "medium": 5,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "KLA",
+    "displayName": "KLA",
+    "slug": "kla",
+    "total": 8,
+    "easy": 1,
+    "medium": 4,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Microstrategy",
+    "displayName": "Microstrategy",
+    "slug": "microstrategy",
+    "total": 8,
+    "easy": 2,
+    "medium": 6,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Nagarro",
+    "displayName": "Nagarro",
+    "slug": "nagarro",
+    "total": 8,
+    "easy": 4,
+    "medium": 4,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "oyo",
+    "displayName": "OYO",
+    "slug": "oyo",
+    "total": 8,
+    "easy": 2,
+    "medium": 5,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Pure Storage",
+    "displayName": "Pure Storage",
+    "slug": "pure-storage",
+    "total": 8,
+    "easy": 2,
+    "medium": 5,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Rakuten",
+    "displayName": "Rakuten",
+    "slug": "rakuten",
+    "total": 8,
+    "easy": 1,
+    "medium": 6,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Rivian",
+    "displayName": "Rivian",
+    "slug": "rivian",
+    "total": 8,
+    "easy": 1,
+    "medium": 6,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Splunk",
+    "displayName": "Splunk",
+    "slug": "splunk",
+    "total": 8,
+    "easy": 1,
+    "medium": 6,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Teradata",
+    "displayName": "Teradata",
+    "slug": "teradata",
+    "total": 8,
+    "easy": 0,
+    "medium": 3,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "Box",
+    "displayName": "Box",
+    "slug": "box",
+    "total": 7,
+    "easy": 2,
+    "medium": 3,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Citigroup",
+    "displayName": "Citigroup",
+    "slug": "citigroup",
+    "total": 7,
+    "easy": 2,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Compass",
+    "displayName": "Compass",
+    "slug": "compass",
+    "total": 7,
+    "easy": 1,
+    "medium": 5,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Dunzo",
+    "displayName": "Dunzo",
+    "slug": "dunzo",
+    "total": 7,
+    "easy": 0,
+    "medium": 4,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Flexport",
+    "displayName": "Flexport",
+    "slug": "flexport",
+    "total": 7,
+    "easy": 0,
+    "medium": 7,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Groww",
+    "displayName": "Groww",
+    "slug": "groww",
+    "total": 7,
+    "easy": 1,
+    "medium": 4,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "HSBC",
+    "displayName": "HSBC",
+    "slug": "hsbc",
+    "total": 7,
+    "easy": 5,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Info Edge",
+    "displayName": "Info Edge",
+    "slug": "info-edge",
+    "total": 7,
+    "easy": 1,
+    "medium": 5,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Netskope",
+    "displayName": "Netskope",
+    "slug": "netskope",
+    "total": 7,
+    "easy": 0,
+    "medium": 2,
+    "hard": 5,
+    "featured": false
+  },
+  {
+    "name": "opentext",
+    "displayName": "OpenText",
+    "slug": "opentext",
+    "total": 7,
+    "easy": 5,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Optiver",
+    "displayName": "Optiver",
+    "slug": "optiver",
+    "total": 7,
+    "easy": 2,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "persistent systems",
+    "displayName": "Persistent Systems",
+    "slug": "persistent-systems",
+    "total": 7,
+    "easy": 5,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Pwc",
+    "displayName": "Pwc",
+    "slug": "pwc",
+    "total": 7,
+    "easy": 4,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Shopee",
+    "displayName": "Shopee",
+    "slug": "shopee",
+    "total": 7,
+    "easy": 0,
+    "medium": 7,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Twitch",
+    "displayName": "Twitch",
+    "slug": "twitch",
+    "total": 7,
+    "easy": 2,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Airtel",
+    "displayName": "Airtel",
+    "slug": "airtel",
+    "total": 6,
+    "easy": 1,
+    "medium": 5,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Audible",
+    "displayName": "Audible",
+    "slug": "audible",
+    "total": 6,
+    "easy": 3,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Cashfree",
+    "displayName": "Cashfree",
+    "slug": "cashfree",
+    "total": 6,
+    "easy": 1,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Comcast",
+    "displayName": "Comcast",
+    "slug": "comcast",
+    "total": 6,
+    "easy": 4,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "FactSet",
+    "displayName": "FactSet",
+    "slug": "factset",
+    "total": 6,
+    "easy": 1,
+    "medium": 5,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Faire",
+    "displayName": "Faire",
+    "slug": "faire",
+    "total": 6,
+    "easy": 0,
+    "medium": 2,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "GoDaddy",
+    "displayName": "GoDaddy",
+    "slug": "godaddy",
+    "total": 6,
+    "easy": 2,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Guidewire",
+    "displayName": "Guidewire",
+    "slug": "guidewire",
+    "total": 6,
+    "easy": 0,
+    "medium": 6,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Harness",
+    "displayName": "Harness",
+    "slug": "harness",
+    "total": 6,
+    "easy": 0,
+    "medium": 3,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Hive",
+    "displayName": "Hive",
+    "slug": "hive",
+    "total": 6,
+    "easy": 0,
+    "medium": 3,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "LiveRamp",
+    "displayName": "LiveRamp",
+    "slug": "liveramp",
+    "total": 6,
+    "easy": 2,
+    "medium": 4,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Lucid",
+    "displayName": "Lucid",
+    "slug": "lucid",
+    "total": 6,
+    "easy": 2,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Mercari",
+    "displayName": "Mercari",
+    "slug": "mercari",
+    "total": 6,
+    "easy": 3,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Moveworks",
+    "displayName": "Moveworks",
+    "slug": "moveworks",
+    "total": 6,
+    "easy": 0,
+    "medium": 3,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Nike",
+    "displayName": "Nike",
+    "slug": "nike",
+    "total": 6,
+    "easy": 1,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Optum",
+    "displayName": "Optum",
+    "slug": "optum",
+    "total": 6,
+    "easy": 2,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Point72",
+    "displayName": "Point72",
+    "slug": "point72",
+    "total": 6,
+    "easy": 3,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Ripple",
+    "displayName": "Ripple",
+    "slug": "ripple",
+    "total": 6,
+    "easy": 1,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Rokt",
+    "displayName": "Rokt",
+    "slug": "rokt",
+    "total": 6,
+    "easy": 2,
+    "medium": 2,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Target",
+    "displayName": "Target",
+    "slug": "target",
+    "total": 6,
+    "easy": 1,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "The Trade Desk",
+    "displayName": "The Trade Desk",
+    "slug": "the-trade-desk",
+    "total": 6,
+    "easy": 0,
+    "medium": 4,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Trilogy",
+    "displayName": "Trilogy",
+    "slug": "trilogy",
+    "total": 6,
+    "easy": 0,
+    "medium": 4,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Upstart",
+    "displayName": "Upstart",
+    "slug": "upstart",
+    "total": 6,
+    "easy": 0,
+    "medium": 6,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Urban Company",
+    "displayName": "Urban Company",
+    "slug": "urban-company",
+    "total": 6,
+    "easy": 0,
+    "medium": 5,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Virtusa",
+    "displayName": "Virtusa",
+    "slug": "virtusa",
+    "total": 6,
+    "easy": 3,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Wise",
+    "displayName": "Wise",
+    "slug": "wise",
+    "total": 6,
+    "easy": 1,
+    "medium": 5,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Zoox",
+    "displayName": "Zoox",
+    "slug": "zoox",
+    "total": 6,
+    "easy": 1,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Alibaba",
+    "displayName": "Alibaba",
+    "slug": "alibaba",
+    "total": 5,
+    "easy": 0,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Altimetrik",
+    "displayName": "Altimetrik",
+    "slug": "altimetrik",
+    "total": 5,
+    "easy": 4,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Amdocs",
+    "displayName": "Amdocs",
+    "slug": "amdocs",
+    "total": 5,
+    "easy": 2,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Asana",
+    "displayName": "Asana",
+    "slug": "asana",
+    "total": 5,
+    "easy": 1,
+    "medium": 4,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "athenahealth",
+    "displayName": "athenahealth",
+    "slug": "athenahealth",
+    "total": 5,
+    "easy": 1,
+    "medium": 4,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Bolt",
+    "displayName": "Bolt",
+    "slug": "bolt",
+    "total": 5,
+    "easy": 3,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Chewy",
+    "displayName": "Chewy",
+    "slug": "chewy",
+    "total": 5,
+    "easy": 2,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Cohesity",
+    "displayName": "Cohesity",
+    "slug": "cohesity",
+    "total": 5,
+    "easy": 0,
+    "medium": 1,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "DevRev",
+    "displayName": "DevRev",
+    "slug": "devrev",
+    "total": 5,
+    "easy": 1,
+    "medium": 2,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Duolingo",
+    "displayName": "Duolingo",
+    "slug": "duolingo",
+    "total": 5,
+    "easy": 0,
+    "medium": 3,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Fidelity",
+    "displayName": "Fidelity",
+    "slug": "fidelity",
+    "total": 5,
+    "easy": 4,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "GSN Games",
+    "displayName": "GSN Games",
+    "slug": "gsn-games",
+    "total": 5,
+    "easy": 2,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Gusto",
+    "displayName": "Gusto",
+    "slug": "gusto",
+    "total": 5,
+    "easy": 1,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "HP",
+    "displayName": "HP",
+    "slug": "hp",
+    "total": 5,
+    "easy": 3,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Hulu",
+    "displayName": "Hulu",
+    "slug": "hulu",
+    "total": 5,
+    "easy": 0,
+    "medium": 2,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "IMC",
+    "displayName": "IMC",
+    "slug": "imc",
+    "total": 5,
+    "easy": 0,
+    "medium": 1,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Indeed",
+    "displayName": "Indeed",
+    "slug": "indeed",
+    "total": 5,
+    "easy": 1,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Lowe's",
+    "displayName": "Lowe's",
+    "slug": "lowes",
+    "total": 5,
+    "easy": 3,
+    "medium": 0,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "MAQ Software",
+    "displayName": "MAQ Software",
+    "slug": "maq-software",
+    "total": 5,
+    "easy": 1,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Qualtrics",
+    "displayName": "Qualtrics",
+    "slug": "qualtrics",
+    "total": 5,
+    "easy": 2,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Remitly",
+    "displayName": "Remitly",
+    "slug": "remitly",
+    "total": 5,
+    "easy": 2,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Sony",
+    "displayName": "Sony",
+    "slug": "sony",
+    "total": 5,
+    "easy": 3,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Squarespace",
+    "displayName": "Squarespace",
+    "slug": "squarespace",
+    "total": 5,
+    "easy": 3,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "thoughtspot",
+    "displayName": "ThoughtSpot",
+    "slug": "thoughtspot",
+    "total": 5,
+    "easy": 0,
+    "medium": 2,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Toast",
+    "displayName": "Toast",
+    "slug": "toast",
+    "total": 5,
+    "easy": 3,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Tripadvisor",
+    "displayName": "Tripadvisor",
+    "slug": "tripadvisor",
+    "total": 5,
+    "easy": 3,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Verily",
+    "displayName": "Verily",
+    "slug": "verily",
+    "total": 5,
+    "easy": 1,
+    "medium": 2,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Vimeo",
+    "displayName": "Vimeo",
+    "slug": "vimeo",
+    "total": 5,
+    "easy": 0,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "VMware",
+    "displayName": "VMware",
+    "slug": "vmware",
+    "total": 5,
+    "easy": 0,
+    "medium": 3,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Warnermedia",
+    "displayName": "Warnermedia",
+    "slug": "warnermedia",
+    "total": 5,
+    "easy": 2,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Wish",
+    "displayName": "Wish",
+    "slug": "wish",
+    "total": 5,
+    "easy": 0,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Workday",
+    "displayName": "Workday",
+    "slug": "workday",
+    "total": 5,
+    "easy": 0,
+    "medium": 5,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Zepto",
+    "displayName": "Zepto",
+    "slug": "zepto",
+    "total": 5,
+    "easy": 0,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "ZS Associates",
+    "displayName": "ZS Associates",
+    "slug": "zs-associates",
+    "total": 5,
+    "easy": 0,
+    "medium": 4,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Acko",
+    "displayName": "Acko",
+    "slug": "acko",
+    "total": 4,
+    "easy": 2,
+    "medium": 0,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Airbus SE",
+    "displayName": "Airbus SE",
+    "slug": "airbus-se",
+    "total": 4,
+    "easy": 2,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Attentive",
+    "displayName": "Attentive",
+    "slug": "attentive",
+    "total": 4,
+    "easy": 2,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Cadence",
+    "displayName": "Cadence",
+    "slug": "cadence",
+    "total": 4,
+    "easy": 1,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Careem",
+    "displayName": "Careem",
+    "slug": "careem",
+    "total": 4,
+    "easy": 1,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Citrix",
+    "displayName": "Citrix",
+    "slug": "citrix",
+    "total": 4,
+    "easy": 1,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Darwinbox",
+    "displayName": "Darwinbox",
+    "slug": "darwinbox",
+    "total": 4,
+    "easy": 0,
+    "medium": 2,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "EarnIn",
+    "displayName": "EarnIn",
+    "slug": "earnin",
+    "total": 4,
+    "easy": 0,
+    "medium": 4,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Fortinet",
+    "displayName": "Fortinet",
+    "slug": "fortinet",
+    "total": 4,
+    "easy": 2,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Garmin",
+    "displayName": "Garmin",
+    "slug": "garmin",
+    "total": 4,
+    "easy": 4,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "jio",
+    "displayName": "Jio",
+    "slug": "jio",
+    "total": 4,
+    "easy": 1,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Liftoff",
+    "displayName": "Liftoff",
+    "slug": "liftoff",
+    "total": 4,
+    "easy": 0,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Mindtickle",
+    "displayName": "Mindtickle",
+    "slug": "mindtickle",
+    "total": 4,
+    "easy": 0,
+    "medium": 0,
+    "hard": 4,
+    "featured": false
+  },
+  {
+    "name": "Nielsen",
+    "displayName": "Nielsen",
+    "slug": "nielsen",
+    "total": 4,
+    "easy": 0,
+    "medium": 4,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Nykaa",
+    "displayName": "Nykaa",
+    "slug": "nykaa",
+    "total": 4,
+    "easy": 0,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Patreon",
+    "displayName": "Patreon",
+    "slug": "patreon",
+    "total": 4,
+    "easy": 2,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Pony.ai",
+    "displayName": "Pony.ai",
+    "slug": "ponyai",
+    "total": 4,
+    "easy": 0,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Poshmark",
+    "displayName": "Poshmark",
+    "slug": "poshmark",
+    "total": 4,
+    "easy": 0,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Reddit",
+    "displayName": "Reddit",
+    "slug": "reddit",
+    "total": 4,
+    "easy": 1,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Riot Games",
+    "displayName": "Riot Games",
+    "slug": "riot-games",
+    "total": 4,
+    "easy": 1,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Shopify",
+    "displayName": "Shopify",
+    "slug": "shopify",
+    "total": 4,
+    "easy": 0,
+    "medium": 4,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Tower Research Capital",
+    "displayName": "Tower Research Capital",
+    "slug": "tower-research-capital",
+    "total": 4,
+    "easy": 0,
+    "medium": 3,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Trexquant",
+    "displayName": "Trexquant",
+    "slug": "trexquant",
+    "total": 4,
+    "easy": 1,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "TuSimple",
+    "displayName": "TuSimple",
+    "slug": "tusimple",
+    "total": 4,
+    "easy": 0,
+    "medium": 2,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "UBS",
+    "displayName": "UBS",
+    "slug": "ubs",
+    "total": 4,
+    "easy": 1,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Valve",
+    "displayName": "Valve",
+    "slug": "valve",
+    "total": 4,
+    "easy": 1,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Works Applications",
+    "displayName": "Works Applications",
+    "slug": "works-applications",
+    "total": 4,
+    "easy": 0,
+    "medium": 2,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "WorldQuant",
+    "displayName": "WorldQuant",
+    "slug": "worldquant",
+    "total": 4,
+    "easy": 0,
+    "medium": 1,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "Zoom",
+    "displayName": "Zoom",
+    "slug": "zoom",
+    "total": 4,
+    "easy": 2,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Activision",
+    "displayName": "Activision",
+    "slug": "activision",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Airwallex",
+    "displayName": "Airwallex",
+    "slug": "airwallex",
+    "total": 3,
+    "easy": 0,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Aon",
+    "displayName": "Aon",
+    "slug": "aon",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "AppFolio",
+    "displayName": "AppFolio",
+    "slug": "appfolio",
+    "total": 3,
+    "easy": 1,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "AQR Capital Management",
+    "displayName": "AQR Capital Management",
+    "slug": "aqr-capital-management",
+    "total": 3,
+    "easy": 0,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Bank of America",
+    "displayName": "Bank of America",
+    "slug": "bank-of-america",
+    "total": 3,
+    "easy": 3,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "blinkit",
+    "displayName": "Blinkit",
+    "slug": "blinkit",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "carwale",
+    "displayName": "CarWale",
+    "slug": "carwale",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Chime",
+    "displayName": "Chime",
+    "slug": "chime",
+    "total": 3,
+    "easy": 0,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "ciena",
+    "displayName": "Ciena",
+    "slug": "ciena",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Clari",
+    "displayName": "Clari",
+    "slug": "clari",
+    "total": 3,
+    "easy": 0,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Commvault",
+    "displayName": "Commvault",
+    "slug": "commvault",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Delhivery",
+    "displayName": "Delhivery",
+    "slug": "delhivery",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Deliveroo",
+    "displayName": "Deliveroo",
+    "slug": "deliveroo",
+    "total": 3,
+    "easy": 2,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "DRW",
+    "displayName": "DRW",
+    "slug": "drw",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "EY",
+    "displayName": "EY",
+    "slug": "ey",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "fourkites",
+    "displayName": "FourKites",
+    "slug": "fourkites",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Gameskraft",
+    "displayName": "Gameskraft",
+    "slug": "gameskraft",
+    "total": 3,
+    "easy": 0,
+    "medium": 0,
+    "hard": 3,
+    "featured": false
+  },
+  {
+    "name": "GE Digital",
+    "displayName": "GE Digital",
+    "slug": "ge-digital",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "GE Healthcare",
+    "displayName": "GE Healthcare",
+    "slug": "ge-healthcare",
+    "total": 3,
+    "easy": 1,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Honeywell",
+    "displayName": "Honeywell",
+    "slug": "honeywell",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "HPE",
+    "displayName": "HPE",
+    "slug": "hpe",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Larsen & Toubro",
+    "displayName": "Larsen & Toubro",
+    "slug": "larsen-toubro",
+    "total": 3,
+    "easy": 3,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "McKinsey",
+    "displayName": "McKinsey",
+    "slug": "mckinsey",
+    "total": 3,
+    "easy": 0,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "MindTree",
+    "displayName": "MindTree",
+    "slug": "mindtree",
+    "total": 3,
+    "easy": 3,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Navan",
+    "displayName": "Navan",
+    "slug": "navan",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Navi",
+    "displayName": "Navi",
+    "slug": "navi",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "NCR",
+    "displayName": "NCR",
+    "slug": "ncr",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Nextdoor",
+    "displayName": "Nextdoor",
+    "slug": "nextdoor",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Nordstrom",
+    "displayName": "Nordstrom",
+    "slug": "nordstrom",
+    "total": 3,
+    "easy": 0,
+    "medium": 3,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Odoo",
+    "displayName": "Odoo",
+    "slug": "odoo",
+    "total": 3,
+    "easy": 2,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Postmates",
+    "displayName": "Postmates",
+    "slug": "postmates",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Samsara",
+    "displayName": "Samsara",
+    "slug": "samsara",
+    "total": 3,
+    "easy": 1,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "StackAdapt",
+    "displayName": "StackAdapt",
+    "slug": "stackadapt",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Tencent",
+    "displayName": "Tencent",
+    "slug": "tencent",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Texas Instruments",
+    "displayName": "Texas Instruments",
+    "slug": "texas-instruments",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "ThoughtWorks",
+    "displayName": "ThoughtWorks",
+    "slug": "thoughtworks",
+    "total": 3,
+    "easy": 3,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Tiger Analytics",
+    "displayName": "Tiger Analytics",
+    "slug": "tiger-analytics",
+    "total": 3,
+    "easy": 3,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Tinder",
+    "displayName": "Tinder",
+    "slug": "tinder",
+    "total": 3,
+    "easy": 1,
+    "medium": 0,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Toptal",
+    "displayName": "Toptal",
+    "slug": "toptal",
+    "total": 3,
+    "easy": 0,
+    "medium": 2,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "USAA",
+    "displayName": "USAA",
+    "slug": "usaa",
+    "total": 3,
+    "easy": 2,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Analytics quotient",
+    "displayName": "Analytics quotient",
+    "slug": "analytics-quotient",
+    "total": 2,
+    "easy": 2,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Apollo.io",
+    "displayName": "Apollo.io",
+    "slug": "apolloio",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "AppDynamics",
+    "displayName": "AppDynamics",
+    "slug": "appdynamics",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "BlackStone",
+    "displayName": "BlackStone",
+    "slug": "blackstone",
+    "total": 2,
+    "easy": 1,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Bridgewater Associates",
+    "displayName": "Bridgewater Associates",
+    "slug": "bridgewater-associates",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Canonical",
+    "displayName": "Canonical",
+    "slug": "canonical",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "CARS24",
+    "displayName": "CARS24",
+    "slug": "cars24",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Cloudera",
+    "displayName": "Cloudera",
+    "slug": "cloudera",
+    "total": 2,
+    "easy": 2,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "CME Group",
+    "displayName": "CME Group",
+    "slug": "cme-group",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "CRED",
+    "displayName": "CRED",
+    "slug": "cred",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Cruise",
+    "displayName": "Cruise",
+    "slug": "cruise",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Dataminr",
+    "displayName": "Dataminr",
+    "slug": "dataminr",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Hotstar",
+    "displayName": "Disney+ Hotstar",
+    "slug": "hotstar",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Flexera",
+    "displayName": "Flexera",
+    "slug": "flexera",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "FPT",
+    "displayName": "FPT",
+    "slug": "fpt",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Freecharge",
+    "displayName": "Freecharge",
+    "slug": "freecharge",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Groupon",
+    "displayName": "Groupon",
+    "slug": "groupon",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Grubhub",
+    "displayName": "Grubhub",
+    "slug": "grubhub",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Houzz",
+    "displayName": "Houzz",
+    "slug": "houzz",
+    "total": 2,
+    "easy": 0,
+    "medium": 0,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "instabase",
+    "displayName": "Instabase",
+    "slug": "instabase",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "IVP",
+    "displayName": "IVP",
+    "slug": "ivp",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Jump Trading",
+    "displayName": "Jump Trading",
+    "slug": "jump-trading",
+    "total": 2,
+    "easy": 1,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Kakao",
+    "displayName": "Kakao",
+    "slug": "kakao",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "LINE",
+    "displayName": "LINE",
+    "slug": "line",
+    "total": 2,
+    "easy": 0,
+    "medium": 0,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Machine Zone",
+    "displayName": "Machine Zone",
+    "slug": "machine-zone",
+    "total": 2,
+    "easy": 0,
+    "medium": 0,
+    "hard": 2,
+    "featured": false
+  },
+  {
+    "name": "Mixpanel",
+    "displayName": "Mixpanel",
+    "slug": "mixpanel",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "National Payments Corporation of India",
+    "displayName": "National Payments Corporation of India",
+    "slug": "national-payments-corporation-of-india",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "NetEase",
+    "displayName": "NetEase",
+    "slug": "netease",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Netsuite",
+    "displayName": "Netsuite",
+    "slug": "netsuite",
+    "total": 2,
+    "easy": 2,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Niantic",
+    "displayName": "Niantic",
+    "slug": "niantic",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Otter.ai",
+    "displayName": "Otter.ai",
+    "slug": "otterai",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "peak6",
+    "displayName": "PEAK6",
+    "slug": "peak6",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Peloton",
+    "displayName": "Peloton",
+    "slug": "peloton",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "PubMatic",
+    "displayName": "PubMatic",
+    "slug": "pubmatic",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "RBC",
+    "displayName": "RBC",
+    "slug": "rbc",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "ShareChat",
+    "displayName": "ShareChat",
+    "slug": "sharechat",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Societe Generale",
+    "displayName": "Societe Generale",
+    "slug": "societe-generale",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Softwire",
+    "displayName": "Softwire",
+    "slug": "softwire",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "SoundHound",
+    "displayName": "SoundHound",
+    "slug": "soundhound",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Stackline",
+    "displayName": "Stackline",
+    "slug": "stackline",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Sumo Logic",
+    "displayName": "Sumo Logic",
+    "slug": "sumo-logic",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Tanium",
+    "displayName": "Tanium",
+    "slug": "tanium",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Tech Mahindra",
+    "displayName": "Tech Mahindra",
+    "slug": "tech-mahindra",
+    "total": 2,
+    "easy": 2,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Tesco",
+    "displayName": "Tesco",
+    "slug": "tesco",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Thomson Reuters",
+    "displayName": "Thomson Reuters",
+    "slug": "thomson-reuters",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "ThousandEyes",
+    "displayName": "ThousandEyes",
+    "slug": "thousandeyes",
+    "total": 2,
+    "easy": 0,
+    "medium": 1,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Turvo",
+    "displayName": "Turvo",
+    "slug": "turvo",
+    "total": 2,
+    "easy": 1,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Unity",
+    "displayName": "Unity",
+    "slug": "unity",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Zalando",
+    "displayName": "Zalando",
+    "slug": "zalando",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Zendesk",
+    "displayName": "Zendesk",
+    "slug": "zendesk",
+    "total": 2,
+    "easy": 2,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Zluri",
+    "displayName": "Zluri",
+    "slug": "zluri",
+    "total": 2,
+    "easy": 0,
+    "medium": 2,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Zynga",
+    "displayName": "Zynga",
+    "slug": "zynga",
+    "total": 2,
+    "easy": 1,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Amadeus",
+    "displayName": "Amadeus",
+    "slug": "amadeus",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Avalara",
+    "displayName": "Avalara",
+    "slug": "avalara",
+    "total": 1,
+    "easy": 0,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Bosch",
+    "displayName": "Bosch",
+    "slug": "bosch",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Braze",
+    "displayName": "Braze",
+    "slug": "braze",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Cleartrip",
+    "displayName": "Cleartrip",
+    "slug": "cleartrip",
+    "total": 1,
+    "easy": 0,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "CureFit",
+    "displayName": "CureFit",
+    "slug": "curefit",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "CVENT",
+    "displayName": "CVENT",
+    "slug": "cvent",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "DeltaX",
+    "displayName": "DeltaX",
+    "slug": "deltax",
+    "total": 1,
+    "easy": 0,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Devsinc",
+    "displayName": "Devsinc",
+    "slug": "devsinc",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Druva",
+    "displayName": "Druva",
+    "slug": "druva",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Edelweiss Group",
+    "displayName": "Edelweiss Group",
+    "slug": "edelweiss-group",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Fiverr",
+    "displayName": "Fiverr",
+    "slug": "fiverr",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "GSA Capital",
+    "displayName": "GSA Capital",
+    "slug": "gsa-capital",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "HiLabs",
+    "displayName": "HiLabs",
+    "slug": "hilabs",
+    "total": 1,
+    "easy": 0,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "IIT Bombay",
+    "displayName": "IIT Bombay",
+    "slug": "iit-bombay",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Juniper Networks",
+    "displayName": "Juniper Networks",
+    "slug": "juniper-networks",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Lendingkart Technologies",
+    "displayName": "Lendingkart Technologies",
+    "slug": "lendingkart-technologies",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Lenskart",
+    "displayName": "Lenskart",
+    "slug": "lenskart",
+    "total": 1,
+    "easy": 0,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Luxoft",
+    "displayName": "Luxoft",
+    "slug": "luxoft",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Mapbox",
+    "displayName": "Mapbox",
+    "slug": "mapbox",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Moengage",
+    "displayName": "Moengage",
+    "slug": "moengage",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "National Instruments",
+    "displayName": "National Instruments",
+    "slug": "national-instruments",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "OKX",
+    "displayName": "OKX",
+    "slug": "okx",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Paycom",
+    "displayName": "Paycom",
+    "slug": "paycom",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "PayU",
+    "displayName": "PayU",
+    "slug": "payu",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "redbus",
+    "displayName": "redBus",
+    "slug": "redbus",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Scale AI",
+    "displayName": "Scale AI",
+    "slug": "scale-ai",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Sentry",
+    "displayName": "Sentry",
+    "slug": "sentry",
+    "total": 1,
+    "easy": 0,
+    "medium": 0,
+    "hard": 1,
+    "featured": false
+  },
+  {
+    "name": "Slice",
+    "displayName": "Slice",
+    "slug": "slice",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "smartnews",
+    "displayName": "SmartNews",
+    "slug": "smartnews",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Smartsheet",
+    "displayName": "Smartsheet",
+    "slug": "smartsheet",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Snapdeal",
+    "displayName": "Snapdeal",
+    "slug": "snapdeal",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "SOTI",
+    "displayName": "SOTI",
+    "slug": "soti",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Synopsys",
+    "displayName": "Synopsys",
+    "slug": "synopsys",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Veeva Systems",
+    "displayName": "Veeva Systems",
+    "slug": "veeva-systems",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Veritas",
+    "displayName": "Veritas",
+    "slug": "veritas",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Wealthfront",
+    "displayName": "Wealthfront",
+    "slug": "wealthfront",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "Western Digital",
+    "displayName": "Western Digital",
+    "slug": "western-digital",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "zeta suite",
+    "displayName": "Zeta Suite",
+    "slug": "zeta-suite",
+    "total": 1,
+    "easy": 1,
+    "medium": 0,
+    "hard": 0,
+    "featured": false
+  },
+  {
+    "name": "ZipRecruiter",
+    "displayName": "ZipRecruiter",
+    "slug": "ziprecruiter",
+    "total": 1,
+    "easy": 0,
+    "medium": 1,
+    "hard": 0,
+    "featured": false
+  }
+]

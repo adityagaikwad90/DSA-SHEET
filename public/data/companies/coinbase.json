@@ -1,0 +1,164 @@
+{
+  "name": "Coinbase",
+  "displayName": "Coinbase",
+  "slug": "coinbase",
+  "total": 11,
+  "counts": {
+    "Easy": 2,
+    "Medium": 8,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "simple-bank-system",
+      "title": "Simple Bank System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/simple-bank-system",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006942725173210162"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 90.8,
+      "acceptanceRate": "0.005025842818764849"
+    },
+    {
+      "id": "zigzag-iterator",
+      "title": "Zigzag Iterator",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/zigzag-iterator",
+      "topics": [
+        "Array",
+        "Design",
+        "Queue",
+        "Iterator"
+      ],
+      "frequency": 89.5,
+      "acceptanceRate": "0.006722123444246888"
+    },
+    {
+      "id": "design-in-memory-file-system",
+      "title": "Design In-Memory File System",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/design-in-memory-file-system",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Design",
+        "Trie",
+        "Sorting"
+      ],
+      "frequency": 80.8,
+      "acceptanceRate": "0.004834500746378832"
+    },
+    {
+      "id": "decode-the-message",
+      "title": "Decode the Message",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/decode-the-message",
+      "topics": [
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 80.7,
+      "acceptanceRate": "0.008601386810546504"
+    },
+    {
+      "id": "random-pick-with-weight",
+      "title": "Random Pick with Weight",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/random-pick-with-weight",
+      "topics": [
+        "Array",
+        "Math",
+        "Binary Search",
+        "Prefix Sum",
+        "Randomized"
+      ],
+      "frequency": 72.9,
+      "acceptanceRate": "0.0049317337410403105"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 51.5,
+      "acceptanceRate": "0.005752120075140459"
+    },
+    {
+      "id": "course-schedule-ii",
+      "title": "Course Schedule II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/course-schedule-ii",
+      "topics": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort"
+      ],
+      "frequency": 51.5,
+      "acceptanceRate": "0.005644351341533157"
+    },
+    {
+      "id": "design-circular-queue",
+      "title": "Design Circular Queue",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-circular-queue",
+      "topics": [
+        "Array",
+        "Linked List",
+        "Design",
+        "Queue"
+      ],
+      "frequency": 51.5,
+      "acceptanceRate": "0.005571322651926797"
+    },
+    {
+      "id": "design-file-system",
+      "title": "Design File System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-file-system",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Design",
+        "Trie"
+      ],
+      "frequency": 51.5,
+      "acceptanceRate": "0.006523791948411897"
+    },
+    {
+      "id": "minimize-result-by-adding-parentheses-to-expression",
+      "title": "Minimize Result by Adding Parentheses to Expression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression",
+      "topics": [
+        "String",
+        "Enumeration"
+      ],
+      "frequency": 51,
+      "acceptanceRate": "0.006865530956157896"
+    }
+  ]
+}

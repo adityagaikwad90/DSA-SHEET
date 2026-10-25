@@ -1,0 +1,144 @@
+{
+  "name": "PayPay",
+  "displayName": "PayPay",
+  "slug": "paypay",
+  "total": 10,
+  "counts": {
+    "Easy": 3,
+    "Medium": 6,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "largest-3-same-digit-number-in-string",
+      "title": "Largest 3-Same-Digit Number in String",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/largest-3-same-digit-number-in-string",
+      "topics": [
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007268494433461658"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006337493392216568"
+    },
+    {
+      "id": "block-placement-queries",
+      "title": "Block Placement Queries",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/block-placement-queries",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Ordered Set"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004097055873502862"
+    },
+    {
+      "id": "min-cost-to-connect-all-points",
+      "title": "Min Cost to Connect All Points",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/min-cost-to-connect-all-points",
+      "topics": [
+        "Array",
+        "Union-Find",
+        "Graph Theory",
+        "Minimum Spanning Tree",
+        "Prim's Algorithm",
+        "Kruskal's Algorithm",
+        "Borůvka's Algorithm"
+      ],
+      "frequency": 88.4,
+      "acceptanceRate": "0.007194192650030034"
+    },
+    {
+      "id": "successful-pairs-of-spells-and-potions",
+      "title": "Successful Pairs of Spells and Potions",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Sorting"
+      ],
+      "frequency": 88.4,
+      "acceptanceRate": "0.004993783747770523"
+    },
+    {
+      "id": "zigzag-conversion",
+      "title": "Zigzag Conversion",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/zigzag-conversion",
+      "topics": [
+        "String"
+      ],
+      "frequency": 88.4,
+      "acceptanceRate": "0.005537299999726853"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 67.5,
+      "acceptanceRate": "0.005752125545021008"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 67.5,
+      "acceptanceRate": "0.005803622953737174"
+    },
+    {
+      "id": "peak-index-in-a-mountain-array",
+      "title": "Peak Index in a Mountain Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/peak-index-in-a-mountain-array",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Ternary Search"
+      ],
+      "frequency": 67.5,
+      "acceptanceRate": "0.006662175479541382"
+    },
+    {
+      "id": "search-in-rotated-sorted-array",
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/search-in-rotated-sorted-array",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 67.5,
+      "acceptanceRate": "0.004579983914585959"
+    }
+  ]
+}

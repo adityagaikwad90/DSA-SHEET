@@ -1,0 +1,226 @@
+{
+  "name": "ZScaler",
+  "displayName": "ZScaler",
+  "slug": "zscaler",
+  "total": 16,
+  "counts": {
+    "Easy": 4,
+    "Medium": 6,
+    "Hard": 6
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k",
+      "title": "Apply Operations to Make Sum of Array Greater Than or Equal to k",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k",
+      "topics": [
+        "Math",
+        "Greedy",
+        "Enumeration"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004454461606412138"
+    },
+    {
+      "id": "minimum-replacements-to-sort-the-array",
+      "title": "Minimum Replacements to Sort the Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-replacements-to-sort-the-array",
+      "topics": [
+        "Array",
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005300493603304121"
+    },
+    {
+      "id": "optimal-account-balancing",
+      "title": "Optimal Account Balancing",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/optimal-account-balancing",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005089870384122055"
+    },
+    {
+      "id": "day-of-the-year",
+      "title": "Day of the Year",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/day-of-the-year",
+      "topics": [
+        "Math",
+        "String"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.005080420734870996"
+    },
+    {
+      "id": "largest-number-after-digit-swaps-by-parity",
+      "title": "Largest Number After Digit Swaps by Parity",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity",
+      "topics": [
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.006578547443329178"
+    },
+    {
+      "id": "maximum-strong-pair-xor-i",
+      "title": "Maximum Strong Pair XOR I",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/maximum-strong-pair-xor-i",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Bit Manipulation",
+        "Trie",
+        "Sliding Window"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.007596311956777073"
+    },
+    {
+      "id": "maximum-strong-pair-xor-ii",
+      "title": "Maximum Strong Pair XOR II",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-strong-pair-xor-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Bit Manipulation",
+        "Trie",
+        "Sliding Window"
+      ],
+      "frequency": 97.1,
+      "acceptanceRate": "0.0033252501793094025"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 86.3,
+      "acceptanceRate": "0.004825727256052667"
+    },
+    {
+      "id": "minimum-increment-to-make-array-unique",
+      "title": "Minimum Increment to Make Array Unique",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-increment-to-make-array-unique",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting",
+        "Counting"
+      ],
+      "frequency": 86.3,
+      "acceptanceRate": "0.006086219900095096"
+    },
+    {
+      "id": "set-matrix-zeroes",
+      "title": "Set Matrix Zeroes",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/set-matrix-zeroes",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Matrix"
+      ],
+      "frequency": 86.3,
+      "acceptanceRate": "0.006378811664941381"
+    },
+    {
+      "id": "contains-duplicate",
+      "title": "Contains Duplicate",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/contains-duplicate",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sorting"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.006479972538717987"
+    },
+    {
+      "id": "number-of-divisible-triplet-sums",
+      "title": "Number of Divisible Triplet Sums",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-divisible-triplet-sums",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.006760607582224454"
+    },
+    {
+      "id": "search-in-rotated-sorted-array",
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/search-in-rotated-sorted-array",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.004579983879962786"
+    },
+    {
+      "id": "integer-to-english-words",
+      "title": "Integer to English Words",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/integer-to-english-words",
+      "topics": [
+        "Math",
+        "String",
+        "Recursion"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.0035309245732496595"
+    },
+    {
+      "id": "reverse-nodes-in-k-group",
+      "title": "Reverse Nodes in k-Group",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/reverse-nodes-in-k-group",
+      "topics": [
+        "Linked List",
+        "Recursion"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.006751130379974859"
+    },
+    {
+      "id": "word-ladder",
+      "title": "Word Ladder",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/word-ladder",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Breadth-First Search",
+        "Bidirectional Search"
+      ],
+      "frequency": 75.4,
+      "acceptanceRate": "0.004677987455193794"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "name": "Epic Systems",
+  "displayName": "Epic Systems",
+  "slug": "epic-systems",
+  "total": 16,
+  "counts": {
+    "Easy": 4,
+    "Medium": 11,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "additive-number",
+      "title": "Additive Number",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/additive-number",
+      "topics": [
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0034698982070157456"
+    },
+    {
+      "id": "spiral-matrix",
+      "title": "Spiral Matrix",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/spiral-matrix",
+      "topics": [
+        "Array",
+        "Matrix",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005814591385998864"
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-parentheses",
+      "topics": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "frequency": 92,
+      "acceptanceRate": "0.00453411526938375"
+    },
+    {
+      "id": "letter-combinations-of-a-phone-number",
+      "title": "Letter Combinations of a Phone Number",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/letter-combinations-of-a-phone-number",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 89.4,
+      "acceptanceRate": "0.0067037483711917135"
+    },
+    {
+      "id": "self-dividing-numbers",
+      "title": "Self Dividing Numbers",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/self-dividing-numbers",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 78.1,
+      "acceptanceRate": "0.008135451908604626"
+    },
+    {
+      "id": "stepping-numbers",
+      "title": "Stepping Numbers",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/stepping-numbers",
+      "topics": [
+        "Math",
+        "Backtracking",
+        "Breadth-First Search"
+      ],
+      "frequency": 78.1,
+      "acceptanceRate": "0.004856868636287765"
+    },
+    {
+      "id": "angle-between-hands-of-a-clock",
+      "title": "Angle Between Hands of a Clock",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/angle-between-hands-of-a-clock",
+      "topics": [
+        "Math"
+      ],
+      "frequency": 68,
+      "acceptanceRate": "0.006993491288645474"
+    },
+    {
+      "id": "count-primes",
+      "title": "Count Primes",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-primes",
+      "topics": [
+        "Array",
+        "Math",
+        "Enumeration",
+        "Number Theory",
+        "Primality Test",
+        "Sieve Theory",
+        "Prime Number Sieve"
+      ],
+      "frequency": 68,
+      "acceptanceRate": "0.0035791442092433794"
+    },
+    {
+      "id": "word-search",
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/word-search",
+      "topics": [
+        "Array",
+        "String",
+        "Backtracking",
+        "Depth-First Search",
+        "Matrix"
+      ],
+      "frequency": 68,
+      "acceptanceRate": "0.004831295488670611"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 59.2,
+      "acceptanceRate": "0.005803618336750189"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 59.2,
+      "acceptanceRate": "0.0038866718003273703"
+    },
+    {
+      "id": "palindromic-substrings",
+      "title": "Palindromic Substrings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/palindromic-substrings",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 59.2,
+      "acceptanceRate": "0.007333736113750426"
+    },
+    {
+      "id": "permutations",
+      "title": "Permutations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/permutations",
+      "topics": [
+        "Array",
+        "Backtracking"
+      ],
+      "frequency": 59.2,
+      "acceptanceRate": "0.00824351941433353"
+    },
+    {
+      "id": "longest-increasing-path-in-a-matrix",
+      "title": "Longest Increasing Path in a Matrix",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Memoization",
+        "Matrix",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 59.2,
+      "acceptanceRate": "0.005718813063448473"
+    },
+    {
+      "id": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/valid-palindrome",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 50.5,
+      "acceptanceRate": "0.0054529137281246675"
+    },
+    {
+      "id": "bulls-and-cows",
+      "title": "Bulls and Cows",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/bulls-and-cows",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "frequency": 50.5,
+      "acceptanceRate": "0.005313798754210995"
+    }
+  ]
+}

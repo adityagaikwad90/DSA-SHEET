@@ -1,0 +1,50 @@
+{
+  "name": "ciena",
+  "displayName": "Ciena",
+  "slug": "ciena",
+  "total": 3,
+  "counts": {
+    "Easy": 1,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0058036233464895245"
+    },
+    {
+      "id": "active-users",
+      "title": "Active Users",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/active-users",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0036553258760329958"
+    },
+    {
+      "id": "number-of-unique-flavors-after-sharing-k-candies",
+      "title": "Number of Unique Flavors After Sharing K Candies",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006207987942727958"
+    }
+  ]
+}

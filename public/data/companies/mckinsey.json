@@ -1,0 +1,55 @@
+{
+  "name": "McKinsey",
+  "displayName": "McKinsey",
+  "slug": "mckinsey",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 3,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximal-score-after-applying-k-operations",
+      "title": "Maximal Score After Applying K Operations",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximal-score-after-applying-k-operations",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006424646438526507"
+    },
+    {
+      "id": "shortest-bridge",
+      "title": "Shortest Bridge",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/shortest-bridge",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005986790330488956"
+    },
+    {
+      "id": "get-equal-substrings-within-budget",
+      "title": "Get Equal Substrings Within Budget",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/get-equal-substrings-within-budget",
+      "topics": [
+        "String",
+        "Binary Search",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "frequency": 69.5,
+      "acceptanceRate": "0.006033776367713881"
+    }
+  ]
+}

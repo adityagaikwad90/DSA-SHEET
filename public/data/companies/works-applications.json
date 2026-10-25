@@ -1,0 +1,66 @@
+{
+  "name": "Works Applications",
+  "displayName": "Works Applications",
+  "slug": "works-applications",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "3sum",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/3sum",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004007316793155122"
+    },
+    {
+      "id": "largest-number",
+      "title": "Largest Number",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/largest-number",
+      "topics": [
+        "Array",
+        "String",
+        "Greedy",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004399287421821326"
+    },
+    {
+      "id": "course-schedule-iii",
+      "title": "Course Schedule III",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/course-schedule-iii",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004235179501089101"
+    },
+    {
+      "id": "k-inverse-pairs-array",
+      "title": "K Inverse Pairs Array",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/k-inverse-pairs-array",
+      "topics": [
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0049074498849707585"
+    }
+  ]
+}

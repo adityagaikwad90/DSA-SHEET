@@ -1,0 +1,81 @@
+{
+  "name": "Gusto",
+  "displayName": "Gusto",
+  "slug": "gusto",
+  "total": 5,
+  "counts": {
+    "Easy": 1,
+    "Medium": 3,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "integer-to-english-words",
+      "title": "Integer to English Words",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/integer-to-english-words",
+      "topics": [
+        "Math",
+        "String",
+        "Recursion"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0035309245732496595"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 83.1,
+      "acceptanceRate": "0.005025845844229252"
+    },
+    {
+      "id": "add-bold-tag-in-string",
+      "title": "Add Bold Tag in String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/add-bold-tag-in-string",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Trie",
+        "String Matching",
+        "Aho–Corasick Algorithm"
+      ],
+      "frequency": 77.9,
+      "acceptanceRate": "0.005153145595587633"
+    },
+    {
+      "id": "distribute-money-to-maximum-children",
+      "title": "Distribute Money to Maximum Children",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/distribute-money-to-maximum-children",
+      "topics": [
+        "Math",
+        "Greedy"
+      ],
+      "frequency": 67.5,
+      "acceptanceRate": "0.0020868644907601932"
+    },
+    {
+      "id": "house-robber",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 51.1,
+      "acceptanceRate": "0.0053686288806417525"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "peak6",
+  "displayName": "PEAK6",
+  "slug": "peak6",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "coordinate-with-maximum-network-quality",
+      "title": "Coordinate With Maximum Network Quality",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coordinate-with-maximum-network-quality",
+      "topics": [
+        "Array",
+        "Enumeration"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004054478952772073"
+    },
+    {
+      "id": "maximum-profit-of-operating-a-centennial-wheel",
+      "title": "Maximum Profit of Operating a Centennial Wheel",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel",
+      "topics": [
+        "Array",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004490523655763021"
+    }
+  ]
+}

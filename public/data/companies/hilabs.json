@@ -1,0 +1,28 @@
+{
+  "name": "HiLabs",
+  "displayName": "HiLabs",
+  "slug": "hilabs",
+  "total": 1,
+  "counts": {
+    "Easy": 0,
+    "Medium": 0,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximize-the-number-of-partitions-after-operations",
+      "title": "Maximize the Number of Partitions After Operations",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations",
+      "topics": [
+        "String",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005315059350717453"
+    }
+  ]
+}

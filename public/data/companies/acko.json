@@ -1,0 +1,62 @@
+{
+  "name": "Acko",
+  "displayName": "Acko",
+  "slug": "acko",
+  "total": 4,
+  "counts": {
+    "Easy": 2,
+    "Medium": 0,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "fill-missing-data",
+      "title": "Fill Missing Data",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/fill-missing-data",
+      "topics": [],
+      "frequency": 100,
+      "acceptanceRate": "0.007277143838276936"
+    },
+    {
+      "id": "count-all-valid-pickup-and-delivery-options",
+      "title": "Count All Valid Pickup and Delivery Options",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Combinatorics"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00649658752374051"
+    },
+    {
+      "id": "invalid-tweets",
+      "title": "Invalid Tweets",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/invalid-tweets",
+      "topics": [
+        "Database"
+      ],
+      "frequency": 89.4,
+      "acceptanceRate": "0.008531280588211967"
+    },
+    {
+      "id": "parallel-courses-iii",
+      "title": "Parallel Courses III",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/parallel-courses-iii",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "frequency": 89.4,
+      "acceptanceRate": "0.00667874352378537"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Hotstar",
+  "displayName": "Disney+ Hotstar",
+  "slug": "hotstar",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 1,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "house-robber",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/house-robber",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0053686288806417525"
+    },
+    {
+      "id": "three-equal-parts",
+      "title": "Three Equal Parts",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/three-equal-parts",
+      "topics": [
+        "Array",
+        "Math"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004185813046156655"
+    }
+  ]
+}

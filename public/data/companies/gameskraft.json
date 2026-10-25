@@ -1,0 +1,62 @@
+{
+  "name": "Gameskraft",
+  "displayName": "Gameskraft",
+  "slug": "gameskraft",
+  "total": 3,
+  "counts": {
+    "Easy": 0,
+    "Medium": 0,
+    "Hard": 3
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "maximize-sum-of-weights-after-edge-removals",
+      "title": "Maximize Sum of Weights after Edge Removals",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals",
+      "topics": [
+        "Dynamic Programming",
+        "Tree",
+        "Depth-First Search",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0033500306116769634"
+    },
+    {
+      "id": "maximum-partition-factor",
+      "title": "Maximum Partition Factor",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/maximum-partition-factor",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "frequency": 93.5,
+      "acceptanceRate": "0.0031791044776119403"
+    },
+    {
+      "id": "count-valid-paths-in-a-tree",
+      "title": "Count Valid Paths in a Tree",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/count-valid-paths-in-a-tree",
+      "topics": [
+        "Math",
+        "Dynamic Programming",
+        "Tree",
+        "Depth-First Search",
+        "Number Theory",
+        "Primality Test",
+        "Sieve Theory",
+        "Prime Number Sieve"
+      ],
+      "frequency": 66.4,
+      "acceptanceRate": "0.0036570075694421287"
+    }
+  ]
+}

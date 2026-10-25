@@ -1,0 +1,38 @@
+{
+  "name": "Bridgewater Associates",
+  "displayName": "Bridgewater Associates",
+  "slug": "bridgewater-associates",
+  "total": 2,
+  "counts": {
+    "Easy": 0,
+    "Medium": 2,
+    "Hard": 0
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "count-strictly-increasing-subarrays",
+      "title": "Count Strictly Increasing Subarrays",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/count-strictly-increasing-subarrays",
+      "topics": [
+        "Array",
+        "Math",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007094650891518079"
+    },
+    {
+      "id": "knight-dialer",
+      "title": "Knight Dialer",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/knight-dialer",
+      "topics": [
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.00622703660330901"
+    }
+  ]
+}

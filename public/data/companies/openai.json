@@ -1,0 +1,265 @@
+{
+  "name": "OpenAI",
+  "displayName": "OpenAI",
+  "slug": "openai",
+  "total": 18,
+  "counts": {
+    "Easy": 1,
+    "Medium": 15,
+    "Hard": 2
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "design-memory-allocator",
+      "title": "Design Memory Allocator",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-memory-allocator",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Simulation"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0051036668574195535"
+    },
+    {
+      "id": "design-sql",
+      "title": "Design SQL",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-sql",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Design"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006339468854582748"
+    },
+    {
+      "id": "find-duplicate-file-in-system",
+      "title": "Find Duplicate File in System",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/find-duplicate-file-in-system",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006754375346194338"
+    },
+    {
+      "id": "encode-and-decode-strings",
+      "title": "Encode and Decode Strings",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/encode-and-decode-strings",
+      "topics": [
+        "Array",
+        "String",
+        "Design"
+      ],
+      "frequency": 90.1,
+      "acceptanceRate": "0.005209337981343404"
+    },
+    {
+      "id": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotting-oranges",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 81.4,
+      "acceptanceRate": "0.005959394495835888"
+    },
+    {
+      "id": "ip-to-cidr",
+      "title": "IP to CIDR",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/ip-to-cidr",
+      "topics": [
+        "String",
+        "Bit Manipulation"
+      ],
+      "frequency": 80,
+      "acceptanceRate": "0.005423994777740118"
+    },
+    {
+      "id": "time-based-key-value-store",
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/time-based-key-value-store",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Design"
+      ],
+      "frequency": 80,
+      "acceptanceRate": "0.005025864157271965"
+    },
+    {
+      "id": "flatten-nested-list-iterator",
+      "title": "Flatten Nested List Iterator",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/flatten-nested-list-iterator",
+      "topics": [
+        "Stack",
+        "Tree",
+        "Depth-First Search",
+        "Design",
+        "Queue",
+        "Iterator"
+      ],
+      "frequency": 77.2,
+      "acceptanceRate": "0.006594042855152821"
+    },
+    {
+      "id": "design-authentication-manager",
+      "title": "Design Authentication Manager",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-authentication-manager",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 66,
+      "acceptanceRate": "0.005885535607630959"
+    },
+    {
+      "id": "simplify-path",
+      "title": "Simplify Path",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/simplify-path",
+      "topics": [
+        "String",
+        "Stack"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.005168685367296402"
+    },
+    {
+      "id": "largest-local-values-in-a-matrix",
+      "title": "Largest Local Values in a Matrix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/largest-local-values-in-a-matrix",
+      "topics": [
+        "Array",
+        "Matrix"
+      ],
+      "frequency": 56.9,
+      "acceptanceRate": "0.008772035891192315"
+    },
+    {
+      "id": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/asteroid-collision",
+      "topics": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ],
+      "frequency": 51.3,
+      "acceptanceRate": "0.004932931077260659"
+    },
+    {
+      "id": "design-hit-counter",
+      "title": "Design Hit Counter",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-hit-counter",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Design",
+        "Queue",
+        "Data Stream"
+      ],
+      "frequency": 51.3,
+      "acceptanceRate": "0.006977334581379982"
+    },
+    {
+      "id": "design-spreadsheet",
+      "title": "Design Spreadsheet",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/design-spreadsheet",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Design",
+        "Matrix"
+      ],
+      "frequency": 51.3,
+      "acceptanceRate": "0.007329346591567577"
+    },
+    {
+      "id": "design-excel-sum-formula",
+      "title": "Design Excel Sum Formula",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/design-excel-sum-formula",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Graph Theory",
+        "Design",
+        "Topological Sort",
+        "Matrix"
+      ],
+      "frequency": 51.3,
+      "acceptanceRate": "0.003933100359922993"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 51.3,
+      "acceptanceRate": "0.00684225151260494"
+    },
+    {
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/lru-cache",
+      "topics": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "frequency": 48.7,
+      "acceptanceRate": "0.004825718862808002"
+    },
+    {
+      "id": "snapshot-array",
+      "title": "Snapshot Array",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/snapshot-array",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Binary Search",
+        "Design",
+        "Persistent Data Structure"
+      ],
+      "frequency": 48.7,
+      "acceptanceRate": "0.0036822698030254102"
+    }
+  ]
+}

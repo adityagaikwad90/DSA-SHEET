@@ -1,0 +1,92 @@
+{
+  "name": "Zoox",
+  "displayName": "Zoox",
+  "slug": "zoox",
+  "total": 6,
+  "counts": {
+    "Easy": 1,
+    "Medium": 4,
+    "Hard": 1
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.005752121173271802"
+    },
+    {
+      "id": "basic-calculator-ii",
+      "title": "Basic Calculator II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/basic-calculator-ii",
+      "topics": [
+        "Math",
+        "String",
+        "Stack"
+      ],
+      "frequency": 73.9,
+      "acceptanceRate": "0.004727717712179759"
+    },
+    {
+      "id": "minimum-number-of-frogs-croaking",
+      "title": "Minimum Number of Frogs Croaking",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-number-of-frogs-croaking",
+      "topics": [
+        "String",
+        "Counting"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.005138347607601535"
+    },
+    {
+      "id": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/rotting-oranges",
+      "topics": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.005959402473334403"
+    },
+    {
+      "id": "string-compression",
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/string-compression",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.006096651946984706"
+    },
+    {
+      "id": "max-points-on-a-line",
+      "title": "Max Points on a Line",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/max-points-on-a-line",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Geometry",
+        "Euclidean Algorithm",
+        "Greatest Common Divisor"
+      ],
+      "frequency": 65.7,
+      "acceptanceRate": "0.0031637313561455657"
+    }
+  ]
+}

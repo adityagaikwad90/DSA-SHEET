@@ -1,0 +1,74 @@
+{
+  "name": "Mindtickle",
+  "displayName": "Mindtickle",
+  "slug": "mindtickle",
+  "total": 4,
+  "counts": {
+    "Easy": 0,
+    "Medium": 0,
+    "Hard": 4
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "find-array-given-subset-sums",
+      "title": "Find Array Given Subset Sums",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/find-array-given-subset-sums",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sorting",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004952451454928535"
+    },
+    {
+      "id": "get-the-maximum-score",
+      "title": "Get the Maximum Score",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/get-the-maximum-score",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0041626895299235545"
+    },
+    {
+      "id": "number-of-ways-to-wear-different-hats-to-each-other",
+      "title": "Number of Ways to Wear Different Hats to Each Other",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Bitmask",
+        "Bipartite Graph",
+        "Matching (Graph)",
+        "Perfect Matching"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.004704388497095042"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.0068422545178338625"
+    }
+  ]
+}

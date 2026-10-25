@@ -1,0 +1,392 @@
+{
+  "name": "HashedIn",
+  "displayName": "HashedIn",
+  "slug": "hashedin",
+  "total": 28,
+  "counts": {
+    "Easy": 2,
+    "Medium": 19,
+    "Hard": 7
+  },
+  "featured": false,
+  "questions": [
+    {
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/group-anagrams",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.007344432435438076"
+    },
+    {
+      "id": "maximum-points-inside-the-square",
+      "title": "Maximum Points Inside the Square",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-points-inside-the-square",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Binary Search",
+        "Sorting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.003987124689989974"
+    },
+    {
+      "id": "subarrays-with-k-different-integers",
+      "title": "Subarrays with K Different Integers",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/subarrays-with-k-different-integers",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Sliding Window",
+        "Counting"
+      ],
+      "frequency": 100,
+      "acceptanceRate": "0.006918476053911981"
+    },
+    {
+      "id": "jump-game",
+      "title": "Jump Game",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.004166910797862115"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+      "topics": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "frequency": 88.6,
+      "acceptanceRate": "0.0040019093575839795"
+    },
+    {
+      "id": "jump-game-ii",
+      "title": "Jump Game II",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/jump-game-ii",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "frequency": 80.5,
+      "acceptanceRate": "0.004366654659991473"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/longest-palindromic-substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "frequency": 80.5,
+      "acceptanceRate": "0.0038866711773173617"
+    },
+    {
+      "id": "minimum-time-to-repair-cars",
+      "title": "Minimum Time to Repair Cars",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/minimum-time-to-repair-cars",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 80.5,
+      "acceptanceRate": "0.005921139876523199"
+    },
+    {
+      "id": "subarray-sums-divisible-by-k",
+      "title": "Subarray Sums Divisible by K",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/subarray-sums-divisible-by-k",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "frequency": 80.5,
+      "acceptanceRate": "0.005687784092937208"
+    },
+    {
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/trapping-rain-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "frequency": 80.5,
+      "acceptanceRate": "0.0068422496005769275"
+    },
+    {
+      "id": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/longest-common-prefix",
+      "topics": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.004853664894040156"
+    },
+    {
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "link": "https://leetcode.com/problems/two-sum",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.005803619454625748"
+    },
+    {
+      "id": "beautiful-arrangement",
+      "title": "Beautiful Arrangement",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/beautiful-arrangement",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.0065005123617897"
+    },
+    {
+      "id": "container-with-most-water",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/container-with-most-water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.006103892244628717"
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/decode-string",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.006337480408192327"
+    },
+    {
+      "id": "edit-distance",
+      "title": "Edit Distance",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/edit-distance",
+      "topics": [
+        "String",
+        "Dynamic Programming"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.006145648831558322"
+    },
+    {
+      "id": "koko-eating-bananas",
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/koko-eating-bananas",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.005071682636224031"
+    },
+    {
+      "id": "maximum-product-subarray",
+      "title": "Maximum Product Subarray",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/maximum-product-subarray",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.00372239059952596"
+    },
+    {
+      "id": "next-permutation",
+      "title": "Next Permutation",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/next-permutation",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.0046395804985513685"
+    },
+    {
+      "id": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/number-of-islands",
+      "topics": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.006531448449824296"
+    },
+    {
+      "id": "restore-ip-addresses",
+      "title": "Restore IP Addresses",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/restore-ip-addresses",
+      "topics": [
+        "String",
+        "Backtracking"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.005736167555005644"
+    },
+    {
+      "id": "sort-colors",
+      "title": "Sort Colors",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/sort-colors",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting",
+        "Quicksort",
+        "Bubble Sort"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.007029499131248329"
+    },
+    {
+      "id": "best-time-to-buy-and-sell-stock-iv",
+      "title": "Best Time to Buy and Sell Stock IV",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv",
+      "topics": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.005157269520612302"
+    },
+    {
+      "id": "chalkboard-xor-game",
+      "title": "Chalkboard XOR Game",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/chalkboard-xor-game",
+      "topics": [
+        "Array",
+        "Math",
+        "Bit Manipulation",
+        "Brainteaser",
+        "Game Theory",
+        "Zero-Sum Game",
+        "Impartial Game"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.0067340036839085675"
+    },
+    {
+      "id": "jump-game-iv",
+      "title": "Jump Game IV",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/jump-game-iv",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Breadth-First Search"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.00511368070308"
+    },
+    {
+      "id": "minimum-cost-to-make-array-equal",
+      "title": "Minimum Cost to Make Array Equal",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-cost-to-make-array-equal",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Greedy",
+        "Sorting",
+        "Prefix Sum"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.0046992420577326235"
+    },
+    {
+      "id": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+      "title": "Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+      "difficulty": "Hard",
+      "link": "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+      "topics": [
+        "String",
+        "Greedy",
+        "Binary Indexed Tree",
+        "Segment Tree"
+      ],
+      "frequency": 69.1,
+      "acceptanceRate": "0.004216315870333384"
+    },
+    {
+      "id": "coin-change",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "link": "https://leetcode.com/problems/coin-change",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "frequency": 61.7,
+      "acceptanceRate": "0.00493061143701088"
+    }
+  ]
+}
