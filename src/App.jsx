@@ -7,6 +7,8 @@ import Register from './pages/Register';
 import DsaVault from './pages/DsaVault';
 import ClubChat from './pages/ClubChat';
 import AiChat from './pages/AiChat';
+import InterviewHub from './pages/InterviewHub';
+import PatternLesson from './pages/PatternLesson';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './Navbar';
 import RewardCelebration from './components/RewardCelebration';
@@ -26,6 +28,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/questions" element={<Questions />} />
         <Route path="/top-100" element={<Questions />} />
+        <Route path="/interview-hub" element={<InterviewHub />} />
+        <Route path="/interview-hub/patterns" element={<InterviewHub defaultTab="patterns" />} />
+        <Route path="/interview-hub/patterns/:patternId" element={<PatternLesson />} />
+        <Route path="/patterns/:patternId" element={<PatternLesson />} />
         <Route path="/sheet" element={<MySheet />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

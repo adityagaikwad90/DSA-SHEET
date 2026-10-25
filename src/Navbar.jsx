@@ -43,6 +43,7 @@ function Navbar() {
           <li><NavLink to="/" end className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Home</NavLink></li>
           <li><NavLink to="/questions" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Code Arena</NavLink></li>
           <li><NavLink to="/top-100" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Top 100</NavLink></li>
+          <li><NavLink to="/interview-hub" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Interview Hub</NavLink></li>
           <li><NavLink to="/sheet" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>My Sheet</NavLink></li>
           <li><NavLink to="/dsa-vault" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>DSA Vault</NavLink></li>
           <li><NavLink to="/club" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Clubs</NavLink></li>

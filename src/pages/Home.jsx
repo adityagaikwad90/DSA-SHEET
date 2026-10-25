@@ -230,6 +230,18 @@ const Home = () => {
 
             <Magnetic>
               <MotionLink
+                to="/interview-hub"
+                className="btn btn-hero-secondary"
+                whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                style={{ borderColor: 'rgba(0, 184, 163, 0.4)', color: '#00b8a3' }}
+              >
+                DSA Patterns Hub
+              </MotionLink>
+            </Magnetic>
+
+            <Magnetic>
+              <MotionLink
                 to="/dsa-vault"
                 className="btn btn-hero-secondary"
                 whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}

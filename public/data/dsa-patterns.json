@@ -1,0 +1,182 @@
+{
+  "version": "1.0.0",
+  "totalPatterns": 16,
+  "patterns": [
+    {
+      "id": "pattern-01",
+      "number": 1,
+      "title": "Sliding Window",
+      "slug": "sliding-window",
+      "category": "Array / String",
+      "estimatedTime": "45 mins",
+      "summary": "In many problems dealing with an array (or a LinkedList), we are asked to find or calculate something among all the contiguous subarrays (or sublists) of a given size. For example, take a look at this problem: Find Averages of Sub Arrays...",
+      "coverImage": null,
+      "problemsCount": 11
+    },
+    {
+      "id": "pattern-02",
+      "number": 2,
+      "title": "Two Pointers",
+      "slug": "two-pointers",
+      "category": "Array / LinkedList",
+      "estimatedTime": "40 mins",
+      "summary": "In problems where we deal with sorted arrays (or LinkedLists) and need to find a set of elements that fulfill certain constraints, the two pointers approach becomes quite useful. The set of elements could be a pair, a triplet or even a subarray. For example, take a look at the...",
+      "coverImage": null,
+      "problemsCount": 11
+    },
+    {
+      "id": "pattern-03",
+      "number": 3,
+      "title": "Fast & Slow Pointers",
+      "slug": "fast-and-slow-pointers",
+      "category": "LinkedList / Cycle Detection",
+      "estimatedTime": "35 mins",
+      "summary": "The Fast & Slow pointer approach, also known as the Hare & Tortoise algorithm, is a pointer algorithm that uses two pointers which move through the array (or sequence/LinkedList) at different speeds. This approach is quite useful when dealing with cyclic LinkedLists or arrays....",
+      "coverImage": null,
+      "problemsCount": 7
+    },
+    {
+      "id": "pattern-04",
+      "number": 4,
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "category": "Intervals / Sorting",
+      "estimatedTime": "45 mins",
+      "summary": "This pattern describes an efficient technique to deal with overlapping intervals. In a lot of problems involving intervals, we either need to find overlapping intervals or merge intervals if they overlap. Given two intervals (a and b), there will be six different ways the two...",
+      "coverImage": "/patterns/images/mergeintervals.png",
+      "problemsCount": 6
+    },
+    {
+      "id": "pattern-05",
+      "number": 5,
+      "title": "Cyclic Sort",
+      "slug": "cyclic-sort",
+      "category": "Array / Index Placement",
+      "estimatedTime": "35 mins",
+      "summary": "This pattern describes an interesting approach to deal with problems involving arrays containing numbers in a given range. For example, take the following problem: You are given an unsorted array containing numbers taken from the range 1 to n The array can have duplicates, which...",
+      "coverImage": "/patterns/images/cyclicsort.png",
+      "problemsCount": 8
+    },
+    {
+      "id": "pattern-06",
+      "number": 6,
+      "title": "In-place Reversal of a LinkedList",
+      "slug": "in-place-reversal-of-a-linkedlist",
+      "category": "LinkedList / Pointers",
+      "estimatedTime": "40 mins",
+      "summary": "In a lot of problems, we are asked to reverse the links between a set of nodes of a LinkedList. Often, the constraint is that we need to do this in-place, i.e., using the existing node objects and without using extra memory. in-place Reversal of a LinkedList pattern describes an...",
+      "coverImage": null,
+      "problemsCount": 5
+    },
+    {
+      "id": "pattern-07",
+      "number": 7,
+      "title": "Tree Breadth First Search",
+      "slug": "tree-breadth-first-search",
+      "category": "Trees / BFS",
+      "estimatedTime": "50 mins",
+      "summary": "This pattern is based on the Breadth First Search (BFS) technique to traverse a tree. Any problem involving the traversal of a tree in a level-by-level order can be efficiently solved using this approach. We will use a Queue to keep track of all the nodes of a level before we...",
+      "coverImage": null,
+      "problemsCount": 9
+    },
+    {
+      "id": "pattern-08",
+      "number": 8,
+      "title": "Tree Depth First Search (DFS)",
+      "slug": "tree-depth-first-search",
+      "category": "Trees / DFS / Recursion",
+      "estimatedTime": "45 mins",
+      "summary": "This pattern is based on the Depth First Search (DFS) technique to traverse a tree. We will be using recursion (or we can also use a stack for the iterative approach) to keep track of all the previous (parent) nodes while traversing. This also means that the space complexity of...",
+      "coverImage": null,
+      "problemsCount": 7
+    },
+    {
+      "id": "pattern-09",
+      "number": 9,
+      "title": "Two Heaps",
+      "slug": "two-heaps",
+      "category": "Heaps / Priority Queue",
+      "estimatedTime": "40 mins",
+      "summary": "In many problems, where we are given a set of elements such that we can divide them into two parts. To solve the problem, we are interested in knowing the smallest element in one part and the biggest element in the other part. This pattern is an efficient approach to solve such...",
+      "coverImage": null,
+      "problemsCount": 4
+    },
+    {
+      "id": "pattern-10",
+      "number": 10,
+      "title": "Subsets",
+      "slug": "subsets",
+      "category": "Backtracking / BFS",
+      "estimatedTime": "45 mins",
+      "summary": "A huge number of coding interview problems involve dealing with Permutations and Combinations of a given set of elements. This pattern describes an efficient Breadth First Search (BFS) approach to handle all these problems.",
+      "coverImage": null,
+      "problemsCount": 9
+    },
+    {
+      "id": "pattern-11",
+      "number": 11,
+      "title": "Modified Binary Search",
+      "slug": "modified-binary-search",
+      "category": "Binary Search",
+      "estimatedTime": "45 mins",
+      "summary": "As we know, whenever we are given a sorted Array or LinkedList or Matrix, and we are asked to find a certain element, the best algorithm we can use is the Binary Search.",
+      "coverImage": null,
+      "problemsCount": 10
+    },
+    {
+      "id": "pattern-12",
+      "number": 12,
+      "title": "Bitwise XOR",
+      "slug": "bitwise-xor",
+      "category": "Bit Manipulation",
+      "estimatedTime": "30 mins",
+      "summary": "XOR is a logical bitwise operator that returns 0 (false) if both bits are the same and returns 1 (true) otherwise. In other words, it only returns 1 if exactly one bit is set to 1 out of the two bits in comparison. | A | B | A xor B | |:---:|:---:|:---:| | 0|0|0| | 0|1|1| |...",
+      "coverImage": null,
+      "problemsCount": 4
+    },
+    {
+      "id": "pattern-13",
+      "number": 13,
+      "title": "Top 'K' Elements",
+      "slug": "top-k-elements",
+      "category": "Heaps / Sorting",
+      "estimatedTime": "50 mins",
+      "summary": "Any problem that asks us to find the top/smallest/frequent K elements among a given set falls under this pattern. The best data structure that comes to mind to keep track of K elements is Heap. This pattern will make use of the Heap to solve multiple problems dealing with K...",
+      "coverImage": null,
+      "problemsCount": 14
+    },
+    {
+      "id": "pattern-14",
+      "number": 14,
+      "title": "K-way Merge",
+      "slug": "k-way-merge",
+      "category": "Heaps / Sorted Lists",
+      "estimatedTime": "45 mins",
+      "summary": "This pattern helps us solve problems that involve a list of sorted arrays. Whenever we are given K sorted arrays, we can use a Heap to efficiently perform a sorted traversal of all the elements of all arrays. We can push the smallest (first) element of each sorted array in a Min...",
+      "coverImage": "/patterns/images/kwaymatrix.png",
+      "problemsCount": 6
+    },
+    {
+      "id": "pattern-15",
+      "number": 15,
+      "title": "0-1 Knapsack (Dynamic Programming)",
+      "slug": "0-1-knapsack-dynamic-programming",
+      "category": "Dynamic Programming",
+      "estimatedTime": "65 mins",
+      "summary": "Core DP pattern for optimization problems: breaking down into overlapping subproblems, memoization (top-down), and tabulation (bottom-up).",
+      "coverImage": "/patterns/images/knapsack.png",
+      "problemsCount": 44
+    },
+    {
+      "id": "pattern-16",
+      "number": 16,
+      "title": "Topological Sort (Graph)",
+      "slug": "topological-sort-graph",
+      "category": "Graph / BFS / DAG",
+      "estimatedTime": "50 mins",
+      "summary": "Topological Sort is used to find a linear ordering of elements that have dependencies on each other. For example, if event B is dependent on event A, A comes before B in topological ordering. This pattern defines an easy way to understand the technique for performing topological...",
+      "coverImage": "/patterns/images/topsort.png",
+      "problemsCount": 7
+    }
+  ]
+}
