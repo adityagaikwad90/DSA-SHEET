@@ -1,12 +1,20 @@
-/* Pattern Lesson Page Styles */
+/* ==========================================================================
+   Pattern Lesson Page Styles - Fully Responsive (Desktop, Tablet & Mobile)
+   ========================================================================== */
+
 .pattern-lesson-page {
   max-width: 1240px;
   margin: 0 auto;
   padding: 1.5rem 1.5rem 5rem;
   min-height: calc(100vh - 80px);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-/* Top bar with Breadcrumbs & Sequence Nav */
+/* --------------------------------------------------------------------------
+   Top Bar: Breadcrumbs & Sequence Navigation
+   -------------------------------------------------------------------------- */
 .lesson-top-bar {
   display: flex;
   justify-content: space-between;
@@ -14,6 +22,8 @@
   margin-bottom: 1.75rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .lesson-breadcrumbs {
@@ -21,6 +31,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
+  flex-wrap: wrap;
 }
 
 .back-link {
@@ -31,6 +42,7 @@
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .back-link:hover {
@@ -44,6 +56,7 @@
 
 .breadcrumb-current {
   color: #94a3b8;
+  white-space: nowrap;
 }
 
 .lesson-sequence-nav {
@@ -63,6 +76,7 @@
   font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .seq-nav-btn:hover:not(:disabled) {
@@ -75,7 +89,9 @@
   cursor: not-allowed;
 }
 
-/* Pattern Lesson Hero */
+/* --------------------------------------------------------------------------
+   Pattern Lesson Hero
+   -------------------------------------------------------------------------- */
 .pattern-lesson-hero {
   display: grid;
   grid-template-columns: 1.6fr 1fr;
@@ -87,6 +103,7 @@
   padding: 2.25rem;
   margin-bottom: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
 }
 
 .meta-badges {
@@ -107,6 +124,7 @@
   border: 1px solid rgba(0, 184, 163, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
 .pattern-category-pill {
@@ -116,6 +134,7 @@
   color: #cbd5e1;
   padding: 0.25rem 0.65rem;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .pattern-time-pill {
@@ -124,6 +143,7 @@
   gap: 0.3rem;
   font-size: 0.75rem;
   color: #94a3b8;
+  white-space: nowrap;
 }
 
 .pattern-lesson-title {
@@ -132,6 +152,7 @@
   color: #ffffff;
   margin-bottom: 0.75rem;
   line-height: 1.25;
+  word-break: break-word;
 }
 
 .pattern-lesson-summary {
@@ -149,6 +170,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  box-sizing: border-box;
 }
 
 .status-label {
@@ -179,6 +201,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .status-btn:hover {
@@ -216,14 +239,22 @@
   font-weight: 600;
 }
 
-/* Tabs Nav */
+/* --------------------------------------------------------------------------
+   Tabs Navigation
+   -------------------------------------------------------------------------- */
 .lesson-tabs-nav {
   display: flex;
   gap: 0.75rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.lesson-tabs-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .lesson-tab-btn {
@@ -240,6 +271,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .lesson-tab-btn:hover {
@@ -252,13 +284,17 @@
   border-bottom-color: var(--color-primary, #00b8a3);
 }
 
-/* Tab 1: Lesson Markdown Wrapper */
+/* --------------------------------------------------------------------------
+   Tab 1: Lesson Markdown Wrapper
+   -------------------------------------------------------------------------- */
 .lesson-markdown-wrapper {
   background: var(--color-bg-surface, #262626);
   border: 1px solid var(--color-border, #333333);
   border-radius: var(--border-radius-md, 12px);
   padding: 2.5rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .attribution-banner {
@@ -269,6 +305,7 @@
   border-radius: 10px;
   padding: 1.15rem 1.4rem;
   margin-bottom: 2.25rem;
+  box-sizing: border-box;
 }
 
 .attribution-icon {
@@ -289,11 +326,14 @@
   line-height: 1.5;
 }
 
-/* Tab 2: Problems List */
+/* --------------------------------------------------------------------------
+   Tab 2: Practice Problems List
+   -------------------------------------------------------------------------- */
 .problems-list-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .problems-header-info {
@@ -301,24 +341,27 @@
   border: 1px solid #2d3748;
   border-radius: 12px;
   padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 .problems-header-info h3 {
   color: #ffffff;
   font-size: 1.25rem;
-  margin-bottom: 0.35rem;
+  margin: 0 0 0.35rem 0;
 }
 
 .problems-header-info p {
   color: #94a3b8;
   margin: 0;
   font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .problems-accordion-list {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  width: 100%;
 }
 
 .problem-detail-card {
@@ -327,6 +370,8 @@
   border-radius: 12px;
   padding: 1.5rem;
   transition: border-color 0.2s ease;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .problem-detail-card:hover {
@@ -347,6 +392,8 @@
   align-items: center;
   gap: 0.65rem;
   flex-wrap: wrap;
+  flex: 1;
+  min-width: 0;
 }
 
 .problem-index-tag {
@@ -356,6 +403,7 @@
   background: rgba(255, 255, 255, 0.05);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
+  white-space: nowrap;
 }
 
 .problem-heading {
@@ -363,6 +411,7 @@
   font-size: 1.15rem;
   font-weight: 700;
   margin: 0;
+  word-break: break-word;
 }
 
 .difficulty-badge {
@@ -370,6 +419,7 @@
   font-weight: 700;
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
+  white-space: nowrap;
 }
 
 .difficulty-easy {
@@ -403,6 +453,7 @@
   font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .leetcode-practice-btn:hover {
@@ -416,6 +467,7 @@
   padding: 0.75rem 1rem;
   border-radius: 0 6px 6px 0;
   margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .problem-description-box p {
@@ -427,8 +479,9 @@
 
 .complexity-chips-row {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .complexity-chip {
@@ -440,6 +493,7 @@
   padding: 0.25rem 0.65rem;
   border-radius: 6px;
   font-size: 0.82rem;
+  white-space: nowrap;
 }
 
 .chip-label {
@@ -475,6 +529,7 @@
   font-weight: 600;
   padding: 0.4rem 0.85rem;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .java-solution-view {
@@ -482,6 +537,7 @@
   border: 1px solid #21262d;
   border-radius: 8px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .code-viewer-header {
@@ -491,12 +547,14 @@
   background: #161b22;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid #21262d;
+  gap: 0.5rem;
 }
 
 .code-source-label {
   font-size: 0.78rem;
   color: #94a3b8;
   font-family: monospace;
+  word-break: break-all;
 }
 
 .copy-code-btn {
@@ -510,6 +568,8 @@
   cursor: pointer;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .copy-code-btn:hover {
@@ -525,19 +585,24 @@
   line-height: 1.55;
   color: #e6edf3;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Tab 3: Strategy & Intuition */
+/* --------------------------------------------------------------------------
+   Tab 3: Strategy & Intuition
+   -------------------------------------------------------------------------- */
 .cheat-sheet-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 .strategy-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .strategy-card {
@@ -545,6 +610,7 @@
   border: 1px solid var(--color-border, #333333);
   border-radius: 12px;
   padding: 1.75rem;
+  box-sizing: border-box;
 }
 
 .strategy-card-header {
@@ -584,12 +650,13 @@
   border: 1px solid var(--color-border, #333333);
   border-radius: 12px;
   padding: 1.75rem;
+  box-sizing: border-box;
 }
 
 .strategy-diagrams-section h4 {
   color: #ffffff;
   font-size: 1.2rem;
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.25rem 0;
 }
 
 .diagrams-gallery {
@@ -605,6 +672,7 @@
   border: 1px solid #334155;
   border-radius: 8px;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .gallery-img {
@@ -619,11 +687,14 @@
   color: #94a3b8;
 }
 
-/* Bottom Completion Navigator */
+/* --------------------------------------------------------------------------
+   Bottom Completion CTA
+   -------------------------------------------------------------------------- */
 .lesson-bottom-cta {
   margin-top: 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 2rem;
+  width: 100%;
 }
 
 .completion-action-box {
@@ -636,12 +707,13 @@
   padding: 1.75rem 2rem;
   gap: 1.5rem;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .action-text h4 {
   color: #ffffff;
   font-size: 1.25rem;
-  margin-bottom: 0.25rem;
+  margin: 0 0 0.25rem 0;
 }
 
 .action-text p {
@@ -670,6 +742,7 @@
   font-weight: 700;
   cursor: pointer;
   transition: background 0.2s ease;
+  white-space: nowrap;
 }
 
 .complete-cta-btn:hover {
@@ -687,6 +760,7 @@
   font-weight: 600;
   font-size: 0.9rem;
   border: 1px solid rgba(0, 184, 163, 0.3);
+  white-space: nowrap;
 }
 
 .next-pattern-cta-btn {
@@ -702,6 +776,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .next-pattern-cta-btn:hover {
@@ -736,16 +811,19 @@
   margin-bottom: 1.5rem;
 }
 
-/* Mobile Responsiveness */
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (Mobile, Tablet, Small Phones)
+   ========================================================================== */
+
 @media (max-width: 900px) {
   .pattern-lesson-hero {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1.75rem;
     gap: 1.5rem;
   }
 
   .pattern-lesson-title {
-    font-size: 1.85rem;
+    font-size: 1.9rem;
   }
 
   .strategy-grid {
@@ -753,14 +831,14 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .pattern-lesson-page {
-    padding: 1rem 1rem 4rem;
+    padding: 1rem 0.85rem 4rem;
   }
 
   .lesson-top-bar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 0.75rem;
   }
 
@@ -769,26 +847,138 @@
     justify-content: space-between;
   }
 
-  .status-buttons-group {
-    flex-direction: column;
+  .seq-nav-btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .pattern-lesson-hero {
+    padding: 1.5rem 1.15rem;
+    border-radius: 12px;
+  }
+
+  .pattern-lesson-title {
+    font-size: 1.75rem;
+  }
+
+  .pattern-lesson-summary {
+    font-size: 0.92rem;
+  }
+
+  .hero-status-control {
+    padding: 1.15rem 1rem;
+    border-radius: 10px;
+  }
+
+  .lesson-tabs-nav {
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lesson-tab-btn {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.88rem;
   }
 
   .lesson-markdown-wrapper {
-    padding: 1.25rem;
+    padding: 1.25rem 1rem;
+    border-radius: 10px;
+  }
+
+  .attribution-banner {
+    padding: 0.9rem;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .problem-detail-card {
+    padding: 1.15rem 1rem;
+    border-radius: 10px;
+  }
+
+  .problem-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .leetcode-practice-btn {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.55rem;
   }
 
   .completion-action-box {
     flex-direction: column;
     align-items: stretch;
+    padding: 1.25rem 1rem;
   }
 
   .action-buttons {
     flex-direction: column;
+    width: 100%;
   }
 
   .complete-cta-btn,
+  .already-completed-tag,
   .next-pattern-cta-btn {
     width: 100%;
     justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pattern-lesson-page {
+    padding: 0.85rem 0.65rem 4rem;
+  }
+
+  .pattern-lesson-hero {
+    padding: 1.25rem 0.85rem;
+  }
+
+  .pattern-lesson-title {
+    font-size: 1.5rem;
+  }
+
+  .status-buttons-group {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .status-btn {
+    padding: 0.55rem;
+    font-size: 0.8rem;
+  }
+
+  .lesson-markdown-wrapper {
+    padding: 1rem 0.75rem;
+  }
+
+  .problem-code-pre {
+    padding: 0.85rem;
+    font-size: 0.78rem;
+  }
+
+  .strategy-card,
+  .strategy-diagrams-section {
+    padding: 1.25rem 1rem;
+  }
+
+  .diagrams-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .pattern-lesson-title {
+    font-size: 1.35rem;
+  }
+
+  .meta-badges {
+    gap: 0.35rem;
   }
 }

@@ -24,37 +24,37 @@ const TRENDS_DATA = [
   {
     category: "Most Popular Languages",
     items: [
-      { name: "JavaScript", percent: 63.6, color: "#f7df1e" },
-      { name: "Python", percent: 49.2, color: "#3776ab" },
+      { name: "JavaScript", percent: 62.3, color: "#f7df1e" },
+      { name: "Python", percent: 51.0, color: "#3776ab" },
       { name: "TypeScript", percent: 38.5, color: "#3178c6" },
-      { name: "Java", percent: 30.5, color: "#e36209" }
+      { name: "Java", percent: 30.3, color: "#e36209" }
     ]
   },
   {
     category: "Most Loved Frameworks",
     items: [
-      { name: "React", percent: 40.5, color: "#61dafb" },
+      { name: "React", percent: 39.5, color: "#61dafb" },
       { name: "Next.js", percent: 17.9, color: "#ffffff" },
-      { name: "Vue.js", percent: 16.3, color: "#4fc08d" },
-      { name: "Svelte", percent: 6.9, color: "#ff3e00" }
+      { name: "Vue.js", percent: 15.4, color: "#4fc08d" },
+      { name: "Svelte", percent: 7.2, color: "#ff3e00" }
     ]
   },
   {
     category: "Databases",
     items: [
-      { name: "PostgreSQL", percent: 45.5, color: "#336791" },
-      { name: "MySQL", percent: 41.1, color: "#4479a1" },
-      { name: "SQLite", percent: 30.9, color: "#003b57" },
-      { name: "MongoDB", percent: 25.5, color: "#47a248" }
+      { name: "PostgreSQL", percent: 48.7, color: "#336791" },
+      { name: "MySQL", percent: 40.3, color: "#4479a1" },
+      { name: "SQLite", percent: 33.1, color: "#003b57" },
+      { name: "MongoDB", percent: 24.8, color: "#47a248" }
     ]
   },
   {
     category: "Cloud Platforms",
     items: [
-      { name: "AWS", percent: 49.0, color: "#ff9900" },
-      { name: "Microsoft Azure", percent: 26.0, color: "#0078d4" },
-      { name: "Google Cloud", percent: 23.9, color: "#4285f4" },
-      { name: "Vercel", percent: 15.0, color: "#000000" }
+      { name: "AWS", percent: 48.6, color: "#ff9900" },
+      { name: "Microsoft Azure", percent: 27.8, color: "#0078d4" },
+      { name: "Google Cloud", percent: 24.9, color: "#4285f4" },
+      { name: "Vercel", percent: 15.2, color: "#000000" }
     ]
   }
 ];

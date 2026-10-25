@@ -276,13 +276,58 @@
 
 @media (max-width: 768px) {
   .safe-markdown-body h1 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
   .safe-markdown-body h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+  }
+  .safe-markdown-body h3 {
+    font-size: 1.05rem;
   }
   .safe-markdown-body pre {
-    padding: 0.9rem;
-    font-size: 0.82rem;
+    padding: 0.85rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .safe-markdown-body blockquote {
+    padding: 0.75rem 1rem;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .safe-markdown-container {
+    font-size: 0.92rem;
+  }
+  .safe-markdown-body h1 {
+    font-size: 1.3rem;
+  }
+  .safe-markdown-body h2 {
+    font-size: 1.1rem;
+  }
+  .safe-markdown-body pre {
+    padding: 0.75rem;
+    font-size: 0.76rem;
+  }
+  .safe-markdown-body ul,
+  .safe-markdown-body ol {
+    margin-left: 1.1rem;
+  }
+  .markdown-table th,
+  .markdown-table td {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.78rem;
+  }
+  .diagram-lightbox-modal {
+    max-width: 100%;
+  }
+  .diagram-lightbox-img {
+    max-width: 95vw;
+    max-height: 75vh;
+  }
+  .diagram-lightbox-close {
+    top: -2.2rem;
+    right: 0.5rem;
   }
 }
