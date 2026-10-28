@@ -1,0 +1,165 @@
+{
+  "title": "Data Structures & Core Algorithms Guide",
+  "source": "interviews",
+  "dataStructures": [
+    {
+      "id": "linked-list",
+      "name": "Linked List",
+      "category": "Linear",
+      "summary": "Linear collection of data elements where each node points to the next via a reference pointer.",
+      "variants": ["Singly-linked list", "Doubly-linked list (prev & next)", "Circular-linked list"],
+      "complexity": { "access": "O(n)", "search": "O(n)", "insert": "O(1)", "remove": "O(1)" },
+      "keyInterviewInsights": [
+        "Use Fast & Slow pointers (Floyd's Cycle Detection) to find middle node or detect loops in O(1) space.",
+        "Dummy head pointer simplifies boundary deletions and merges.",
+        "In-place reversal requires three pointers: prev, curr, and next."
+      ]
+    },
+    {
+      "id": "stack",
+      "name": "Stack",
+      "category": "Linear",
+      "summary": "Last In, First Out (LIFO) collection where insertions and deletions happen only at the top.",
+      "variants": ["Array-based Stack", "LinkedList-based Stack", "Monotonic Stack"],
+      "complexity": { "access": "O(n)", "search": "O(n)", "insert": "O(1)", "remove": "O(1)" },
+      "keyInterviewInsights": [
+        "Monotonic Stacks solve Next Greater Element, Daily Temperatures, and Largest Rectangle in Histogram in O(n).",
+        "Essential for expression evaluation, parenthesis matching, and DFS recursion call stacks."
+      ]
+    },
+    {
+      "id": "queue",
+      "name": "Queue & Deque",
+      "category": "Linear",
+      "summary": "First In, First Out (FIFO) collection where elements are inserted at rear and removed from front.",
+      "variants": ["Circular Queue", "Priority Queue", "Double-Ended Queue (Deque)", "Monotonic Queue"],
+      "complexity": { "access": "O(n)", "search": "O(n)", "insert": "O(1)", "remove": "O(1)" },
+      "keyInterviewInsights": [
+        "Fundamental to Level-Order Tree Traversal and Breadth First Search (BFS).",
+        "Monotonic Deque solves Sliding Window Maximum in O(n) total time."
+      ]
+    },
+    {
+      "id": "bst",
+      "name": "Binary Search Tree (BST)",
+      "category": "Hierarchical",
+      "summary": "Binary tree where every node in left subtree is <= root, and every node in right subtree is >= root.",
+      "variants": ["Balanced BST (AVL Tree)", "Red-Black Tree", "B-Tree (Disks)"],
+      "complexity": { "access": "O(log n)", "search": "O(log n)", "insert": "O(log n)", "remove": "O(log n)" },
+      "keyInterviewInsights": [
+        "In-order traversal of a BST produces elements in strictly ascending sorted order.",
+        "Unbalanced BST degenerates to a linked list with O(n) operations; self-balancing trees guarantee O(log n).",
+        "Lowest Common Ancestor (LCA) in BST can be found in O(h) without extra space."
+      ]
+    },
+    {
+      "id": "heap",
+      "name": "Heap (Min-Heap / Max-Heap)",
+      "category": "Hierarchical",
+      "summary": "Complete binary tree satisfying the heap property: parent is always <= (min-heap) or >= (max-heap) children.",
+      "variants": ["Binary Heap (Array implementation)", "Fibonacci Heap", "Two Heaps Pattern"],
+      "complexity": { "access": "O(1) [peek]", "search": "O(n)", "insert": "O(log n)", "remove": "O(log n)" },
+      "keyInterviewInsights": [
+        "Array indexing: Parent at (i-1)//2, Left child at 2i + 1, Right child at 2i + 2.",
+        "Building a heap takes O(n) time with bottom-up heapify (not O(n log n)).",
+        "Two Heaps pattern (Min-Heap + Max-Heap) maintains continuous Median of a data stream in O(1) peek and O(log n) insert."
+      ]
+    },
+    {
+      "id": "trie",
+      "name": "Trie (Prefix Tree)",
+      "category": "Hierarchical",
+      "summary": "Tree-like search data structure used to store dynamic strings where keys share common prefixes.",
+      "variants": ["Standard Trie", "Compressed Trie (Radix Tree)", "Suffix Tree"],
+      "complexity": { "access": "O(L)", "search": "O(L)", "insert": "O(L)", "remove": "O(L)" },
+      "keyInterviewInsights": [
+        "L is the length of the string, completely independent of the number of words stored in the dictionary.",
+        "Powers search engine autocomplete, spell checkers, IP routing lookups, and Boggle word search."
+      ]
+    },
+    {
+      "id": "segment-tree",
+      "name": "Segment Tree & Fenwick Tree",
+      "category": "Advanced",
+      "summary": "Tree data structures storing intervals or prefix sums to support fast range queries and updates.",
+      "variants": ["Fenwick Tree (Binary Indexed Tree / BIT)", "Segment Tree with Lazy Propagation"],
+      "complexity": { "access": "O(log n)", "search": "O(log n)", "insert": "O(log n)", "remove": "O(log n)" },
+      "keyInterviewInsights": [
+        "Fenwick Tree uses bitwise i += (i & -i) to achieve O(log n) point updates and prefix sum queries with minimal array memory.",
+        "Segment Tree supports arbitrary associative operations: Range Min, Range Max, Range GCD, Range Sum."
+      ]
+    },
+    {
+      "id": "graph",
+      "name": "Graph (Adjacency List vs Matrix)",
+      "category": "Non-Linear",
+      "summary": "Set of vertices V connected by edges E, representing complex relational networks.",
+      "variants": ["Directed vs Undirected", "Weighted vs Unweighted", "DAG (Directed Acyclic Graph)", "Bipartite"],
+      "complexity": { "access": "O(V + E)", "search": "O(V + E)", "insert": "O(1)", "remove": "O(V + E)" },
+      "keyInterviewInsights": [
+        "Adjacency List is preferred for sparse graphs (O(V + E) space); Matrix is preferred for dense graphs (O(V^2)).",
+        "Topological Sort (Kahn's In-Degree Algorithm / Post-order DFS) solves dependency resolution and course scheduling."
+      ]
+    }
+  ],
+  "coreAlgorithms": [
+    {
+      "id": "quicksort",
+      "name": "Quicksort",
+      "type": "Sorting (Divide & Conquer)",
+      "stable": false,
+      "timeBest": "O(n log n)",
+      "timeAvg": "O(n log n)",
+      "timeWorst": "O(n²)",
+      "space": "O(log n)",
+      "summary": "Partitions array around a pivot element so left <= pivot and right >= pivot, then recurses on subarrays.",
+      "notes": "Fastest practical in-memory sort due to cache locality. Randomized pivot or median-of-three prevents O(n²) worst case on sorted arrays."
+    },
+    {
+      "id": "mergesort",
+      "name": "Mergesort",
+      "type": "Sorting (Divide & Conquer)",
+      "stable": true,
+      "timeBest": "O(n log n)",
+      "timeAvg": "O(n log n)",
+      "timeWorst": "O(n log n)",
+      "space": "O(n)",
+      "summary": "Divides array into two halves, recursively sorts them, and merges the two sorted subarrays.",
+      "notes": "Guaranteed O(n log n) in all cases. Stable sorting preserved. Preferred for sorting linked lists in O(1) auxiliary stack space."
+    },
+    {
+      "id": "dfs",
+      "name": "Depth First Search (DFS)",
+      "type": "Graph / Tree Traversal",
+      "timeBest": "O(V + E)",
+      "timeAvg": "O(V + E)",
+      "timeWorst": "O(V + E)",
+      "space": "O(V)",
+      "summary": "Explores as deep as possible along each branch before backtracking using a recursion stack.",
+      "notes": "Ideal for cycle detection, connected components, path finding, maze solving, and backtracking."
+    },
+    {
+      "id": "bfs",
+      "name": "Breadth First Search (BFS)",
+      "type": "Graph / Tree Traversal",
+      "timeBest": "O(V + E)",
+      "timeAvg": "O(V + E)",
+      "timeWorst": "O(V + E)",
+      "space": "O(V)",
+      "summary": "Visits all neighbors at the current depth level before moving deeper using a FIFO queue.",
+      "notes": "Guarantees the shortest path in unweighted graphs. Essential for level-order tree traversal."
+    },
+    {
+      "id": "topological-sort",
+      "name": "Topological Sort",
+      "type": "Graph Ordering",
+      "timeBest": "O(V + E)",
+      "timeAvg": "O(V + E)",
+      "timeWorst": "O(V + E)",
+      "space": "O(V)",
+      "summary": "Produces a linear ordering of vertices in a Directed Acyclic Graph (DAG) such that for every edge u -> v, u comes before v.",
+      "notes": "Implemented via Kahn's algorithm (Queue of in-degree 0 nodes) or DFS. If processed node count < V, graph contains a cycle!"
+    }
+  ]
+}
+

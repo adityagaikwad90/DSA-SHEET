@@ -47,7 +47,7 @@ function Navbar() {
           <li><NavLink to="/sheet" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>My Sheet</NavLink></li>
           <li><NavLink to="/dsa-vault" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>DSA Vault</NavLink></li>
           <li><NavLink to="/club" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Clubs</NavLink></li>
-          <li><NavLink to="/ask-ai" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Ask AI</NavLink></li>
+          <li><NavLink to="/news" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Tech News</NavLink></li>
 
           {currentUser ? (
             <>

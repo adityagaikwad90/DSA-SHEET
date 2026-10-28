@@ -1,7 +1,7 @@
 /* Widget Container - Fixed Positioning */
 .todo-widget-container {
     position: fixed;
-    bottom: 2rem;
+    bottom: 6.5rem;
     right: 2rem;
     z-index: 1000;
     display: flex;

@@ -242,6 +242,18 @@ const Home = () => {
 
             <Magnetic>
               <MotionLink
+                to="/news"
+                className="btn btn-hero-secondary"
+                whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                style={{ borderColor: 'rgba(0, 184, 163, 0.4)', color: '#00d2b8' }}
+              >
+                Tech News Radar
+              </MotionLink>
+            </Magnetic>
+
+            <Magnetic>
+              <MotionLink
                 to="/dsa-vault"
                 className="btn btn-hero-secondary"
                 whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}

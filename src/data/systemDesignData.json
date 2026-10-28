@@ -1,0 +1,283 @@
+{
+  "title": "Awesome System Design Resources & Interview Guide",
+  "source": "awesome-system-design-resources-main",
+  "framework": {
+    "title": "4-Step System Design Interview Framework",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Understand the Problem & Scope",
+        "desc": "Clarify functional requirements, non-functional requirements (throughput, latency, availability, consistency), and calculate back-of-the-envelope estimations (DAU, QPS, storage, bandwidth)."
+      },
+      {
+        "step": 2,
+        "title": "High-Level Architecture Design",
+        "desc": "Sketch the primary building blocks: Clients, DNS, CDN, Load Balancer, API Gateway, App Services, Database (SQL/NoSQL), and Cache."
+      },
+      {
+        "step": 3,
+        "title": "Deep Dive into Bottlenecks",
+        "desc": "Scale specific bottlenecks: Database Sharding, Replication, Cache Eviction, Rate Limiting, Message Queues for async workloads, and SPOF mitigation."
+      },
+      {
+        "step": 4,
+        "title": "Wrap-Up & Trade-offs",
+        "desc": "Evaluate fault tolerance, monitoring (metrics/logging/tracing), disaster recovery, and explain why you chose specific tradeoffs (e.g. eventual vs strong consistency)."
+      }
+    ]
+  },
+  "coreConcepts": [
+    {
+      "id": "scalability",
+      "title": "Scalability (Horizontal vs Vertical)",
+      "badge": "Core",
+      "summary": "Ability of a system to handle increased load without compromising performance.",
+      "details": "Vertical scaling (scale up) adds CPU/RAM to a single machine (easy, but has hardware limits and SPOF). Horizontal scaling (scale out) adds more commodity instances behind a load balancer (resilient, limitless, requires distributed architecture).",
+      "keyPoints": ["Vertical: Scale Up (Hardware limits, downtime risk)", "Horizontal: Scale Out (Stateless services, load balanced)", "Auto-scaling groups based on CPU/traffic metrics"],
+      "link": "https://algomaster.io/learn/system-design/scalability"
+    },
+    {
+      "id": "availability",
+      "title": "High Availability & 99.999% SLA",
+      "badge": "Core",
+      "summary": "Percentage of time a system remains operational and accessible to users.",
+      "details": "Calculated as Uptime / (Uptime + Downtime). 99.9% (Three 9s) allows ~8.76 hours downtime/year, while 99.999% (Five 9s) allows only ~5.26 minutes downtime/year. Requires redundancy and automated failover.",
+      "keyPoints": ["Active-Passive vs Active-Active redundancy", "Health check probes and automated DNS failover", "Eliminating Single Points of Failure (SPOF)"],
+      "link": "https://algomaster.io/learn/system-design/availability"
+    },
+    {
+      "id": "cap-theorem",
+      "title": "CAP Theorem (Consistency, Availability, Partition Tolerance)",
+      "badge": "Core",
+      "summary": "In a distributed computer system, you can only guarantee two out of three properties simultaneously.",
+      "details": "Network Partitions (P) are inevitable in real-world distributed networks. Thus, systems must choose between Consistency (CP - all nodes see the same data at the same time, e.g. HBase, MongoDB, Spanner) or Availability (AP - every non-failing node returns a response, e.g. Cassandra, DynamoDB, CouchDB).",
+      "keyPoints": ["CP: Consistent & Partition Tolerant (Sacrifices availability during splits)", "AP: Available & Partition Tolerant (Eventual consistency, high uptime)", "PACELC theorem extends CAP for latency vs consistency in normal state"],
+      "link": "https://algomaster.io/learn/system-design/cap-theorem"
+    },
+    {
+      "id": "consistent-hashing",
+      "title": "Consistent Hashing & Virtual Nodes",
+      "badge": "Core",
+      "summary": "Distributed hashing scheme that minimizes key remapping when servers are added or removed.",
+      "details": "Keys and servers are mapped to a circular hash ring [0, 2^32 - 1]. A key is assigned to the first server encountered clockwise. Virtual nodes (replicas per physical server) ensure uniform distribution and prevent 'hot spots'.",
+      "keyPoints": ["Traditional hash(key) % N requires remapping almost all keys when N changes", "Consistent hashing only remaps K/N keys on average", "Virtual nodes prevent non-uniform distribution across physical servers"],
+      "link": "https://algomaster.io/learn/system-design/consistent-hashing",
+      "hasCode": true,
+      "codeSnippet": "class ConsistentHashing:\n    def __init__(self, servers, num_replicas=3):\n        self.ring = {}\n        self.sorted_keys = []\n        for s in servers:\n            self.add_server(s)\n\n    def get_server(self, key):\n        if not self.ring: return None\n        hash_val = self._hash(key)\n        idx = bisect.bisect_right(self.sorted_keys, hash_val)\n        if idx == len(self.sorted_keys):\n            idx = 0\n        return self.ring[self.sorted_keys[idx]]"
+    },
+    {
+      "id": "latency-throughput",
+      "title": "Latency vs Throughput vs Bandwidth",
+      "badge": "Performance",
+      "summary": "Fundamental metrics governing system responsiveness and data capacity.",
+      "details": "Latency is the time it takes for a data packet or request to travel from source to destination (measured in milliseconds). Throughput is the number of operations or requests processed per second (QPS/RPS). Bandwidth is the maximum theoretical data transfer rate of the network pipe.",
+      "keyPoints": ["Aim for maximum throughput with acceptable p99 latency", "Caching and CDNs drastically lower latency", "Batching increases throughput at the expense of marginal latency"],
+      "link": "https://algomaster.io/learn/system-design/latency-vs-throughput"
+    },
+    {
+      "id": "spof",
+      "title": "SPOF (Single Point of Failure)",
+      "badge": "Reliability",
+      "summary": "Any component whose failure causes the entire system to stop working.",
+      "details": "Eliminated by deploying redundant components (multiple web servers, multi-AZ database replicas, redundant power supplies, multi-region failovers) combined with automated heartbeat monitoring.",
+      "keyPoints": ["Identify single points across compute, storage, network, and DNS", "Automated health checks & heartbeat monitoring", "Zero-downtime rolling deployments"],
+      "link": "https://algomaster.io/learn/system-design/single-point-of-failure-spof"
+    }
+  ],
+  "databaseFundamentals": [
+    {
+      "id": "acid-vs-base",
+      "title": "ACID vs BASE Transactions",
+      "category": "Databases",
+      "summary": "ACID guarantees strict transactional integrity; BASE provides flexible scalability.",
+      "details": "ACID (Atomicity, Consistency, Isolation, Durability) is standard in relational databases (PostgreSQL, MySQL). BASE (Basically Available, Soft-state, Eventual consistency) is common in distributed NoSQL stores (Cassandra, DynamoDB).",
+      "keyPoints": ["Atomicity: All or nothing", "Consistency: Valid database state transitions", "Isolation: Concurrent transactions do not interfere", "Durability: Committed data survives crashes"],
+      "link": "https://algomaster.io/learn/system-design/acid-transactions"
+    },
+    {
+      "id": "sql-vs-nosql",
+      "title": "SQL vs NoSQL Paradigms",
+      "category": "Databases",
+      "summary": "Structured relational tables vs flexible distributed document/key-value/column/graph stores.",
+      "details": "Choose SQL when schema is fixed, relationships are complex, and ACID is paramount. Choose NoSQL for massive read/write scale, flexible schemas, unstructured data, or geographical distribution.",
+      "keyPoints": ["SQL: PostgreSQL, MySQL, SQLite (Relational, joins, ACID)", "Document: MongoDB, CouchDB (Hierarchical JSON-like)", "Key-Value: Redis, DynamoDB (Ultra-low latency O(1))", "Wide-Column: Cassandra, ScyllaDB (Time-series, write-heavy)", "Graph: Neo4j (Social networks, fraud detection)"],
+      "link": "https://algomaster.io/learn/system-design/sql-vs-nosql"
+    },
+    {
+      "id": "db-indexing",
+      "title": "Database Indexing (B-Trees & Hash Indexes)",
+      "category": "Databases",
+      "summary": "Data structures that speed up search queries from O(N) full table scan to O(log N).",
+      "details": "B-Tree / B+Tree indexes keep keys sorted and balance branch depth, enabling fast equality and range queries. Hash indexes provide O(1) exact lookups but cannot do range scans. Every index adds overhead to writes and inserts.",
+      "keyPoints": ["B+Tree: Balanced disk-friendly search tree (Range queries & sort)", "Hash Index: O(1) point lookups, no range support", "Composite indexes: Order of columns matters (Leftmost prefix rule)"],
+      "link": "https://algomaster.io/learn/system-design/indexing"
+    },
+    {
+      "id": "db-sharding",
+      "title": "Database Sharding & Partitioning",
+      "category": "Databases",
+      "summary": "Horizontal partitioning of database records across multiple database instances.",
+      "details": "Enables scaling beyond the memory and CPU limits of a single machine. Sharding strategies include Range-based, Hash-based (Shard Key % N or Consistent Hashing), and Directory-based lookups.",
+      "keyPoints": ["Carefully choose Shard Key to avoid hotspotting", "Cross-shard joins are slow and complex", "Re-sharding requires careful data migration without downtime"],
+      "link": "https://algomaster.io/learn/system-design/sharding"
+    },
+    {
+      "id": "bloom-filters",
+      "title": "Bloom Filters",
+      "category": "Databases",
+      "summary": "Space-efficient probabilistic data structure used to test set membership.",
+      "details": "Returns either 'possibly in set' or 'definitely not in set'. False positives are possible, but false negatives are impossible. Used extensively in Bigtable, Cassandra, and RocksDB to avoid expensive disk lookups for non-existent keys.",
+      "keyPoints": ["O(k) time complexity where k is number of hash functions", "Zero false negatives: If it says not present, it is 100% absent", "Saves huge disk I/O in distributed databases"],
+      "link": "https://algomaster.io/learn/system-design/bloom-filters"
+    }
+  ],
+  "cachingFundamentals": [
+    {
+      "id": "caching-strategies",
+      "title": "Caching Strategies (Cache-Aside, Write-Through, Write-Back)",
+      "category": "Caching",
+      "summary": "Patterns dictating how application code, cache, and database synchronize.",
+      "details": "Cache-Aside: App reads from cache; on miss reads DB and writes to cache. Write-Through: App writes to cache, which synchronously updates DB. Write-Back (Write-Behind): App writes to cache; cache asynchronously batches updates to DB.",
+      "keyPoints": ["Cache-Aside (Lazy loading): Stale data possible without TTL", "Write-Through: High read consistency, higher write latency", "Write-Back: Ultra-fast writes, risk of data loss on crash"],
+      "link": "https://algomaster.io/learn/system-design/caching-strategies"
+    },
+    {
+      "id": "cache-eviction",
+      "title": "Cache Eviction Policies (LRU, LFU, FIFO)",
+      "category": "Caching",
+      "summary": "Algorithms that determine which items are purged when memory is exhausted.",
+      "details": "LRU (Least Recently Used) discards items not accessed for the longest time (Doubly-Linked List + Hash Map). LFU (Least Frequently Used) discards items with lowest access count. FIFO (First In First Out) purges oldest entries.",
+      "keyPoints": ["LRU: Optimal for general workloads with temporal locality", "LFU: Optimal for persistent hot keys, higher memory overhead", "TTL (Time-To-Live): Automatic expiry for stale data"],
+      "link": "https://blog.algomaster.io/p/7-cache-eviction-strategies"
+    },
+    {
+      "id": "cdn-edge",
+      "title": "CDN (Content Delivery Network)",
+      "category": "Caching",
+      "summary": "Globally distributed network of edge proxy servers caching static & dynamic content close to users.",
+      "details": "CDNs (Cloudflare, Akamai, CloudFront) dramatically reduce latency by serving assets from local Points of Presence (PoPs), offloading over 80% of traffic from the origin server and mitigating DDoS attacks.",
+      "keyPoints": ["Push CDN: Content uploaded in advance", "Pull CDN: Caches on-demand upon first user request", "Edge compute: Run worker scripts directly on edge nodes"],
+      "link": "https://algomaster.io/learn/system-design/content-delivery-network-cdn"
+    }
+  ],
+  "asyncAndMicroservices": [
+    {
+      "id": "message-queues",
+      "title": "Message Queues & Event Streaming (Kafka vs RabbitMQ)",
+      "category": "Async Systems",
+      "summary": "Decouples producers and consumers with persistent, asynchronous message buffers.",
+      "details": "RabbitMQ is an AMQP broker with complex routing rules, dead-letter exchanges, and push delivery. Apache Kafka is a distributed append-only commit log capable of millions of events/sec, partitioned replay, and consumer-group pull models.",
+      "keyPoints": ["Decouples services and smooths traffic spikes (Backpressure)", "At-least-once, At-most-once, Exactly-once processing semantics", "Idempotent consumers ensure safe retries"],
+      "link": "https://algomaster.io/learn/system-design/message-queues"
+    },
+    {
+      "id": "circuit-breaker",
+      "title": "Circuit Breaker Pattern",
+      "category": "Distributed Systems",
+      "summary": "Prevents cascading failures in microservice architectures when dependent services fail.",
+      "details": "Operates in three states: CLOSED (normal traffic passes), OPEN (calls fail fast immediately without hitting failing dependency), HALF-OPEN (allows trial requests to check if dependency recovered).",
+      "keyPoints": ["Fails fast to avoid exhausting worker thread pools", "Fallback responses prevent total user outage", "Automatic self-healing when dependent service recovers"],
+      "link": "https://medium.com/geekculture/design-patterns-for-microservices-circuit-breaker-pattern-276249ffab33"
+    },
+    {
+      "id": "rate-limiting",
+      "title": "Rate Limiting Algorithms (Token Bucket, Leaky Bucket)",
+      "category": "API Gateway",
+      "summary": "Protects APIs from denial of service, abuse, and noisy neighbors.",
+      "details": "Token Bucket: Tokens added at constant rate; requests consume tokens; allows controlled bursts. Leaky Bucket: Requests enter FIFO queue and are processed at smooth constant rate. Sliding Window Log: Exact timestamp logging with sliding window accuracy.",
+      "keyPoints": ["Token Bucket: Allows bursts, memory-efficient", "Leaky Bucket: Smooths output rate, drops overflows", "Implemented at API Gateway (Envoy/Kong) or with Redis Lua scripts"],
+      "link": "https://blog.algomaster.io/p/rate-limiting-algorithms-explained-with-code",
+      "hasCode": true,
+      "codeSnippet": "class TokenBucket:\n    def __init__(self, capacity, fill_rate):\n        self.capacity = capacity\n        self.fill_rate = fill_rate\n        self.tokens = capacity\n        self.last_fill = time.time()\n\n    def allow_request(self, tokens_needed=1):\n        now = time.time()\n        self.tokens = min(self.capacity, self.tokens + (now - self.last_fill) * self.fill_rate)\n        self.last_fill = now\n        if self.tokens >= tokens_needed:\n            self.tokens -= tokens_needed\n            return True\n        return False"
+    }
+  ],
+  "interviewProblems": [
+    {
+      "id": "tinyurl",
+      "title": "Design a URL Shortener (TinyURL)",
+      "difficulty": "Easy",
+      "topics": ["Base62 Encoding", "Key-Value Store", "Cache", "Hashing"],
+      "description": "Design a high-throughput, low-latency URL shortening service that generates short aliases (e.g. tinyurl.com/a1B2c3) for long URLs.",
+      "scale": "100M new URLs/month, 10:1 read/write ratio, 7-character aliases",
+      "keyComponents": ["Base62 encoding (62^7 = 3.5 trillion URLs)", "Redis Cache for hot URLs (80-20 rule)", "MD5 hash with collision handling or distributed counter (Snowflake/Zookeeper)"],
+      "link": "https://algomaster.io/learn/system-design-interviews/design-url-shortener"
+    },
+    {
+      "id": "rate-limiter-design",
+      "title": "Design an API Rate Limiter",
+      "difficulty": "Easy",
+      "topics": ["Token Bucket", "Redis", "Distributed Lock", "API Gateway"],
+      "description": "Design a distributed rate limiter to throttle requests per user or IP address across multiple API gateway nodes.",
+      "scale": "10,000 QPS, sub-millisecond check latency, high availability",
+      "keyComponents": ["Redis cluster using atomic Lua scripts", "Token Bucket or Sliding Window Counter", "HTTP 429 Too Many Requests response with Retry-After header"],
+      "link": "https://www.youtube.com/watch?v=mhUQe4BKZXs"
+    },
+    {
+      "id": "whatsapp",
+      "title": "Design a Chat System (WhatsApp / Messenger)",
+      "difficulty": "Medium",
+      "topics": ["WebSockets", "Push Notifications", "Cassandra", "End-to-End Encryption"],
+      "description": "Design a real-time messaging system supporting 1-on-1 chat, group conversations, online status presence, and message delivery receipts.",
+      "scale": "2 Billion users, 100 Billion messages/day, low latency delivery",
+      "keyComponents": ["Stateful WebSocket gateways maintaining connection pools", "Message service + Apache Cassandra for horizontal write scale", "Redis Pub/Sub for routing messages to recipient's active gateway server"],
+      "link": "https://algomaster.io/learn/system-design-interviews/design-whatsapp"
+    },
+    {
+      "id": "youtube",
+      "title": "Design a Video Streaming Platform (YouTube / Netflix)",
+      "difficulty": "Medium",
+      "topics": ["Video Transcoding", "CDN", "Blob Storage (S3)", "HLS / DASH"],
+      "description": "Design a globally available video streaming service supporting high-speed video ingestion, multi-bitrate transcoding, and smooth playback.",
+      "scale": "500 hours video uploaded/min, 1 Billion video views/day",
+      "keyComponents": ["Blob storage (S3) for raw and transcoded chunks", "Distributed DAG transcoding pipeline (MPEG-DASH / HLS for adaptive bitrate)", "Global CDN edge caching for popular video segments"],
+      "link": "https://www.youtube.com/watch?v=jPKTo1iGQiE"
+    },
+    {
+      "id": "uber",
+      "title": "Design a Ride-Hailing Platform (Uber / Lyft)",
+      "difficulty": "Hard",
+      "topics": ["Geospatial Indexing", "QuadTree / Google S2", "WebSockets", "Matching Engine"],
+      "description": "Design a real-time ride-matching platform that tracks driver locations, computes ETA, and efficiently pairs riders with nearby available drivers.",
+      "scale": "1M active drivers sending location updates every 4 seconds, high write load",
+      "keyComponents": ["Geospatial indexing using Google S2 or Uber H3 hexagonal grid in Redis", "Location Tracking Service (Memory-optimized key-value store)", "Matching Engine checking proximity within expanding geo-radius"],
+      "link": "https://www.youtube.com/watch?v=umWABit-wbk"
+    },
+    {
+      "id": "google-docs",
+      "title": "Design a Collaborative Real-time Document Editor (Google Docs)",
+      "difficulty": "Hard",
+      "topics": ["Operational Transformation (OT)", "CRDTs", "WebSockets", "Version Vector"],
+      "description": "Design a concurrent multi-user rich text editor allowing simultaneous editing with zero conflict divergence and real-time cursor tracking.",
+      "scale": "Millions of concurrent active documents, low-latency character synchronization",
+      "keyComponents": ["Operational Transformation (OT) or CRDT (Conflict-free Replicated Data Types)", "Centralized sequencing server per document for total order", "Snapshotting and commit logs in distributed storage"],
+      "link": "https://www.youtube.com/watch?v=2auwirNBvGg"
+    }
+  ],
+  "mustReadEngineering": [
+    {
+      "company": "Discord",
+      "title": "How Discord stores trillions of messages",
+      "desc": "How Discord migrated from MongoDB to Cassandra, and later to ScyllaDB in Rust to eliminate JVM garbage collection pauses.",
+      "link": "https://discord.com/blog/how-discord-stores-trillions-of-messages"
+    },
+    {
+      "company": "Canva",
+      "title": "Scaling Media Uploads from Zero to 50M per Day",
+      "desc": "Architectural breakdown of high-throughput chunked S3 uploads, asynchronous image processing pipelines, and resilient queuing.",
+      "link": "https://www.canva.dev/blog/engineering/from-zero-to-50-million-uploads-per-day-scaling-media-at-canva/"
+    },
+    {
+      "company": "Airbnb",
+      "title": "Avoiding Double Payments in a Distributed System",
+      "desc": "Idempotency keys, distributed locking with database leases, and two-phase commits to ensure absolute transactional accuracy.",
+      "link": "https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb"
+    },
+    {
+      "company": "Google",
+      "title": "Spanner: Google’s Globally Distributed Database",
+      "desc": "TrueTime API with GPS and atomic clocks providing externally consistent distributed transactions across global data centers.",
+      "link": "https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf"
+    }
+  ]
+}
+
