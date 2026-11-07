@@ -15,7 +15,10 @@ import {
   Building2,
   Calendar,
   Layers,
-  Sparkles
+  Sparkles,
+  BarChart3,
+  Zap,
+  Clock
 } from 'lucide-react';
 import { DSA_TOPICS, IMPORTANCE_LEVELS } from '../constants';
 import {
@@ -23,7 +26,13 @@ import {
   saveQuestionProgressRecord,
   deleteQuestionProgressRecord
 } from '../utils/userProgress';
+import { fuzzyFilter } from '../utils/fuzzySearch';
+import { isQuestionDue, calculateNextReview } from '../utils/spacedRepetition';
+import { showSolvedToast, showNeedsPracticeToast } from '../utils/toastNotifications';
 import QuestionCompletionDialog from '../components/QuestionCompletionDialog';
+import ActivityHeatmap from '../components/ActivityHeatmap';
+import DsaAnalyticsDashboard from '../components/DsaAnalyticsDashboard';
+import AiCodeReviewModal from '../components/AiCodeReviewModal';
 import './MySheet.css';
 
 const MySheet = () => {
@@ -31,8 +40,10 @@ const MySheet = () => {
   const [entries, setEntries] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
-  const [statusFilter, setStatusFilter] = useState('all'); // all | solved_easily | needs_practice
+  const [statusFilter, setStatusFilter] = useState('all'); // all | solved_easily | needs_practice | spaced_due
   const [showAddForm, setShowAddForm] = useState(false);
+  const [showAnalytics, setShowAnalytics] = useState(true);
+  const [reviewingEntry, setReviewingEntry] = useState(null);
 
   // Edit dialog state
   const [editingEntry, setEditingEntry] = useState(null);
@@ -148,26 +159,32 @@ const MySheet = () => {
     return () => window.removeEventListener('dsa-progress-updated', handleProgressUpdate);
   }, []);
 
-  // Filter entries
+  // Filter entries with fuzzy search & spaced repetition
   const filteredEntries = useMemo(() => {
-    return entries.filter((entry) => {
-      // Status filter
-      if (statusFilter === 'solved_easily' && entry.status !== 'solved_easily') return false;
-      if (statusFilter === 'needs_practice' && entry.status !== 'needs_practice') return false;
+    let list = entries;
 
-      // Search term
-      if (searchTerm.trim()) {
-        const q = searchTerm.toLowerCase().trim();
-        const titleMatch = (entry.title || entry.question || '').toLowerCase().includes(q);
-        const notesMatch = (entry.notes || '').toLowerCase().includes(q);
-        const companyMatch = (entry.company || '').toLowerCase().includes(q);
-        const diffMatch = (entry.difficulty || '').toLowerCase().includes(q);
-        const topicMatch = Array.isArray(entry.topics) && entry.topics.some((t) => t.toLowerCase().includes(q));
-        return titleMatch || notesMatch || companyMatch || diffMatch || topicMatch;
-      }
+    // 1. Spaced Repetition / Status Filter
+    if (statusFilter === 'solved_easily') {
+      list = list.filter((e) => e.status === 'solved_easily');
+    } else if (statusFilter === 'needs_practice') {
+      list = list.filter((e) => e.status === 'needs_practice');
+    } else if (statusFilter === 'spaced_due') {
+      list = list.filter((e) => e.status === 'needs_practice' || isQuestionDue(e.nextReviewDate));
+    }
 
-      return true;
-    });
+    // 2. High-Performance Fuzzy Search via Fuse.js
+    if (searchTerm.trim()) {
+      list = fuzzyFilter(list, searchTerm, [
+        'title',
+        'question',
+        'notes',
+        'company',
+        'difficulty',
+        'topics'
+      ]);
+    }
+
+    return list;
   }, [entries, statusFilter, searchTerm]);
 
   // Status counts for filters
@@ -175,7 +192,8 @@ const MySheet = () => {
     const total = entries.length;
     const solvedEasily = entries.filter((e) => e.status === 'solved_easily').length;
     const needsPractice = entries.filter((e) => e.status === 'needs_practice').length;
-    return { total, solvedEasily, needsPractice };
+    const spacedDue = entries.filter((e) => e.status === 'needs_practice' || isQuestionDue(e.nextReviewDate)).length;
+    return { total, solvedEasily, needsPractice, spacedDue };
   }, [entries]);
 
   // Topic changes for manual add form
@@ -278,16 +296,29 @@ const MySheet = () => {
     setEditErrorMessage('');
   };
 
-  // Save changes from Edit Dialog
+  // Save changes from Edit Dialog with Spaced Repetition calculation
   const handleSaveEdit = async (status, notes) => {
     if (!editingEntry) return;
     setIsSavingEdit(true);
     setEditErrorMessage('');
 
     try {
+      // Calculate next review date using SM-2 algorithm
+      const qualityScore = status === 'solved_easily' ? 5 : 3;
+      const sm2Update = calculateNextReview(qualityScore, {
+        repetitions: editingEntry.repetitions || 0,
+        interval: editingEntry.interval || 0,
+        easeFactor: editingEntry.easeFactor || 2.5
+      });
+
+      const entryWithSm2 = {
+        ...editingEntry,
+        ...sm2Update
+      };
+
       const updated = await saveQuestionProgressRecord(
         currentUser?.uid,
-        editingEntry,
+        entryWithSm2,
         status,
         notes
       );
@@ -299,6 +330,12 @@ const MySheet = () => {
             : item
         )
       );
+
+      if (status === 'solved_easily') {
+        showSolvedToast(editingEntry.title || editingEntry.question);
+      } else {
+        showNeedsPracticeToast(editingEntry.title || editingEntry.question, sm2Update.interval);
+      }
 
       setIsSavingEdit(false);
       setEditingEntry(null);
@@ -350,8 +387,32 @@ const MySheet = () => {
             <span className="overview-num stat-practice-num">{counts.needsPractice}</span>
             <span className="overview-label">Needs Practice</span>
           </div>
+          <div className="overview-divider" />
+          <div className="overview-card">
+            <span className="overview-num stat-practice-num" style={{ color: '#38bdf8' }}>{counts.spacedDue}</span>
+            <span className="overview-label">Review Due</span>
+          </div>
+        </div>
+
+        {/* Analytics & Heatmap Collapsible Toggle */}
+        <div style={{ marginTop: '1.25rem' }}>
+          <button
+            className={`btn-analytics-toggle ${showAnalytics ? 'active' : ''}`}
+            onClick={() => setShowAnalytics(!showAnalytics)}
+          >
+            <BarChart3 size={15} />
+            <span>{showAnalytics ? 'Hide Analytics & Heatmap' : 'Show Consistency Heatmap & Analytics'}</span>
+          </button>
         </div>
       </div>
+
+      {/* Analytics Dashboard & Activity Heatmap */}
+      {showAnalytics && (
+        <div className="mysheet-analytics-section">
+          <ActivityHeatmap entries={entries} />
+          <DsaAnalyticsDashboard entries={entries} />
+        </div>
+      )}
 
       {/* Controls & Filter Tabs */}
       <div className="mysheet-controls-wrapper">
@@ -378,6 +439,14 @@ const MySheet = () => {
             <RotateCcw size={14} />
             Needs Practice
             <span className="tab-pill">{counts.needsPractice}</span>
+          </button>
+          <button
+            className={`mysheet-tab tab-spaced ${statusFilter === 'spaced_due' ? 'active' : ''}`}
+            onClick={() => setStatusFilter('spaced_due')}
+          >
+            <Clock size={14} />
+            Review Queue (SM-2)
+            <span className="tab-pill">{counts.spacedDue}</span>
           </button>
         </div>
 
@@ -603,6 +672,14 @@ const MySheet = () => {
                         <div className="actions-button-group">
                           <button
                             type="button"
+                            className="btn-action btn-action-ai"
+                            onClick={() => setReviewingEntry(entry)}
+                            title="AI Code Review (Monaco + Gemini)"
+                          >
+                            <Sparkles size={15} />
+                          </button>
+                          <button
+                            type="button"
                             className="btn-action btn-action-edit"
                             onClick={() => handleEdit(entry)}
                             title="Edit notes & status"
@@ -637,6 +714,13 @@ const MySheet = () => {
         onClose={() => setEditingEntry(null)}
         isSaving={isSavingEdit}
         errorMessage={editErrorMessage}
+      />
+
+      {/* AI Code Review Modal (Monaco Editor + Gemini) */}
+      <AiCodeReviewModal
+        isOpen={Boolean(reviewingEntry)}
+        question={reviewingEntry}
+        onClose={() => setReviewingEntry(null)}
       />
     </div>
   );

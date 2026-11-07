@@ -26,6 +26,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { executeGeminiPrompt } from "../utils/geminiClient";
 import './FuturisticFloatingAi.css';
 
 const CHAT_STORAGE_KEY = 'NEURAL_COPILOT_CHAT_V2';
@@ -33,7 +34,7 @@ const CUSTOM_KEY_STORAGE = 'CUSTOM_GEMINI_API_KEY';
 
 // Assistant Operational Modes
 const AI_MODES = [
-  { id: 'hint', label: 'Quick Hint', icon: Zap, color: '#ffa116', promptPrefix: 'Give a subtle conceptual hint without spoiling the full solution.' },
+  { id: 'hint', label: 'Quick Hint', icon: Zap, color: '#f59e0b', promptPrefix: 'Give a subtle conceptual hint without spoiling the full solution.' },
   { id: 'explain', label: 'Deep Explain', icon: Cpu, color: '#00f0ff', promptPrefix: 'Provide deep step-by-step intuitive breakdown of the algorithm with clear logic.' },
   { id: 'complexity', label: 'Big-O Analysis', icon: Activity, color: '#a855f7', promptPrefix: 'Analyze time and space complexity with Big-O notation, worst/average/best cases.' },
   { id: 'debug', label: 'Code Debugger', icon: ShieldAlert, color: '#ef4444', promptPrefix: 'Identify edge cases, off-by-one errors, or potential bugs in this logic.' }
@@ -332,7 +333,6 @@ export default function FuturisticFloatingAi() {
     }
 
     try {
-      const genAI = new GoogleGenerativeAI(apiKey);
       const activeModeObj = AI_MODES.find(m => m.id === selectedMode) || AI_MODES[0];
 
       // Contextual System Instruction
@@ -341,28 +341,18 @@ Mode: ${activeModeObj.label} (${activeModeObj.promptPrefix}).
 Current Page Context: User is browsing "${location.pathname}".
 Keep answers direct, technically sound, and well-structured using markdown. Format all code blocks with appropriate syntax highlighting (\`\`\`javascript, \`\`\`python, \`\`\`cpp, etc.). When in 'Quick Hint' mode, provide guiding clues without revealing full code solutions.`;
 
-      // Fallback model cascade
-      let model;
-      try {
-        model = genAI.getGenerativeModel({
-          model: "gemini-1.5-flash",
-          systemInstruction
-        });
-      } catch {
-        model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
-      }
-
       // Build context history
       const history = messages.filter(m => m.id !== 1).slice(-8).map(m => ({
         role: m.sender === 'user' ? 'user' : 'model',
         parts: [{ text: m.text }]
       }));
 
-      const chat = model.startChat({ history });
-      const augmentedQuery = `${activeModeObj.promptPrefix}\nUser Prompt: ${userMsg.text}`;
-      const result = await chat.sendMessage(augmentedQuery);
-      const response = await result.response;
-      const responseText = response.text();
+      const responseText = await executeGeminiPrompt({
+        apiKey,
+        prompt: `${activeModeObj.promptPrefix}\nUser Prompt: ${userMsg.text}`,
+        systemInstruction,
+        history
+      });
 
       const aiMsg = {
         id: Date.now() + 1,
@@ -380,8 +370,10 @@ Keep answers direct, technically sound, and well-structured using markdown. Form
 
       if (errStr.includes("429") || errStr.includes("quota") || errStr.includes("rate limit")) {
         errorDesc = "⚠️ **QUOTA LIMIT EXCEEDED (429)**\n\nYour Gemini API free-tier quota has reached its momentary limit. Please wait 60 seconds or configure an alternative key in the top right.";
-      } else if (errStr.includes("key") || errStr.includes("invalid") || errStr.includes("403")) {
-        errorDesc = "🔑 **INVALID API KEY**\n\nThe configured Gemini API key is unauthorized. Click the Key icon at the top of the HUD to paste a valid key from Google AI Studio.";
+      } else if (errStr.includes("key") || errStr.includes("invalid") || errStr.includes("403") || errStr.includes("unauthorized") || errStr.includes("api_key_invalid")) {
+        errorDesc = "🔑 **INVALID GEMINI API KEY**\n\nThe Google Generative Language API rejected this key.\n\n**Common Fix:**\n• Gemini API keys from [Google AI Studio](https://aistudio.google.com/app/apikey) **always start with `AIzaSy...`** (39 characters).\n• If your key starts with `AQ.`, it is a Google Cloud / Antigravity access token, not an AI Studio API key. Please generate a free key at [aistudio.google.com](https://aistudio.google.com/app/apikey).";
+      } else if (errStr.includes("not found") || errStr.includes("404")) {
+        errorDesc = "⚠️ **MODEL NOT FOUND (404)**\n\nThe requested Gemini model was not found for this API endpoint. Please check your region or API permissions.";
       }
 
       setMessages(prev => [
@@ -670,11 +662,17 @@ Keep answers direct, technically sound, and well-structured using markdown. Form
 
                     <input
                       type="text"
-                      placeholder="Paste Gemini API Key (e.g. AIzaSy...)"
+                      placeholder="Paste Gemini API Key (AIzaSy... or AQ...)"
                       value={customApiKey}
                       onChange={(e) => setCustomApiKey(e.target.value)}
                       className="hud-key-input"
                     />
+
+                    {customApiKey && (
+                      <div style={{ color: '#10b981', fontSize: '0.78rem', marginTop: '0.5rem', lineHeight: '1.4' }}>
+                        ✓ {customApiKey.startsWith('AQ.') ? 'Auth Key (Bearer Authentication)' : 'Standard Gemini API Key'} detected.
+                      </div>
+                    )}
 
                     <div className="modal-btn-row">
                       <button

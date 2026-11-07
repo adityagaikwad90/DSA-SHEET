@@ -14,9 +14,20 @@
     animation: fadeIn 0.3s ease-out;
 }
 
+@keyframes modalSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 .modal-content {
-    background: rgba(24, 24, 27, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(18, 23, 34, 0.97);
+    border: 1px solid rgba(99, 102, 241, 0.25);
     border-radius: var(--border-radius-xl);
     width: 100%;
     max-width: 600px;
@@ -24,9 +35,9 @@
     max-height: 600px;
     display: flex;
     flex-direction: column;
-    box-shadow: var(--shadow-2xl);
-    animation: slideUp 0.4s ease-out;
-    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(16, 185, 129, 0.1);
+    animation: modalSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    backdrop-filter: blur(24px);
 }
 
 .modal-header {
@@ -35,14 +46,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, rgba(24, 24, 27, 0.5), transparent);
+    background: linear-gradient(to right, rgba(99, 102, 241, 0.08), transparent);
 }
 
 .modal-header h2 {
     margin: 0;
     font-size: 1.5rem;
     color: var(--color-text-primary);
-    background: var(--gradient-primary);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -87,8 +98,8 @@
     animation: spin 1s linear infinite;
     width: 24px;
     height: 24px;
-    border: 3px solid rgba(139, 92, 246, 0.3);
-    border-top-color: var(--color-primary);
+    border: 3px solid rgba(16, 185, 129, 0.2);
+    border-top-color: var(--palette-10-accent, #10b981);
     border-radius: 50%;
 }
 
@@ -104,8 +115,8 @@
 
 .modal-body textarea {
     flex: 1;
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(10, 13, 20, 0.6);
+    border: 1px solid rgba(99, 102, 241, 0.2);
     border-radius: var(--border-radius-md);
     padding: 1rem;
     color: var(--color-text-primary);
@@ -118,15 +129,15 @@
 
 .modal-body textarea:focus {
     outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
-    background: rgba(0, 0, 0, 0.4);
+    border-color: var(--palette-10-accent, #10b981);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    background: rgba(10, 13, 20, 0.85);
 }
 
 /* PDF Section */
 .pdf-section {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.15);
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-md);
 }
@@ -146,9 +157,9 @@
     align-items: center;
     gap: 6px;
     padding: 8px 16px;
-    background: rgba(59, 130, 246, 0.1);
-    color: var(--color-primary);
-    border: 1px solid rgba(59, 130, 246, 0.2);
+    background: rgba(99, 102, 241, 0.12);
+    color: #818cf8;
+    border: 1px solid rgba(99, 102, 241, 0.25);
     border-radius: var(--border-radius-md);
     cursor: pointer;
     font-size: 0.85rem;
@@ -157,9 +168,9 @@
 }
 
 .upload-btn:hover {
-    background: rgba(59, 130, 246, 0.2);
+    background: rgba(99, 102, 241, 0.22);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
 }
 
 .pdf-preview {
@@ -246,21 +257,21 @@
     padding: 0.75rem 2rem;
     background: var(--gradient-primary);
     border: none;
-    color: white;
+    color: #0a0d14;
     border-radius: var(--border-radius-md);
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     transition: var(--transition-base);
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
 }
 
 .btn-save:hover {
-    background: var(--gradient-hover);
+    filter: brightness(1.1);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.45);
 }
 
 .btn-save:disabled {

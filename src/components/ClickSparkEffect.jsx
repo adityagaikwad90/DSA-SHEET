@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const SPARK_COLORS = ['#00b8a3', '#ffa116', '#38bdf8', '#fbbf24', '#ffffff'];
+const SPARK_COLORS = ['#10b981', '#f59e0b', '#38bdf8', '#818cf8', '#ffffff'];
 
 const ClickSparkEffect = () => {
     const canvasRef = useRef(null);
@@ -43,7 +43,7 @@ const ClickSparkEffect = () => {
                 maxRadius: 36 + Math.random() * 8,
                 opacity: 0.75,
                 lineWidth: 2,
-                color: Math.random() > 0.5 ? '#00b8a3' : '#ffa116'
+                color: Math.random() > 0.5 ? '#10b981' : '#f59e0b'
             });
 
             // 2. Burst of luminous neon sparks

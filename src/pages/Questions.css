@@ -10,8 +10,8 @@
   margin: 0 auto;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 12% 25%, rgba(0, 184, 163, 0.05), transparent 32%),
-    radial-gradient(circle at 88% 18%, rgba(255, 161, 22, 0.05), transparent 30%),
+    radial-gradient(circle at 12% 25%, rgba(16, 185, 129, 0.05), transparent 32%),
+    radial-gradient(circle at 88% 18%, rgba(245, 158, 11, 0.05), transparent 30%),
     var(--color-bg-primary);
   background-attachment: fixed;
   position: relative;
@@ -52,8 +52,8 @@
   align-items: center;
   gap: 6px;
   padding: 4px 14px;
-  background: rgba(0, 184, 163, 0.1);
-  border: 1px solid rgba(0, 184, 163, 0.25);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
   border-radius: var(--border-radius-full);
   color: var(--color-primary);
   font-size: 0.8rem;
@@ -70,7 +70,7 @@
   font-size: clamp(2.2rem, 4.5vw, 3.25rem);
   font-weight: 800;
   margin-bottom: 0.65rem;
-  background: linear-gradient(90deg, #ffffff 0%, #00d2b8 50%, #ffa116 100%);
+  background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -90,15 +90,21 @@
   display: inline-flex;
   align-items: center;
   background: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(99, 102, 241, 0.25);
   border-radius: var(--border-radius-lg);
   padding: 0.85rem 1.75rem;
   margin-top: 2rem;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(12px);
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.global-stats-bar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -6px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(16, 185, 129, 0.2);
 }
 
 .stat-item {
@@ -117,12 +123,12 @@
 }
 
 .stat-icon-companies {
-  background: rgba(0, 184, 163, 0.15);
+  background: rgba(16, 185, 129, 0.15);
   color: var(--color-primary);
 }
 
 .stat-icon-questions {
-  background: rgba(255, 161, 22, 0.15);
+  background: rgba(245, 158, 11, 0.15);
   color: var(--color-secondary);
 }
 
@@ -207,7 +213,7 @@
 .company-search-input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(0, 184, 163, 0.15);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
 }
 
 .clear-search-btn {
@@ -286,9 +292,9 @@
 }
 
 .category-pill.active {
-  background: rgba(0, 184, 163, 0.14);
+  background: rgba(16, 185, 129, 0.14);
   border-color: var(--color-primary);
-  color: #00d2b8;
+  color: #34d399;
 }
 
 .pill-count {
@@ -300,7 +306,7 @@
 }
 
 .category-pill.active .pill-count {
-  background: rgba(0, 184, 163, 0.25);
+  background: rgba(16, 185, 129, 0.25);
   color: #ffffff;
 }
 
@@ -345,7 +351,7 @@
 }
 
 .company-card.has-progress {
-  border-color: rgba(0, 184, 163, 0.3);
+  border-color: rgba(16, 185, 129, 0.3);
 }
 
 /* Card Top: Avatar and Titles */
@@ -402,8 +408,8 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  background: rgba(255, 161, 22, 0.15);
-  border: 1px solid rgba(255, 161, 22, 0.35);
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
   color: var(--color-secondary);
 }
 
@@ -449,7 +455,7 @@
   height: 100%;
   background: var(--gradient-primary);
   border-radius: var(--border-radius-full);
-  box-shadow: 0 0 6px rgba(0, 184, 163, 0.4);
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);
 }
 
 /* Difficulty Count Badges in Company Card */
@@ -477,23 +483,23 @@
 }
 
 .diff-pill-easy {
-  background: rgba(0, 184, 163, 0.1);
-  color: #00d2b8;
-  border-color: rgba(0, 184, 163, 0.2);
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.2);
 }
 
 .easy-dot {
-  background: #00d2b8;
+  background: #34d399;
 }
 
 .diff-pill-medium {
-  background: rgba(255, 161, 22, 0.1);
-  color: #ffa116;
-  border-color: rgba(255, 161, 22, 0.2);
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.2);
 }
 
 .med-dot {
-  background: #ffa116;
+  background: #f59e0b;
 }
 
 .diff-pill-hard {
@@ -711,9 +717,9 @@
 .stat-percent-badge {
   padding: 3px 10px;
   border-radius: var(--border-radius-full);
-  background: rgba(0, 184, 163, 0.12);
-  border: 1px solid rgba(0, 184, 163, 0.25);
-  color: #00d2b8;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: #34d399;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -730,7 +736,19 @@
   height: 100%;
   background: var(--gradient-primary);
   border-radius: var(--border-radius-full);
-  box-shadow: 0 0 10px rgba(0, 184, 163, 0.5);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  position: relative;
+  overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.banner-progress-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%);
+  transform: translateX(-100%);
+  animation: barShimmer 2.2s ease-in-out infinite;
 }
 
 /* ==========================================================================
@@ -787,32 +805,32 @@
 
 .difficulty-tab-btn.tab-all.active {
   border-color: var(--color-primary);
-  color: #00d2b8;
+  color: #34d399;
 }
 
 .difficulty-tab-btn.tab-all.active .tab-badge {
-  background: rgba(0, 184, 163, 0.2);
-  color: #00d2b8;
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
 }
 
 .difficulty-tab-btn.tab-easy.active {
-  border-color: #00b8a3;
-  color: #00d2b8;
+  border-color: #10b981;
+  color: #34d399;
 }
 
 .difficulty-tab-btn.tab-easy.active .tab-badge {
-  background: rgba(0, 184, 163, 0.2);
-  color: #00d2b8;
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
 }
 
 .difficulty-tab-btn.tab-medium.active {
-  border-color: #ffa116;
-  color: #ffa116;
+  border-color: #f59e0b;
+  color: #f59e0b;
 }
 
 .difficulty-tab-btn.tab-medium.active .tab-badge {
-  background: rgba(255, 161, 22, 0.2);
-  color: #ffa116;
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
 }
 
 .difficulty-tab-btn.tab-hard.active {
@@ -858,7 +876,7 @@
 .question-search-input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(0, 184, 163, 0.15);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
 }
 
 .toolbar-right-controls {
@@ -925,13 +943,13 @@
 }
 
 .question-card.solved-card {
-  border-color: rgba(0, 184, 163, 0.35);
-  background: rgba(0, 184, 163, 0.04);
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.04);
 }
 
 .question-card.needs-practice-card {
-  border-color: rgba(255, 161, 22, 0.4);
-  background: rgba(255, 161, 22, 0.04);
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.04);
 }
 
 .card-content {
@@ -1016,7 +1034,7 @@
 }
 
 .solved-toggle.active.needs-practice {
-  color: #ffa116;
+  color: #f59e0b;
 }
 
 .solved-icon {
@@ -1026,11 +1044,11 @@
 
 .solved-icon.active.solved-easily-icon {
   color: var(--color-primary);
-  fill: rgba(0, 184, 163, 0.2);
+  fill: rgba(16, 185, 129, 0.2);
 }
 
 .solved-icon.active.needs-practice-icon {
-  color: #ffa116;
+  color: #f59e0b;
   fill: none;
 }
 
@@ -1040,15 +1058,15 @@
   gap: 4px;
   padding: 2px 7px;
   border-radius: 4px;
-  background: rgba(255, 161, 22, 0.12);
-  border: 1px solid rgba(255, 161, 22, 0.28);
-  color: #ffa116;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  color: #f59e0b;
   font-size: 0.7rem;
   font-weight: 700;
 }
 
 .needs-practice-chip-icon {
-  color: #ffa116;
+  color: #f59e0b;
 }
 
 /* Badges: Difficulty, Frequency, Slug */
@@ -1069,15 +1087,15 @@
 }
 
 .difficulty-easy {
-  background-color: rgba(0, 184, 163, 0.12);
-  color: #00d2b8;
-  border: 1px solid rgba(0, 184, 163, 0.25);
+  background-color: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
 .difficulty-medium {
-  background-color: rgba(255, 161, 22, 0.12);
-  color: #ffa116;
-  border: 1px solid rgba(255, 161, 22, 0.25);
+  background-color: rgba(245, 158, 11, 0.12);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .difficulty-hard {
@@ -1092,15 +1110,15 @@
   gap: 3px;
   padding: 2px 7px;
   border-radius: 4px;
-  background: rgba(255, 161, 22, 0.1);
-  border: 1px solid rgba(255, 161, 22, 0.22);
-  color: #ffa116;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  color: #f59e0b;
   font-size: 0.7rem;
   font-weight: 700;
 }
 
 .flame-icon {
-  color: #ffa116;
+  color: #f59e0b;
 }
 
 .question-slug-hint {
@@ -1128,7 +1146,7 @@
 .topic-more {
   cursor: help;
   color: var(--color-primary);
-  background: rgba(0, 184, 163, 0.08);
+  background: rgba(16, 185, 129, 0.08);
 }
 
 /* Action Links */
@@ -1155,15 +1173,29 @@
 }
 
 .link-leetcode {
-  background-color: rgba(255, 161, 22, 0.12);
-  color: #ffa116;
-  border: 1px solid rgba(255, 161, 22, 0.25);
+  background-color: rgba(245, 158, 11, 0.12);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .link-leetcode:hover {
-  background-color: rgba(255, 161, 22, 0.22);
+  background-color: rgba(245, 158, 11, 0.22);
   color: #ffffff;
   transform: translateY(-1px);
+}
+
+.link-ai-review {
+  background-color: rgba(99, 102, 241, 0.12);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  cursor: pointer;
+}
+
+.link-ai-review:hover {
+  background-color: rgba(99, 102, 241, 0.25);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 .ext-icon {
@@ -1223,7 +1255,7 @@
 .loading-spinner {
   width: 36px;
   height: 36px;
-  border: 3px solid rgba(0, 184, 163, 0.15);
+  border: 3px solid rgba(16, 185, 129, 0.15);
   border-top-color: var(--color-primary);
   border-radius: 50%;
   animation: spinner-rotate 0.8s linear infinite;
@@ -1240,9 +1272,9 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(0, 184, 163, 0.14);
+  background: rgba(16, 185, 129, 0.14);
   border: 1px solid var(--color-primary);
-  color: #00d2b8;
+  color: #34d399;
   padding: 0.55rem 1.25rem;
   border-radius: var(--border-radius-md);
   font-size: 0.85rem;
@@ -1254,7 +1286,7 @@
 
 .reset-filters-btn:hover,
 .retry-btn:hover {
-  background: rgba(0, 184, 163, 0.25);
+  background: rgba(16, 185, 129, 0.25);
   transform: translateY(-1px);
 }
 

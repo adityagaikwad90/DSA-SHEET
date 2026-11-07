@@ -16,11 +16,13 @@ import RewardCelebration from './components/RewardCelebration';
 import ClickSparkEffect from './components/ClickSparkEffect';
 import ScrollToTop from './components/ScrollToTop';
 import FuturisticFloatingAi from './components/FuturisticFloatingAi';
+import { Toaster } from 'sonner';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
+      <Toaster position="bottom-left" richColors theme="dark" />
       <ScrollToTop />
       <ClickSparkEffect />
       <RewardCelebration />

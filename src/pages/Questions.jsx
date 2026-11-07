@@ -40,8 +40,12 @@ import {
   getStaticTopRepeatedQuestions,
   fetchTopRepeatedQuestions
 } from '../utils/companyDataLoader';
+import { fuzzyFilter } from '../utils/fuzzySearch';
+import { calculateNextReview } from '../utils/spacedRepetition';
+import { showSolvedToast, showNeedsPracticeToast } from '../utils/toastNotifications';
 import QuestionCompletionDialog from '../components/QuestionCompletionDialog';
 import MostRepeatedSection from '../components/MostRepeatedSection';
+import AiCodeReviewModal from '../components/AiCodeReviewModal';
 import './Questions.css';
 
 // Brand colors for top tech companies
@@ -172,6 +176,7 @@ const Questions = () => {
   const [activeDialogQuestion, setActiveDialogQuestion] = useState(null);
   const [isSavingProgress, setIsSavingProgress] = useState(false);
   const [dialogErrorMessage, setDialogErrorMessage] = useState('');
+  const [codeReviewQuestion, setCodeReviewQuestion] = useState(null);
 
   // Selected company full dataset
   const [currentCompanyData, setCurrentCompanyData] = useState(null);
@@ -303,9 +308,23 @@ const Questions = () => {
     setDialogErrorMessage('');
 
     try {
+      // Calculate SM-2 spaced repetition parameters
+      const qualityScore = status === 'solved_easily' ? 5 : 3;
+      const existing = savedRecords[activeDialogQuestion.id] || {};
+      const sm2Params = calculateNextReview(qualityScore, {
+        repetitions: existing.repetitions || 0,
+        interval: existing.interval || 0,
+        easeFactor: existing.easeFactor || 2.5
+      });
+
+      const questionWithSm2 = {
+        ...activeDialogQuestion,
+        ...sm2Params
+      };
+
       const updatedRecord = await saveQuestionProgressRecord(
         currentUser?.uid,
-        activeDialogQuestion,
+        questionWithSm2,
         status,
         notes
       );
@@ -322,9 +341,12 @@ const Questions = () => {
         return prev;
       });
 
-      // Celebration effect when marked as Solved Easily
+      // Celebration effect & Rich Toasts
       if (status === 'solved_easily') {
         triggerRewardCelebration(window.innerWidth / 2, window.innerHeight * 0.4);
+        showSolvedToast(activeDialogQuestion.title || activeDialogQuestion.id);
+      } else {
+        showNeedsPracticeToast(activeDialogQuestion.title || activeDialogQuestion.id, sm2Params.interval);
       }
 
       setIsSavingProgress(false);
@@ -355,15 +377,9 @@ const Questions = () => {
   const filteredCompanies = useMemo(() => {
     let list = [...companiesSummary];
 
-    // Search query
+    // Fuzzy Search query
     if (companySearch.trim()) {
-      const q = companySearch.toLowerCase().trim();
-      list = list.filter(
-        (c) =>
-          c.displayName.toLowerCase().includes(q) ||
-          c.name.toLowerCase().includes(q) ||
-          c.slug.includes(q)
-      );
+      list = fuzzyFilter(list, companySearch, ['displayName', 'name', 'slug']);
     }
 
     // Category Filter
@@ -436,15 +452,9 @@ const Questions = () => {
       list = list.filter((q) => savedRecords[q.id]?.status === 'needs_practice');
     }
 
-    // Text search
+    // High-Performance Fuzzy search
     if (questionSearch.trim()) {
-      const q = questionSearch.toLowerCase().trim();
-      list = list.filter(
-        (item) =>
-          item.title.toLowerCase().includes(q) ||
-          item.id.toLowerCase().includes(q) ||
-          item.topics.some((t) => t.toLowerCase().includes(q))
-      );
+      list = fuzzyFilter(list, questionSearch, ['title', 'id', 'topics']);
     }
 
     // Sorting
@@ -1207,6 +1217,18 @@ const Questions = () => {
 
                               {/* Platform Action Links */}
                               <div className="question-links">
+                                <button
+                                  type="button"
+                                  className="link-btn link-ai-review"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    setCodeReviewQuestion(q);
+                                  }}
+                                  title="AI Code Review (Monaco + Gemini)"
+                                >
+                                  <Sparkles size={14} /> AI Review
+                                </button>
+
                                 {q.link ? (
                                   <a
                                     href={q.link}
@@ -1255,6 +1277,13 @@ const Questions = () => {
         onClose={handleCloseDialog}
         isSaving={isSavingProgress}
         errorMessage={dialogErrorMessage}
+      />
+
+      {/* AI Code Review Modal (Monaco Editor + Gemini) */}
+      <AiCodeReviewModal
+        isOpen={Boolean(codeReviewQuestion)}
+        question={codeReviewQuestion}
+        onClose={() => setCodeReviewQuestion(null)}
       />
     </div>
   );

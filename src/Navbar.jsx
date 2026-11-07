@@ -1,12 +1,39 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
+import { loadSavedRecords } from "./utils/userProgress";
+import { getDueReviewQuestions } from "./utils/spacedRepetition";
 import "./Navbar.css";
 
 function Navbar() {
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+  const [dueReviewCount, setDueReviewCount] = useState(0);
+
+  useEffect(() => {
+    const updateDueCount = () => {
+      try {
+        const records = loadSavedRecords(currentUser?.uid);
+        const due = getDueReviewQuestions(records);
+        setDueReviewCount(due.length);
+      } catch (e) {
+        setDueReviewCount(0);
+      }
+    };
+
+    updateDueCount();
+
+    // Listen to localStorage updates across tabs/components
+    window.addEventListener("storage", updateDueCount);
+    // Custom event triggered when question status is updated in this window
+    window.addEventListener("dsa-progress-updated", updateDueCount);
+
+    return () => {
+      window.removeEventListener("storage", updateDueCount);
+      window.removeEventListener("dsa-progress-updated", updateDueCount);
+    };
+  }, [currentUser]);
 
   const handleLogout = async () => {
     try {
@@ -44,7 +71,16 @@ function Navbar() {
           <li><NavLink to="/questions" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Code Arena</NavLink></li>
           <li><NavLink to="/top-100" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Top 100</NavLink></li>
           <li><NavLink to="/interview-hub" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Interview Hub</NavLink></li>
-          <li><NavLink to="/sheet" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>My Sheet</NavLink></li>
+          <li>
+            <NavLink to="/sheet" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>
+              My Sheet
+              {dueReviewCount > 0 && (
+                <span className="nav-review-badge" title={`${dueReviewCount} questions due for spaced review`}>
+                  {dueReviewCount}
+                </span>
+              )}
+            </NavLink>
+          </li>
           <li><NavLink to="/dsa-vault" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>DSA Vault</NavLink></li>
           <li><NavLink to="/club" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Clubs</NavLink></li>
           <li><NavLink to="/news" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Tech News</NavLink></li>

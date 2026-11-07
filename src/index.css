@@ -1,63 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Color Palette - LeetCode Clean Dark Theme */
-  --color-bg-primary: #1a1a1a;
-  --color-bg-surface: #262626;
-  --color-bg-surface-hover: #303030;
-  --color-bg-secondary: #222222;
-  --color-bg-tertiary: #282828;
-  --color-bg-elevated: #2d2d2d;
+  /* ==========================================================================
+     THE 60-30-10 MODERN DEVELOPER LEARNING PLATFORM PALETTE
+     (Linear & JetBrains inspired: Deep Obsidian + Slate Indigo + Electric Emerald)
+     ========================================================================== */
+  
+  /* 60% DOMINANT BASE (Low eye-strain, deep midnight canvas with soft depth) */
+  --palette-60-base: #0a0d14;              /* Pure obsidian dark canvas */
+  --palette-60-surface: #121722;           /* Structured container & bento tile backdrop */
+  --palette-60-surface-hover: #18202f;     /* Smooth interactive hover */
+  --palette-60-elevated: #1e2638;          /* Floating menus, dropdowns, code modals */
+  --palette-60-border: rgba(255, 255, 255, 0.08); /* Crisp separator */
 
-  /* Subtle Crisp Borders */
-  --color-border: #333333;
-  --color-border-subtle: rgba(255, 255, 255, 0.08);
-  --color-border-hover: #484848;
+  /* 30% SECONDARY SUPPORT (Slate Indigo & Sky Blue for structure, headers & syntax) */
+  --palette-30-text-primary: #f8fafc;      /* Pure high-contrast reading text */
+  --palette-30-text-secondary: #94a3b8;    /* Muted secondary labels */
+  --palette-30-text-muted: #64748b;        /* Helper notes & metadata */
+  --palette-30-indigo: #6366f1;            /* Supporting brand indigo (Linear / Discord style) */
+  --palette-30-indigo-light: #818cf8;      /* Supporting bright indigo */
+  --palette-30-sky: #38bdf8;               /* Interactive cyan-sky for tech links & badges */
+  --palette-30-card-border: rgba(99, 102, 241, 0.2); /* Structural card outline */
 
-  /* Text Contrast - Crisp Whites & Neutral Grays */
-  --color-text-primary: #ffffff;
-  --color-text-secondary: #9ca3af;
-  --color-text-muted: #6b7280;
+  /* 10% ACCENT / CTA (Electric Emerald Green for 'Solved', Run Code & Primary Action) */
+  --palette-10-accent: #10b981;            /* Electric Emerald Green (Target 10% focal point) */
+  --palette-10-accent-hover: #059669;      /* Focused button hover state */
+  --palette-10-accent-warm: #f59e0b;       /* Amber for streak & medium difficulty */
+  --palette-10-accent-glow: rgba(16, 185, 129, 0.35);
 
-  /* LeetCode Signature Palette (Cyan/Teal & Warm Amber) */
-  --color-primary: #00b8a3;
-  --color-primary-hover: #009e86;
-  --color-secondary: #ffa116;
-  --color-secondary-hover: #f59e0b;
-  --gradient-primary: linear-gradient(90deg, #00b8a3 0%, #00d2b8 100%);
-  --gradient-hover: linear-gradient(90deg, #009e86 0%, #00b8a3 100%);
-  --gradient-amber: linear-gradient(90deg, #ffa116 0%, #f59e0b 100%);
-  --gradient-text: linear-gradient(90deg, #ffffff 0%, #00b8a3 100%);
+  /* Semantic Mapping for Code Arena & Components */
+  --color-bg-primary: var(--palette-60-base);
+  --color-bg-surface: var(--palette-60-surface);
+  --color-bg-surface-hover: var(--palette-60-surface-hover);
+  --color-bg-secondary: #0e121a;
+  --color-bg-tertiary: #141a26;
+  --color-bg-elevated: var(--palette-60-elevated);
+
+  --color-border: #222b3d;
+  --color-border-subtle: var(--palette-60-border);
+  --color-border-hover: rgba(99, 102, 241, 0.4);
+
+  --color-text-primary: var(--palette-30-text-primary);
+  --color-text-secondary: var(--palette-30-text-secondary);
+  --color-text-muted: var(--palette-30-text-muted);
+
+  --color-primary: var(--palette-10-accent);
+  --color-primary-hover: var(--palette-10-accent-hover);
+  --color-secondary: var(--palette-10-accent-warm);
+  --color-secondary-hover: #d97706;
+
+  /* Harmonious Modern Developer Gradients (60-30-10 Tri-Color Flow) */
+  --gradient-primary: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --gradient-hover: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  --gradient-amber: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  
+  /* Tri-Color Hero Heading Gradient: Pure White -> Electric Sky/Indigo -> Emerald Accent */
+  --gradient-text: linear-gradient(135deg, #ffffff 0%, #818cf8 50%, #10b981 100%);
+  --gradient-heading-alt: linear-gradient(135deg, #ffffff 0%, #38bdf8 60%, #6366f1 100%);
+
+  /* Three-Color Lensing Surface Gradients for Bento Tiles & Cards */
+  --gradient-card-surface: linear-gradient(145deg, rgba(18, 23, 34, 0.9) 0%, rgba(10, 13, 20, 0.95) 100%);
+  --gradient-card-hover: linear-gradient(145deg, rgba(99, 102, 241, 0.12) 0%, rgba(16, 185, 129, 0.08) 50%, rgba(18, 23, 34, 0.9) 100%);
+  --gradient-border-highlight: linear-gradient(135deg, rgba(99, 102, 241, 0.5) 0%, rgba(16, 185, 129, 0.3) 50%, rgba(56, 189, 248, 0.3) 100%);
+
+  /* Difficulty Gradients (Easy Emerald / Medium Warm Amber / Hard Coral Red) */
+  --gradient-easy: linear-gradient(135deg, rgba(16, 185, 129, 0.25) 0%, rgba(6, 182, 212, 0.08) 100%);
+  --gradient-medium: linear-gradient(135deg, rgba(245, 158, 11, 0.25) 0%, rgba(217, 119, 6, 0.08) 100%);
+  --gradient-hard: linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(248, 113, 113, 0.08) 100%);
 
   /* Status Colors */
-  --color-success: #00b8a3;
-  --color-success-bg: rgba(0, 184, 163, 0.12);
-  --color-success-border: rgba(0, 184, 163, 0.25);
-  --color-success-text: #00b8a3;
+  --color-success: #10b981;
+  --color-success-bg: rgba(16, 185, 129, 0.12);
+  --color-success-border: rgba(16, 185, 129, 0.25);
+  --color-success-text: #10b981;
 
-  --color-warning: #ffa116;
-  --color-warning-bg: rgba(255, 161, 22, 0.12);
-  --color-warning-border: rgba(255, 161, 22, 0.25);
-  --color-warning-text: #ffa116;
+  --color-warning: #f59e0b;
+  --color-warning-bg: rgba(245, 158, 11, 0.12);
+  --color-warning-border: rgba(245, 158, 11, 0.25);
+  --color-warning-text: #f59e0b;
 
   --color-error: #ef4444;
   --color-error-bg: rgba(239, 68, 68, 0.12);
   --color-error-border: rgba(239, 68, 68, 0.25);
   --color-error-text: #f87171;
 
-  --color-accent: #00b8a3;
-  --color-accent-bg: rgba(0, 184, 163, 0.12);
-  --color-accent-text: #00d2b8;
-  --color-info: #3b82f6;
+  --color-accent: #10b981;
+  --color-accent-bg: rgba(16, 185, 129, 0.12);
+  --color-accent-text: #34d399;
+  --color-info: #6366f1;
 
   /* Difficulty Badges */
-  --badge-easy-bg: rgba(0, 184, 163, 0.12);
-  --badge-easy-text: #00b8a3;
-  --badge-easy-border: rgba(0, 184, 163, 0.25);
+  --badge-easy-bg: rgba(16, 185, 129, 0.12);
+  --badge-easy-text: #10b981;
+  --badge-easy-border: rgba(16, 185, 129, 0.25);
 
-  --badge-medium-bg: rgba(255, 161, 22, 0.12);
-  --badge-medium-text: #ffa116;
-  --badge-medium-border: rgba(255, 161, 22, 0.25);
+  --badge-medium-bg: rgba(245, 158, 11, 0.12);
+  --badge-medium-text: #f59e0b;
+  --badge-medium-border: rgba(245, 158, 11, 0.25);
 
   --badge-hard-bg: rgba(239, 68, 68, 0.12);
   --badge-hard-text: #f87171;
@@ -73,7 +112,8 @@
   --spacing-3xl: 4.5rem;  /* 72px */
 
   /* Typography */
-  --font-family-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-sans: 'Inter', 'IBM Plex Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -109,8 +149,17 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: 80px;
+}
+
 ::selection {
-  background: rgba(0, 184, 163, 0.3);
+  background: rgba(99, 102, 241, 0.35);
   color: #ffffff;
 }
 
@@ -118,8 +167,9 @@ body {
   font-family: var(--font-family-sans);
   background-color: var(--color-bg-primary);
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(0, 184, 163, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(255, 161, 22, 0.03) 0%, transparent 40%);
+    radial-gradient(circle at 50% -10%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 85% 20%, rgba(16, 185, 129, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 15% 55%, rgba(56, 189, 248, 0.04) 0%, transparent 40%);
   background-attachment: fixed;
   color: var(--color-text-primary);
   line-height: 1.55;
@@ -168,19 +218,161 @@ button {
   background: none;
 }
 
-/* Page Micro-Interaction: Fast Fade-in (~200ms, no bounce) */
+/* ==========================================================================
+   GLOBAL ADVANCED ANIMATION SUITE (Linear, Vercel & Raycast inspired)
+   ========================================================================== */
+
+/* Page Micro-Interaction: Fast Fade-in (~200ms) */
 @keyframes pageFadeIn {
   from {
     opacity: 0;
+    transform: translateY(6px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .page-enter,
 .page-fade-in {
-  animation: pageFadeIn 0.2s ease-out forwards;
+  animation: pageFadeIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 1. Iridescent Text Gradient Flow */
+@keyframes textGradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text-animated {
+  background: linear-gradient(135deg, #ffffff 0%, #818cf8 25%, #10b981 50%, #38bdf8 75%, #ffffff 100%);
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: textGradientFlow 8s ease infinite;
+}
+
+/* 2. Rotating Border Beam for Eyebrow Pills */
+@keyframes rotateBeam {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 3. Soft Breathing Pulse for Live Indicators & Badges */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.4));
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.85;
+    filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.8));
+  }
+}
+
+.live-pulse-dot {
+  animation: softPulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 4. Checkmark Spring Pop on Task / Question Solved */
+@keyframes checkSpring {
+  0% {
+    transform: scale(0.65);
+  }
+  50% {
+    transform: scale(1.22);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.check-pop-animate {
+  animation: checkSpring 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* 5. Liquid Shimmer Beam for Progress Bars */
+@keyframes barShimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.progress-shimmer-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-shimmer-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%);
+  transform: translateX(-100%);
+  animation: barShimmer 2.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* 6. Card Glass Sheen Sweep on Hover */
+.shimmer-card-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-card-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.04) 30%,
+    rgba(99, 102, 241, 0.12) 50%,
+    rgba(16, 185, 129, 0.08) 70%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  transition: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.shimmer-card-hover:hover::before {
+  left: 140%;
+  transition: left 0.85s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* 7. Button Spring Feedback */
+.btn-press {
+  transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.18s ease;
+}
+
+.btn-press:active {
+  transform: scale(0.96) !important;
 }
 
 /* Skeleton Loading Shimmer */
@@ -379,21 +571,21 @@ button {
 
 .badge-easy,
 .difficulty-easy {
-  background: var(--badge-easy-bg);
+  background: var(--gradient-easy);
   color: var(--badge-easy-text);
   border-color: var(--badge-easy-border);
 }
 
 .badge-medium,
 .difficulty-medium {
-  background: var(--badge-medium-bg);
+  background: var(--gradient-medium);
   color: var(--badge-medium-text);
   border-color: var(--badge-medium-border);
 }
 
 .badge-hard,
 .difficulty-hard {
-  background: var(--badge-hard-bg);
+  background: var(--gradient-hard);
   color: var(--badge-hard-text);
   border-color: var(--badge-hard-border);
 }
@@ -418,4 +610,54 @@ button {
   height: 100%;
   border-radius: var(--border-radius-full);
   transition: width 0.4s ease;
+}
+
+/* --------------------------------------------------------------------------
+   UI/UX PRO MAX - GLOBAL ACCESSIBILITY & DESIGN SYSTEM EXTENSIONS
+   (Focus Rings, Reduced Motion, Keyboard Outlines, Touch Targets)
+   -------------------------------------------------------------------------- */
+
+/* Focus rings with 3:1 contrast and 2px visible offset (WCAG 2.2 AA / AAA) */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(0, 184, 163, 0.15);
+}
+
+/* Prevent layout jump & outline suppression */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Global Prefers Reduced Motion override */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Touch target minimum reassurance (44x44pt touch zones on mobile) */
+@media (pointer: coarse) {
+  button,
+  .btn,
+  .nav-link,
+  .hub-tab-btn,
+  .subview-btn,
+  .status-filter-btn,
+  .company-pill-btn,
+  .cat-filter-pill {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
 }

@@ -5,26 +5,31 @@
   align-items: center;
   justify-content: center;
   padding: var(--spacing-md);
-  background: radial-gradient(circle at center, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+  background: radial-gradient(circle at center, rgba(18, 23, 34, 0.9) 0%, var(--palette-60-base) 100%);
 }
 
 .auth-box {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: var(--border-radius-lg);
+  background: rgba(18, 23, 34, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: var(--border-radius-xl, 20px);
   padding: var(--spacing-2xl);
   width: 100%;
-  max-width: 400px;
-  box-shadow: var(--shadow-xl);
+  max-width: 420px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(16, 185, 129, 0.1);
 }
 
 .auth-box h2 {
   text-align: center;
   margin-bottom: var(--spacing-xl);
   font-size: var(--font-size-2xl);
-  color: var(--color-text-primary);
+  font-weight: 800;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
 }
 
 .input-group {
@@ -34,57 +39,60 @@
 .input-group label {
   display: block;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-text-secondary);
+  color: var(--palette-30-text-secondary, #94a3b8);
   font-size: var(--font-size-sm);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .input-group input {
   width: 100%;
-  padding: 0.75rem 1rem;
-  background-color: rgba(15, 23, 42, 0.5);
-  border: 1px solid var(--color-bg-tertiary);
-  border-radius: var(--border-radius-md);
+  padding: 0.85rem 1rem;
+  background-color: rgba(10, 13, 20, 0.7);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: var(--border-radius-md, 10px);
   color: var(--color-text-primary);
   font-size: var(--font-size-base);
   transition: var(--transition-base);
+  box-sizing: border-box;
 }
 
 .input-group input:focus {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  border-color: var(--palette-10-accent, #10b981);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  background-color: rgba(10, 13, 20, 0.9);
   outline: none;
 }
 
 .auth-btn {
   width: 100%;
-  padding: 0.75rem;
-  background-color: var(--color-primary);
-  color: white;
+  padding: 0.85rem;
+  background: var(--gradient-primary);
+  color: #0a0d14;
   border: none;
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-md, 10px);
   font-size: var(--font-size-base);
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: var(--transition-base);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: var(--spacing-sm);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
 }
 
 .auth-btn:hover {
-  background-color: var(--color-primary-hover);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(16, 185, 129, 0.45);
 }
 
 .auth-link {
   text-align: center;
   margin-top: var(--spacing-lg);
-  color: var(--color-text-secondary);
+  color: var(--palette-30-text-secondary, #94a3b8);
   font-size: var(--font-size-sm);
 }
 
 .auth-link a {
-  color: var(--color-primary);
+  color: var(--palette-10-accent, #10b981);
   font-weight: 600;
 }
 

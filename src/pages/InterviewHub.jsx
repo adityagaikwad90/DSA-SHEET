@@ -6,7 +6,8 @@ import {
   Filter, Sparkles, Building2, Code2, ExternalLink, ArrowRight,
   RefreshCw, Check, Layers, Flame, Award, Cpu, Globe, Network,
   Activity, Database, Server, HardDrive, Terminal, SlidersHorizontal,
-  Copy, ShieldAlert, Zap, ArrowUpRight, CheckCircle2, ChevronDown
+  Copy, ShieldAlert, Zap, ArrowUpRight, CheckCircle2, ChevronDown,
+  Layers as LayersIcon, BookCheck
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import {
@@ -20,6 +21,7 @@ import interviewArchiveSummary from '../data/interviewArchiveSummary.json';
 import systemDesignData from '../data/systemDesignData.json';
 import networkingData from '../data/networkingData.json';
 import dsaCoreData from '../data/dsaCoreData.json';
+import { fuzzyFilter } from '../utils/fuzzySearch';
 import './InterviewHub.css';
 
 const { patterns = [], totalPatterns = 16, totalProblems = 162 } = dsaPatternsData;
@@ -135,25 +137,20 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
     return ['all', ...Array.from(set)];
   }, []);
 
-  // Filtered patterns
+  // Filtered patterns with fuzzy search
   const filteredPatterns = useMemo(() => {
-    return patterns.filter((pattern) => {
+    let list = patterns.filter((pattern) => {
       const status = getPatternStatus(progressMap, pattern.id);
       if (statusFilter !== 'all' && status !== statusFilter) return false;
       if (selectedCategory !== 'all' && pattern.category !== selectedCategory) return false;
-
-      if (dsaSearchQuery.trim()) {
-        const query = dsaSearchQuery.toLowerCase().trim();
-        const matchesName = pattern.title.toLowerCase().includes(query);
-        const matchesSummary = pattern.summary.toLowerCase().includes(query);
-        const matchesCategory = (pattern.category || '').toLowerCase().includes(query);
-        const matchesProblems = pattern.problems.some((prob) =>
-          prob.title.toLowerCase().includes(query)
-        );
-        if (!matchesName && !matchesSummary && !matchesCategory && !matchesProblems) return false;
-      }
       return true;
     });
+
+    if (dsaSearchQuery.trim()) {
+      list = fuzzyFilter(list, dsaSearchQuery, ['title', 'summary', 'category']);
+    }
+
+    return list;
   }, [dsaSearchQuery, statusFilter, selectedCategory, progressMap]);
 
   // Progress stats calculation
@@ -437,9 +434,9 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
                               disabled={isUpdatingStatus === pattern.id}
                               onChange={(e) => handleStatusChange(e, pattern.id, e.target.value)}
                             >
-                              <option value="not_started">⚪ Not Started</option>
-                              <option value="learning">🟡 In Progress</option>
-                              <option value="completed">🟢 Completed</option>
+                              <option value="not_started">Not Started</option>
+                              <option value="learning">In Progress</option>
+                              <option value="completed">Completed</option>
                             </select>
                           </div>
                         </div>
@@ -644,22 +641,26 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
           <div className="sys-controls-bar">
             <div className="sys-category-pills">
               {[
-                { id: 'all', label: 'All Resources' },
-                { id: 'core', label: '⚙️ Core Concepts' },
-                { id: 'databases', label: '🗄️ Databases' },
-                { id: 'caching', label: '⚡ Caching & CDN' },
-                { id: 'async', label: '🔄 Async & Queues' },
-                { id: 'problems', label: '💻 Classic Problems' },
-                { id: 'case-studies', label: '📜 Engineering Reads' }
-              ].map((c) => (
-                <button
-                  key={c.id}
-                  onClick={() => setSysCategory(c.id)}
-                  className={`sys-pill-btn ${sysCategory === c.id ? 'active' : ''}`}
-                >
-                  {c.label}
-                </button>
-              ))}
+                { id: 'all', label: 'All Resources', icon: Layers },
+                { id: 'core', label: 'Core Concepts', icon: Cpu },
+                { id: 'databases', label: 'Databases', icon: Database },
+                { id: 'caching', label: 'Caching & CDN', icon: Zap },
+                { id: 'async', label: 'Async & Queues', icon: Activity },
+                { id: 'problems', label: 'Classic Problems', icon: Code2 },
+                { id: 'case-studies', label: 'Engineering Reads', icon: BookOpen }
+              ].map((c) => {
+                const PillIcon = c.icon;
+                return (
+                  <button
+                    key={c.id}
+                    onClick={() => setSysCategory(c.id)}
+                    className={`sys-pill-btn ${sysCategory === c.id ? 'active' : ''}`}
+                  >
+                    <PillIcon size={14} className="sys-pill-icon" aria-hidden="true" />
+                    <span>{c.label}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 

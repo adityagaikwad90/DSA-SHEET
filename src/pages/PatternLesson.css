@@ -38,7 +38,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: var(--color-primary, #00b8a3);
+  color: var(--color-primary, #10b981);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
@@ -97,7 +97,7 @@
   grid-template-columns: 1.6fr 1fr;
   gap: 2rem;
   align-items: center;
-  background: linear-gradient(135deg, rgba(26, 32, 44, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(26, 32, 44, 0.9) 0%, rgba(10, 13, 20, 0.9) 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--border-radius-lg, 16px);
   padding: 2.25rem;
@@ -117,11 +117,11 @@
 .pattern-number-pill {
   font-size: 0.75rem;
   font-weight: 700;
-  background: rgba(0, 184, 163, 0.15);
-  color: var(--color-primary, #00b8a3);
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--color-primary, #10b981);
   padding: 0.25rem 0.65rem;
   border-radius: 6px;
-  border: 1px solid rgba(0, 184, 163, 0.3);
+  border: 1px solid rgba(16, 185, 129, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   white-space: nowrap;
@@ -216,15 +216,15 @@
 }
 
 .status-btn.active.learning {
-  background: rgba(255, 161, 22, 0.2);
-  border-color: var(--color-secondary, #ffa116);
-  color: #ffa116;
+  background: rgba(245, 158, 11, 0.2);
+  border-color: var(--color-secondary, #f59e0b);
+  color: #f59e0b;
 }
 
 .status-btn.active.completed {
-  background: rgba(0, 184, 163, 0.2);
-  border-color: var(--color-primary, #00b8a3);
-  color: #00b8a3;
+  background: rgba(16, 185, 129, 0.2);
+  border-color: var(--color-primary, #10b981);
+  color: #10b981;
 }
 
 .status-success-banner {
@@ -232,8 +232,8 @@
   align-items: center;
   gap: 0.4rem;
   font-size: 0.8rem;
-  color: var(--color-primary, #00b8a3);
-  background: rgba(0, 184, 163, 0.1);
+  color: var(--color-primary, #10b981);
+  background: rgba(16, 185, 129, 0.1);
   padding: 0.4rem 0.75rem;
   border-radius: 6px;
   font-weight: 600;
@@ -280,8 +280,8 @@
 }
 
 .lesson-tab-btn.active {
-  color: var(--color-primary, #00b8a3);
-  border-bottom-color: var(--color-primary, #00b8a3);
+  color: var(--color-primary, #10b981);
+  border-bottom-color: var(--color-primary, #10b981);
 }
 
 /* --------------------------------------------------------------------------
@@ -300,8 +300,8 @@
 .attribution-banner {
   display: flex;
   gap: 1rem;
-  background: rgba(0, 184, 163, 0.08);
-  border: 1px solid rgba(0, 184, 163, 0.25);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
   border-radius: 10px;
   padding: 1.15rem 1.4rem;
   margin-bottom: 2.25rem;
@@ -309,7 +309,7 @@
 }
 
 .attribution-icon {
-  color: var(--color-primary, #00b8a3);
+  color: var(--color-primary, #10b981);
   flex-shrink: 0;
   margin-top: 0.2rem;
 }
@@ -423,15 +423,15 @@
 }
 
 .difficulty-easy {
-  background: rgba(0, 184, 163, 0.15);
-  color: #00b8a3;
-  border: 1px solid rgba(0, 184, 163, 0.3);
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 .difficulty-medium {
-  background: rgba(255, 161, 22, 0.15);
-  color: #ffa116;
-  border: 1px solid rgba(255, 161, 22, 0.3);
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
 .difficulty-hard {
@@ -444,9 +444,9 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(0, 184, 163, 0.12);
-  border: 1px solid rgba(0, 184, 163, 0.3);
-  color: var(--color-primary, #00b8a3);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--color-primary, #10b981);
   padding: 0.4rem 0.85rem;
   border-radius: 6px;
   font-size: 0.82rem;
@@ -457,7 +457,7 @@
 }
 
 .leetcode-practice-btn:hover {
-  background: var(--color-primary, #00b8a3);
+  background: var(--color-primary, #10b981);
   color: #111827;
 }
 
@@ -733,7 +733,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--color-primary, #00b8a3);
+  background: var(--color-primary, #10b981);
   color: #111827;
   border: none;
   padding: 0.75rem 1.4rem;
@@ -753,13 +753,13 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: var(--color-primary, #00b8a3);
-  background: rgba(0, 184, 163, 0.15);
+  color: var(--color-primary, #10b981);
+  background: rgba(16, 185, 129, 0.15);
   padding: 0.65rem 1.15rem;
   border-radius: 8px;
   font-weight: 600;
   font-size: 0.9rem;
-  border: 1px solid rgba(0, 184, 163, 0.3);
+  border: 1px solid rgba(16, 185, 129, 0.3);
   white-space: nowrap;
 }
 

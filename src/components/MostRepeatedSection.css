@@ -23,29 +23,36 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.35rem 0.9rem;
-  background: rgba(255, 107, 0, 0.12);
-  border: 1px solid rgba(255, 107, 0, 0.3);
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
   border-radius: 9999px;
-  color: #ff8a3d;
+  color: #f59e0b;
   font-size: 0.8rem;
   font-weight: 600;
   margin-bottom: 0.9rem;
   letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+}
+
+.repeated-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
+  border-color: rgba(245, 158, 11, 0.6);
 }
 
 .flame-icon-pulse {
-  color: #ff6b00;
+  color: #f59e0b;
   animation: flamePulse 2s ease-in-out infinite;
 }
 
 @keyframes flamePulse {
   0%, 100% {
     transform: scale(1);
-    filter: drop-shadow(0 0 3px rgba(255, 107, 0, 0.4));
+    filter: drop-shadow(0 0 3px rgba(245, 158, 11, 0.4));
   }
   50% {
     transform: scale(1.15);
-    filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.8));
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.8));
   }
 }
 
@@ -55,9 +62,11 @@
   color: #f8fafc;
   margin: 0 0 0.6rem 0;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #ffffff 30%, #ff8a3d 100%);
+  background: linear-gradient(135deg, #ffffff 20%, #f59e0b 60%, #10b981 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: textGradientFlow 7s ease infinite;
 }
 
 .repeated-main-subtitle {
@@ -103,7 +112,7 @@
 }
 
 .stat-count-text strong {
-  color: #00b8a3;
+  color: #10b981;
   font-weight: 700;
 }
 
@@ -117,7 +126,7 @@
 
 .repeated-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #ff8a3d, #00b8a3);
+  background: linear-gradient(90deg, #f59e0b, #10b981);
   border-radius: 9999px;
   transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -149,18 +158,18 @@
 }
 
 .metric-easy {
-  color: #00b8a3;
+  color: #10b981;
   border-color: rgba(0, 184, 163, 0.25);
   background: rgba(0, 184, 163, 0.07);
 }
-.dot-easy { background: #00b8a3; }
+.dot-easy { background: #10b981; }
 
 .metric-medium {
-  color: #ffa116;
+  color: #f59e0b;
   border-color: rgba(255, 161, 22, 0.25);
   background: rgba(255, 161, 22, 0.07);
 }
-.dot-medium { background: #ffa116; }
+.dot-medium { background: #f59e0b; }
 
 .metric-hard {
   color: #ff375f;
@@ -220,20 +229,20 @@
 }
 
 .diff-tab.active {
-  background: #ff8a3d;
+  background: #f59e0b;
   color: #0a0e17;
   font-weight: 700;
   box-shadow: 0 2px 10px rgba(255, 138, 61, 0.35);
 }
 
 .diff-tab-easy.active {
-  background: #00b8a3;
+  background: #10b981;
   color: #04201d;
   box-shadow: 0 2px 10px rgba(0, 184, 163, 0.35);
 }
 
 .diff-tab-medium.active {
-  background: #ffa116;
+  background: #f59e0b;
   color: #2b1700;
   box-shadow: 0 2px 10px rgba(255, 161, 22, 0.35);
 }
@@ -281,7 +290,7 @@
 
 .repeated-search-input:focus {
   outline: none;
-  border-color: #ff8a3d;
+  border-color: #f59e0b;
   box-shadow: 0 0 0 2px rgba(255, 138, 61, 0.2);
 }
 
@@ -327,7 +336,7 @@
 
 .repeated-select:focus {
   outline: none;
-  border-color: #ff8a3d;
+  border-color: #f59e0b;
   box-shadow: 0 0 0 2px rgba(255, 138, 61, 0.2);
 }
 
@@ -422,7 +431,7 @@
 
 .rank-badge.top-10 {
   border-color: rgba(255, 138, 61, 0.3);
-  color: #ff8a3d;
+  color: #f59e0b;
 }
 
 /* Checkbox button */
@@ -454,12 +463,12 @@
 }
 
 .status-icon-solved {
-  color: #00b8a3;
+  color: #10b981;
   filter: drop-shadow(0 0 4px rgba(0, 184, 163, 0.5));
 }
 
 .status-icon-practice {
-  color: #ffa116;
+  color: #f59e0b;
   filter: drop-shadow(0 0 4px rgba(255, 161, 22, 0.5));
 }
 
@@ -490,7 +499,7 @@
 }
 
 .repeated-title-link:hover {
-  color: #ff8a3d;
+  color: #f59e0b;
 }
 
 .repeated-title-link .ext-icon {
@@ -513,13 +522,13 @@
 
 .diff-easy {
   background: rgba(0, 184, 163, 0.12);
-  color: #00b8a3;
+  color: #10b981;
   border: 1px solid rgba(0, 184, 163, 0.25);
 }
 
 .diff-medium {
   background: rgba(255, 161, 22, 0.12);
-  color: #ffa116;
+  color: #f59e0b;
   border: 1px solid rgba(255, 161, 22, 0.25);
 }
 
@@ -541,13 +550,13 @@
 
 .status-badge-chip.chip-solved {
   background: rgba(0, 184, 163, 0.15);
-  color: #00b8a3;
+  color: #10b981;
   border: 1px solid rgba(0, 184, 163, 0.3);
 }
 
 .status-badge-chip.chip-practice {
   background: rgba(255, 161, 22, 0.15);
-  color: #ffa116;
+  color: #f59e0b;
   border: 1px solid rgba(255, 161, 22, 0.3);
 }
 
@@ -566,7 +575,7 @@
   gap: 0.35rem;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #ff8a3d;
+  color: #f59e0b;
   background: rgba(255, 107, 0, 0.1);
   border: 1px solid rgba(255, 107, 0, 0.25);
   border-radius: 6px;
@@ -574,7 +583,7 @@
 }
 
 .building-icon {
-  color: #ff8a3d;
+  color: #f59e0b;
 }
 
 .company-pills-wrap {
@@ -655,8 +664,8 @@
 }
 
 .practice-leetcode-btn:hover {
-  background: #ff8a3d;
-  border-color: #ff8a3d;
+  background: #f59e0b;
+  border-color: #f59e0b;
   color: #0a0e17;
   box-shadow: 0 4px 12px rgba(255, 138, 61, 0.35);
 }
@@ -708,9 +717,9 @@
 }
 
 .reset-filters-btn:hover {
-  background: #ff8a3d;
+  background: #f59e0b;
   color: #0a0e17;
-  border-color: #ff8a3d;
+  border-color: #f59e0b;
 }
 
 /* Responsive adjustments for Tablets and Mobile Phones */

@@ -47,18 +47,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem;
-    background: rgba(30, 41, 59, 0.4);
-    border-radius: 12px;
+    background: var(--gradient-card-surface);
+    border-radius: 16px;
     text-decoration: none;
     color: var(--color-text-primary);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    transition: all 0.2s ease;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    backdrop-filter: blur(16px);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .vault-resource-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    /* Fallback or slight boost */
+    background: var(--gradient-card-hover, rgba(18, 23, 34, 0.95));
+    border-color: rgba(16, 185, 129, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.45);
 }
 
 .resource-info h4 {

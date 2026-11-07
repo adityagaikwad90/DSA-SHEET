@@ -15,19 +15,31 @@
   padding: 1rem;
 }
 
+@keyframes completionModalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .completion-modal-card {
-  background: var(--color-bg-surface, #262626);
-  border: 1px solid var(--color-border, #333333);
+  background: rgba(18, 23, 34, 0.97);
+  border: 1px solid rgba(99, 102, 241, 0.25);
   border-radius: var(--border-radius-lg, 16px);
   width: 100%;
   max-width: 490px;
   padding: 1.5rem 1.65rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(16, 185, 129, 0.1);
   display: flex;
   flex-direction: column;
   gap: 1.15rem;
   position: relative;
   text-align: left;
+  animation: completionModalEnter 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* Header */
@@ -94,8 +106,8 @@
 
 .completion-notes-textarea {
   width: 100%;
-  background: var(--color-bg-primary, #1a1a1a);
-  border: 1px solid var(--color-border, #333333);
+  background: rgba(10, 13, 20, 0.7);
+  border: 1px solid rgba(99, 102, 241, 0.2);
   border-radius: var(--border-radius-md, 10px);
   padding: 0.85rem 1rem;
   color: var(--color-text-primary, #ffffff);
@@ -116,8 +128,8 @@
 
 .completion-notes-textarea:focus {
   outline: none;
-  border-color: var(--color-primary, #00b8a3);
-  box-shadow: 0 0 0 3px rgba(0, 184, 163, 0.15);
+  border-color: var(--palette-10-accent, #10b981);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
 }
 
 .completion-notes-textarea:disabled {
@@ -164,7 +176,7 @@
 /* Cancel Button */
 .completion-btn-cancel {
   background: transparent;
-  border: 1px solid var(--color-border, #333333);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--color-text-secondary, #9ca3af);
   margin-right: auto;
 }
@@ -172,43 +184,43 @@
 .completion-btn-cancel:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.06);
   color: var(--color-text-primary, #ffffff);
-  border-color: var(--color-border-hover, #484848);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Needs Practice Button */
 .completion-btn-practice {
-  background: rgba(255, 161, 22, 0.12);
-  border: 1px solid rgba(255, 161, 22, 0.35);
-  color: #ffa116;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #f59e0b;
 }
 
 .completion-btn-practice:hover:not(:disabled) {
-  background: rgba(255, 161, 22, 0.22);
-  border-color: #ffa116;
+  background: rgba(245, 158, 11, 0.22);
+  border-color: #f59e0b;
   color: #ffffff;
   transform: translateY(-1px);
 }
 
 .completion-btn-practice.selected-status {
-  box-shadow: 0 0 0 2px rgba(255, 161, 22, 0.35);
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.35);
 }
 
 /* Solved Easily Button */
 .completion-btn-solved {
-  background: var(--gradient-primary, linear-gradient(90deg, #00b8a3 0%, #00d2b8 100%));
+  background: var(--gradient-primary);
   border: 1px solid transparent;
-  color: #0b1e1b;
+  color: #0a0d14;
   font-weight: 700;
 }
 
 .completion-btn-solved:hover:not(:disabled) {
   filter: brightness(1.1);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(0, 184, 163, 0.35);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
 }
 
 .completion-btn-solved.selected-status {
-  box-shadow: 0 0 0 2px rgba(0, 184, 163, 0.5);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.5);
 }
 
 .completion-btn:disabled {

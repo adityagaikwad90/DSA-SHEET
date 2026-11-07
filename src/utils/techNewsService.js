@@ -230,21 +230,21 @@ export function categorizeArticle(article) {
   const text = `${article.title || ''} ${article.description || ''} ${article.source?.name || ''}`.toLowerCase();
 
   if (/\b(ai|artificial intelligence|machine learning|deep learning|neural|llm|gpt|openai|claude|gemini|deepmind|copilot)\b/i.test(text)) {
-    return { id: 'ai', label: 'AI & Machine Learning', color: '#00d2b8', icon: 'Bot' };
+    return { id: 'ai', label: 'AI & Machine Learning', color: '#10b981', icon: 'Bot' };
   }
   if (/\b(cybersecurity|security|vulnerability|malware|ransomware|cve|zero-day|hacker|patch|exploit|breach)\b/i.test(text)) {
     return { id: 'cybersecurity', label: 'Cybersecurity', color: '#ef4444', icon: 'ShieldAlert' };
   }
   if (/\b(code|coding|software|developer|programming|react|python|javascript|typescript|github|frontend|backend|api|rust|golang|linux|monorepo)\b/i.test(text)) {
-    return { id: 'dev', label: 'Software & Dev', color: '#3b82f6', icon: 'Code2' };
+    return { id: 'dev', label: 'Software & Dev', color: '#6366f1', icon: 'Code2' };
   }
   if (/\b(apple|google|microsoft|amazon|meta|cloud|aws|azure|gcp|enterprise)\b/i.test(text)) {
-    return { id: 'big-tech', label: 'Big Tech & Cloud', color: '#a855f7', icon: 'Cloud' };
+    return { id: 'big-tech', label: 'Big Tech & Cloud', color: '#818cf8', icon: 'Cloud' };
   }
   if (/\b(ev|electric vehicle|tesla|battery|chip|semiconductor|gpu|cpu|nvidia|hardware|tsmc|intel|amd|robot|robotics|gadget|phone)\b/i.test(text)) {
-    return { id: 'hardware', label: 'Hardware & EV', color: '#ffa116', icon: 'Zap' };
+    return { id: 'hardware', label: 'Hardware & EV', color: '#f59e0b', icon: 'Zap' };
   }
-  return { id: 'general', label: 'Tech Innovation', color: '#00b8a3', icon: 'Cpu' };
+  return { id: 'general', label: 'Tech Innovation', color: '#38bdf8', icon: 'Cpu' };
 }
 
 /**

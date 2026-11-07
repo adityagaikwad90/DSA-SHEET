@@ -23,7 +23,7 @@
   font-size: 1.85rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 0.75rem;
-  color: var(--color-primary, #00b8a3);
+  color: var(--color-primary, #10b981);
 }
 
 .safe-markdown-body h2 {
@@ -43,7 +43,7 @@
 
 .safe-markdown-body h4 {
   font-size: 1.05rem;
-  color: var(--color-secondary, #ffa116);
+  color: var(--color-secondary, #f59e0b);
 }
 
 .safe-markdown-body p {
@@ -65,7 +65,7 @@
 
 /* Links */
 .markdown-link {
-  color: var(--color-primary, #00b8a3);
+  color: var(--color-primary, #10b981);
   text-decoration: none;
   font-weight: 500;
   border-bottom: 1px dashed rgba(0, 184, 163, 0.4);
@@ -83,7 +83,7 @@
   margin: 1.25rem 0;
   padding: 0.9rem 1.25rem;
   background: rgba(0, 184, 163, 0.06);
-  border-left: 4px solid var(--color-primary, #00b8a3);
+  border-left: 4px solid var(--color-primary, #10b981);
   border-radius: 0 8px 8px 0;
   color: #e2e8f0;
   font-size: 0.98rem;
@@ -140,7 +140,7 @@
 }
 
 .safe-markdown-body li::marker {
-  color: var(--color-primary, #00b8a3);
+  color: var(--color-primary, #10b981);
 }
 
 /* Tables */
@@ -198,7 +198,7 @@
 
 .markdown-image:hover {
   transform: scale(1.01);
-  border-color: var(--color-primary, #00b8a3);
+  border-color: var(--color-primary, #10b981);
 }
 
 .markdown-image-caption {
