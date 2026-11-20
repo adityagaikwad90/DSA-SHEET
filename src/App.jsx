@@ -14,7 +14,6 @@ import Careers from './pages/Careers';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './Navbar';
 import RewardCelebration from './components/RewardCelebration';
-import ClickSparkEffect from './components/ClickSparkEffect';
 import ScrollToTop from './components/ScrollToTop';
 import FuturisticFloatingAi from './components/FuturisticFloatingAi';
 import { Toaster } from 'sonner';
@@ -25,7 +24,6 @@ function App() {
     <div className="app">
       <Toaster position="bottom-left" richColors theme="dark" />
       <ScrollToTop />
-      <ClickSparkEffect />
       <RewardCelebration />
       <FuturisticFloatingAi />
       <Navbar />

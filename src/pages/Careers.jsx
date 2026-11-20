@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Briefcase, 
@@ -29,9 +29,12 @@ import {
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { useAuth } from '../context/AuthContext';
+import { getLiveJobOpenings } from '../utils/jobFeedService';
 import { fuzzyFilter } from '../utils/fuzzySearch';
 import rawCareerData from '../data/careerCompaniesData.json';
 import './Careers.css';
+
+const MotionDiv = motion.div;
 
 // Application status configurations
 const APPLICATION_STATUSES = [
@@ -55,10 +58,29 @@ const CATEGORIES = [
 ];
 
 const ALPHABET = ['All', '#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')];
+const JOB_STATUSES = [
+  { id: 'saved', label: 'Saved' },
+  { id: 'applied', label: 'Applied' },
+  { id: 'interviewing', label: 'Interviewing' },
+  { id: 'offer', label: 'Offer received' },
+  { id: 'archived', label: 'Archived' },
+];
 
 export default function Careers() {
   const { currentUser } = useAuth();
   const storageUserId = currentUser?.uid || 'guest';
+  const [activeView, setActiveView] = useState('jobs');
+  const [liveJobs, setLiveJobs] = useState([]);
+  const [jobsLoading, setJobsLoading] = useState(true);
+  const [jobsError, setJobsError] = useState('');
+  const [jobsUpdatedAt, setJobsUpdatedAt] = useState(null);
+  const [jobSearch, setJobSearch] = useState('');
+  const [jobLocation, setJobLocation] = useState('');
+  const [remoteOnly, setRemoteOnly] = useState(false);
+  const [jobTracker, setJobTracker] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(`dsa_job_tracker_${storageUserId}`) || '{}'); }
+    catch { return {}; }
+  });
 
   // State
   const [searchQuery, setSearchQuery] = useState('');
@@ -68,6 +90,49 @@ export default function Careers() {
   const [onlyRemote, setOnlyRemote] = useState(false);
   const [onlyFeatured, setOnlyFeatured] = useState(false);
   const [onlyTracked, setOnlyTracked] = useState(false);
+
+  useEffect(() => {
+    let isMounted = true;
+    getLiveJobOpenings().then(({ jobs, updatedAt }) => {
+      if (!isMounted) return;
+      setLiveJobs(jobs);
+      setJobsUpdatedAt(updatedAt || null);
+      setJobsError('');
+    }).catch((error) => {
+      if (!isMounted) return;
+      console.error('Failed to load live job openings', error);
+      setJobsError('Live openings are not available yet. Check back after the job feeds are configured.');
+    }).finally(() => { if (isMounted) setJobsLoading(false); });
+    return () => { isMounted = false; };
+  }, []);
+
+  useEffect(() => {
+    try { localStorage.setItem(`dsa_job_tracker_${storageUserId}`, JSON.stringify(jobTracker)); }
+    catch (error) { console.error('Failed to save job tracker', error); }
+  }, [jobTracker, storageUserId]);
+
+  const updateJobStatus = (job, status) => {
+    setJobTracker((previous) => ({
+      ...previous,
+      [job.id]: {
+        ...previous[job.id], status, jobTitle: job.title, companyName: job.companyName,
+        applyUrl: job.applyUrl, updatedAt: new Date().toISOString(),
+        dateApplied: status === 'applied' ? (previous[job.id]?.dateApplied || new Date().toISOString()) : previous[job.id]?.dateApplied || null,
+      },
+    }));
+    toast.success(status === 'saved' ? 'Role saved to your list.' : status === 'applied' ? 'Role marked as applied.' : `Role updated: ${status}.`);
+  };
+
+  const visibleLiveJobs = useMemo(() => {
+    const query = jobSearch.trim().toLowerCase();
+    const locationQuery = jobLocation.trim().toLowerCase();
+    return liveJobs.filter((job) => {
+      const searchable = [job.title, job.companyName, job.department, job.location, job.workplaceType].filter(Boolean).join(' ').toLowerCase();
+      const locationMatches = !locationQuery || String(job.location || '').toLowerCase().includes(locationQuery);
+      const remoteMatches = !remoteOnly || /remote|distributed/i.test(`${job.location || ''} ${job.workplaceType || ''}`);
+      return (!query || searchable.includes(query)) && locationMatches && remoteMatches;
+    }).sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''));
+  }, [liveJobs, jobSearch, jobLocation, remoteOnly]);
 
   // Application tracker state { [companyId]: { status, dateApplied, notes, roleTitle } }
   const [trackerData, setTrackerData] = useState(() => {
@@ -220,7 +285,7 @@ export default function Careers() {
       try {
         const parsed = new URL(customForm.url.startsWith('http') ? customForm.url : `https://${customForm.url}`);
         cleanDomain = parsed.hostname.replace(/^www\./, '');
-      } catch (err) {
+      } catch {
         cleanDomain = customForm.name.toLowerCase().replace(/[^a-z0-9]/g, '') + '.com';
       }
     }
@@ -299,7 +364,7 @@ export default function Careers() {
     const escapeCsvCell = (value) => {
       let safeValue = String(value ?? '');
       // Prevent spreadsheet apps from treating user-controlled cells as formulas.
-      if (/^[\u0000-\u0020]*[=+\-@]/.test(safeValue)) {
+      if (/^\s*[=+\-@]/.test(safeValue)) {
         safeValue = `'${safeValue}`;
       }
       return `"${safeValue.replace(/"/g, '""')}"`;
@@ -479,6 +544,61 @@ export default function Careers() {
         </div>
       </header>
 
+      <nav className="careers-view-tabs" aria-label="Careers sections">
+        <button type="button" className={activeView === 'jobs' ? 'active' : ''} onClick={() => setActiveView('jobs')}>
+          <Briefcase size={16} /> Live openings <span>{liveJobs.length}</span>
+        </button>
+        <button type="button" className={activeView === 'companies' ? 'active' : ''} onClick={() => setActiveView('companies')}>
+          <Building2 size={16} /> Company directory <span>{stats.total}</span>
+        </button>
+      </nav>
+
+      {activeView === 'jobs' && (
+        <section className="live-jobs-section" aria-labelledby="live-jobs-title">
+          <div className="live-jobs-heading">
+            <div>
+              <span className="live-jobs-eyebrow"><span className="live-jobs-dot" /> Refreshed from company career feeds</span>
+              <h2 id="live-jobs-title">Open roles, with a direct path to apply</h2>
+              <p>Search current listings and keep your application status in one place.</p>
+            </div>
+            <div className="live-jobs-updated">{jobsUpdatedAt ? `Updated ${new Date(jobsUpdatedAt).toLocaleString()}` : 'ATS feeds refresh every 6 hours'}</div>
+          </div>
+          <div className="live-jobs-filters">
+            <label className="live-job-search"><Search size={17} /><input aria-label="Search open roles" value={jobSearch} onChange={(event) => setJobSearch(event.target.value)} placeholder="Job title, company, team or keyword" /></label>
+            <label className="live-job-location"><Globe size={16} /><input aria-label="Filter by location" value={jobLocation} onChange={(event) => setJobLocation(event.target.value)} placeholder="Location" /></label>
+            <label className="live-job-remote"><input type="checkbox" checked={remoteOnly} onChange={(event) => setRemoteOnly(event.target.checked)} /> Remote</label>
+          </div>
+          {jobsLoading ? (
+            <div className="live-jobs-message"><span className="jobs-loading-spinner" /> Loading current openings…</div>
+          ) : jobsError ? (
+            <div className="live-jobs-message live-jobs-empty"><Briefcase size={24} /><strong>No live feeds connected yet</strong><span>{jobsError}</span><button type="button" onClick={() => setActiveView('companies')}>Browse company career pages</button></div>
+          ) : visibleLiveJobs.length === 0 ? (
+            <div className="live-jobs-message live-jobs-empty"><Search size={24} /><strong>No matching openings</strong><span>Try another title or location, or clear the filters.</span></div>
+          ) : (
+            <div className="live-jobs-grid">
+              {visibleLiveJobs.map((job) => {
+                const status = jobTracker[job.id]?.status;
+                const isSaved = status === 'saved';
+                return (
+                  <article key={job.id} className="live-job-card">
+                    <div className="live-job-card-top"><span className="live-job-company">{job.companyName}</span>{job.provider && <span className="live-job-source">{job.provider}</span>}</div>
+                    <h3>{job.title}</h3>
+                    <div className="live-job-meta"><span><Globe size={14} />{job.location || 'Location not listed'}</span>{job.department && <span><Layers size={14} />{job.department}</span>}{job.employmentType && <span><Clock size={14} />{job.employmentType}</span>}</div>
+                    {status && <div className={`live-job-status status-${status}`}>{JOB_STATUSES.find((item) => item.id === status)?.label || status}</div>}
+                    <div className="live-job-actions">
+                      <button type="button" className={`live-job-save ${isSaved ? 'saved' : ''}`} onClick={() => updateJobStatus(job, isSaved ? 'archived' : 'saved')} aria-label={isSaved ? 'Remove saved role' : 'Save role'}><Bookmark size={15} />{isSaved ? 'Saved' : 'Save'}</button>
+                      {status ? <select aria-label={`Update status for ${job.title}`} className="live-job-status-select" value={status} onChange={(event) => updateJobStatus(job, event.target.value)}>{JOB_STATUSES.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}</select> : <button type="button" className="live-job-mark-applied" onClick={() => updateJobStatus(job, 'applied')}><CheckCircle2 size={15} /> Mark applied</button>}
+                      <a href={job.applyUrl} target="_blank" rel="noopener noreferrer" className="live-job-apply" onClick={() => { if (!jobTracker[job.id]) updateJobStatus(job, 'saved'); }}>Apply <ArrowUpRight size={15} /></a>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </section>
+      )}
+
+      {activeView === 'companies' && <>
       {/* Main Filter Section */}
       <section className="careers-controls-wrapper">
         {/* Search & Quick Toggles */}
@@ -645,7 +765,7 @@ export default function Careers() {
             const faviconUrl = `https://www.google.com/s2/favicons?domain=${company.domain}&sz=64`;
 
             return (
-              <motion.div 
+              <MotionDiv
                 key={company.id}
                 layout
                 initial={{ opacity: 0, y: 15 }}
@@ -774,27 +894,24 @@ export default function Careers() {
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="btn-apply-cta"
-                    onClick={() => {
-                      if (currentStatus === 'not_applied') {
-                        handleStatusChange(company, 'applied');
-                      }
-                    }}
                   >
                     <span>Apply Now</span>
                     <ArrowUpRight size={15} />
                   </a>
                 </div>
-              </motion.div>
+              </MotionDiv>
             );
           })}
         </div>
       )}
 
+      </>}
+
       {/* Note / Application Details Modal */}
       <AnimatePresence>
         {activeNoteCompany && (
           <div className="careers-modal-backdrop" onClick={() => setActiveNoteCompany(null)}>
-            <motion.div 
+            <MotionDiv
               className="careers-modal-card"
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -872,7 +989,7 @@ export default function Careers() {
                   <Check size={16} /> Save Notes
                 </button>
               </div>
-            </motion.div>
+            </MotionDiv>
           </div>
         )}
       </AnimatePresence>
@@ -881,7 +998,7 @@ export default function Careers() {
       <AnimatePresence>
         {isAddModalOpen && (
           <div className="careers-modal-backdrop" onClick={() => setIsAddModalOpen(false)}>
-            <motion.div 
+            <MotionDiv
               className="careers-modal-card"
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -996,7 +1113,7 @@ export default function Careers() {
                   </button>
                 </div>
               </form>
-            </motion.div>
+            </MotionDiv>
           </div>
         )}
       </AnimatePresence>

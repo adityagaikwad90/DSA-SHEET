@@ -271,7 +271,7 @@
   background: var(--color-secondary);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1240px) {
   .hamburger-menu {
     display: flex;
   }
@@ -357,4 +357,159 @@
   background: #10b981 !important;
   color: #022c22 !important;
   box-shadow: 0 0 12px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Quiet, compact navigation consistent with the refreshed product theme. */
+.navbar {
+  height: 70px;
+  background: rgba(13, 17, 25, 0.94);
+  border-bottom-color: rgba(190, 205, 228, 0.1);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.nav-container {
+  max-width: 1440px;
+  padding: 0 clamp(1rem, 3vw, 2.25rem);
+}
+
+.nav-logo-link:hover {
+  transform: none;
+}
+
+.nav-logo-icon-wrapper {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  border-color: rgba(190, 205, 228, 0.12);
+  box-shadow: none;
+}
+
+.nav-logo-link:hover .nav-logo-icon-wrapper {
+  transform: none;
+  border-color: rgba(162, 154, 245, 0.35);
+  box-shadow: none;
+}
+
+.nav-logo-accent {
+  background: none;
+  color: #aaa4f4;
+  -webkit-text-fill-color: #aaa4f4;
+}
+
+.nav-links {
+  gap: clamp(0.15rem, 0.45vw, 0.6rem);
+}
+
+.nav-link {
+  padding: 0.45rem 0.6rem;
+  font-size: 0.82rem;
+}
+
+.nav-link::after {
+  display: none;
+}
+
+.nav-link.active {
+  color: #ecebff;
+  background: rgba(129, 120, 232, 0.12);
+}
+
+.nav-link:hover {
+  background: rgba(190, 205, 228, 0.07);
+}
+
+.user-info {
+  padding: 0.35rem 0.65rem;
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(190, 205, 228, 0.1);
+  box-shadow: none;
+}
+
+.user-info:hover {
+  border-color: rgba(190, 205, 228, 0.16);
+  box-shadow: none;
+}
+
+.user-status-dot {
+  box-shadow: none;
+  animation: none;
+}
+
+.nav-review-badge {
+  background: rgba(213, 168, 107, 0.14);
+  border-color: rgba(213, 168, 107, 0.28);
+  color: #e1b778;
+  box-shadow: none;
+  animation: none;
+}
+
+.logout-btn {
+  background: rgba(239, 108, 108, 0.08);
+  border-color: rgba(239, 108, 108, 0.2);
+}
+
+.logout-btn:hover {
+  background: rgba(239, 108, 108, 0.14);
+}
+
+.nav-btn-register {
+  background: rgba(129, 120, 232, 0.14) !important;
+  border-color: rgba(162, 154, 245, 0.26) !important;
+  color: #c1bcff !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.nav-btn-register:hover {
+  background: rgba(129, 120, 232, 0.22) !important;
+  color: #ecebff !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1240px) {
+  .nav-links {
+    top: 70px;
+    right: 0;
+    left: auto;
+    width: min(360px, 100%);
+    height: calc(100dvh - 70px);
+    padding: 1rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0.35rem;
+    background: rgba(16, 22, 32, 0.98);
+    border-left: 1px solid rgba(190, 205, 228, 0.1);
+    box-shadow: -16px 18px 38px rgba(0, 0, 0, 0.24);
+    transform: translateX(100%);
+    opacity: 1;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    text-align: left;
+  }
+
+  .nav-links li .nav-link {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.72rem 0.85rem;
+    font-size: 0.96rem;
+    border-radius: 8px;
+  }
+
+  .nav-links .user-info {
+    margin: 0.5rem 0 0;
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 8px;
+  }
+
+  .nav-links .logout-btn {
+    margin-top: 0.25rem;
+  }
 }

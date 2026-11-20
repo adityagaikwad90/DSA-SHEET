@@ -1219,6 +1219,248 @@
     }
 }
 
+/* Refined product presentation */
+.home-container {
+    background: transparent;
+}
+
+.hero-section {
+    min-height: min(820px, calc(100vh - 70px));
+    padding: 3rem 1.5rem 4rem;
+    background:
+        radial-gradient(ellipse 60% 46% at 50% 0%, rgba(111, 112, 194, 0.16), transparent 72%),
+        linear-gradient(180deg, rgba(15, 20, 30, 0.35), transparent 88%);
+}
+
+.hero-ambient-blob,
+.particles-container {
+    display: none;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-eyebrow-pill {
+    padding: 0.45rem 0.85rem;
+    background: rgba(21, 28, 39, 0.82);
+    border-color: rgba(162, 154, 245, 0.25);
+    color: #b7b1f8;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    box-shadow: none;
+}
+
+.hero-eyebrow-pill:hover {
+    border-color: rgba(162, 154, 245, 0.4);
+    box-shadow: none;
+}
+
+.hero-title {
+    max-width: 18ch;
+    font-size: clamp(2.9rem, 6vw, 5.2rem);
+    font-weight: 700;
+    letter-spacing: -0.055em;
+    line-height: 1.04;
+}
+
+.hero-title-solid {
+    color: #edf1f7;
+}
+
+.hero-subtitle {
+    max-width: 600px;
+    margin-bottom: 1.6rem;
+    font-size: clamp(1rem, 1.5vw, 1.12rem);
+    line-height: 1.75;
+}
+
+.hero-quick-strip {
+    gap: 1rem;
+    padding: 0.65rem 1rem;
+    background: rgba(21, 28, 39, 0.86);
+    border: 1px solid rgba(190, 205, 228, 0.1);
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+.quick-icon-streak,
+.quick-icon-solved {
+    filter: none;
+}
+
+.quick-review-pill.pill-clear,
+.quick-review-pill.pill-alert {
+    box-shadow: none;
+}
+
+.hero-actions-wrapper {
+    gap: 1.1rem;
+}
+
+.hero-btn-primary {
+    min-height: 50px;
+    padding: 0.8rem 1.55rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(68, 86, 157, 0.22);
+}
+
+.hero-btn-primary:hover {
+    box-shadow: 0 10px 28px rgba(68, 86, 157, 0.3);
+    filter: brightness(1.04);
+    transform: translateY(-1px);
+}
+
+.hero-dock-pill {
+    padding: 0.55rem 0.9rem;
+    background: rgba(21, 28, 39, 0.72);
+    border-color: rgba(190, 205, 228, 0.1);
+    border-radius: 9px;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+.hero-dock-pill:hover {
+    background: #1b2533;
+    border-color: rgba(162, 154, 245, 0.3);
+    box-shadow: none;
+    transform: translateY(-1px);
+}
+
+.section {
+    max-width: 1240px;
+    padding: clamp(3.5rem, 7vw, 6rem) 1.5rem;
+}
+
+.section-title {
+    font-size: clamp(1.9rem, 3.5vw, 2.55rem);
+    letter-spacing: -0.04em;
+    font-weight: 650;
+}
+
+.section-subtitle {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.trends-grid {
+    mask-image: none;
+    gap: 1rem;
+}
+
+.trend-card {
+    background: #151c27;
+    border: 1px solid rgba(190, 205, 228, 0.1);
+    border-radius: 14px;
+    padding: 1.5rem;
+}
+
+.trend-category {
+    border-color: rgba(190, 205, 228, 0.1);
+    font-size: 1.05rem;
+}
+
+.trend-bar-bg {
+    background: #202b3a;
+}
+
+.bento-badge {
+    background: rgba(129, 120, 232, 0.09);
+    border: 1px solid rgba(129, 120, 232, 0.2);
+    color: #b7b1f8;
+    box-shadow: none;
+}
+
+.bento-grid {
+    gap: 1rem;
+}
+
+.bento-card,
+.bento-card.tile-careers {
+    background: linear-gradient(145deg, #171f2b, #141b26 72%);
+    border: 1px solid rgba(190, 205, 228, 0.1);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+    backdrop-filter: none;
+}
+
+.bento-card::before {
+    display: none;
+}
+
+.bento-card:hover {
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+    transform: translateY(-2px);
+}
+
+.bento-card:hover .bento-icon-wrapper {
+    transform: none;
+}
+
+.bento-icon-wrapper {
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.bento-status-pill {
+    letter-spacing: 0.04em;
+    box-shadow: none;
+}
+
+.pattern-pill {
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.bento-careers-stats-box {
+    background: rgba(11, 16, 24, 0.45);
+    border-color: rgba(190, 205, 228, 0.1);
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+.bento-stat-mini {
+    border-color: rgba(190, 205, 228, 0.08);
+}
+
+.bento-cta-link:hover svg {
+    transform: translateX(2px);
+}
+
+.footer {
+    border-top-color: rgba(190, 205, 228, 0.1);
+    background: #0b1018;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding: 4rem 1.1rem 3.5rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.45rem, 11vw, 3.4rem);
+    }
+
+    .hero-quick-strip {
+        border-radius: 10px;
+    }
+
+    .hero-secondary-dock {
+        gap: 0.5rem;
+    }
+
+    .hero-dock-pill {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.78rem;
+    }
+}
+
 @media (max-width: 768px) {
     .home-container {
         padding-top: 70px;

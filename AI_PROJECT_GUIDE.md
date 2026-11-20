@@ -20,6 +20,10 @@ The actual Git repository root is this directory (`vite-project/`), not its pare
 - Docker multi-stage build: Node builder image followed by Nginx static hosting
 - Vercel SPA rewrite configuration in `vercel.json`
 
+## Visual design system
+
+The interface uses a dark slate foundation with a restrained violet-to-blue brand gradient. Shared palette, typography, spacing, radius, and shadow tokens live in `src/index.css`; route-specific layouts live beside each page. The landing page and navigation favor matte surfaces, readable type, and small interaction states over animated particles, magnetic hover, or glowing outlines. Preserve the reduced-motion behavior when adding motion, and use semantic green/amber/red for status feedback instead of making every element an accent color.
+
 ## Run and maintain
 
 Run commands from the repository root (`vite-project/`):
@@ -107,6 +111,11 @@ Question progress is stored locally per Firebase UID and synced to Firestore for
 ### Careers tracker
 
 - `src/pages/Careers.jsx`, `Careers.css`: searchable and filterable company directory, wishlist/application/interview/offer status, notes, custom companies, and CSV export.
+- The Careers route now opens on a live openings view with role/location search, remote filter, direct ATS apply links, and a per-user local application tracker. The company directory remains available as a second view.
+- `src/utils/jobFeedService.js` calls the authenticated `getLiveJobOpenings` Firebase callable in `us-central1`; the browser does not call external ATS feeds directly.
+- `functions/src/jobBoards.js` is the allowlist of company ATS boards to import. `functions/src/index.js` refreshes those public feeds every six hours, normalizes listings into Firestore `job_openings`, marks removed postings inactive, and serves active postings to signed-in users. Supported feed providers are Greenhouse, Lever global, Lever EU, and Ashby.
+- `functions/src/jobBoards.js` includes the verified OpenAI Ashby public board as a starter feed. `LIVE_JOBS_SETUP.md` explains how to add other boards, deploy the Firebase Functions, and run the initial refresh.
+- Job application status is stored in browser `localStorage` under a UID-specific key; it is currently per browser/device and is not synchronized between devices. Opening an apply link does not mark a role as applied; users can do that explicitly.
 - `src/data/careerCompaniesData.json`: bundled directory data imported by the page; it must remain available in a clean checkout/build.
 - `scripts/generate-career-data.js`: parses the `moreThanFAANGM-main/README.md` listing from `../../moreThanFAANGM-main.zip` and writes `src/data/careerCompaniesData.json`.
 
@@ -150,9 +159,10 @@ Generated files are runtime inputs, not disposable build caches. Before changing
 
 ## Backend/data model summary
 
-There is no custom API server. Current cloud services are accessed from frontend modules:
+There is no general-purpose API server. Current cloud services are accessed from frontend modules, with a small Cloud Functions backend for the Careers feed:
 
 - Firebase Auth: email/password authentication.
+- Firebase Cloud Functions: scheduled public ATS feed sync and authenticated callable for cached job openings (`functions/`). Scheduled Functions require Blaze billing / Cloud Scheduler.
 - Firestore: `users`, `progress`, `userProgress`, `pattern_progress`, `topic_notes`, `user_chats`, `clubs`, and `direct_messages` are referenced by source.
 - AWS S3: topic-note PDF uploads and deletes.
 - Gemini: chat, floating assistant, and code review.

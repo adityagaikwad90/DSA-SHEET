@@ -141,6 +141,51 @@
   --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Product theme: restrained ink surfaces with a violet-to-blue brand accent. */
+:root {
+  --palette-60-base: #0d1119;
+  --palette-60-surface: #151c27;
+  --palette-60-surface-hover: #1b2533;
+  --palette-60-elevated: #202b3a;
+  --palette-60-border: rgba(190, 205, 228, 0.1);
+  --palette-30-text-primary: #edf1f7;
+  --palette-30-text-secondary: #a6b1c2;
+  --palette-30-text-muted: #77859a;
+  --palette-30-indigo: #8178e8;
+  --palette-30-indigo-light: #a29af5;
+  --palette-30-sky: #73afe3;
+  --palette-30-card-border: rgba(129, 120, 232, 0.2);
+  --palette-10-accent: #8290f6;
+  --palette-10-accent-hover: #6f7de8;
+  --palette-10-accent-warm: #d5a86b;
+  --palette-10-accent-glow: rgba(130, 144, 246, 0.2);
+  --color-bg-secondary: #101620;
+  --color-bg-tertiary: #18212e;
+  --color-border: #293444;
+  --color-border-hover: rgba(130, 144, 246, 0.45);
+  --color-primary: #8290f6;
+  --color-primary-hover: #6f7de8;
+  --color-secondary: #d5a86b;
+  --color-secondary-hover: #c39558;
+  --gradient-primary: linear-gradient(125deg, #7771e8 0%, #5798d5 100%);
+  --gradient-hover: linear-gradient(125deg, #6e68db 0%, #4d8bc7 100%);
+  --gradient-amber: linear-gradient(125deg, #d5a86b 0%, #bd8452 100%);
+  --gradient-text: linear-gradient(115deg, #edf1f7 0%, #aaa4f4 55%, #82b5e6 100%);
+  --gradient-heading-alt: linear-gradient(115deg, #edf1f7 0%, #a29af5 60%, #73afe3 100%);
+  --gradient-card-surface: linear-gradient(145deg, #171e2a 0%, #131a25 100%);
+  --gradient-card-hover: linear-gradient(145deg, rgba(129, 120, 232, 0.08) 0%, #171e2a 75%);
+  --gradient-border-highlight: linear-gradient(135deg, rgba(129, 120, 232, 0.4), rgba(115, 175, 227, 0.25));
+  --color-success: #73b99b;
+  --color-success-text: #83c6a7;
+  --color-accent: #73b99b;
+  --color-accent-text: #83c6a7;
+  --font-size-4xl: 2.65rem;
+  --border-radius-sm: 7px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 14px;
+  --shadow-glow: 0 0 18px rgba(129, 120, 232, 0.1);
+}
+
 *,
 *::before,
 *::after {
@@ -166,11 +211,7 @@ div[id] {
 body {
   font-family: var(--font-family-sans);
   background-color: var(--color-bg-primary);
-  background-image: 
-    radial-gradient(circle at 50% -10%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
-    radial-gradient(circle at 85% 20%, rgba(16, 185, 129, 0.06) 0%, transparent 45%),
-    radial-gradient(circle at 15% 55%, rgba(56, 189, 248, 0.04) 0%, transparent 40%);
-  background-attachment: fixed;
+  background-image: radial-gradient(ellipse at 50% -24%, rgba(103, 113, 195, 0.11), transparent 58%);
   color: var(--color-text-primary);
   line-height: 1.55;
   min-height: 100vh;
@@ -253,12 +294,12 @@ button {
 }
 
 .gradient-text-animated {
-  background: linear-gradient(135deg, #ffffff 0%, #818cf8 25%, #10b981 50%, #38bdf8 75%, #ffffff 100%);
-  background-size: 250% auto;
+  background: var(--gradient-text);
+  background-size: 100% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: textGradientFlow 8s ease infinite;
+  animation: none;
 }
 
 /* 2. Rotating Border Beam for Eyebrow Pills */
@@ -660,4 +701,32 @@ textarea:focus-visible {
     display: inline-flex;
     align-items: center;
   }
+}
+
+/* Shared form controls and interaction states. */
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  color: var(--color-text-primary);
+  border-color: rgba(190, 205, 228, 0.14);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+::selection {
+  background: rgba(129, 120, 232, 0.34);
+}
+
+:focus-visible {
+  outline-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(130, 144, 246, 0.14);
 }

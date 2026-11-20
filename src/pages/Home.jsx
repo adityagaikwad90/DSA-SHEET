@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import {
   ArrowRight,
   CheckCircle2,
@@ -25,7 +25,6 @@ import {
 import { useAuth } from '../context/AuthContext';
 import { DSA_TOPICS } from '../constants';
 import TodoList from '../components/TodoList';
-import Magnetic from '../components/Magnetic';
 import { loadLocalSolved, loadSavedRecords } from '../utils/userProgress';
 import { getDueReviewQuestions } from '../utils/spacedRepetition';
 import './Home.css';
@@ -69,42 +68,11 @@ const TRENDS_DATA = [
   }
 ];
 
-const Particles = () => {
-  return (
-    <div className="particles-container">
-      {[...Array(25)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="particle"
-          initial={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
-            opacity: 0,
-            scale: Math.random() * 0.5 + 0.5,
-          }}
-          animate={{
-            y: [null, Math.random() * -150],
-            opacity: [0, 0.4, 0],
-          }}
-          transition={{
-            duration: Math.random() * 20 + 15, // Slower, more floating
-            repeat: Infinity,
-            ease: "linear",
-            delay: Math.random() * 10,
-          }}
-        />
-      ))}
-    </div>
-  );
-};
-
 const MotionLink = motion.create ? motion.create(Link) : motion(Link);
 
 const Home = () => {
   const { currentUser } = useAuth();
   const trendsContainerRef = React.useRef(null);
-  const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 200]);
   const [stats, setStats] = React.useState({ solvedCount: 0, dueCount: 0, streakDays: 0 });
 
   React.useEffect(() => {
@@ -121,7 +89,9 @@ const Home = () => {
         try {
           const key = new Date(d).toISOString().split('T')[0];
           counts[key] = (counts[key] || 0) + 1;
-        } catch (e) {}
+        } catch {
+          // Ignore malformed dates from older local progress records.
+        }
       });
 
       const today = new Date();
@@ -232,15 +202,8 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <Particles />
-
       {/* Hero Section */}
       <section className="hero-section">
-        {/* Subtle Ambient Background Blobs (Tri-color Palette Depth) */}
-        <div className="hero-ambient-blob hero-ambient-blob-1" aria-hidden="true"></div>
-        <div className="hero-ambient-blob hero-ambient-blob-2" aria-hidden="true"></div>
-        <div className="hero-ambient-blob hero-ambient-blob-3" aria-hidden="true"></div>
-
         <motion.div
           className="hero-content"
           variants={heroContainerVariants}
@@ -249,9 +212,8 @@ const Home = () => {
         >
           <motion.div variants={heroHeadingVariants}>
             <div className="hero-eyebrow-pill">
-              <img src="/dsa-logo.png" alt="" className="hero-eyebrow-logo" />
-              <Sparkles size={14} className="eyebrow-icon live-pulse-dot" />
-              <span>Next-Gen Technical Interview System</span>
+              <Sparkles size={14} className="eyebrow-icon" />
+              <span>YOUR INTERVIEW PREP WORKSPACE</span>
             </div>
             <h1 className="hero-title">
               {currentUser ? (
@@ -263,15 +225,15 @@ const Home = () => {
                 </>
               ) : (
                 <>
-                  <span className="hero-title-solid">A Smarter Way to </span>
-                  <span className="text-gradient gradient-text-animated">Master DSA & Architecture</span>
+                  <span className="hero-title-solid">Build confidence for </span>
+                  <span className="text-gradient gradient-text-animated">technical interviews</span>
                 </>
               )}
             </h1>
           </motion.div>
 
           <motion.p className="hero-subtitle" variants={heroSubtextVariants}>
-            Master 16 core algorithm patterns, distributed system design blueprints, and high-scale computer networking with AI-guided assistance.
+            Practice coding patterns, review system design, and keep your progress in one place. Get an AI hint when you need a nudge.
           </motion.p>
 
           {/* Quick Momentum & Spaced Review Strip */}
@@ -297,7 +259,6 @@ const Home = () => {
           {/* Action Buttons: Clear Hero CTA + Secondary Action Dock */}
           <motion.div className="hero-actions-wrapper" variants={heroButtonsVariants}>
             <div className="hero-primary-action">
-              <Magnetic>
                 <MotionLink
                   to="/questions"
                   className="btn btn-primary hero-btn-primary"
@@ -306,11 +267,9 @@ const Home = () => {
                 >
                   <span>Start Solving</span> <ChevronRight size={18} />
                 </MotionLink>
-              </Magnetic>
             </div>
 
             <div className="hero-secondary-dock">
-              <Magnetic>
                 <MotionLink
                   to="/interview-hub?tab=dsa"
                   className="hero-dock-pill"
@@ -320,9 +279,7 @@ const Home = () => {
                   <Layers size={15} className="dock-icon text-emerald" />
                   <span>16 Patterns Hub</span>
                 </MotionLink>
-              </Magnetic>
 
-              <Magnetic>
                 <MotionLink
                   to="/interview-hub?tab=system-design"
                   className="hero-dock-pill"
@@ -332,9 +289,7 @@ const Home = () => {
                   <Cpu size={15} className="dock-icon text-amber" />
                   <span>System Design</span>
                 </MotionLink>
-              </Magnetic>
 
-              <Magnetic>
                 <MotionLink
                   to="/careers"
                   className="hero-dock-pill"
@@ -344,9 +299,7 @@ const Home = () => {
                   <Briefcase size={15} className="dock-icon text-emerald" />
                   <span>480+ Careers</span>
                 </MotionLink>
-              </Magnetic>
 
-              <Magnetic>
                 <MotionLink
                   to="/news"
                   className="hero-dock-pill"
@@ -356,9 +309,7 @@ const Home = () => {
                   <Globe size={15} className="dock-icon text-sky" />
                   <span>Tech Radar</span>
                 </MotionLink>
-              </Magnetic>
 
-              <Magnetic>
                 <MotionLink
                   to="/dsa-vault"
                   className="hero-dock-pill"
@@ -368,7 +319,6 @@ const Home = () => {
                   <BookOpen size={15} className="dock-icon text-indigo" />
                   <span>Topic Notes</span>
                 </MotionLink>
-              </Magnetic>
             </div>
           </motion.div>
         </motion.div>
@@ -383,8 +333,8 @@ const Home = () => {
           transition={{ duration: 0.7 }}
         >
           <div className="section-header text-center mb-md">
-            <h2 className="section-title">Developer Trends <span className="text-primary">2024</span></h2>
-            <p className="section-subtitle">Insights from Stack Overflow Developer Survey</p>
+            <h2 className="section-title">Developer survey snapshot</h2>
+            <p className="section-subtitle">Selected results from the Stack Overflow Developer Survey 2024.</p>
           </div>
 
           <div className="trends-scroll-wrapper">
@@ -443,17 +393,17 @@ const Home = () => {
           <div className="section-header text-center mb-md">
             <div className="bento-badge">
               <Sparkles size={14} />
-              <span>Engineered for Mastery</span>
+              <span>One focused workspace</span>
             </div>
-            <h2 className="section-title">Everything You Need To Crack Top Tier Roles</h2>
-            <p className="section-subtitle">A cohesive developer ecosystem combining algorithm patterns, distributed system design, and AI assistance.</p>
+            <h2 className="section-title">Prepare for every part of the interview</h2>
+            <p className="section-subtitle">Practice coding, review core concepts, and keep your preparation organized.</p>
           </div>
 
           <div className="bento-grid">
             {/* Tile 1: 16 DSA Coding Patterns (Span 7) */}
             <motion.div
               className="bento-card tile-patterns"
-              whileHover={{ y: -4, borderColor: "rgba(16, 185, 129, 0.5)" }}
+              whileHover={{ y: -2 }}
               transition={{ duration: 0.2 }}
             >
               <div className="bento-card-header">
@@ -482,7 +432,7 @@ const Home = () => {
             {/* Tile 2: System Design Blueprints (Span 5) */}
             <motion.div
               className="bento-card tile-system-design"
-              whileHover={{ y: -4, borderColor: "rgba(245, 158, 11, 0.5)" }}
+              whileHover={{ y: -2 }}
               transition={{ duration: 0.2 }}
             >
               <div className="bento-card-header">
@@ -509,7 +459,7 @@ const Home = () => {
             {/* Tile 3: 7-Layer OSI & Networking (Span 4) */}
             <motion.div
               className="bento-card tile-networking"
-              whileHover={{ y: -4, borderColor: "rgba(56, 189, 248, 0.5)" }}
+              whileHover={{ y: -2 }}
               transition={{ duration: 0.2 }}
             >
               <div className="bento-card-header">
@@ -535,16 +485,16 @@ const Home = () => {
             {/* Tile 4: 500+ Verified FAANG Solutions (Span 4) */}
             <motion.div
               className="bento-card tile-faang"
-              whileHover={{ y: -4, borderColor: "rgba(99, 102, 241, 0.5)" }}
+              whileHover={{ y: -2 }}
               transition={{ duration: 0.2 }}
             >
               <div className="bento-card-header">
                 <div className="bento-icon-wrapper indigo">
                   <Award size={24} />
                 </div>
-                <span className="bento-status-pill indigo">FAANG Archives</span>
+                <span className="bento-status-pill indigo">Interview Archive</span>
               </div>
-              <h3 className="bento-card-title">500+ Verified Solutions</h3>
+              <h3 className="bento-card-title">500+ Interview Solutions</h3>
               <p className="bento-card-desc">
                 Real solutions tested across Google, Meta, Amazon, Microsoft, and Apple with line-by-line syntax viewers and direct LeetCode practice links.
               </p>
@@ -562,7 +512,7 @@ const Home = () => {
             {/* Tile 5: Neural AI Copilot Assistant (Span 4) */}
             <motion.div
               className="bento-card tile-copilot"
-              whileHover={{ y: -4, borderColor: "rgba(16, 185, 129, 0.5)" }}
+              whileHover={{ y: -2 }}
               transition={{ duration: 0.2 }}
             >
               <div className="bento-card-header">
@@ -571,7 +521,7 @@ const Home = () => {
                 </div>
                 <span className="bento-status-pill emerald">Floating Copilot</span>
               </div>
-              <h3 className="bento-card-title">Neural AI Copilot</h3>
+              <h3 className="bento-card-title">AI Study Assistant</h3>
               <p className="bento-card-desc">
                 Ask questions at any moment with hotkey <kbd>Ctrl + /</kbd>. Offers dry-run debugging, algorithmic hints, and time complexity reviews without spoiling the solution.
               </p>
@@ -588,7 +538,7 @@ const Home = () => {
             {/* Tile 6: 480+ Product Companies & Careers Tracker (Span 12 Showcase) */}
             <motion.div
               className="bento-card tile-careers"
-              whileHover={{ y: -4, borderColor: "rgba(16, 185, 129, 0.5)" }}
+              whileHover={{ y: -2 }}
               transition={{ duration: 0.2 }}
             >
               <div className="bento-careers-content">
@@ -597,11 +547,11 @@ const Home = () => {
                     <div className="bento-icon-wrapper emerald">
                       <Briefcase size={24} />
                     </div>
-                    <span className="bento-status-pill emerald">480+ Verified Portals</span>
+                    <span className="bento-status-pill emerald">480+ Career Pages</span>
                   </div>
                   <h3 className="bento-card-title">Careers & Job Application Tracker</h3>
                   <p className="bento-card-desc">
-                    Direct verified application links to 480+ product companies, unicorn startups, and quant funds. Track your wishlist, applications, interview rounds, and offers in one unified dashboard.
+                    Browse career pages from product companies, startups, and quant firms. Track your wishlist, applications, interviews, and offers in one place.
                   </p>
                   <div className="bento-pattern-chips">
                     <span className="pattern-pill">Direct Apply</span>
@@ -625,8 +575,8 @@ const Home = () => {
                     <span className="mini-stat-lbl">Tech Sectors</span>
                   </div>
                   <div className="bento-stat-mini">
-                    <span className="mini-stat-val text-amber">100%</span>
-                    <span className="mini-stat-lbl">Verified Links</span>
+                    <span className="mini-stat-val text-amber">Direct</span>
+                    <span className="mini-stat-lbl">Career Pages</span>
                   </div>
                   <div className="bento-stat-mini">
                     <span className="mini-stat-val text-indigo">Track</span>

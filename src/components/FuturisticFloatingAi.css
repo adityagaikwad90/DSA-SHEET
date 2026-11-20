@@ -1014,3 +1014,109 @@
   }
 }
 
+/* Give the assistant the same considered, low-noise treatment as the app. */
+.orb-ambient-glow,
+.orb-orbital-ring,
+.orb-audio-waves,
+.orb-status-pill {
+  display: none;
+}
+
+.neural-orb-trigger {
+  width: 54px;
+  height: 54px;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+
+.orb-core {
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  background: var(--gradient-primary);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 24px rgba(68, 86, 157, 0.3);
+}
+
+.orb-inner-icon {
+  color: #fff;
+  filter: none;
+}
+
+.orb-unread-badge {
+  border-color: #151c27;
+  box-shadow: none;
+  animation: none;
+}
+
+.cyber-ai-hud {
+  background: #151c27;
+  border-color: rgba(190, 205, 228, 0.14);
+  border-radius: 14px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(18px);
+}
+
+.cyber-ai-hud::before,
+.hud-corner {
+  display: none;
+}
+
+.cyber-hud-header {
+  background: #111822;
+  border-bottom-color: rgba(190, 205, 228, 0.1);
+}
+
+.hud-avatar-box {
+  background: rgba(129, 120, 232, 0.12);
+  border-color: rgba(162, 154, 245, 0.24);
+  color: #b7b1f8;
+  box-shadow: none;
+}
+
+.hud-avatar-glow {
+  display: none;
+}
+
+.hud-title {
+  background: var(--gradient-heading-alt);
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+}
+
+.cyber-message-row.ai .message-sender-avatar {
+  background: rgba(129, 120, 232, 0.12);
+  border-color: rgba(162, 154, 245, 0.22);
+  color: #b7b1f8;
+  box-shadow: none;
+}
+
+.cyber-message-row.user .cyber-bubble {
+  background: linear-gradient(125deg, rgba(119, 113, 232, 0.25), rgba(87, 152, 213, 0.18));
+  border-color: rgba(162, 154, 245, 0.2);
+  box-shadow: none;
+}
+
+.cyber-message-row.ai .cyber-bubble {
+  background: #111822;
+  border-color: rgba(190, 205, 228, 0.1);
+  box-shadow: none;
+}
+
+.input-glow-wrapper:focus-within {
+  border-color: rgba(162, 154, 245, 0.45);
+  box-shadow: 0 0 0 3px rgba(130, 144, 246, 0.12);
+}
+
+.cyber-send-btn.can-send {
+  background: var(--gradient-primary);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: none;
+}
+
+.cyber-send-btn.can-send:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(68, 86, 157, 0.22);
+}
+
