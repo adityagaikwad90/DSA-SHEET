@@ -1,78 +1,356 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useState, useMemo } from 'react';
+import { motion as Motion, AnimatePresence } from 'framer-motion';
+import { useSearchParams } from 'react-router-dom';
 import {
   Search, BookOpen, CheckCircle, Clock, CircleDot, ChevronRight,
   Filter, Sparkles, Building2, Code2, ExternalLink, ArrowRight,
   RefreshCw, Check, Layers, Flame, Award, Cpu, Globe, Network,
   Activity, Database, Server, HardDrive, Terminal, SlidersHorizontal,
   Copy, ShieldAlert, Zap, ArrowUpRight, CheckCircle2, ChevronDown,
-  Layers as LayersIcon, BookCheck
+  Layers as LayersIcon, BookCheck, Radar
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import {
-  loadLocalPatternProgress,
-  savePatternProgressRecord,
-  fetchUserPatternProgressFromFirestore,
-  getPatternStatus
-} from '../utils/patternProgress';
-import dsaPatternsData from '../data/dsaPatternsData.json';
 import interviewArchiveSummary from '../data/interviewArchiveSummary.json';
 import systemDesignData from '../data/systemDesignData.json';
 import networkingData from '../data/networkingData.json';
-import dsaCoreData from '../data/dsaCoreData.json';
-import { fuzzyFilter } from '../utils/fuzzySearch';
 import './InterviewHub.css';
 
-const { patterns = [], totalPatterns = 16, totalProblems = 162 } = dsaPatternsData;
-
-const STATUS_FILTERS = [
-  { id: 'all', label: 'All Patterns' },
-  { id: 'not_started', label: 'Not Started' },
-  { id: 'learning', label: 'In Progress' },
-  { id: 'completed', label: 'Completed' }
-];
-
 const HUB_TABS = [
-  { id: 'dsa', label: 'DSA & Patterns', icon: Layers, badge: `${totalPatterns} Patterns` },
+  { id: 'career-roadmaps', label: 'Career Roadmaps', icon: Layers, badge: '19 Job Paths' },
+  { id: 'tech-radar', label: 'Emerging Tech Radar', icon: Radar, badge: '8 Tools to Explore' },
   { id: 'system-design', label: 'System Design', icon: Cpu, badge: 'Awesome Guide' },
   { id: 'networking', label: 'Networking', icon: Globe, badge: '7-Layer OSI' },
   { id: 'archive', label: 'Company Archive', icon: Building2, badge: '500+ Solutions' }
 ];
 
-const InterviewHub = ({ defaultTab = 'dsa' }) => {
-  const { currentUser } = useAuth();
-  const navigate = useNavigate();
+const CAREER_ROADMAPS = [
+  {
+    id: 'devops', title: 'DevOps Engineer', level: 'Core path', summary: 'Build, deploy, operate, and improve reliable software delivery systems.',
+    stages: [
+      ['Linux & shell', 'Ubuntu, Bash', 'Use the command line, manage processes and permissions, inspect logs, and automate routine server tasks.'],
+      ['Networking fundamentals', 'TCP/IP, DNS, HTTP/S, SSH, TLS', 'Understand how requests travel, how services discover each other, and how to diagnose connectivity and name resolution.'],
+      ['Git & collaboration', 'Git, GitHub', 'Track changes, work with branches and pull requests, and keep infrastructure and application code reviewable.'],
+      ['Scripting', 'Python or Bash', 'Automate repetitive operational work and write small utilities. Choose one language first; Python is a flexible default.'],
+      ['Cloud foundations', 'AWS, Azure, or GCP', 'Learn identity and access, virtual networks, compute, storage, load balancing, and managed services in one cloud first.'],
+      ['Containers', 'Docker, OCI images', 'Package an application and its runtime consistently, then run it locally and in a server environment.'],
+      ['Infrastructure as Code', 'Terraform', 'Provision repeatable cloud infrastructure from version-controlled configuration; learn state and modules.'],
+      ['CI/CD', 'GitHub Actions; Jenkins where used', 'Automate build, test, security checks, and releases. Start with one CI platform and learn deployment strategies.'],
+      ['Kubernetes', 'Kubernetes, Helm', 'Run and scale containerized workloads; understand deployments, services, config, secrets, ingress, and resource limits.'],
+      ['Observability', 'Prometheus, Grafana, Loki/OpenTelemetry', 'Collect metrics, logs, and traces; build dashboards and alerts that help diagnose service health.'],
+      ['GitOps & delivery', 'Argo CD', 'Keep desired Kubernetes state in Git and reconcile deployments automatically. Learn after basic Kubernetes and CI/CD.'],
+      ['Reliability & security', 'SLOs, incident response, IAM, secrets management', 'Practice safe releases, least privilege, backups, rollback, and clear incident runbooks. These are ongoing practices.']
+    ]
+  },
+  {
+    id: 'cloud', title: 'Cloud Engineer', level: 'Core path', summary: 'Design and operate secure, reliable cloud infrastructure.',
+    stages: [
+      ['Linux & networking', 'Linux, TCP/IP, DNS, HTTP/S', 'Build the foundation for troubleshooting servers and cloud connectivity.'],
+      ['Choose one cloud', 'AWS, Azure, or GCP', 'Learn IAM, virtual networks, compute, storage, DNS, load balancers, and managed databases in one provider.'],
+      ['Cloud security', 'IAM, KMS, security groups', 'Apply least privilege, encryption, network boundaries, and audit logging.'],
+      ['Infrastructure as Code', 'Terraform', 'Create repeatable environments and manage changes through review.'],
+      ['Containers & platform basics', 'Docker; Kubernetes is role-dependent', 'Understand application packaging and learn orchestration when the target role uses it.'],
+      ['Operations & cost', 'Cloud monitoring, budgets, backups', 'Monitor availability and spend, test recovery, and document operational procedures.']
+    ]
+  },
+  {
+    id: 'backend', title: 'Backend Engineer', level: 'Core path', summary: 'Build APIs and services that store data and serve product features reliably.',
+    stages: [
+      ['Programming foundations', 'Java, Python, Go, JavaScript/TypeScript, or C#', 'Choose one language used in your target market and learn testing, error handling, and concurrency basics.'],
+      ['Web & API fundamentals', 'HTTP, REST, JSON, authentication', 'Design endpoints, validate input, handle errors, and understand sessions and tokens.'],
+      ['Databases', 'PostgreSQL; Redis as needed', 'Model relational data, write SQL, use indexes and transactions, and learn caching when useful.'],
+      ['Testing & code quality', 'Unit, integration, API tests', 'Catch regressions and make service changes safer to review and release.'],
+      ['Deployment basics', 'Git, Docker, CI/CD, one cloud', 'Ship a service, configure environments and secrets, and understand logs and health checks.'],
+      ['Scale & system design', 'Queues, caching, load balancing', 'Learn reliability and scaling patterns as your projects and target roles require them.']
+    ]
+  },
+  {
+    id: 'frontend', title: 'Frontend Engineer', level: 'Core path', summary: 'Create accessible, responsive web applications that work well across devices.',
+    stages: [
+      ['Web foundations', 'HTML, CSS, JavaScript', 'Build semantic pages, responsive layouts, and interactions before adding a framework.'],
+      ['Type-safe application code', 'TypeScript', 'Catch common errors and make larger interfaces easier to change.'],
+      ['UI framework', 'React; Next.js where appropriate', 'Build reusable components, manage state, and learn routing and data loading.'],
+      ['Browser & accessibility', 'DOM, DevTools, WCAG basics', 'Debug rendering and network issues and make interfaces usable with keyboards and assistive technology.'],
+      ['Testing & delivery', 'Vitest/Jest, Playwright, GitHub Actions', 'Test behavior in components and browsers, then automate checks and deployment.'],
+      ['Performance & APIs', 'Web Vitals, HTTP, REST/GraphQL', 'Keep pages fast and connect the UI to services safely.']
+    ]
+  },
+  {
+    id: 'data', title: 'Data Engineer', level: 'Core path', summary: 'Build dependable systems that collect, transform, and serve data.',
+    stages: [
+      ['Programming & SQL', 'Python, SQL', 'Use Python for data tasks and SQL to query and model relational data.'],
+      ['Data modeling & storage', 'PostgreSQL, warehouse concepts', 'Learn schemas, partitions, dimensional modeling, and data quality checks.'],
+      ['Pipelines & orchestration', 'Airflow or a managed equivalent', 'Schedule, retry, monitor, and backfill data workflows.'],
+      ['Distributed processing', 'Spark; Kafka for streaming roles', 'Process larger datasets or event streams when the use case needs distributed systems.'],
+      ['Cloud data platform', 'AWS, Azure, or GCP; warehouse such as BigQuery/Snowflake', 'Learn the services and warehouse used by your target employers.'],
+      ['Testing & operations', 'Git, CI/CD, data observability', 'Version pipelines, validate data contracts, and alert on freshness or quality failures.']
+    ]
+  },
+  {
+    id: 'security', title: 'Cybersecurity Engineer', level: 'Core path', summary: 'Protect systems by understanding infrastructure, threats, and practical defensive controls.',
+    stages: [
+      ['IT foundations', 'Linux, Windows, networking, DNS, HTTP/S', 'Understand the systems and protocols that security teams need to protect.'],
+      ['Scripting & Git', 'Python or Bash, Git', 'Automate investigation tasks and safely manage scripts and configuration.'],
+      ['Security fundamentals', 'Identity, encryption, threat modeling', 'Learn access control, common attack patterns, secure configuration, and risk-based thinking.'],
+      ['Defensive tooling', 'SIEM, endpoint detection, vulnerability scanners', 'Collect and investigate events, prioritize findings, and document response steps.'],
+      ['Cloud & application security', 'One cloud IAM model, OWASP Top 10', 'Review permissions and configurations and understand common web application risks.'],
+      ['Practice & response', 'Labs, incident runbooks, basic forensics', 'Build hands-on investigation skills in authorized practice environments and learn clear incident handling.']
+    ]
+  },
+  {
+    id: 'ai-ml', title: 'AI / Machine Learning Engineer', level: 'AI path', summary: 'Turn data and trained models into tested, useful software features.',
+    resources: [{ label: 'PyTorch: Learn the Basics', url: 'https://docs.pytorch.org/tutorials/beginner/basics/intro.html' }],
+    stages: [
+      ['Programming & math foundations', 'Python, NumPy, linear algebra, probability', 'Write clear Python and build enough statistics and linear algebra to understand model behavior.'],
+      ['Data work', 'SQL, pandas, notebooks', 'Collect, clean, explore, and split data carefully; check for leakage and biased samples.'],
+      ['Classical machine learning', 'scikit-learn', 'Learn regression, classification, feature engineering, evaluation metrics, and validation before deep learning.'],
+      ['Deep learning', 'PyTorch', 'Build and train neural networks; understand tensors, loss functions, optimizers, and GPU basics.'],
+      ['Model evaluation', 'Precision/recall, calibration, error analysis', 'Compare models against a simple baseline and inspect failures across important data groups.'],
+      ['Serving & monitoring', 'FastAPI, Docker, cloud, model monitoring', 'Expose a model through an API, version it, measure latency and quality, and monitor changing input data.']
+    ]
+  },
+  {
+    id: 'genai', title: 'Generative AI Application Engineer', level: 'AI path', summary: 'Build reliable applications around language and multimodal models.',
+    resources: [{ label: 'Hugging Face LLM Course', url: 'https://huggingface.co/learn/llm-course/en/chapter1/1' }],
+    stages: [
+      ['Application programming', 'Python or TypeScript, APIs, Git', 'Build a small service or web app and learn request handling, authentication, and error handling.'],
+      ['LLM foundations', 'Tokens, context windows, prompting, model APIs', 'Understand model inputs and outputs, latency, cost, and the limits of generated answers.'],
+      ['Retrieval & data grounding', 'Embeddings, vector search, chunking, RAG', 'Connect responses to trusted source material and return citations or retrieved context where appropriate.'],
+      ['Tool use & workflows', 'Structured outputs, function calling, agent workflows', 'Let a model call narrowly scoped application functions and validate every action and result.'],
+      ['Evaluation & safety', 'Test sets, tracing, prompt injection defenses, PII controls', 'Measure answer quality and failures, protect data, and require human approval for consequential actions.'],
+      ['Production delivery', 'Caching, rate limits, observability, cloud deployment', 'Control cost and latency, monitor model and retrieval behavior, and provide fallbacks when providers fail.']
+    ]
+  },
+  {
+    id: 'data-scientist', title: 'Data Scientist', level: 'AI & analytics path', summary: 'Use statistics and machine learning to answer questions and support decisions.',
+    stages: [
+      ['Statistics & Python', 'Python, probability, experimentation', 'Learn distributions, uncertainty, sampling, and how to reason from data rather than anecdotes.'],
+      ['Data querying', 'SQL, pandas, notebooks', 'Extract, clean, join, and document datasets; check data quality before analysis.'],
+      ['Exploratory analysis', 'Visualization, cohort analysis', 'Find patterns and explain them clearly with charts, assumptions, and limitations.'],
+      ['Modeling', 'scikit-learn, supervised and unsupervised learning', 'Build interpretable baselines, select metrics tied to the use case, and avoid data leakage.'],
+      ['Experimentation', 'A/B testing, causal inference basics', 'Design experiments, estimate effects, and distinguish correlation from evidence of impact.'],
+      ['Communication & delivery', 'Jupyter, dashboards, version control', 'Turn findings into recommendations and collaborate with engineers to operationalize useful models.']
+    ]
+  },
+  {
+    id: 'data-analyst', title: 'Data Analyst / BI Analyst', level: 'Analytics path', summary: 'Turn business data into clear metrics, dashboards, and useful decisions.',
+    stages: [
+      ['Spreadsheet & data basics', 'Excel or Google Sheets, data types, data quality', 'Clean and validate tabular data and learn how business metrics are defined.'],
+      ['Querying', 'SQL, joins, aggregations, window functions', 'Retrieve and summarize data from relational databases with repeatable queries.'],
+      ['Analysis & statistics', 'Descriptive statistics, cohorts, funnels', 'Compare segments and trends carefully and explain what the data does and does not show.'],
+      ['Visualization & BI', 'Power BI or Tableau', 'Build dashboards with clear definitions, useful filters, and charts that answer specific questions.'],
+      ['Automation & reproducibility', 'Python/pandas optional, scheduled refreshes', 'Automate repeated reporting and document data sources and transformation steps.'],
+      ['Communication & portfolio', 'Business writing, stakeholder questions', 'Present findings with assumptions, recommendations, and measurable next steps.']
+    ]
+  },
+  {
+    id: 'mlops', title: 'MLOps Engineer', level: 'AI operations path', summary: 'Automate the lifecycle of training, validating, deploying, and monitoring machine learning systems.',
+    resources: [{ label: 'Google Cloud: MLOps architecture', url: 'https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning' }],
+    stages: [
+      ['Engineering foundations', 'Python, Git, Linux, testing', 'Write modular code and understand environments, source control, and automated checks.'],
+      ['Cloud & containers', 'AWS, Azure, or GCP; Docker', 'Package repeatable training and serving environments and learn one cloud provider’s storage, compute, and identity services.'],
+      ['ML workflow basics', 'Datasets, experiments, model evaluation', 'Understand how data, training code, metrics, and model artifacts move through a real ML project.'],
+      ['Pipelines & orchestration', 'Kubeflow, MLflow, or managed platform tools', 'Automate repeatable data preparation, training, validation, and model registration. Pick tools used by target employers.'],
+      ['CI/CD/CT for ML', 'GitHub Actions, Jenkins, pipeline runners', 'Test code, data schemas, and models; automate pipeline releases and scheduled or triggered retraining.'],
+      ['Serving & observability', 'Model registry, API serving, Prometheus/Grafana', 'Deploy approved models and watch latency, errors, input drift, and model quality over time.'],
+      ['Governance & rollback', 'Lineage, access controls, approval gates', 'Track which data and code produced each model and make promotion or rollback auditable.']
+    ]
+  },
+  {
+    id: 'qa-sdet', title: 'QA Automation Engineer / SDET', level: 'Testing path', summary: 'Design automated checks that give teams fast, trustworthy feedback about software quality.',
+    resources: [
+      { label: 'Playwright: Getting started', url: 'https://playwright.dev/docs/intro' },
+      { label: 'Selenium: Test automation overview', url: 'https://www.selenium.dev/documentation/en/introduction/on_test_automation/' }
+    ],
+    stages: [
+      ['Testing foundations', 'Test design, risk, exploratory testing', 'Learn what to test, how to prioritize risk, and how to write clear reproducible defect reports.'],
+      ['Programming & version control', 'Java, JavaScript/TypeScript, or Python; Git', 'Choose one language used by your target teams and build maintainable test code.'],
+      ['Unit & API testing', 'JUnit/pytest/Jest, Postman, REST', 'Test business rules and service contracts at layers that run quickly and fail with useful messages.'],
+      ['Web end-to-end automation', 'Playwright or Selenium', 'Automate a small set of critical user journeys across browsers; favor stable user-visible checks.'],
+      ['Test data & environments', 'Fixtures, mocks, containers', 'Make tests isolated and repeatable, and control dependencies that cause flaky results.'],
+      ['CI & reporting', 'GitHub Actions/Jenkins, test reports', 'Run checks on pull requests, publish results, and help teams diagnose failures quickly.']
+    ]
+  },
+  {
+    id: 'performance-test', title: 'Performance Test Engineer', level: 'Testing path', summary: 'Find capacity, latency, and reliability limits before users encounter them.',
+    resources: [{ label: 'Grafana k6: Load testing websites', url: 'https://grafana.com/docs/k6/latest/testing-guides/load-testing-websites/' }],
+    stages: [
+      ['Testing & web foundations', 'HTTP, APIs, SQL, Linux basics', 'Understand request flows and how to inspect application and server behavior.'],
+      ['Performance concepts', 'Latency percentiles, throughput, concurrency', 'Learn how to define realistic workloads and interpret p95/p99 latency and error rates.'],
+      ['Load test scripting', 'k6 or JMeter', 'Write repeatable smoke, average-load, stress, and soak tests with clear pass thresholds.'],
+      ['Workload modeling', 'User journeys, test data, ramp patterns', 'Model realistic traffic and use test systems you are authorized to load.'],
+      ['Observability & diagnosis', 'Grafana, Prometheus, logs, traces', 'Correlate test results with service metrics to find bottlenecks rather than just report slowdowns.'],
+      ['Automation & communication', 'CI pipelines, dashboards, reports', 'Run safe baseline checks in delivery pipelines and explain capacity risks and next steps.']
+    ]
+  },
+  {
+    id: 'rpa', title: 'RPA / Business Automation Developer', level: 'Automation path', summary: 'Automate repeatable business processes across desktop apps, web apps, and APIs.',
+    resources: [{ label: 'UiPath Studio: Automation projects', url: 'https://docs.uipath.com/studio/standalone/latest/user-guide/about-automation-projects' }],
+    stages: [
+      ['Process analysis', 'Process maps, exception cases, business rules', 'Understand the full workflow and identify where automation is safe and worthwhile.'],
+      ['Workflow programming', 'UiPath, Power Automate, or Python', 'Choose a platform used by target employers and create small, readable automations.'],
+      ['UI & API automation', 'Selectors, browser automation, REST APIs', 'Prefer supported APIs when available; use robust selectors and handle changing interfaces carefully.'],
+      ['Data & documents', 'Excel/CSV, SQL, OCR where needed', 'Validate inputs and outputs and use document extraction only where the process requires it.'],
+      ['Reliability & exceptions', 'Retries, queues, logging, human review', 'Handle timeouts and unexpected cases explicitly; send uncertain or sensitive cases to a person.'],
+      ['Deploy & operate', 'Orchestrator, credentials vault, monitoring', 'Publish versioned workflows, protect credentials, and track failures and business outcomes.']
+    ]
+  },
+  {
+    id: 'mobile', title: 'Mobile App Engineer', level: 'Application path', summary: 'Build, test, and ship applications for Android and iOS.',
+    resources: [{ label: 'Flutter: Learn and build apps', url: 'https://docs.flutter.dev/learn' }],
+    stages: [
+      ['Choose a platform', 'Kotlin/Android, Swift/iOS, or Dart/Flutter', 'Start with native development for a single platform or Flutter when cross-platform roles fit your goals.'],
+      ['Programming & UI basics', 'Language fundamentals, layouts, navigation', 'Build screens that adapt to device sizes and follow platform interaction patterns.'],
+      ['App architecture & state', 'MVVM or similar, state management', 'Separate UI, domain logic, and data access so features are testable and maintainable.'],
+      ['Networking & local storage', 'HTTP APIs, SQLite, secure storage', 'Handle offline states, loading and errors, and protect sensitive local data.'],
+      ['Testing & device quality', 'Unit/UI tests, emulator, Appium', 'Test important flows across devices and OS versions; automate device tests where valuable.'],
+      ['Release & monitoring', 'CI, app signing, store release, crash reporting', 'Build signed release artifacts, manage staged rollouts, and learn from crash and performance data.']
+    ]
+  },
+  {
+    id: 'sre', title: 'Site Reliability Engineer (SRE)', level: 'Reliability path', summary: 'Improve service reliability through measurement, automation, and operational engineering.',
+    stages: [
+      ['Systems foundations', 'Linux, networking, DNS, HTTP', 'Troubleshoot services, operating systems, and network paths methodically.'],
+      ['Programming & automation', 'Python or Go, Bash, Git', 'Automate recurring operational work and build tools that reduce manual toil.'],
+      ['Distributed systems & cloud', 'One cloud, databases, queues, caching', 'Understand failure modes, dependencies, capacity, and how services behave under load.'],
+      ['Observability', 'Metrics, logs, traces, Prometheus/Grafana', 'Instrument services and use signals to find user-facing problems quickly.'],
+      ['Reliability practices', 'SLIs, SLOs, error budgets, incident response', 'Set measurable reliability targets, respond to incidents, and turn findings into system improvements.'],
+      ['Delivery & resilience', 'CI/CD, Terraform, Kubernetes as needed', 'Make safe releases routine and practice rollback, backups, and recovery scenarios.']
+    ]
+  },
+  {
+    id: 'platform', title: 'Platform Engineer', level: 'Infrastructure path', summary: 'Build internal tools and self-service platforms that help product teams ship safely.',
+    resources: [{ label: 'CNCF: Platform engineering glossary', url: 'https://tag-app-delivery.cncf.io/wgs/platforms/glossary/' }],
+    stages: [
+      ['Software & operations foundations', 'Linux, Git, scripting, networking', 'Build enough application and infrastructure knowledge to understand developer workflows.'],
+      ['Cloud & IaC', 'AWS/Azure/GCP, Terraform', 'Create reusable, reviewed infrastructure building blocks for teams.'],
+      ['Containers & orchestration', 'Docker, Kubernetes, Helm', 'Operate a platform for deploying and managing workloads with clear security boundaries.'],
+      ['Developer experience', 'Service templates, CLI, Backstage or similar', 'Offer self-service workflows and documentation that reduce setup and handoff work.'],
+      ['Platform delivery', 'GitOps, CI/CD, Argo CD', 'Automate consistent build and deployment paths while keeping teams able to understand and control releases.'],
+      ['Security & operations', 'IAM, secrets, observability, SLOs', 'Provide secure defaults, platform health signals, support paths, and ongoing improvements based on developer needs.']
+    ]
+  },
+  {
+    id: 'devsecops', title: 'DevSecOps Engineer', level: 'Security & delivery path', summary: 'Build security checks and controls into software delivery and cloud operations.',
+    stages: [
+      ['Engineering foundations', 'Linux, Git, scripting, networking', 'Understand code, operating systems, and common service communication paths.'],
+      ['Cloud & identity security', 'One cloud IAM model, secrets, encryption', 'Learn least privilege, secure defaults, key handling, and audit trails.'],
+      ['Secure development', 'OWASP Top 10, threat modeling, code review', 'Identify common application risks early and recommend practical mitigations.'],
+      ['Pipeline security', 'SAST, dependency scanning, secret scanning, IaC scanning', 'Add actionable checks to CI and manage findings without overwhelming developers.'],
+      ['Container & runtime controls', 'Docker, Kubernetes, admission policies', 'Reduce image risk, limit workload permissions, and apply appropriate runtime policies.'],
+      ['Response & governance', 'SIEM, vulnerability management, incident runbooks', 'Prioritize remediation, track exceptions, and support a clear response process.']
+    ]
+  },
+  {
+    id: 'industrial-automation', title: 'Industrial Automation Engineer', level: 'Automation path', summary: 'Automate machines and production processes using control systems and industrial networks.',
+    stages: [
+      ['Electrical & control foundations', 'Sensors, actuators, relays, control loops', 'Understand how physical signals are measured and how control decisions affect equipment.'],
+      ['PLC programming', 'IEC 61131-3 concepts, ladder logic, structured text', 'Write and test control logic for programmable controllers using the platform common in your industry.'],
+      ['Industrial communication', 'Modbus, PROFINET, OPC UA', 'Connect controllers, drives, sensors, and supervisory systems safely and reliably.'],
+      ['HMI & SCADA', 'HMI screens, alarms, historian systems', 'Give operators clear process visibility and useful alarms without overwhelming them.'],
+      ['Safety & commissioning', 'Risk assessment, interlocks, test plans', 'Validate behavior in a controlled environment and follow site safety and change procedures.'],
+      ['Data & maintenance', 'Historian data, Python/SQL, predictive maintenance basics', 'Use production data to identify downtime patterns and support maintenance decisions.']
+    ]
+  }
+];
+
+const TECH_RADAR_CATEGORIES = ['All topics', 'Automation', 'AI building', 'Agent connections', 'Local AI', 'AI quality'];
+
+const TRENDING_TOOLS = [
+  {
+    name: 'n8n', category: 'Automation', signal: 'Hands-on workflow automation',
+    summary: 'Visual workflow automation that connects APIs and apps, with code steps and AI nodes when needed. Good for learning how to combine deterministic steps with a model call.',
+    explore: 'Build an email or form triage flow: validate input → classify with an LLM → require human approval → write the result to a test table.',
+    links: [
+      { label: 'Official docs', url: 'https://docs.n8n.io/' },
+      { label: 'Reddit: n8n AI workflow discussion', url: 'https://www.reddit.com/r/n8n/comments/1xq8e68/how_have_you_been_using_ai_while_building_in_n8n/' }
+    ]
+  },
+  {
+    name: 'Workato', category: 'Automation', signal: 'Enterprise integration & governance',
+    summary: 'Enterprise integration and automation platform for connecting business systems, APIs, and governed AI agent workflows. Explore it to understand how automation changes when permissions, audit trails, and approvals matter.',
+    explore: 'Map one business process across two systems, then identify required access controls, approval points, retries, and audit events.',
+    links: [
+      { label: 'Official Agentic docs', url: 'https://docs.workato.com/agentic/agentic.html' },
+      { label: 'Official MCP FAQ', url: 'https://docs.workato.com/en/agentic/faqs.html' }
+    ]
+  },
+  {
+    name: 'Model Context Protocol (MCP)', category: 'Agent connections', signal: 'An open integration protocol',
+    summary: 'A standard way for AI applications to connect to tools and data sources. Learn clients, servers, tool permissions, authentication, and how to keep tool access narrow.',
+    explore: 'Create a read-only MCP server for a small local dataset, connect one client, and inspect exactly what data and actions the server exposes.',
+    links: [
+      { label: 'Official introduction', url: 'https://modelcontextprotocol.io/docs/getting-started/intro' },
+      { label: 'Reddit: MCP use cases', url: 'https://www.reddit.com/r/AI_Agents/comments/1rvjo5i/anyone_using_mcp_servers_for_anything_beyond_chat/' }
+    ]
+  },
+  {
+    name: 'Emergent', category: 'AI building', signal: 'AI app prototyping',
+    summary: 'An AI app builder that turns a written product idea into a working app preview. Useful for exploring rapid prototyping, while still reviewing generated code, permissions, data handling, and deployment before real use.',
+    explore: 'Prototype a small CRUD app with login and a database; inspect the generated code and test validation, access control, and failure cases.',
+    links: [
+      { label: 'Official help center', url: 'https://help.emergent.sh/' },
+      { label: 'Reddit: lessons from AI app builders', url: 'https://www.reddit.com/r/nocode/comments/1xhqmwa/i_stopped_asking_ai_to_build_my_app_for_4_weeks/' }
+    ]
+  },
+  {
+    name: 'AI coding agents', category: 'AI building', signal: 'Active developer-tool discussion',
+    summary: 'Tools such as Claude Code, Cursor, and other IDE or terminal agents can inspect a project and help make multi-file changes. The durable skill is directing, reviewing, and validating changes—not memorizing one product.',
+    explore: 'Give an agent a small issue in a sample repository, ask it to explain its plan, review the diff, run checks, and reject changes you cannot explain.',
+    links: [
+      { label: 'Claude Code docs', url: 'https://docs.anthropic.com/en/docs/claude-code/overview' },
+      { label: 'Reddit: coding tool discussion', url: 'https://www.reddit.com/r/vibecoding/comments/1revk82/what_ai_toolsplatforms_are_you_actually_using_for/' }
+    ]
+  },
+  {
+    name: 'Ollama + local models', category: 'Local AI', signal: 'Local inference experimentation',
+    summary: 'Run supported open models on your own machine and connect them to local apps. This is useful for learning model serving and privacy trade-offs; speed and quality depend on model size and hardware.',
+    explore: 'Run a small local model and build a private document Q&A demo with a few non-sensitive sample files; compare its latency and answer quality with a hosted model.',
+    links: [
+      { label: 'Ollama docs', url: 'https://docs.ollama.com/' },
+      { label: 'Reddit: local model setups', url: 'https://www.reddit.com/r/LocalLLaMA/comments/1smeyc6/using_locally_hosted_llms_for_the_workplace/' }
+    ]
+  },
+  {
+    name: 'LangGraph', category: 'Agent connections', signal: 'Stateful agent workflows',
+    summary: 'A framework for defining multi-step, stateful AI workflows with explicit nodes, transitions, and human input. Explore it when a simple prompt chain is not enough and the process needs controlled branching.',
+    explore: 'Build a support-ticket workflow with classify → retrieve → draft response → human review, and make each state and transition visible.',
+    links: [
+      { label: 'LangGraph learning docs', url: 'https://docs.langchain.com/oss/python/learn' },
+      { label: 'Reddit: agent workflow discussion', url: 'https://www.reddit.com/r/AI_Agents/comments/1rvjo5i/anyone_using_mcp_servers_for_anything_beyond_chat/' }
+    ]
+  },
+  {
+    name: 'Langfuse', category: 'AI quality', signal: 'Testing and observing AI apps',
+    summary: 'Open platform for tracing AI application steps and evaluating outputs. Useful because AI features need checks for answer quality, cost, and latency in addition to normal software tests.',
+    explore: 'Trace a small RAG or chatbot demo, create a fixed set of test questions, and compare output quality and latency after a prompt or model change.',
+    links: [
+      { label: 'Official evaluation docs', url: 'https://langfuse.com/docs/evaluation/overview' },
+      { label: 'Official docs', url: 'https://langfuse.com/docs' }
+    ]
+  }
+];
+
+const InterviewHub = ({ defaultTab = 'career-roadmaps' }) => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   // Active Main Hub Tab
   const tabFromQuery = searchParams.get('tab');
   const getInitialTab = () => {
-    if (tabFromQuery === 'archive' || tabFromQuery === 'patterns') return tabFromQuery === 'patterns' ? 'dsa' : 'archive';
-    if (['dsa', 'system-design', 'networking', 'archive'].includes(tabFromQuery)) return tabFromQuery;
-    return defaultTab === 'patterns' ? 'dsa' : defaultTab;
+    if (tabFromQuery === 'archive') return 'archive';
+    if (tabFromQuery === 'dsa' || tabFromQuery === 'patterns') return 'career-roadmaps';
+    if (['career-roadmaps', 'tech-radar', 'system-design', 'networking', 'archive'].includes(tabFromQuery)) return tabFromQuery;
+    return ['system-design', 'networking', 'archive'].includes(defaultTab) ? defaultTab : 'career-roadmaps';
   };
   const [activeTab, setActiveTab] = useState(getInitialTab());
-
-  // 1. DSA Tab Sub-view ('patterns' | 'data-structures' | 'algorithms')
-  const [dsaSubView, setDsaSubView] = useState('patterns');
-  const [dsaSearchQuery, setDsaSearchQuery] = useState('');
-  const [statusFilter, setStatusFilter] = useState('all');
-  const [selectedCategory, setSelectedCategory] = useState('all');
-
-  // User learning progress state
-  const [progressMap, setProgressMap] = useState({});
-  const [isUpdatingStatus, setIsUpdatingStatus] = useState(null);
+  const [selectedRoadmap, setSelectedRoadmap] = useState('devops');
+  const [radarCategory, setRadarCategory] = useState('All topics');
 
   // 2. System Design Tab state
   const [sysCategory, setSysCategory] = useState('all');
-  const [sysSearch, setSysSearch] = useState('');
   const [sysDifficulty, setSysDifficulty] = useState('all');
   const [activeCodeModal, setActiveCodeModal] = useState(null);
 
   // 3. Networking Tab state
   const [activeOsiLayer, setActiveOsiLayer] = useState(7);
-  const [networkSearch, setNetworkSearch] = useState('');
 
   // 4. Archive Tab state
   const [archiveSearch, setArchiveSearch] = useState('');
@@ -81,94 +359,11 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
   );
   const [activeSolutionModal, setActiveSolutionModal] = useState(null);
 
-  // Initial Load of Pattern Progress
-  useEffect(() => {
-    const uid = currentUser?.uid;
-    const local = loadLocalPatternProgress(uid);
-    setProgressMap(local);
-
-    if (uid) {
-      fetchUserPatternProgressFromFirestore(uid).then((remote) => {
-        if (remote) setProgressMap(remote);
-      });
-    }
-
-    const handleProgressUpdate = (e) => {
-      if (e.detail?.all) {
-        setProgressMap(e.detail.all);
-      } else if (e.detail?.patternId) {
-        setProgressMap((prev) => ({
-          ...prev,
-          [e.detail.patternId]: e.detail.record || { status: e.detail.status }
-        }));
-      }
-    };
-
-    window.addEventListener('dsa-pattern-progress-updated', handleProgressUpdate);
-    return () => window.removeEventListener('dsa-pattern-progress-updated', handleProgressUpdate);
-  }, [currentUser]);
-
   // Tab change handler
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
     setSearchParams({ tab: tabId });
   };
-
-  // Status Change Handler
-  const handleStatusChange = async (e, patternId, newStatus) => {
-    e.stopPropagation();
-    setIsUpdatingStatus(patternId);
-    try {
-      await savePatternProgressRecord(currentUser?.uid, patternId, newStatus);
-      setProgressMap((prev) => ({
-        ...prev,
-        [patternId]: { ...(prev[patternId] || {}), status: newStatus }
-      }));
-    } catch (err) {
-      console.error('Failed to update pattern status:', err);
-    } finally {
-      setIsUpdatingStatus(null);
-    }
-  };
-
-  // Categories list derived from patterns
-  const categories = useMemo(() => {
-    const set = new Set(patterns.map((p) => p.category).filter(Boolean));
-    return ['all', ...Array.from(set)];
-  }, []);
-
-  // Filtered patterns with fuzzy search
-  const filteredPatterns = useMemo(() => {
-    let list = patterns.filter((pattern) => {
-      const status = getPatternStatus(progressMap, pattern.id);
-      if (statusFilter !== 'all' && status !== statusFilter) return false;
-      if (selectedCategory !== 'all' && pattern.category !== selectedCategory) return false;
-      return true;
-    });
-
-    if (dsaSearchQuery.trim()) {
-      list = fuzzyFilter(list, dsaSearchQuery, ['title', 'summary', 'category']);
-    }
-
-    return list;
-  }, [dsaSearchQuery, statusFilter, selectedCategory, progressMap]);
-
-  // Progress stats calculation
-  const progressStats = useMemo(() => {
-    let completed = 0;
-    let learning = 0;
-    let notStarted = 0;
-
-    patterns.forEach((p) => {
-      const status = getPatternStatus(progressMap, p.id);
-      if (status === 'completed') completed++;
-      else if (status === 'learning') learning++;
-      else notStarted++;
-    });
-
-    const completionRate = Math.round((completed / totalPatterns) * 100) || 0;
-    return { completed, learning, notStarted, completionRate };
-  }, [progressMap]);
 
   // Filtered Company solutions
   const companySolutionsList = useMemo(() => {
@@ -184,22 +379,13 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
     if (sysDifficulty !== 'all') {
       list = list.filter((p) => p.difficulty.toLowerCase() === sysDifficulty.toLowerCase());
     }
-    if (sysSearch.trim()) {
-      const q = sysSearch.toLowerCase();
-      list = list.filter(
-        (p) =>
-          p.title.toLowerCase().includes(q) ||
-          p.description.toLowerCase().includes(q) ||
-          p.topics.some((t) => t.toLowerCase().includes(q))
-      );
-    }
     return list;
-  }, [sysDifficulty, sysSearch]);
+  }, [sysDifficulty]);
 
   return (
     <div className="interview-hub-container">
       {/* Hero Header */}
-      <motion.section
+      <Motion.section
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
@@ -214,19 +400,19 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
             Interview <span className="gradient-highlight">Mastery Hub</span>
           </h1>
           <p className="hero-subtitle">
-            Your end-to-end technical interview roadmap: 16 core DSA patterns, high-scale System Design architectures, Computer Networking fundamentals, and 500+ verified FAANG company solutions.
+            Explore practical role roadmaps, interview system design, networking fundamentals, and company interview solutions in one place.
           </p>
 
           {/* Quick Metrics Bar */}
           <div className="hero-metrics">
             <div className="metric-item">
-              <span className="metric-number">{totalPatterns}</span>
-              <span className="metric-label">DSA Patterns</span>
+              <span className="metric-number">{CAREER_ROADMAPS.length}</span>
+              <span className="metric-label">Career Paths</span>
             </div>
             <div className="metric-divider" />
             <div className="metric-item">
-              <span className="metric-number">25+</span>
-              <span className="metric-label">System Design</span>
+              <span className="metric-number">50+</span>
+              <span className="metric-label">Tools & Skills</span>
             </div>
             <div className="metric-divider" />
             <div className="metric-item">
@@ -241,39 +427,7 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
           </div>
         </div>
 
-        {/* Global Progress Card */}
-        <div className="hero-progress-card">
-          <div className="progress-card-header">
-            <div className="progress-info">
-              <Award size={22} className="award-icon" />
-              <div>
-                <h4>Pattern Proficiency</h4>
-                <p>{progressStats.completed} of {totalPatterns} Patterns Mastered</p>
-              </div>
-            </div>
-            <span className="progress-percentage">{progressStats.completionRate}%</span>
-          </div>
-
-          <div className="progress-track">
-            <div
-              className="progress-fill"
-              style={{ width: `${progressStats.completionRate}%` }}
-            />
-          </div>
-
-          <div className="progress-breakdown">
-            <span className="pill-completed">
-              <CheckCircle size={13} /> {progressStats.completed} Completed
-            </span>
-            <span className="pill-learning">
-              <Clock size={13} /> {progressStats.learning} In Progress
-            </span>
-            <span className="pill-not-started">
-              <CircleDot size={13} /> {progressStats.notStarted} Remaining
-            </span>
-          </div>
-        </div>
-      </motion.section>
+      </Motion.section>
 
       {/* Main Hub Tabs Navigation */}
       <div className="hub-tabs-container">
@@ -294,319 +448,125 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
         })}
       </div>
 
-      {/* =========================================================================
-          SECTION 1: DATA STRUCTURES & ALGORITHMS (DSA & PATTERNS)
-          ========================================================================= */}
-      {activeTab === 'dsa' && (
-        <motion.div
-          key="dsa-tab"
+      {/* Career roadmaps */}
+      {activeTab === 'career-roadmaps' && (
+        <Motion.div
+          key="career-roadmaps-tab"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
-          className="patterns-section"
+          className="career-roadmaps-section"
         >
-          {/* Sub-view Switcher Bar */}
-          <div className="dsa-subview-bar">
-            <div className="subview-buttons">
-              <button
-                className={`subview-btn ${dsaSubView === 'patterns' ? 'active' : ''}`}
-                onClick={() => setDsaSubView('patterns')}
-              >
-                <Layers size={15} />
-                <span>16 Coding Patterns ({totalPatterns})</span>
-              </button>
-              <button
-                className={`subview-btn ${dsaSubView === 'data-structures' ? 'active' : ''}`}
-                onClick={() => setDsaSubView('data-structures')}
-              >
-                <Database size={15} />
-                <span>Data Structures Mastery ({dsaCoreData.dataStructures.length})</span>
-              </button>
-              <button
-                className={`subview-btn ${dsaSubView === 'algorithms' ? 'active' : ''}`}
-                onClick={() => setDsaSubView('algorithms')}
-              >
-                <Zap size={15} />
-                <span>Core Algorithms ({dsaCoreData.coreAlgorithms.length})</span>
-              </button>
+          <div className="roadmap-intro">
+            <div>
+              <span className="roadmap-kicker">Choose a role</span>
+              <h2>Career Roadmaps</h2>
+              <p>Follow the foundations first, then add the tools commonly used in that role. Pick one cloud provider and one tool in each category to start.</p>
             </div>
           </div>
-
-          {/* Subview 1A: 16 Coding Patterns */}
-          {dsaSubView === 'patterns' && (
-            <>
-              {/* Controls: Search, Status & Categories */}
-              <div className="patterns-controls-bar">
-                <div className="search-box">
-                  <Search size={18} className="search-icon" />
-                  <input
-                    type="text"
-                    value={dsaSearchQuery}
-                    onChange={(e) => setDsaSearchQuery(e.target.value)}
-                    placeholder="Search patterns (e.g. Sliding Window, Two Heaps, Graphs)..."
-                    className="search-input"
-                  />
-                  {dsaSearchQuery && (
-                    <button
-                      className="search-clear-btn"
-                      onClick={() => setDsaSearchQuery('')}
-                      aria-label="Clear search"
-                    >
-                      ×
-                    </button>
-                  )}
-                </div>
-
-                <div className="status-filters-group">
-                  {STATUS_FILTERS.map((f) => (
-                    <button
-                      key={f.id}
-                      onClick={() => setStatusFilter(f.id)}
-                      className={`status-filter-btn ${statusFilter === f.id ? 'active' : ''}`}
-                    >
-                      {f.label}
-                      {f.id === 'all' && ` (${totalPatterns})`}
-                      {f.id === 'completed' && ` (${progressStats.completed})`}
-                      {f.id === 'learning' && ` (${progressStats.learning})`}
-                      {f.id === 'not_started' && ` (${progressStats.notStarted})`}
-                    </button>
-                  ))}
-                </div>
+          <div className="roadmap-role-list" role="tablist" aria-label="Career roles">
+            {CAREER_ROADMAPS.map((roadmap) => (
+              <button key={roadmap.id} role="tab" aria-selected={selectedRoadmap === roadmap.id}
+                className={`roadmap-role-btn ${selectedRoadmap === roadmap.id ? 'active' : ''}`}
+                onClick={() => setSelectedRoadmap(roadmap.id)}>
+                {roadmap.title}
+              </button>
+            ))}
+          </div>
+          {CAREER_ROADMAPS.filter((roadmap) => roadmap.id === selectedRoadmap).map((roadmap) => (
+            <section className="roadmap-detail" key={roadmap.id}>
+              <div className="roadmap-detail-heading">
+                <div><span className="roadmap-kicker">{roadmap.level}</span><h3>{roadmap.title}</h3></div>
+                <p>{roadmap.summary}</p>
               </div>
-
-              {/* Category Filter Ribbon */}
-              <div className="category-filters-ribbon">
-                {categories.map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    className={`cat-filter-pill ${selectedCategory === cat ? 'active' : ''}`}
-                  >
-                    {cat === 'all' ? 'All Categories' : cat}
-                  </button>
+              <ol className="roadmap-flow">
+                {roadmap.stages.map(([name, tools, description], index) => (
+                  <li className="roadmap-step" key={name}>
+                    <span className="roadmap-step-number">{String(index + 1).padStart(2, '0')}</span>
+                    <div className="roadmap-step-content">
+                      <div className="roadmap-step-title"><h4>{name}</h4><span>{tools}</span></div>
+                      <p>{description}</p>
+                    </div>
+                  </li>
                 ))}
-              </div>
-
-              {/* Results Summary Row */}
-              <div className="results-info-row">
-                <span className="results-count">
-                  Showing <strong>{filteredPatterns.length}</strong> of {totalPatterns} Patterns
-                </span>
-                {(dsaSearchQuery || statusFilter !== 'all' || selectedCategory !== 'all') && (
-                  <button
-                    className="reset-filters-btn"
-                    onClick={() => {
-                      setDsaSearchQuery('');
-                      setStatusFilter('all');
-                      setSelectedCategory('all');
-                    }}
-                  >
-                    <RefreshCw size={13} /> Reset Filters
-                  </button>
-                )}
-              </div>
-
-              {/* Patterns 3-Column / 4-Column Grid */}
-              {filteredPatterns.length > 0 ? (
-                <div className="patterns-grid">
-                  {filteredPatterns.map((pattern, index) => {
-                    const status = getPatternStatus(progressMap, pattern.id);
-                    const hasDiagram = Boolean(pattern.coverImage);
-
-                    return (
-                      <motion.div
-                        key={pattern.id}
-                        layout
-                        initial={{ opacity: 0, y: 15 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.25, delay: index * 0.02 }}
-                        className={`pattern-card status-${status}`}
-                        onClick={() => navigate(`/interview-hub/patterns/${pattern.slug || pattern.id}`)}
-                      >
-                        <div className="pattern-card-header">
-                          <div className="pattern-number-tag">
-                            Pattern {String(pattern.number).padStart(2, '0')}
-                          </div>
-                          <div className="status-dropdown-wrapper" onClick={(e) => e.stopPropagation()}>
-                            <select
-                              className={`status-select-badge status-${status}`}
-                              value={status}
-                              disabled={isUpdatingStatus === pattern.id}
-                              onChange={(e) => handleStatusChange(e, pattern.id, e.target.value)}
-                            >
-                              <option value="not_started">Not Started</option>
-                              <option value="learning">In Progress</option>
-                              <option value="completed">Completed</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        {hasDiagram ? (
-                          <div className="pattern-diagram-preview">
-                            <img
-                              src={pattern.coverImage}
-                              alt={`${pattern.title} diagram`}
-                              loading="lazy"
-                              className="diagram-thumb"
-                            />
-                            <span className="diagram-badge">
-                              <Code2 size={12} /> Diagram Included
-                            </span>
-                          </div>
-                        ) : (
-                          <div className="pattern-abstract-thumb">
-                            <div className="abstract-pattern-icon">
-                              <Code2 size={24} />
-                            </div>
-                            <span className="abstract-category-text">{pattern.category}</span>
-                          </div>
-                        )}
-
-                        <div className="pattern-card-body">
-                          <h3 className="pattern-title">{pattern.title}</h3>
-                          <p className="pattern-summary">{pattern.summary}</p>
-                        </div>
-
-                        <div className="pattern-card-footer">
-                          <div className="pattern-stats-chips">
-                            <span className="stat-chip">
-                              <BookOpen size={13} /> {pattern.problemsCount} Problems
-                            </span>
-                            <span className="stat-chip time-chip">
-                              <Clock size={13} /> {pattern.estimatedTime || '~2h'}
-                            </span>
-                          </div>
-
-                          <button
-                            className="open-lesson-btn"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              navigate(`/interview-hub/patterns/${pattern.slug || pattern.id}`);
-                            }}
-                          >
-                            <span>Start Lesson</span>
-                            <ChevronRight size={16} />
-                          </button>
-                        </div>
-                      </motion.div>
-                    );
-                  })}
-                </div>
-              ) : (
-                <div className="patterns-empty-state">
-                  <div className="empty-icon-box">
-                    <Search size={36} />
+              </ol>
+              {roadmap.resources?.length > 0 && (
+                <div className="roadmap-resources">
+                  <h4>Official learning resources</h4>
+                  <div>
+                    {roadmap.resources.map((resource) => (
+                      <a key={resource.url} href={resource.url} target="_blank" rel="noreferrer">
+                        {resource.label}<ExternalLink size={14} />
+                      </a>
+                    ))}
                   </div>
-                  <h3>No patterns match your search</h3>
-                  <p>Try searching with different keywords, or reset your learning status filters.</p>
-                  <button
-                    className="primary-btn"
-                    onClick={() => {
-                      setDsaSearchQuery('');
-                      setStatusFilter('all');
-                      setSelectedCategory('all');
-                    }}
-                  >
-                    Clear All Filters
-                  </button>
                 </div>
               )}
-            </>
-          )}
+            </section>
+          ))}
+        </Motion.div>
+      )}
 
-          {/* Subview 1B: Data Structures Roadmap (from interviews) */}
-          {dsaSubView === 'data-structures' && (
-            <div className="dsa-core-grid">
-              {dsaCoreData.dataStructures.map((ds) => (
-                <div key={ds.id} className="dsa-core-card">
-                  <div className="core-card-header">
-                    <span className="core-category-pill">{ds.category}</span>
-                    <h3 className="core-card-title">{ds.name}</h3>
-                  </div>
-                  <p className="core-card-desc">{ds.summary}</p>
-
-                  <div className="complexity-grid">
-                    <div className="comp-cell">
-                      <span className="comp-label">Access</span>
-                      <span className="comp-val">{ds.complexity.access}</span>
-                    </div>
-                    <div className="comp-cell">
-                      <span className="comp-label">Search</span>
-                      <span className="comp-val">{ds.complexity.search}</span>
-                    </div>
-                    <div className="comp-cell">
-                      <span className="comp-label">Insert</span>
-                      <span className="comp-val highlight">{ds.complexity.insert}</span>
-                    </div>
-                    <div className="comp-cell">
-                      <span className="comp-label">Remove</span>
-                      <span className="comp-val highlight">{ds.complexity.remove}</span>
-                    </div>
-                  </div>
-
-                  <div className="core-insights-box">
-                    <span className="insights-heading">KEY INTERVIEW INSIGHTS:</span>
-                    <ul>
-                      {ds.keyInterviewInsights.map((ins, iIdx) => (
-                        <li key={iIdx}>{ins}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
+      {activeTab === 'tech-radar' && (
+        <Motion.div
+          key="tech-radar-tab"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          className="tech-radar-section"
+        >
+          <div className="tech-radar-heading">
+            <div>
+              <span className="roadmap-kicker">Explore what’s gaining attention</span>
+              <h2>Emerging Tech Radar</h2>
+              <p>Tools and ideas worth trying, with a small project to help you learn by building. This is a discovery list, not a ranking of job demand.</p>
             </div>
-          )}
+            <span className="radar-updated">Web + Reddit scan · Nov 21, 2026</span>
+          </div>
 
-          {/* Subview 1C: Core Algorithms (from interviews) */}
-          {dsaSubView === 'algorithms' && (
-            <div className="algorithms-grid">
-              {dsaCoreData.coreAlgorithms.map((algo) => (
-                <div key={algo.id} className="algorithm-card">
-                  <div className="algo-card-top">
-                    <span className="algo-type-tag">{algo.type}</span>
-                    {algo.stable !== undefined && (
-                      <span className={`stable-tag ${algo.stable ? 'is-stable' : 'is-unstable'}`}>
-                        {algo.stable ? 'Stable Sort' : 'Unstable Sort'}
-                      </span>
-                    )}
-                  </div>
-                  <h3 className="algo-title">{algo.name}</h3>
-                  <p className="algo-summary">{algo.summary}</p>
-
-                  <div className="complexity-grid algo-comp">
-                    <div className="comp-cell">
-                      <span className="comp-label">Best Time</span>
-                      <span className="comp-val highlight">{algo.timeBest}</span>
-                    </div>
-                    <div className="comp-cell">
-                      <span className="comp-label">Avg Time</span>
-                      <span className="comp-val">{algo.timeAvg}</span>
-                    </div>
-                    <div className="comp-cell">
-                      <span className="comp-label">Worst Time</span>
-                      <span className="comp-val">{algo.timeWorst}</span>
-                    </div>
-                    <div className="comp-cell">
-                      <span className="comp-label">Aux Space</span>
-                      <span className="comp-val">{algo.space}</span>
-                    </div>
-                  </div>
-
-                  <div className="algo-notes-box">
-                    <strong>Architectural Note:</strong> {algo.notes}
-                  </div>
-                </div>
-              ))}
+          <aside className="community-pulse">
+            <div><strong>Community pulse</strong><p>Recent Reddit threads discuss using n8n with AI and MCP, experimenting with coding agents, and keeping AI-built apps manageable by shipping in small steps. Treat these as practitioner anecdotes; verify tools against official docs and your own experiments.</p></div>
+            <div className="community-pulse-links">
+              <a href="https://www.reddit.com/r/n8n/comments/1xq8e68/how_have_you_been_using_ai_while_building_in_n8n/" target="_blank" rel="noreferrer">n8n + AI <ExternalLink size={13} /></a>
+              <a href="https://www.reddit.com/r/vibecoding/comments/1revk82/what_ai_toolsplatforms_are_you_actually_using_for/" target="_blank" rel="noreferrer">Coding agents <ExternalLink size={13} /></a>
+              <a href="https://www.reddit.com/r/nocode/comments/1xhqmwa/i_stopped_asking_ai_to_build_my_app_for_4_weeks/" target="_blank" rel="noreferrer">AI app building lessons <ExternalLink size={13} /></a>
             </div>
-          )}
-        </motion.div>
+          </aside>
+
+          <div className="radar-category-list" aria-label="Filter emerging technology topics">
+            {TECH_RADAR_CATEGORIES.map((category) => (
+              <button key={category} className={`radar-category-btn ${radarCategory === category ? 'active' : ''}`} onClick={() => setRadarCategory(category)}>
+                {category}
+              </button>
+            ))}
+          </div>
+
+          <div className="tech-radar-grid">
+            {TRENDING_TOOLS.filter((tool) => radarCategory === 'All topics' || tool.category === radarCategory).map((tool) => (
+              <article className="tech-radar-card" key={tool.name}>
+                <div className="tech-radar-card-top">
+                  <span className="radar-category-tag">{tool.category}</span>
+                  <span className="radar-signal-tag">{tool.signal}</span>
+                </div>
+                <h3>{tool.name}</h3>
+                <p className="radar-summary">{tool.summary}</p>
+                <div className="radar-explore"><strong>Try this</strong><p>{tool.explore}</p></div>
+                <div className="radar-links">
+                  {tool.links.map((link) => (
+                    <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label}<ExternalLink size={13} /></a>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </Motion.div>
       )}
 
       {/* =========================================================================
           SECTION 2: SYSTEM DESIGN MASTERY (From awesome-system-design-resources)
           ========================================================================= */}
       {activeTab === 'system-design' && (
-        <motion.div
+        <Motion.div
           key="system-design-tab"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -977,14 +937,14 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
               </div>
             </div>
           )}
-        </motion.div>
+        </Motion.div>
       )}
 
       {/* =========================================================================
           SECTION 3: COMPUTER NETWORKING MASTERY
           ========================================================================= */}
       {activeTab === 'networking' && (
-        <motion.div
+        <Motion.div
           key="networking-tab"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -1212,14 +1172,14 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
               </div>
             </div>
           </section>
-        </motion.div>
+        </Motion.div>
       )}
 
       {/* =========================================================================
           SECTION 4: COMPANY SOLUTIONS ARCHIVE (From interviews)
           ========================================================================= */}
       {activeTab === 'archive' && (
-        <motion.div
+        <Motion.div
           key="archive-tab"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -1350,7 +1310,7 @@ const InterviewHub = ({ defaultTab = 'dsa' }) => {
               </div>
             </div>
           )}
-        </motion.div>
+        </Motion.div>
       )}
     </div>
   );

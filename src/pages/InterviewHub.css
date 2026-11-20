@@ -17,7 +17,7 @@
    -------------------------------------------------------------------------- */
 .interview-hub-hero {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
   align-items: center;
   background: linear-gradient(135deg, rgba(26, 32, 44, 0.85) 0%, rgba(17, 24, 39, 0.95) 100%);
@@ -2582,4 +2582,397 @@
   border-color: #10b981;
   font-weight: 700;
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+}
+
+/* Career roadmaps */
+.career-roadmaps-section {
+  color: #f8fafc;
+}
+
+.roadmap-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.roadmap-kicker {
+  display: inline-block;
+  color: #34d399;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.4rem;
+}
+
+.roadmap-intro h2,
+.roadmap-detail-heading h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.65rem;
+}
+
+.roadmap-intro p,
+.roadmap-detail-heading p {
+  color: #a7b1c2;
+  max-width: 700px;
+  line-height: 1.6;
+  margin: 0.55rem 0 0;
+}
+
+.roadmap-role-list {
+  display: flex;
+  gap: 0.65rem;
+  overflow-x: auto;
+  padding: 0.15rem 0 1rem;
+  scrollbar-width: thin;
+}
+
+.roadmap-role-btn {
+  flex: 0 0 auto;
+  padding: 0.7rem 1rem;
+  color: #cbd5e1;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.roadmap-role-btn:hover,
+.roadmap-role-btn.active {
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.6);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.roadmap-detail {
+  padding: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(17, 24, 39, 0.76));
+}
+
+.roadmap-detail-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.roadmap-detail-heading p {
+  max-width: 520px;
+  margin: 0;
+}
+
+.roadmap-flow {
+  list-style: none;
+  padding: 1.25rem 0 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.roadmap-step {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.roadmap-step-number {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  border-radius: 50%;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.roadmap-step-content {
+  min-width: 0;
+  padding: 0.15rem 0 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.roadmap-step:last-child .roadmap-step-content {
+  border-bottom: 0;
+}
+
+.roadmap-step-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.roadmap-step-title h4 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+.roadmap-step-title span {
+  color: #7dd3fc;
+  font-size: 0.82rem;
+  text-align: right;
+}
+
+.roadmap-step-content p {
+  color: #a7b1c2;
+  line-height: 1.55;
+  font-size: 0.9rem;
+  margin: 0.45rem 0 0;
+}
+
+.roadmap-resources {
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.roadmap-resources h4 {
+  color: #dbeafe;
+  font-size: 0.86rem;
+  margin: 0 0 0.75rem;
+}
+
+.roadmap-resources > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.roadmap-resources a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.75rem;
+  color: #7dd3fc;
+  background: rgba(14, 165, 233, 0.08);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+
+.roadmap-resources a:hover {
+  color: #fff;
+  border-color: rgba(125, 211, 252, 0.55);
+}
+
+/* Emerging technology radar */
+.tech-radar-section {
+  color: #f8fafc;
+}
+
+.tech-radar-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.tech-radar-heading h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.65rem;
+}
+
+.tech-radar-heading p {
+  color: #a7b1c2;
+  line-height: 1.6;
+  margin: 0.55rem 0 0;
+  max-width: 720px;
+}
+
+.radar-updated {
+  flex: 0 0 auto;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+
+.community-pulse {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: center;
+  background: rgba(14, 165, 233, 0.07);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.community-pulse strong {
+  color: #bae6fd;
+  font-size: 0.9rem;
+}
+
+.community-pulse p {
+  color: #a7b1c2;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  margin: 0.35rem 0 0;
+}
+
+.community-pulse-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.community-pulse-links a,
+.radar-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #7dd3fc;
+  text-decoration: none;
+  font-size: 0.78rem;
+}
+
+.community-pulse-links a {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 7px;
+  white-space: nowrap;
+}
+
+.community-pulse-links a:hover,
+.radar-links a:hover {
+  color: #fff;
+}
+
+.radar-category-list {
+  display: flex;
+  gap: 0.55rem;
+  overflow-x: auto;
+  padding: 0.2rem 0 1rem;
+}
+
+.radar-category-btn {
+  flex: 0 0 auto;
+  padding: 0.55rem 0.8rem;
+  color: #cbd5e1;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.radar-category-btn:hover,
+.radar-category-btn.active {
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.55);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.tech-radar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr));
+  gap: 1rem;
+}
+
+.tech-radar-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.2rem;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.92), rgba(17, 24, 39, 0.78));
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 14px;
+}
+
+.tech-radar-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.radar-category-tag,
+.radar-signal-tag {
+  color: #a7b1c2;
+  font-size: 0.7rem;
+}
+
+.radar-category-tag {
+  padding: 0.25rem 0.5rem;
+  color: #a7f3d0;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.radar-signal-tag {
+  align-self: center;
+  text-align: right;
+}
+
+.tech-radar-card h3 {
+  color: #fff;
+  margin: 0.75rem 0 0.4rem;
+  font-size: 1.12rem;
+}
+
+.radar-summary,
+.radar-explore p {
+  color: #a7b1c2;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.radar-explore {
+  padding: 0.75rem;
+  margin: 0.9rem 0;
+  background: rgba(255, 255, 255, 0.035);
+  border-left: 2px solid rgba(52, 211, 153, 0.65);
+  border-radius: 0 8px 8px 0;
+}
+
+.radar-explore strong {
+  display: block;
+  color: #d1fae5;
+  font-size: 0.78rem;
+  margin-bottom: 0.3rem;
+}
+
+.radar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 0.4rem;
+}
+
+@media (max-width: 760px) {
+  .tech-radar-heading { display: block; }
+  .radar-updated { display: inline-block; margin-top: 0.8rem; }
+  .community-pulse { grid-template-columns: 1fr; }
+  .community-pulse-links { justify-content: flex-start; }
+}
+
+@media (max-width: 640px) {
+  .roadmap-detail { padding: 1rem; }
+  .roadmap-detail-heading { display: block; }
+  .roadmap-detail-heading p { margin-top: 0.65rem; }
+  .roadmap-step-title { display: block; }
+  .roadmap-step-title span { display: block; text-align: left; margin-top: 0.25rem; }
+  .roadmap-step { grid-template-columns: 34px minmax(0, 1fr); gap: 0.7rem; }
+  .roadmap-step-number { width: 32px; height: 32px; }
 }
