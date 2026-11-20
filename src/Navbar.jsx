@@ -57,7 +57,12 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-logo-link" onClick={closeMenu}>
-          <h2 className="nav-logo">DSA Sheet</h2>
+          <div className="nav-logo-icon-wrapper">
+            <img src="/dsa-logo.png" alt="DSA Sheet Logo" className="nav-logo-img" />
+          </div>
+          <span className="nav-logo-text">
+            DSA <span className="nav-logo-accent">Sheet</span>
+          </span>
         </Link>
 
         <div className="hamburger-menu" onClick={toggleMenu} aria-label="Toggle navigation">
@@ -68,25 +73,30 @@ function Navbar() {
 
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li><NavLink to="/" end className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Home</NavLink></li>
-          <li><NavLink to="/questions" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Code Arena</NavLink></li>
-          <li><NavLink to="/top-100" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Top 100</NavLink></li>
-          <li><NavLink to="/interview-hub" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Interview Hub</NavLink></li>
-          <li>
-            <NavLink to="/sheet" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>
-              My Sheet
-              {dueReviewCount > 0 && (
-                <span className="nav-review-badge" title={`${dueReviewCount} questions due for spaced review`}>
-                  {dueReviewCount}
-                </span>
-              )}
-            </NavLink>
-          </li>
-          <li><NavLink to="/dsa-vault" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>DSA Vault</NavLink></li>
-          <li><NavLink to="/club" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Clubs</NavLink></li>
+
+          {/* Public Route */}
           <li><NavLink to="/news" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Tech News</NavLink></li>
 
+          {/* Protected Routes (Available when logged in) */}
           {currentUser ? (
             <>
+              <li><NavLink to="/questions" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Code Arena</NavLink></li>
+              <li><NavLink to="/top-100" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Top 100</NavLink></li>
+              <li><NavLink to="/interview-hub" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Interview Hub</NavLink></li>
+              <li>
+                <NavLink to="/sheet" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>
+                  My Sheet
+                  {dueReviewCount > 0 && (
+                    <span className="nav-review-badge" title={`${dueReviewCount} questions due for spaced review`}>
+                      {dueReviewCount}
+                    </span>
+                  )}
+                </NavLink>
+              </li>
+              <li><NavLink to="/dsa-vault" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>DSA Vault</NavLink></li>
+              <li><NavLink to="/club" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Clubs</NavLink></li>
+              <li><NavLink to="/careers" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Careers</NavLink></li>
+
               <li className="user-info">
                 <span className="user-status-dot"></span>
                 <span>{currentUser.email.split('@')[0]}</span>
@@ -100,7 +110,7 @@ function Navbar() {
           ) : (
             <>
               <li><NavLink to="/login" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Login</NavLink></li>
-              <li><NavLink to="/register" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} onClick={closeMenu}>Register</NavLink></li>
+              <li><NavLink to="/register" className={({ isActive }) => `nav-link nav-btn-register ${isActive ? "active" : ""}`} onClick={closeMenu}>Register</NavLink></li>
             </>
           )}
         </ul>

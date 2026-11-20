@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node scripts/generate-company-data.js && node scripts/generate-patterns-data.js",
+    "prebuild": "node scripts/generate-company-data.js && node scripts/generate-patterns-data.js && node scripts/generate-career-data.js",
     "build": "vite build",
-    "generate:data": "node scripts/generate-company-data.js && node scripts/generate-patterns-data.js",
+    "generate:data": "node scripts/generate-company-data.js && node scripts/generate-patterns-data.js && node scripts/generate-career-data.js",
     "generate:patterns": "node scripts/generate-patterns-data.js",
+    "generate:careers": "node scripts/generate-career-data.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },

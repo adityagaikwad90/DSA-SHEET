@@ -40,6 +40,10 @@ export default function Register() {
   return (
     <div className="auth-container">
       <div className="auth-box">
+        <div className="auth-brand-badge">
+          <img src="/dsa-logo.png" alt="DSA Sheet" className="auth-brand-logo" />
+          <span className="auth-brand-name">DSA Sheet</span>
+        </div>
         <h2>Create Account</h2>
         {error && <p style={{ color: "red", marginBottom: "1rem" }}>{error}</p>}
         <form onSubmit={handleRegister}>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../firebase";
 import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
@@ -10,6 +10,8 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,7 +34,7 @@ export default function Login() {
         });
       }
 
-      navigate("/"); // Redirect to home on success
+      navigate(from, { replace: true });
     } catch (err) {
       setError(err.message);
     }
@@ -41,7 +43,16 @@ export default function Login() {
   return (
     <div className="auth-container">
       <div className="auth-box">
-        <h2>Login</h2>
+        <div className="auth-brand-badge">
+          <img src="/dsa-logo.png" alt="DSA Sheet" className="auth-brand-logo" />
+          <span className="auth-brand-name">DSA Sheet</span>
+        </div>
+        {location.state?.from && (
+          <div className="auth-redirect-notice">
+            Please log in to access this feature
+          </div>
+        )}
+        <h2>Welcome Back</h2>
         {error && <p style={{ color: "red", marginBottom: "1rem" }}>{error}</p>}
         <form onSubmit={handleSubmit}>
           {/* Email */}

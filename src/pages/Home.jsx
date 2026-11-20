@@ -19,7 +19,8 @@ import {
   Award,
   Sparkles,
   Bot,
-  BookOpen
+  BookOpen,
+  Briefcase
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { DSA_TOPICS } from '../constants';
@@ -248,6 +249,7 @@ const Home = () => {
         >
           <motion.div variants={heroHeadingVariants}>
             <div className="hero-eyebrow-pill">
+              <img src="/dsa-logo.png" alt="" className="hero-eyebrow-logo" />
               <Sparkles size={14} className="eyebrow-icon live-pulse-dot" />
               <span>Next-Gen Technical Interview System</span>
             </div>
@@ -329,6 +331,18 @@ const Home = () => {
                 >
                   <Cpu size={15} className="dock-icon text-amber" />
                   <span>System Design</span>
+                </MotionLink>
+              </Magnetic>
+
+              <Magnetic>
+                <MotionLink
+                  to="/careers"
+                  className="hero-dock-pill"
+                  whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <Briefcase size={15} className="dock-icon text-emerald" />
+                  <span>480+ Careers</span>
                 </MotionLink>
               </Magnetic>
 
@@ -570,6 +584,57 @@ const Home = () => {
                 Press Ctrl + / to activate <ArrowRight size={15} />
               </span>
             </motion.div>
+
+            {/* Tile 6: 480+ Product Companies & Careers Tracker (Span 12 Showcase) */}
+            <motion.div
+              className="bento-card tile-careers"
+              whileHover={{ y: -4, borderColor: "rgba(16, 185, 129, 0.5)" }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="bento-careers-content">
+                <div className="bento-careers-left">
+                  <div className="bento-card-header">
+                    <div className="bento-icon-wrapper emerald">
+                      <Briefcase size={24} />
+                    </div>
+                    <span className="bento-status-pill emerald">480+ Verified Portals</span>
+                  </div>
+                  <h3 className="bento-card-title">Careers & Job Application Tracker</h3>
+                  <p className="bento-card-desc">
+                    Direct verified application links to 480+ product companies, unicorn startups, and quant funds. Track your wishlist, applications, interview rounds, and offers in one unified dashboard.
+                  </p>
+                  <div className="bento-pattern-chips">
+                    <span className="pattern-pill">Direct Apply</span>
+                    <span className="pattern-pill">Pipeline Tracker</span>
+                    <span className="pattern-pill">CSV Export</span>
+                    <span className="pattern-pill">Remote Friendly</span>
+                    <span className="pattern-pill">7 Tech Sectors</span>
+                  </div>
+                  <Link to="/careers" className="bento-cta-link emerald" style={{ marginTop: '0.75rem' }}>
+                    Explore 480+ Portals & Apply <ArrowRight size={15} />
+                  </Link>
+                </div>
+
+                <div className="bento-careers-stats-box">
+                  <div className="bento-stat-mini">
+                    <span className="mini-stat-val text-emerald">484</span>
+                    <span className="mini-stat-lbl">Curated Firms</span>
+                  </div>
+                  <div className="bento-stat-mini">
+                    <span className="mini-stat-val text-sky">7</span>
+                    <span className="mini-stat-lbl">Tech Sectors</span>
+                  </div>
+                  <div className="bento-stat-mini">
+                    <span className="mini-stat-val text-amber">100%</span>
+                    <span className="mini-stat-lbl">Verified Links</span>
+                  </div>
+                  <div className="bento-stat-mini">
+                    <span className="mini-stat-val text-indigo">Track</span>
+                    <span className="mini-stat-lbl">Wishlist → Offer</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </section>
@@ -608,7 +673,12 @@ const Home = () => {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>DSA Sheet</h3>
+            <div className="footer-brand-header">
+              <div className="footer-logo-wrapper">
+                <img src="/dsa-logo.png" alt="DSA Sheet Logo" className="footer-logo-img" />
+              </div>
+              <h3 className="footer-brand-title">DSA Sheet</h3>
+            </div>
             <p>Built for developers, by developers.</p>
           </div>
           <div className="footer-links">
